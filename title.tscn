@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://ccckve5n0xbh4"]
+
+[ext_resource type="Script" path="res://title.gd" id="1_fbo7u"]
+[ext_resource type="Script" path="res://Game name.gd" id="2_bbb0f"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_dxhuu"]
+[ext_resource type="Script" path="res://nebula.gd" id="3_bn1r3"]
+[ext_resource type="Script" path="res://fps.gd" id="3_tsoef"]
+[ext_resource type="Script" path="res://start.gd" id="4_cc41w"]
+[ext_resource type="Script" path="res://exit.gd" id="5_scoec"]
+
+[node name="title" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fbo7u")
+
+[node name="nebula" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2, 1.96)
+stream = ExtResource("2_dxhuu")
+autoplay = true
+script = ExtResource("3_bn1r3")
+
+[node name="fps" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("3_tsoef")
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 308.0
+offset_right = 235.0
+offset_bottom = 331.0
+scale = Vector2(5.86131, 5.35486)
+text = "Midori in the Magic School"
+script = ExtResource("2_bbb0f")
+
+[node name="start" type="Label" parent="."]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 92.0
+offset_right = 610.0
+offset_bottom = 118.0
+scale = Vector2(2.61468, 1.57466)
+text = "Press A or Enter start"
+script = ExtResource("4_cc41w")
+
+[node name="exit" type="Label" parent="."]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 602.0
+offset_right = 568.0
+offset_bottom = 628.0
+scale = Vector2(2.61468, 1.57466)
+text = "Press escape or B to exit"
+script = ExtResource("5_scoec")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 653.0
+offset_right = 76.0
+offset_bottom = 676.0
+text = "R0.0.0-dev 2023 Page Asgardius GNU General Public License 3
+2016-2023 Asgardius Virtualx Project"
+
+[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]

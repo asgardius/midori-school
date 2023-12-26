@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dblfov80ngodu"]
+
+[ext_resource type="Script" path="res://Label2.gd" id="1_2bvs5"]
+
+[node name="Selftest" type="Label"]
+offset_left = 77.0
+offset_top = 94.0
+offset_right = 117.0
+offset_bottom = 117.0
+script = ExtResource("1_2bvs5")

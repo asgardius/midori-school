@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://b30uq5ye61dd6"]
+
+[ext_resource type="Script" path="res://bootclick.gd" id="1_52bti"]
+[ext_resource type="Script" path="res://fps.gd" id="2_gnh1w"]
+[ext_resource type="PackedScene" path="res://selftest.tscn" id="3_jtnh5"]
+
+[node name="bootclick" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_52bti")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 105.0
+offset_top = 258.0
+offset_right = 453.0
+offset_bottom = 284.0
+scale = Vector2(2.94857, 7.68)
+text = "Press enter or a gamepad button to continue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="fps" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("2_gnh1w")
+
+[node name="Selftest" parent="." instance=ExtResource("3_jtnh5")]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 112.0
+offset_right = 97.0
+offset_bottom = 135.0
