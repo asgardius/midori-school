@@ -28,22 +28,23 @@ func _input(event):
    # Mouse in viewport coordinates.
 	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_A)):
 		#print("Mouse Click/Unclick at: ", event.position)
-		#_level()
-		print("There are not game levels at the moment")
+		_level()
+		#print("There are not game levels at the moment")
 	elif (Time.get_ticks_msec() - wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_B)):
 		get_tree().quit()
 
 func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-		Global.live = 1
-		Global.gamelevel = randi() % 3
-		if Global.gamelevel == 0:
-			get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
-		elif Global.gamelevel == 1:
-			get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
-		else:
-			get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
+	get_tree().change_scene_to_file("res://levels/credits.tscn")
+		#Global.live = 1
+		#Global.gamelevel = randi() % 3
+		#if Global.gamelevel == 0:
+		#	get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
+		#elif Global.gamelevel == 1:
+		#	get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
+		#else:
+		#	get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

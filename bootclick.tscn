@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b30uq5ye61dd6"]
+[gd_scene load_steps=4 format=3 uid="uid://doxnh56s63i2y"]
 
 [ext_resource type="Script" path="res://bootclick.gd" id="1_52bti"]
 [ext_resource type="Script" path="res://fps.gd" id="2_gnh1w"]

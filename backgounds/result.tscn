@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq8vnuy2g3ewv"]
+
+[ext_resource type="Texture2D" uid="uid://b1p80uik4t12b" path="res://backgounds/kimberlyarch.jpg" id="1_6w0sp"]
+[ext_resource type="Script" path="res://backgounds/result.gd" id="1_ejbiw"]
+[ext_resource type="Script" path="res://fps.gd" id="2_r4na5"]
+
+[node name="Result" type="Node2D"]
+script = ExtResource("1_ejbiw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_6w0sp")
+
+[node name="fps" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("2_r4na5")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 484.0
+offset_top = 260.0
+offset_right = 851.0
+offset_bottom = 283.0
+text = "This is a placeholder for Dungeon Result Screen"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 346.0
+offset_top = 361.0
+offset_right = 602.0
+offset_bottom = 387.0
+scale = Vector2(2.92998, 7.01768)
+text = "Press Enter or A to return to title"
