@@ -1,2 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
+# nonfree placeholders must be excluded
+nonfree/
