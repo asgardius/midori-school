@@ -4,9 +4,9 @@
 [ext_resource type="Script" path="res://Game name.gd" id="2_bbb0f"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_dxhuu"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_bn1r3"]
-[ext_resource type="Script" path="res://fps.gd" id="3_tsoef"]
 [ext_resource type="Script" path="res://start.gd" id="4_cc41w"]
 [ext_resource type="Script" path="res://exit.gd" id="5_scoec"]
+[ext_resource type="PackedScene" uid="uid://wovn8m050haq" path="res://levels/bottomhud.tscn" id="7_yq7ke"]
 
 [node name="title" type="Control"]
 layout_mode = 3
@@ -26,12 +26,6 @@ stream = ExtResource("2_dxhuu")
 autoplay = true
 script = ExtResource("3_bn1r3")
 
-[node name="fps" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("3_tsoef")
-
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
 offset_left = 31.0
@@ -49,7 +43,7 @@ offset_top = 92.0
 offset_right = 610.0
 offset_bottom = 118.0
 scale = Vector2(2.61468, 1.57466)
-text = "Press A or Enter start"
+text = "Press B or Enter start"
 script = ExtResource("4_cc41w")
 
 [node name="exit" type="Label" parent="."]
@@ -59,16 +53,19 @@ offset_top = 602.0
 offset_right = 568.0
 offset_bottom = 628.0
 scale = Vector2(2.61468, 1.57466)
-text = "Press escape or B to exit"
+text = "Press escape or A to exit"
 script = ExtResource("5_scoec")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 36.0
-offset_top = 653.0
-offset_right = 76.0
-offset_bottom = 676.0
-text = "R0.0.0-dev 2023 Page Asgardius GNU General Public License 3
-2016-2023 Asgardius Virtualx Project"
+offset_left = 398.0
+offset_top = 660.0
+offset_right = 871.0
+offset_bottom = 709.0
+text = "2023-2024 Page Asgardius GNU General Public License 3
+2016-2024 Asgardius Virtualx Project"
+
+[node name="Bottomhud" parent="." instance=ExtResource("7_yq7ke")]
+layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]

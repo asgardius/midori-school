@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctp1qc3xlecob"]
+
+[ext_resource type="Script" path="res://backgounds/wip.gd" id="1_1qonj"]
+[ext_resource type="Texture2D" uid="uid://becayb0ro0bd4" path="res://backgounds/midoriasgardius.jpg" id="2_gghyy"]
+[ext_resource type="PackedScene" uid="uid://wovn8m050haq" path="res://levels/bottomhud.tscn" id="3_sdx6y"]
+
+[node name="WIP" type="Node2D"]
+script = ExtResource("1_1qonj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_gghyy")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 503.0
+offset_top = 172.0
+offset_right = 997.0
+offset_bottom = 221.0
+scale = Vector2(1.20077, 1.41766)
+text = "This game is under developmnt
+More content will be added in following releases"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 346.0
+offset_top = 361.0
+offset_right = 602.0
+offset_bottom = 387.0
+scale = Vector2(2.92998, 7.01768)
+text = "Press Enter or B to return to title"
+
+[node name="Bottomhud" parent="." instance=ExtResource("3_sdx6y")]

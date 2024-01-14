@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://levels/credits.gd" id="1_y6orl"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_0cref"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_ffw0g"]
+[ext_resource type="PackedScene" uid="uid://wovn8m050haq" path="res://levels/bottomhud.tscn" id="5_yvope"]
 [ext_resource type="Script" path="res://levels/roll.gd" id="6_3q8sp"]
-[ext_resource type="Script" path="res://fps.gd" id="7_jok2t"]
 
 [node name="credits" type="Node2D"]
 script = ExtResource("1_y6orl")
@@ -55,6 +55,14 @@ Soundtrack provided by archive.org
 Title screen
 RELOADED Theme
 RELOADED
+
+Settings and Stores
+Jellies in the Sea
+vince kaichan
+
+Testrooms
+Get A Brain Morans
+Fearofdark
 
 Friendly challenge
 Oskars Skarmslackare
@@ -397,12 +405,23 @@ Source code hosted at https://git.asgardius.company/asgardius/midori-school
 
 You can listen my radio station at https://asteroid.asgardius.company/public/r3
 
-Special Thanks for Unity Technologies for make me choosing Godot
+Special thanks
 
+Unity Technologies
+For make me choosing Godot
 Godot does what Unitydnt
 
-I'm looking for developers, artists and japanese voice actors who want to help on this videogame
-from Asgardius Virtualx series and the next Genshin Killer
+CAPCOM
+For making great games in the past
+
+ZUN
+For let me know that a single person can create a great game
+
+Hoyoverse
+For let me know that fireworks can make a fun game
+
+SNK
+For let me know that a Heavy Machine Gun can be turned into a good stage boss
 
 Contact info
 
@@ -424,9 +443,6 @@ You can reuse assets for non-commercial purposes only"
 horizontal_alignment = 1
 script = ExtResource("6_3q8sp")
 
-[node name="fps" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("7_jok2t")
+[node name="Bottomhud" parent="." instance=ExtResource("5_yvope")]
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]

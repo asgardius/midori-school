@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://wovn8m050haq"]
+
+[ext_resource type="Script" path="res://fps.gd" id="1_15gcj"]
+
+[node name="Bottomhud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="fps" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 697.0
+offset_right = 45.0
+offset_bottom = 720.0
+script = ExtResource("1_15gcj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1191.0
+offset_top = 691.0
+offset_right = 1271.0
+offset_bottom = 714.0
+text = "R0.0.0-dev"

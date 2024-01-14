@@ -37,7 +37,7 @@ func _process(delta):
 				bgsound.play(0)
 			else:
 				_complete()
-	elif bgsound.has_stream_playback():
+	elif bgsound.get_playback_position() > 10:
 		playstart = true
 	#pass
 
@@ -51,6 +51,6 @@ func _complete():
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_key_pressed(KEY_ENTER):
+	if bgsound.get_playback_position() > 1 && event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_key_pressed(KEY_X) || Input.is_key_pressed(KEY_ENTER):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_complete()
