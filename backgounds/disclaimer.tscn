@@ -15,13 +15,15 @@ texture = ExtResource("2_gghyy")
 [node name="Label" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
-offset_left = 503.0
-offset_top = 172.0
-offset_right = 997.0
-offset_bottom = 221.0
+offset_left = 514.0
+offset_top = 105.0
+offset_right = 1008.0
+offset_bottom = 206.0
 scale = Vector2(1.20077, 1.41766)
-text = "Playing with fireworks inside a videogame can give hours of fun,
-but in real life is dangerous"
+text = "Disclaimer
+Playing with fireworks inside a videogame can give hours of fun,
+but in real life is dangerous
+Life assurance services exists only on fiction"
 
 [node name="Label2" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
