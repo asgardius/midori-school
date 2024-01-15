@@ -32,7 +32,7 @@ offset_left = 31.0
 offset_top = 308.0
 offset_right = 235.0
 offset_bottom = 331.0
-scale = Vector2(5.86131, 5.35486)
+theme_override_font_sizes/font_size = 95
 text = "Midori in the Magic School"
 script = ExtResource("2_bbb0f")
 
@@ -42,7 +42,7 @@ offset_left = 446.0
 offset_top = 92.0
 offset_right = 610.0
 offset_bottom = 118.0
-scale = Vector2(2.61468, 1.57466)
+theme_override_font_sizes/font_size = 40
 text = "Press B or Enter start"
 script = ExtResource("4_cc41w")
 
@@ -52,7 +52,7 @@ offset_left = 364.0
 offset_top = 602.0
 offset_right = 568.0
 offset_bottom = 628.0
-scale = Vector2(2.61468, 1.57466)
+theme_override_font_sizes/font_size = 40
 text = "Press escape or A to exit"
 script = ExtResource("5_scoec")
 

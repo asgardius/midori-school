@@ -19,7 +19,7 @@ offset_left = 514.0
 offset_top = 105.0
 offset_right = 1008.0
 offset_bottom = 206.0
-scale = Vector2(1.20077, 1.41766)
+theme_override_font_sizes/font_size = 22
 text = "Disclaimer
 Playing with fireworks inside a videogame can give hours of fun,
 but in real life is dangerous
@@ -30,9 +30,9 @@ modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
 offset_left = 346.0
 offset_top = 361.0
-offset_right = 602.0
-offset_bottom = 387.0
-scale = Vector2(2.92998, 7.01768)
-text = "Press Enter or B to start playing"
+offset_right = 1004.0
+offset_bottom = 429.0
+theme_override_font_sizes/font_size = 49
+text = "Press Enter or B to continue"
 
 [node name="Bottomhud" parent="." instance=ExtResource("3_sdx6y")]

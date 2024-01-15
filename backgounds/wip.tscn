@@ -19,7 +19,6 @@ offset_left = 503.0
 offset_top = 172.0
 offset_right = 997.0
 offset_bottom = 221.0
-scale = Vector2(1.20077, 1.41766)
 text = "This game is under developmnt
 More content will be added in following releases"
 
@@ -28,9 +27,9 @@ modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
 offset_left = 346.0
 offset_top = 361.0
-offset_right = 602.0
-offset_bottom = 387.0
-scale = Vector2(2.92998, 7.01768)
-text = "Press Enter or B to return to title"
+offset_right = 1004.0
+offset_bottom = 429.0
+theme_override_font_sizes/font_size = 49
+text = "Press Enter or B to continue"
 
 [node name="Bottomhud" parent="." instance=ExtResource("3_sdx6y")]

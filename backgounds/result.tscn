@@ -17,9 +17,9 @@ modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
 offset_left = 559.0
 offset_top = 68.0
-offset_right = 785.0
-offset_bottom = 195.0
-scale = Vector2(1.71496, 1.67053)
+offset_right = 963.0
+offset_bottom = 230.0
+theme_override_font_sizes/font_size = 21
 text = "Defeated enemies: 0
 Clear time: 0
 Charged skill uses: 0
@@ -31,9 +31,9 @@ modulate = Color(0, 0, 0, 1)
 self_modulate = Color(0, 0, 0, 1)
 offset_left = 346.0
 offset_top = 361.0
-offset_right = 565.0
-offset_bottom = 387.0
-scale = Vector2(2.92998, 7.01768)
+offset_right = 1004.0
+offset_bottom = 429.0
+theme_override_font_sizes/font_size = 49
 text = "Press Enter or B to continue"
 
 [node name="Bottomhud" parent="." instance=ExtResource("3_sdx6y")]
