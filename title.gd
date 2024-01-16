@@ -26,11 +26,11 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_key_pressed(KEY_ENTER) || Input.is_key_pressed(KEY_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_B)):
+	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_action_pressed("ui_accept")):
 		#print("Mouse Click/Unclick at: ", event.position)
-		_level()
-		#print("There are not game levels at the moment")
-	elif (Time.get_ticks_msec() - wait) >= 1000 && (Input.is_key_pressed(KEY_ESCAPE) || Input.is_key_pressed(KEY_Z) || Input.is_joy_button_pressed(0,JOY_BUTTON_A)):
+		get_tree().change_scene_to_file("res://levels/tmenu.tscn")
+		#_level()
+	elif (Time.get_ticks_msec() - wait) >= 1000 && (Input.is_action_pressed("ui_cancel")):
 		get_tree().quit()
 
 func _level():

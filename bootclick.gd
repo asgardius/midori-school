@@ -9,8 +9,9 @@ const savegame = preload("res://save.gd")
 	
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	OS.get_data_dir().rsplit("/", true, 7)[2]
-	#loadgame.new()
+	#OS.get_data_dir().rsplit("/", true, 7)[2]
+	loadgame.new()
+	print(OS.get_processor_name())
 	#pass # Replace with function body.
 	#add_child(title)
 
@@ -24,7 +25,7 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if !Global.sk && (event is InputEventMouseButton || Input.is_key_pressed(KEY_ENTER) || Input.is_key_pressed(KEY_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER)):
+	if !Global.sk && (event is InputEventMouseButton || Input.is_action_pressed("ui_accept")):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
 

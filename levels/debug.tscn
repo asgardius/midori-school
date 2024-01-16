@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=3 uid="uid://brrta1s63r2q2"]
+
+[ext_resource type="Script" path="res://levels/debug.gd" id="1_gm5qw"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_l51wy"]
+[ext_resource type="Script" path="res://nebula.gd" id="3_0jyxj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6u0xs"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[node name="Debug" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gm5qw")
+
+[node name="nebula" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 368.0
+scale = Vector2(2, 1.96)
+stream = ExtResource("2_l51wy")
+autoplay = true
+script = ExtResource("3_0jyxj")
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 61.0
+offset_right = 991.0
+offset_bottom = 207.0
+theme_override_font_sizes/font_size = 106
+text = "Debug Menu"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -129.5
+offset_top = -362.0
+offset_right = 129.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Scene Selector" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
+text = "Scene Selector"
+
+[node name="Sound Test" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "Sound Test"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
+text = "Back"
+
+[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
+[connection signal="pressed" from="VBoxContainer/Scene Selector" to="." method="_on_scene_selector_pressed"]
+[connection signal="pressed" from="VBoxContainer/Sound Test" to="." method="_on_sound_test_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]
