@@ -1,0 +1,212 @@
+[gd_scene load_steps=8 format=3 uid="uid://v2cnmd1atfw1"]
+
+[ext_resource type="Script" path="res://levels/musictest.gd" id="1_mulrj"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_hc5pw"]
+[ext_resource type="Script" path="res://nebula.gd" id="3_4oqoj"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_a1ux8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cprm3"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alctd"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0dqsq"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[node name="Musictest" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mulrj")
+
+[node name="nebula" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 368.0
+scale = Vector2(2, 1.96)
+stream = ExtResource("2_hc5pw")
+autoplay = true
+script = ExtResource("3_4oqoj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 3.0
+offset_right = 790.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 40
+text = "Music Test"
+
+[node name="Stop" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 672.0
+offset_right = 444.0
+offset_bottom = 708.0
+theme_override_font_sizes/font_size = 22
+text = "Press X to stop playback"
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -640.0
+offset_top = -419.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="Title Screen" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+text = "Title Screen: X-Force Theme"
+
+[node name="Disclaimer, Settings, Stores" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+text = "Disclaimer, Settings, Stores"
+
+[node name="Testrooms" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Testrooms"
+
+[node name="Friendly challenge" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Friendly challenge"
+
+[node name="School nursery" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "School nursery"
+
+[node name="Overworld (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Overworld (Ceres)"
+
+[node name="Boss fight (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Boss fight (Ceres)"
+
+[node name="Result" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Result Screen"
+
+[node name="Overworld (Earth)" type="Button" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Overworld (Earth)"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="The Zubmarine Zone" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "The Zubmarine Zone"
+
+[node name="Radioactive Desert" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Radioactive Desert"
+
+[node name="Boss Fight (Earth)" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Boss Fight (Earth)"
+
+[node name="Dungeon of Destruction" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Dungeon of Destruction"
+
+[node name="Final Boss Fight" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Final Boss Fight"
+
+[node name="Ending Theme" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Ending Theme"
+
+[node name="Credits 1" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Credits 1"
+
+[node name="Credits 2" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Credits 2"
+
+[node name="Credits 3" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Credits 3"
+
+[node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_0dqsq")
+text = "Back"
+
+[node name="Bottomhud" parent="." instance=ExtResource("4_a1ux8")]
+layout_mode = 1
+
+[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Disclaimer, Settings, Stores" to="." method="_on_disclaimer_settings_stores_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Testrooms" to="." method="_on_testrooms_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Friendly challenge" to="." method="_on_friendly_challenge_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/School nursery" to="." method="_on_school_nursery_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Overworld (Ceres)" to="." method="_on_overworld_ceres_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Boss fight (Ceres)" to="." method="_on_boss_fight_ceres_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Result" to="." method="_on_result_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Overworld (Earth)" to="." method="_on_overworld_earth_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/The Zubmarine Zone" to="." method="_on_the_zubmarine_zone_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Radioactive Desert" to="." method="_on_radioactive_desert_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Boss Fight (Earth)" to="." method="_on_boss_fight_earth_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Dungeon of Destruction" to="." method="_on_dungeon_of_destruction_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Final Boss Fight" to="." method="_on_final_boss_fight_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Ending Theme" to="." method="_on_ending_theme_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Credits 1" to="." method="_on_credits_1_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Credits 2" to="." method="_on_credits_2_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Credits 3" to="." method="_on_credits_3_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Back" to="." method="_on_back_pressed"]

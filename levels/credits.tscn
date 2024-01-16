@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://levels/credits.gd" id="1_y6orl"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_0cref"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_ffw0g"]
-[ext_resource type="PackedScene" uid="uid://wovn8m050haq" path="res://levels/bottomhud.tscn" id="5_yvope"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="5_yvope"]
 [ext_resource type="Script" path="res://levels/roll.gd" id="6_3q8sp"]
 
 [node name="credits" type="Node2D"]
@@ -446,6 +446,9 @@ For let me know that fireworks can make a fun game
 
 SNK
 For let me know that a Heavy Machine Gun can be turned into a good stage boss
+
+OMOCAT
+For let me know that sketch graphics can give good results
 
 Contact info
 

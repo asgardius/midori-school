@@ -13,7 +13,7 @@ func _ready():
 		Global.sk = true
 	Global.gamelevel = null
 	add_child(bgsound)
-	var titlemusic = load("res://music/reloaded.wav")
+	var titlemusic = load(Global.musictracks[0])
 	bgsound.stream = titlemusic
 	bgsound.play(0)
 	wait = Time.get_ticks_msec()
@@ -26,11 +26,11 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if (Time.get_ticks_msec() - wait) >= 1000 && (event is InputEventMouseButton || Input.is_action_pressed("ui_accept")):
+	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		get_tree().change_scene_to_file("res://levels/tmenu.tscn")
 		#_level()
-	elif (Time.get_ticks_msec() - wait) >= 1000 && (Input.is_action_pressed("ui_cancel")):
+	elif Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
 
 func _level():

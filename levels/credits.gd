@@ -3,9 +3,9 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
-var song1 = load("res://music/sweetener.wav")
-var song2 = load("res://music/tooold.wav")
-var song3 = load("res://music/portello.wav")
+var song1 = load(Global.musictracks[15])
+var song2 = load(Global.musictracks[16])
+var song3 = load(Global.musictracks[17])
 var playstart = false
 var playindex = 0
 
@@ -44,6 +44,9 @@ func _process(delta):
 func _complete():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
+	if Global.debug:
+		get_tree().change_scene_to_file("res://levels/scene.tscn")
+	else:
 		get_tree().change_scene_to_file("res://backgounds/result.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
@@ -51,6 +54,6 @@ func _complete():
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if bgsound.get_playback_position() > 1 && event is InputEventMouseButton || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_key_pressed(KEY_X) || Input.is_key_pressed(KEY_ENTER):
+	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_complete()

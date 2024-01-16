@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://backgounds/result.gd" id="1_ejbiw"]
 [ext_resource type="Texture2D" uid="uid://becayb0ro0bd4" path="res://backgounds/midoriasgardius.jpg" id="2_gghyy"]
-[ext_resource type="PackedScene" uid="uid://wovn8m050haq" path="res://levels/bottomhud.tscn" id="3_sdx6y"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_sdx6y"]
 
 [node name="Result" type="Node2D"]
 script = ExtResource("1_ejbiw")

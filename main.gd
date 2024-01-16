@@ -1,7 +1,5 @@
 extends Node
 
-var title = preload("res://title.tscn").instantiate()
-var boot = preload("res://bootclick.tscn").instantiate()
 const loadgame = preload("res://load.gd")
 const savegame = preload("res://save.gd")
 
@@ -25,7 +23,7 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if !Global.sk && (event is InputEventMouseButton || Input.is_action_pressed("ui_accept")):
+	if !Global.sk && Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
 

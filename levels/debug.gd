@@ -1,6 +1,7 @@
 extends Control
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	Global.debug = true
 	$"VBoxContainer/Scene Selector".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,7 +26,7 @@ func _level():
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if Input.is_action_pressed("ui_cancel"):
+	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()
 		#print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
@@ -48,4 +49,5 @@ func _on_sound_test_pressed():
 
 
 func _on_back_pressed():
+	Global.debug = false
 	get_tree().change_scene_to_file("res://levels/tmenu.tscn")

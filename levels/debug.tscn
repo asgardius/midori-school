@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://brrta1s63r2q2"]
+[gd_scene load_steps=8 format=3 uid="uid://brrta1s63r2q2"]
 
 [ext_resource type="Script" path="res://levels/debug.gd" id="1_gm5qw"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_l51wy"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_0jyxj"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_ogmre"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
 bg_color = Color(0, 0.8, 0, 1)
@@ -70,6 +71,9 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
 text = "Back"
+
+[node name="Bottomhud" parent="." instance=ExtResource("4_ogmre")]
+layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
 [connection signal="pressed" from="VBoxContainer/Scene Selector" to="." method="_on_scene_selector_pressed"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://s8ttuboef06k"]
+[gd_scene load_steps=8 format=3 uid="uid://s8ttuboef06k"]
 
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="1_33b4o"]
 [ext_resource type="Script" path="res://levels/tmenu.gd" id="1_w3aym"]
 [ext_resource type="Script" path="res://nebula.gd" id="2_x35ws"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_0qcfw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
 bg_color = Color(0, 0.8, 0, 1)
@@ -70,6 +71,9 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
 text = "Exit"
+
+[node name="Bottomhud" parent="." instance=ExtResource("4_0qcfw")]
+layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
