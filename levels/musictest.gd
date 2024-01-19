@@ -106,8 +106,7 @@ func _on_radioactive_desert_pressed():
 	player.stream = load(Global.musictracks[10])
 	player.play(0)
 
-
-func _on_boss_fight_earth_pressed():
+func _on_natashas_theme_pressed():
 	player.stream = load(Global.musictracks[11])
 	player.play(0)
 
@@ -139,4 +138,21 @@ func _on_credits_2_pressed():
 
 func _on_credits_3_pressed():
 	player.stream = load(Global.musictracks[17])
+	player.play(0)
+
+
+
+
+func _on_the_magic_school_pressed():
+	player.stream = load(Global.musictracks[18])
+	player.play(0)
+
+
+func _on_deep_forest_pressed():
+	player.stream = load(Global.musictracks[19])
+	player.play(0)
+
+
+func _on_boss_fight_earth_pressed():
+	player.stream = load(Global.musictracks[20])
 	player.play(0)

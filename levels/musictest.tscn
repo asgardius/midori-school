@@ -74,7 +74,7 @@ layout_mode = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
-text = "Title Screen: X-Force Theme"
+text = "Title Screen"
 
 [node name="Disclaimer, Settings, Stores" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -124,26 +124,26 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
 text = "Overworld (Earth)"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
-layout_mode = 2
-
-[node name="The Zubmarine Zone" type="Button" parent="BoxContainer/VBoxContainer2"]
+[node name="The Zubmarine Zone" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
 text = "The Zubmarine Zone"
 
-[node name="Radioactive Desert" type="Button" parent="BoxContainer/VBoxContainer2"]
+[node name="Radioactive Desert" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
 text = "Radioactive Desert"
 
-[node name="Boss Fight (Earth)" type="Button" parent="BoxContainer/VBoxContainer2"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="Natasha’s Theme" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Boss Fight (Earth)"
+text = "Natasha’s Theme"
 
 [node name="Dungeon of Destruction" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
@@ -181,6 +181,24 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
 text = "Credits 3"
 
+[node name="The Magic School" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "The Magic School"
+
+[node name="Deep Forest" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Deep Forest"
+
+[node name="Boss Fight (Earth)" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "Boss Fight (Earth)"
+
 [node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
@@ -200,13 +218,16 @@ layout_mode = 1
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Boss fight (Ceres)" to="." method="_on_boss_fight_ceres_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Result" to="." method="_on_result_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Overworld (Earth)" to="." method="_on_overworld_earth_pressed"]
-[connection signal="pressed" from="BoxContainer/VBoxContainer2/The Zubmarine Zone" to="." method="_on_the_zubmarine_zone_pressed"]
-[connection signal="pressed" from="BoxContainer/VBoxContainer2/Radioactive Desert" to="." method="_on_radioactive_desert_pressed"]
-[connection signal="pressed" from="BoxContainer/VBoxContainer2/Boss Fight (Earth)" to="." method="_on_boss_fight_earth_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/The Zubmarine Zone" to="." method="_on_the_zubmarine_zone_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Radioactive Desert" to="." method="_on_radioactive_desert_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Natasha’s Theme" to="." method="_on_natashas_theme_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Dungeon of Destruction" to="." method="_on_dungeon_of_destruction_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Final Boss Fight" to="." method="_on_final_boss_fight_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Ending Theme" to="." method="_on_ending_theme_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Credits 1" to="." method="_on_credits_1_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Credits 2" to="." method="_on_credits_2_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Credits 3" to="." method="_on_credits_3_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/The Magic School" to="." method="_on_the_magic_school_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Deep Forest" to="." method="_on_deep_forest_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Boss Fight (Earth)" to="." method="_on_boss_fight_earth_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Back" to="." method="_on_back_pressed"]
