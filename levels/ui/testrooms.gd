@@ -48,9 +48,11 @@ func _on_back_pressed():
 
 func _on_testspawn_pressed():
 	Global.dplace = [0, 2, 1]
+	Global.live = 1
 	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
 
 
 func _on_testboss_pressed():
 	Global.dplace = [0, 1, 1]
+	Global.live = 1
 	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")

@@ -1,0 +1,36 @@
+extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+var angle = 2
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+@onready var anim := $AnimationPlayer
+
+func _physics_process(delta):
+	# Add the gravity.
+	#var velocity = Vector2.ZERO
+	if Global.live == 1:
+		velocity = (Vector2.RIGHT.rotated(rotation) * 500 * Global.xm * delta)-Vector2.UP.rotated(rotation) * 500 * Global.ym * delta
+		#origmpos = get_viewport().get_mouse_position()
+	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
+	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
+		position += velocity
+		if Global.ym > 0.3:
+			angle = 2
+		elif Global.ym < -0.3:
+			angle = 0
+		if velocity.y != 0 || velocity.x != 0:
+			if angle == 0:
+				anim.play("nwalk")
+			else:
+				anim.play("swalk")
+		else:
+			if angle == 0:
+				anim.play("nidle")
+			else:
+				anim.play("sidle")
+	move_and_slide()

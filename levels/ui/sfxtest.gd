@@ -60,3 +60,8 @@ func _on_game_over_pressed():
 func _on_gauge_fill_pressed():
 	player.stream = load(Global.sfxtracks[1])
 	player.play(0)
+
+
+func _on_explosion_pressed():
+	player.stream = load(Global.sfxtracks[2])
+	player.play(0)

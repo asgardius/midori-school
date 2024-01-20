@@ -77,11 +77,11 @@ text = "Gauge Fill"
 [node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
 layout_mode = 2
 
-[node name="Placeholder 2" type="Button" parent="BoxContainer/VBoxContainer2"]
+[node name="Explosion" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
-text = "Placeholder 2"
+text = "Explosion"
 
 [node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
@@ -95,3 +95,5 @@ layout_mode = 1
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Game Over" to="." method="_on_game_over_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Gauge Fill" to="." method="_on_gauge_fill_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Explosion" to="." method="_on_explosion_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Back" to="." method="_on_back_pressed"]
