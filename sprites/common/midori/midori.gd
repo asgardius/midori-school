@@ -23,14 +23,26 @@ func _physics_process(delta):
 			angle = 2
 		elif Global.ym < -0.3:
 			angle = 0
+		elif Global.xm > 0.3:
+			angle = 1
+		elif Global.xm < -0.3:
+			angle = 3
 		if velocity.y != 0 || velocity.x != 0:
 			if angle == 0:
 				anim.play("nwalk")
+			elif angle == 1:
+				anim.play("ewalk")
+			elif angle == 3:
+				anim.play("wwalk")
 			else:
 				anim.play("swalk")
 		else:
 			if angle == 0:
 				anim.play("nidle")
+			elif angle == 1:
+				anim.play("eidle")
+			elif angle == 3:
+				anim.play("widle")
 			else:
 				anim.play("sidle")
 	move_and_slide()
