@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cehe6sm8ly06u"]
 
-[ext_resource type="Texture2D" uid="uid://dknl7c6h0at0q" path="res://sprites/common/midori.png" id="1_hti2k"]
+[ext_resource type="Texture2D" uid="uid://bc2vrf8qggvtp" path="res://sprites/common/midori/sprite.png" id="1_oqq2w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dj8gt"]
 size = Vector2(128, 255.5)
@@ -18,38 +18,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [2]
-}
-
-[sub_resource type="Animation" id="Animation_w3ius"]
-resource_name = "sidle"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
-[sub_resource type="Animation" id="Animation_u56r5"]
-resource_name = "swalk"
-length = 0.2
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [1, 2]
 }
 
 [sub_resource type="Animation" id="Animation_cajcr"]
@@ -84,6 +52,38 @@ tracks/0/keys = {
 "values": [4, 5]
 }
 
+[sub_resource type="Animation" id="Animation_w3ius"]
+resource_name = "sidle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_u56r5"]
+resource_name = "swalk"
+length = 0.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 2]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mh65y"]
 _data = {
 "RESET": SubResource("Animation_i5rhc"),
@@ -96,7 +96,7 @@ _data = {
 [node name="Midori" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_hti2k")
+texture = ExtResource("1_oqq2w")
 hframes = 3
 vframes = 2
 frame = 2

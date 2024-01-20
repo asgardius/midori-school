@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dknl7c6h0at0q"
-path="res://.godot/imported/midori.png-541694b9fef1221d8fa07dae465a3960.ctex"
+uid="uid://bc2vrf8qggvtp"
+path="res://.godot/imported/sprite.png-ce427b185553672e3e09cd3e81d98e38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/common/midori.png"
-dest_files=["res://.godot/imported/midori.png-541694b9fef1221d8fa07dae465a3960.ctex"]
+source_file="res://sprites/common/midori/sprite.png"
+dest_files=["res://.godot/imported/sprite.png-ce427b185553672e3e09cd3e81d98e38.ctex"]
 
 [params]
 
