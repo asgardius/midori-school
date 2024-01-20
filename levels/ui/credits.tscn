@@ -26,9 +26,12 @@ text = "Midori in the Magic School
 Programming
 Page Asgardius
 
+Character design
+Page Asgardius
+
 Made with Godot Engine
 
-Testing
+Testing Devices
 
 Asus VivoBook X1500EA
 Arch Linux Rolling
@@ -38,6 +41,11 @@ Provided as a replacement for a HP 14 laptop that died while running Genshin Imp
 Steam Deck
 Arch Linux Rolling
 Provided by Evelyn Freeman
+
+HP Pavilion x360
+Debian 12
+Game assets were designed with this device
+Provided by Eric Asgardius
 
 Feedback
 Sakura Nakayama
@@ -49,8 +57,7 @@ Beachkid
 Sakura Nakayama
 
 Music
-
-Soundtrack provided by archive.org
+Soundtrack provided by archive.org and Bandcamp
 
 Title screen
 RELOADED Theme
@@ -120,9 +127,24 @@ Credit roll 2
 too old
 tj technoiZ
 
-Credit roll 3
-portello
-motherchip
+The Magic School
+songbirds playground
+Vince Kaichan
+
+Deep Forest
+Gotanda Lights
+Vince Kaichan
+
+Boss Fight (Earth)
+unreeeal superhero 3
+rez-kenet
+
+Sound Effects
+Provided by Pixabay
+
+Game Over
+Brain Damage
+Daub Audio
 
 Encoders
 
@@ -144,6 +166,18 @@ xiph.org
 
 PCM
 Public Domain
+
+Asset design tools
+
+Stable Diffusion
+CompVis
+Used only for placeholders (currently unused)
+
+Krita
+KDE Community
+
+GNU Image Manipulation Program
+GNU Project
 
 Engine development
 
@@ -435,6 +469,12 @@ Unity Technologies
 For make me choosing Godot
 Godot does what Unitydnt
 
+Ferdowsi
+For writing the book that inspired the Blacksmith of Destruction
+
+Shigeru Miyamoto
+For let me know that an elf as a main character is a great idea
+
 CAPCOM
 For making great games in the past
 
@@ -465,6 +505,10 @@ Matrix Chat
 You are free to distribute this game and make modifications, but remember sharing your modifications with source code
 
 You are free to create guides, but i suggest avoiding cheat codes
+
+Buy Tracker Works from Vince Kaichan at
+https://vincekaichan.bandcamp.com/album/tracker-works-2014-2018
+You will find all tracks from this composer that was used here
 
 You can reuse assets for non-commercial purposes only"
 horizontal_alignment = 1

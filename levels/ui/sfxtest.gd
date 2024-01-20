@@ -5,7 +5,7 @@ var player := AudioStreamPlayer.new()
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
-	$"BoxContainer/VBoxContainer/Title Screen".grab_focus()
+	$"BoxContainer/VBoxContainer/Game Over".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -50,3 +50,13 @@ func _input(event):
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://levels/ui/soundtest.tscn")
 
+
+
+func _on_game_over_pressed():
+	player.stream = load(Global.sfxtracks[0])
+	player.play(0)
+
+
+func _on_gauge_fill_pressed():
+	player.stream = load(Global.sfxtracks[1])
+	player.play(0)

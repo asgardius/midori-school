@@ -3,12 +3,14 @@ var level
 var player
 var music
 var bgsound := AudioStreamPlayer.new()
+var sfx1 := AudioStreamPlayer.new()
 var musictrack
 var isboss
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_child(bgsound)
+	add_child(sfx1)
 	if Global.debug:
 		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instantiate()
 		player = load(Global.pchars[Global.dcpchar]).instantiate()
@@ -32,8 +34,11 @@ func _ready():
 	get_tree().root.add_child.call_deferred(level)
 	get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
-	if !isboss:
-		bgsound.play(0)
+	if isboss:
+		sfx1.stream = load(Global.sfxtracks[1])
+		sfx1.play(0)
+	bgsound.play(0)
+		
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

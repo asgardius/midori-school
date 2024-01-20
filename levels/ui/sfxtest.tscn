@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cv2a37xetkkse"]
+[gd_scene load_steps=7 format=3 uid="uid://cv2a37xetkkse"]
 
 [ext_resource type="Script" path="res://levels/ui/sfxtest.gd" id="1_l1lbb"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_c55jp"]
@@ -6,9 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_xxv3m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cprm3"]
-bg_color = Color(0, 0.8, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alctd"]
 bg_color = Color(0, 0.8, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0dqsq"]
@@ -65,110 +62,26 @@ grow_vertical = 0
 [node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer"]
 layout_mode = 2
 
-[node name="Title Screen" type="Button" parent="BoxContainer/VBoxContainer"]
+[node name="Game Over" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
-text = "Title Screen"
+text = "Game Over"
 
-[node name="Disclaimer, Settings, Stores" type="Button" parent="BoxContainer/VBoxContainer"]
+[node name="Gauge Fill" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
-text = "Disclaimer, Settings, Stores"
-
-[node name="Testrooms" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Testrooms"
-
-[node name="Friendly challenge" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Friendly challenge"
-
-[node name="School nursery" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "School nursery"
-
-[node name="Overworld (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Overworld (Ceres)"
-
-[node name="Boss fight (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Boss fight (Ceres)"
-
-[node name="Overworld (Earth)" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Overworld (Earth)"
-
-[node name="The Zubmarine Zone" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "The Zubmarine Zone"
+text = "Gauge Fill"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
 layout_mode = 2
 
-[node name="Radioactive Desert" type="Button" parent="BoxContainer/VBoxContainer2"]
+[node name="Placeholder 2" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Radioactive Desert"
-
-[node name="Boss Fight (Earth)" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Boss Fight (Earth)"
-
-[node name="Dungeon of Destruction" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Dungeon of Destruction"
-
-[node name="Final Boss Fight" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Final Boss Fight"
-
-[node name="Ending Theme" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Ending Theme"
-
-[node name="Credits 1" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Credits 1"
-
-[node name="Credits 2" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Credits 2"
-
-[node name="Credits 3" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Credits 3"
+theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+text = "Placeholder 2"
 
 [node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
@@ -180,3 +93,5 @@ text = "Back"
 layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Game Over" to="." method="_on_game_over_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Gauge Fill" to="." method="_on_gauge_fill_pressed"]
