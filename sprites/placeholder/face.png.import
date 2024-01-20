@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ben8c86as6jxe"
-path="res://.godot/imported/sidle.png-4166c81ff128a76ac7880107712c544c.ctex"
+uid="uid://bb4sw2rhdbjbf"
+path="res://.godot/imported/face.png-5c2e95a83c1bd2f50674a584a2d88c4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/midori/sidle.png"
-dest_files=["res://.godot/imported/sidle.png-4166c81ff128a76ac7880107712c544c.ctex"]
+source_file="res://sprites/placeholder/face.png"
+dest_files=["res://.godot/imported/face.png-5c2e95a83c1bd2f50674a584a2d88c4c.ctex"]
 
 [params]
 

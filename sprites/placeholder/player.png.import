@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkmq5ewfihvai"
-path="res://.godot/imported/nidle.png-4b4effa9d66f09e83225356dc7877481.ctex"
+uid="uid://dursxelwwxe8u"
+path="res://.godot/imported/player.png-132d3a237e614f1ef29e140714a5341a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/midori/nidle.png"
-dest_files=["res://.godot/imported/nidle.png-4b4effa9d66f09e83225356dc7877481.ctex"]
+source_file="res://sprites/placeholder/player.png"
+dest_files=["res://.godot/imported/player.png-132d3a237e614f1ef29e140714a5341a.ctex"]
 
 [params]
 

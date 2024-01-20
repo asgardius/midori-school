@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcm20qp1cqfo7"
-path="res://.godot/imported/nwalk1.png-dc3c6b2b408e7b990cb64e1bca03e606.ctex"
+uid="uid://dknl7c6h0at0q"
+path="res://.godot/imported/midori.png-541694b9fef1221d8fa07dae465a3960.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/midori/nwalk1.png"
-dest_files=["res://.godot/imported/nwalk1.png-dc3c6b2b408e7b990cb64e1bca03e606.ctex"]
+source_file="res://sprites/common/midori.png"
+dest_files=["res://.godot/imported/midori.png-541694b9fef1221d8fa07dae465a3960.ctex"]
 
 [params]
 
