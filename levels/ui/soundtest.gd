@@ -28,13 +28,13 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/debug.tscn")
+	get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")
 
 
 
 func _on_music_pressed():
-	get_tree().change_scene_to_file("res://levels/musictest.tscn")
+	get_tree().change_scene_to_file("res://levels/ui/musictest.tscn")
 
 
 func _on_sfx_pressed():
-	get_tree().change_scene_to_file("res://levels/sfxtest.tscn")
+	get_tree().change_scene_to_file("res://levels/ui/sfxtest.tscn")

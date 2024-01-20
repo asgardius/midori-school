@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://cd8hd11usuhbu"]
+
+[ext_resource type="Texture2D" uid="uid://bb4sw2rhdbjbf" path="res://sprites/common/placeholder/face.png" id="1_4l8il"]
+
+[node name="Talk" type="Node2D"]
+
+[node name="Playerface" type="TextureRect" parent="."]
+offset_left = 511.0
+offset_top = 35.0
+offset_right = 767.0
+offset_bottom = 291.0
+texture = ExtResource("1_4l8il")
+
+[node name="Textbox" type="ColorRect" parent="."]
+offset_left = 41.0
+offset_top = 319.0
+offset_right = 1243.0
+offset_bottom = 681.0
+color = Color(0.254902, 0.254902, 0.254902, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 319.0
+offset_right = 1243.0
+offset_bottom = 412.0
+theme_override_font_sizes/font_size = 68
+text = "Character name goes here"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dialog" type="Label" parent="."]
+offset_left = 41.0
+offset_top = 414.0
+offset_right = 1243.0
+offset_bottom = 681.0
+theme_override_font_sizes/font_size = 68
+text = "Your dialog goes here"
+horizontal_alignment = 1
+vertical_alignment = 1

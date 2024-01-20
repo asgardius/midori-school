@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://g8ajwoud48us"]
 
-[ext_resource type="Script" path="res://levels/credits.gd" id="1_y6orl"]
+[ext_resource type="Script" path="res://levels/ui/credits.gd" id="1_y6orl"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_0cref"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_ffw0g"]
 [ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="5_yvope"]
-[ext_resource type="Script" path="res://levels/roll.gd" id="6_3q8sp"]
+[ext_resource type="Script" path="res://levels/ui/roll.gd" id="6_3q8sp"]
 
 [node name="credits" type="Node2D"]
 script = ExtResource("1_y6orl")

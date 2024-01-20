@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://cma7ddp0r4rm"]
+
+[ext_resource type="Texture2D" uid="uid://dursxelwwxe8u" path="res://sprites/common/placeholder/player.png" id="1_hxdyl"]
+
+[node name="Testboss" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 583.0
+offset_top = 4.0
+offset_right = 711.0
+offset_bottom = 260.0
+texture = ExtResource("1_hxdyl")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 327.0
+offset_top = 354.0
+offset_right = 957.0
+offset_bottom = 409.0
+theme_override_font_sizes/font_size = 40
+text = "Boss spawns at EBU pattern area"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://v2cnmd1atfw1"]
 
-[ext_resource type="Script" path="res://levels/musictest.gd" id="1_mulrj"]
+[ext_resource type="Script" path="res://levels/ui/musictest.gd" id="1_mulrj"]
 [ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_hc5pw"]
 [ext_resource type="Script" path="res://nebula.gd" id="3_4oqoj"]
 [ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_a1ux8"]

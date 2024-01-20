@@ -45,7 +45,7 @@ func _complete():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 	if Global.debug:
-		get_tree().change_scene_to_file("res://levels/scene.tscn")
+		get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
 	else:
 		get_tree().change_scene_to_file("res://backgounds/result.tscn")
 		#get_tree().root.add_child(title)

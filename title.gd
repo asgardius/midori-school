@@ -28,7 +28,7 @@ func _input(event):
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
-		get_tree().change_scene_to_file("res://levels/tmenu.tscn")
+		get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")
 		#_level()
 	elif Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()

@@ -1,16 +1,11 @@
 extends Control
-
-var player := AudioStreamPlayer.new()
-
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	add_child(player)
-	$"BoxContainer/VBoxContainer/Title Screen".grab_focus()
+	$VBoxContainer/Start.grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
 
 func _level():
 	# This is like autoloading the scene, only
@@ -28,12 +23,9 @@ func _level():
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
 
-func _input(event):
+#func _input(event):
    # Mouse in viewport coordinates.
-	if Input.is_action_just_pressed("ui_cancel"):
-		_on_back_pressed()
-	if Input.is_key_pressed(KEY_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_X):
-		player.stop()
+#	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
 		#print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
 #			_on_debug_pressed()
@@ -45,8 +37,15 @@ func _input(event):
 #		focus_next
 			
 
+func _on_start_pressed():
+	_level()
+	#pass # Replace with function body.
 
 
-func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/soundtest.tscn")
+func _on_debug_pressed():
+	get_tree().change_scene_to_file("res://levels/ui/debug.tscn")
 
+
+func _on_exit_pressed():
+	get_tree().quit()
+	#pass # Replace with function body.

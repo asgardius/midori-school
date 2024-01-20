@@ -1,7 +1,7 @@
 extends Control
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	$VBoxContainer/Start.grab_focus()
+	$"VBoxContainer/Testspawn".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -23,9 +23,10 @@ func _level():
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
 
-#func _input(event):
+func _input(event):
    # Mouse in viewport coordinates.
-#	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
+	if Input.is_action_just_pressed("ui_cancel"):
+		_on_back_pressed()
 		#print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
 #			_on_debug_pressed()
@@ -37,15 +38,19 @@ func _level():
 #		focus_next
 			
 
-func _on_start_pressed():
-	_level()
-	#pass # Replace with function body.
 
 
-func _on_debug_pressed():
-	get_tree().change_scene_to_file("res://levels/debug.tscn")
 
 
-func _on_exit_pressed():
-	get_tree().quit()
-	#pass # Replace with function body.
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+
+
+func _on_testspawn_pressed():
+	Global.dplace = [0, 2, 1]
+	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+
+
+func _on_testboss_pressed():
+	Global.dplace = [0, 1, 1]
+	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")

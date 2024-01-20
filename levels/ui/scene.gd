@@ -43,10 +43,10 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/debug.tscn")
+	get_tree().change_scene_to_file("res://levels/ui/debug.tscn")
 
 func _on_credits_pressed():
-	get_tree().change_scene_to_file("res://levels/credits.tscn")
+	get_tree().change_scene_to_file("res://levels/ui/credits.tscn")
 
 
 func _on_wip_pressed():
@@ -59,3 +59,7 @@ func _on_results_pressed():
 
 func _on_disclaimer_pressed():
 	get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
+
+
+func _on_testrooms_pressed():
+	get_tree().change_scene_to_file("res://levels/ui/testrooms.tscn")

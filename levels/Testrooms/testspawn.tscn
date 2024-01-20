@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5cxd2rmstnpt"]
+
+[ext_resource type="Texture2D" uid="uid://kxvipok4tnuw" path="res://backgounds/wip.jpg" id="1_yw0he"]
+
+[node name="Testspawn" type="Node2D"]
+
+[node name="WIP" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_yw0he")

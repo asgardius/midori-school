@@ -1,9 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://brrta1s63r2q2"]
+[gd_scene load_steps=8 format=3 uid="uid://s8ttuboef06k"]
 
-[ext_resource type="Script" path="res://levels/debug.gd" id="1_gm5qw"]
-[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_l51wy"]
-[ext_resource type="Script" path="res://nebula.gd" id="3_0jyxj"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_ogmre"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="1_33b4o"]
+[ext_resource type="Script" path="res://levels/ui/tmenu.gd" id="1_w3aym"]
+[ext_resource type="Script" path="res://nebula.gd" id="2_x35ws"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_0qcfw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
 bg_color = Color(0, 0.8, 0, 1)
@@ -14,32 +14,32 @@ bg_color = Color(0, 0.8, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
 bg_color = Color(0, 0.8, 0, 1)
 
-[node name="Debug" type="Control"]
+[node name="Tmenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_gm5qw")
+script = ExtResource("1_w3aym")
 
 [node name="nebula" type="VideoStreamPlayer" parent="."]
 layout_mode = 0
 offset_right = 640.0
 offset_bottom = 368.0
 scale = Vector2(2, 1.96)
-stream = ExtResource("2_l51wy")
+stream = ExtResource("1_33b4o")
 autoplay = true
-script = ExtResource("3_0jyxj")
+script = ExtResource("2_x35ws")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 339.0
-offset_top = 61.0
-offset_right = 991.0
-offset_bottom = 207.0
-theme_override_font_sizes/font_size = 106
-text = "Debug Menu"
+offset_left = 31.0
+offset_top = 113.0
+offset_right = 1237.0
+offset_bottom = 243.0
+theme_override_font_sizes/font_size = 95
+text = "Midori in the Magic School"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -54,28 +54,28 @@ offset_right = 129.5
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Scene Selector" type="Button" parent="VBoxContainer"]
+[node name="Start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
-text = "Scene Selector"
+text = "Start"
 
-[node name="Sound Test" type="Button" parent="VBoxContainer"]
+[node name="Debug" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "Sound Test"
+text = "Debug"
 
-[node name="Back" type="Button" parent="VBoxContainer"]
+[node name="Exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
-text = "Back"
+text = "Exit"
 
-[node name="Bottomhud" parent="." instance=ExtResource("4_ogmre")]
+[node name="Bottomhud" parent="." instance=ExtResource("4_0qcfw")]
 layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
-[connection signal="pressed" from="VBoxContainer/Scene Selector" to="." method="_on_scene_selector_pressed"]
-[connection signal="pressed" from="VBoxContainer/Sound Test" to="." method="_on_sound_test_pressed"]
-[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Debug" to="." method="_on_debug_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

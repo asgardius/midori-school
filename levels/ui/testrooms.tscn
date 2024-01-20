@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://duyxejhnys1l4"]
+[gd_scene load_steps=7 format=3 uid="uid://b0pgk6d871bor"]
 
-[ext_resource type="Script" path="res://levels/scene.gd" id="1_hxcrn"]
-[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_nvftm"]
-[ext_resource type="Script" path="res://nebula.gd" id="3_6sds4"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_2y7h7"]
+[ext_resource type="Script" path="res://levels/ui/testrooms.gd" id="1_p5nnr"]
+[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_wyg0k"]
+[ext_resource type="Script" path="res://nebula.gd" id="3_co5y6"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_jvl8w"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6u0xs"]
 bg_color = Color(0, 0.8, 0, 1)
@@ -11,23 +11,23 @@ bg_color = Color(0, 0.8, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
 bg_color = Color(0, 0.8, 0, 1)
 
-[node name="Scene" type="Control"]
+[node name="Testrooms" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_hxcrn")
+script = ExtResource("1_p5nnr")
 
 [node name="nebula" type="VideoStreamPlayer" parent="."]
 layout_mode = 0
 offset_right = 640.0
 offset_bottom = 368.0
 scale = Vector2(2, 1.96)
-stream = ExtResource("2_nvftm")
+stream = ExtResource("2_wyg0k")
 autoplay = true
-script = ExtResource("3_6sds4")
+script = ExtResource("3_co5y6")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
@@ -36,7 +36,7 @@ offset_top = 3.0
 offset_right = 790.0
 offset_bottom = 73.0
 theme_override_font_sizes/font_size = 40
-text = "Scene selector"
+text = "Test Rooms"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -51,29 +51,30 @@ offset_right = 129.5
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Disclaimer" type="Button" parent="VBoxContainer"]
+[node name="Testspawn" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "Disclaimer"
+text = "Test Spawn"
 
-[node name="Results" type="Button" parent="VBoxContainer"]
+[node name="Testboss" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "Result Screen"
+text = "Test Boss
+"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "Credits"
+text = "Unused"
 
 [node name="WIP" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "Work in Progress"
+text = "Unused"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -81,12 +82,10 @@ theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
 text = "Back"
 
-[node name="Bottomhud" parent="." instance=ExtResource("4_2y7h7")]
+[node name="Bottomhud" parent="." instance=ExtResource("4_jvl8w")]
 layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
-[connection signal="pressed" from="VBoxContainer/Disclaimer" to="." method="_on_disclaimer_pressed"]
-[connection signal="pressed" from="VBoxContainer/Results" to="." method="_on_results_pressed"]
-[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="VBoxContainer/WIP" to="." method="_on_wip_pressed"]
+[connection signal="pressed" from="VBoxContainer/Testspawn" to="." method="_on_testspawn_pressed"]
+[connection signal="pressed" from="VBoxContainer/Testboss" to="." method="_on_testboss_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]
