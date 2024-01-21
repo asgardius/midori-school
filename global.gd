@@ -6,7 +6,7 @@ var origmpos
 var mousepos
 var timelimit = 15000
 var wait
-const places = [[[[null, null, null, null, false], [null, null, null, null, false]], [[null, null, null, null, false], ["res://levels/Testrooms/testboss.tscn", 640, 360, 11, true]], [[null, null, null, null ,false], ["res://levels/Testrooms/testspawn.tscn", 640, 360, 2 ,false]]]]
+const places = [[[[null, null, null, null, false], [null, null, null, null, false]], [[null, null, null, null, false], ["res://levels/Testrooms/testboss.tscn", 640, 360, 20, true]], [[null, null, null, null ,false], ["res://levels/Testrooms/testspawn.tscn", 640, 360, 2 ,false]]]]
 var cplace = [0,2,1]
 var dplace = [null, null, null]
 const pchars = ["res://sprites/common/midori/midori.tscn"]

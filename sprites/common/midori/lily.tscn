@@ -1,7 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://cehe6sm8ly06u"]
+[gd_scene load_steps=14 format=3 uid="uid://b216q83uw4c45"]
 
-[ext_resource type="Script" path="res://sprites/common/midori/midori.gd" id="1_6vvcv"]
-[ext_resource type="Texture2D" uid="uid://bc2vrf8qggvtp" path="res://sprites/common/midori/sprite.png" id="1_oqq2w"]
+[ext_resource type="Script" path="res://sprites/common/midori/lily.gd" id="1_0lf8i"]
+[ext_resource type="Texture2D" uid="uid://bc2vrf8qggvtp" path="res://sprites/common/midori/sprite.png" id="2_lcff3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dj8gt"]
 size = Vector2(86, 68)
@@ -162,11 +162,11 @@ _data = {
 "wwalk": SubResource("Animation_letwb")
 }
 
-[node name="Midori" type="CharacterBody2D"]
-script = ExtResource("1_6vvcv")
+[node name="Lily" type="CharacterBody2D"]
+script = ExtResource("1_0lf8i")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_oqq2w")
+texture = ExtResource("2_lcff3")
 hframes = 3
 vframes = 4
 
