@@ -1,5 +1,6 @@
 extends Label
 var housefreedom
+var welcometext = ""
 func _ready():
 	housefreedom = OS.get_processor_name().contains("AMD Custom APU") && OS.get_processor_name().contains("0405")
 	if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
@@ -8,15 +9,15 @@ func _ready():
 		_sk()
 	else:
 		if Global.firstrun:
-			if housefreedom:
-				set_text("Welcome to your first session "+OS.get_data_dir().rsplit("/", true, 7)[2]+"\nSteam machines are not dead yet");
-			else:
-				set_text("Welcome to your first session "+OS.get_data_dir().rsplit("/", true, 7)[2]);
+			welcometext = "Welcome to your first session "+OS.get_data_dir().rsplit("/", true, 7)[2]
 		else:
-			if housefreedom:
-				set_text("Welcome back "+OS.get_data_dir().rsplit("/", true, 7)[2]+"\nSteam machines are not dead yet");
-			else:
-				set_text("Welcome back "+OS.get_data_dir().rsplit("/", true, 7)[2]);
+			welcometext = "Welcome back "+OS.get_data_dir().rsplit("/", true, 7)[2]
+		if housefreedom:
+			welcometext = welcometext+"\nSteam machines are not dead yet"
+		if OS.get_environment("MANGOHUD").contains("1"):
+			Global.mangohud = true
+			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"
+		set_text(welcometext)
 
 func _sk():
 	set_text("Script Kiddie detected, only true hackers can cheat here");

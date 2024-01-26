@@ -13,6 +13,7 @@ const pchars = ["res://sprites/common/midori/midori.tscn"]
 const npchars = []
 var cpchar = 0
 var dcpchar = 0
+var mangohud = false
 var cspawnarea = [null, null]
 var owlocation = [[null, null], [null, null]]
 var hiscoresfile = "user://hiscores.save"
