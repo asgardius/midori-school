@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d0jrygo3ihcdk"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_51vn3"]
-[ext_resource type="PackedScene" path="res://selftest.tscn" id="2_jnmxu"]
+[ext_resource type="PackedScene" uid="uid://dblfov80ngodu" path="res://selftest.tscn" id="2_jnmxu"]
 [ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_tig2r"]
 
 [node name="Main" type="Control"]
