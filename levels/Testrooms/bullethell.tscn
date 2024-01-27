@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8hmum2w6aygy"]
+[gd_scene load_steps=7 format=3 uid="uid://c8hmum2w6aygy"]
 
+[ext_resource type="Script" path="res://levels/Testrooms/bullethell.gd" id="1_cjbjq"]
 [ext_resource type="Texture2D" uid="uid://dursxelwwxe8u" path="res://sprites/common/placeholder/player.png" id="1_g5hs8"]
 [ext_resource type="PackedScene" uid="uid://dpudp1d2wpryc" path="res://sprites/common/natasha/natasha.tscn" id="2_5cnwp"]
 [ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_slxde"]
@@ -11,6 +12,7 @@ size = Vector2(20, 761)
 size = Vector2(1283, 20)
 
 [node name="Bullethell" type="Node2D"]
+script = ExtResource("1_cjbjq")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 583.0

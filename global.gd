@@ -6,9 +6,16 @@ var origmpos
 var mousepos
 var timelimit = 15000
 var wait
+var bossready = false
+const pcnames = ["Midori Asgardius", null, null, null, null, null, null, null, null, "Natasha Dostoyevsky"]
+const npcnames = ["Lily", null, null, null, null, null, null, null, null, "Natasha Dostoyevsky"]
+const pcfaces = ["res://sprites/common/midori/face.png", null, null, null, null, null, null, null, null, "res://sprites/common/natasha/face.png"]
+const npcfaces = ["res://sprites/common/midori/face.png", null, null, null, null, null, null, null, null, "res://sprites/common/natasha/face.png"]
+var cdialog = []
 const places = [[[[null, null, false], [null, null, false]], [["res://levels/Testrooms/bullethell.tscn", 11, true], ["res://levels/Testrooms/lilytest.tscn", 20, true]], [["res://levels/Testrooms/dialogtest.tscn", 19, false], ["res://levels/Testrooms/testspawn.tscn", 2 ,false]]]]
 var cplace = [0,2,1]
 var dplace = [null, null, null]
+const dialogs = []
 const pchars = ["res://sprites/common/midori/sprite.png", null, null, null, null, null, null, null, null, "res://sprites/common/natasha/sprite.png"]
 const npchars = ["res://sprites/common/midori/sprite.png", null, null, null, null, null, null, null, null, "res://sprites/common/natasha/sprite.png"]
 var party = [null, null, null, null]

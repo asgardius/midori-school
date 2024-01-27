@@ -6,6 +6,7 @@ var bgsound := AudioStreamPlayer.new()
 var sfx1 := AudioStreamPlayer.new()
 var musictrack
 var isboss
+var bhud = load("res://levels/bottomhud.tscn").instantiate()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -32,12 +33,11 @@ func _ready():
 	#	player.position.y = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	music = load(musictrack)
 	get_tree().root.add_child.call_deferred(level)
+	get_tree().root.add_child.call_deferred(bhud)
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
-	if isboss:
-		sfx1.stream = load(Global.sfxtracks[1])
-		sfx1.play(0)
-	bgsound.play(0)
+	if !isboss:
+		bgsound.play(0)
 		
 
 
@@ -64,6 +64,8 @@ func _process(delta):
 func _input(event):
 	if Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK):
 		Global.live = 0
+		Global.bossready = false
+		get_tree().root.remove_child(bhud)
 		get_tree().root.remove_child(player)
 		get_tree().root.remove_child(level)
 		if Global.debug:
@@ -98,3 +100,8 @@ func _input(event):
 		else:
 			if Global.party[3] != null:
 				Global.cpchar = 3
+	if Global.bossready:
+		Global.bossready = false
+		sfx1.stream = load(Global.sfxtracks[1])
+		sfx1.play(0)
+		bgsound.play(0)

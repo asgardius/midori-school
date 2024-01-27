@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://cs2dkktcbaptx"]
+[gd_scene load_steps=6 format=3 uid="uid://cs2dkktcbaptx"]
 
+[ext_resource type="Script" path="res://levels/Testrooms/dialogtest.gd" id="1_hf3bg"]
 [ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="2_lfw71"]
 [ext_resource type="Texture2D" uid="uid://kxvipok4tnuw" path="res://backgounds/wip.jpg" id="2_xoavp"]
 
@@ -10,6 +11,7 @@ size = Vector2(20, 761)
 size = Vector2(1283, 20)
 
 [node name="Dialogtest" type="Node2D"]
+script = ExtResource("1_hf3bg")
 
 [node name="WIP" type="TextureRect" parent="."]
 offset_right = 40.0
