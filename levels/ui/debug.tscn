@@ -54,7 +54,13 @@ offset_right = 129.5
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Scene Selector" type="Button" parent="VBoxContainer"]
+[node name="Gamepad Test" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
+text = "Gamepad Test"
+
+[node name="Scene Selector2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
@@ -76,6 +82,7 @@ text = "Back"
 layout_mode = 1
 
 [connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
-[connection signal="pressed" from="VBoxContainer/Scene Selector" to="." method="_on_scene_selector_pressed"]
+[connection signal="pressed" from="VBoxContainer/Gamepad Test" to="." method="_on_gamepad_test_pressed"]
+[connection signal="pressed" from="VBoxContainer/Scene Selector2" to="." method="_on_scene_selector_pressed"]
 [connection signal="pressed" from="VBoxContainer/Sound Test" to="." method="_on_sound_test_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

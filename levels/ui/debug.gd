@@ -2,7 +2,7 @@ extends Control
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Global.debug = true
-	$"VBoxContainer/Scene Selector".grab_focus()
+	$"VBoxContainer/Gamepad Test".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -51,3 +51,7 @@ func _on_sound_test_pressed():
 func _on_back_pressed():
 	Global.debug = false
 	get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")
+
+
+func _on_gamepad_test_pressed():
+	get_tree().change_scene_to_file("res://levels/ui/gamepadtest.tscn")

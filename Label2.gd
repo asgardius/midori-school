@@ -17,6 +17,17 @@ func _ready():
 		if OS.get_environment("MANGOHUD").contains("1"):
 			Global.mangohud = true
 			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"
+		#This can be used to detect background process, may be useful later
+		#var output = []
+		# Execute "get-process" in powershell and save data in "output":
+		#var chrome_active = false
+		#OS.execute('/bin/bash', ['-c', "ps aux | grep obs"], output, true)   
+		#var result = output[0].rsplit("/", true, 7).size()
+		#print(output)
+		#chrome_active = result > 5    # If there is more than 0 chrome processes, it will be true
+		#if chrome_active:
+		#	welcometext = welcometext+"\nBe careful"
+		#print("Number of chrome processes: " + str(result))
 		set_text(welcometext)
 
 func _sk():
