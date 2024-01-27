@@ -4,6 +4,7 @@ var dindex = 0
 var cname
 var dialog
 var pface
+var press = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	cname = $Cname
@@ -23,7 +24,9 @@ func _process(delta):
 	pass
 
 func _input(event):
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") && !press:
+		press = true
+	if Input.is_action_just_released("ui_accept") && press:
 		dindex += 1
 		if dindex < Global.cdialog.size():
 			if Global.cdialog[dindex][1]:
@@ -43,3 +46,4 @@ func _input(event):
 				Global.bossready = true
 				Global.live = 1
 			Global.cdialog = []
+		press = false

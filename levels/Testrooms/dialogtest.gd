@@ -14,4 +14,3 @@ func _process(delta):
 func _input(event):
 	if Global.cdialog.size() == 0:
 		get_tree().root.remove_child(talk)
-		Global.live = 1
