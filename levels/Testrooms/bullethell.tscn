@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cma7ddp0r4rm"]
+[gd_scene load_steps=6 format=3 uid="uid://c8hmum2w6aygy"]
 
-[ext_resource type="Texture2D" uid="uid://dursxelwwxe8u" path="res://sprites/common/placeholder/player.png" id="1_hxdyl"]
-[ext_resource type="PackedScene" uid="uid://b216q83uw4c45" path="res://sprites/common/midori/lily.tscn" id="2_ccp01"]
+[ext_resource type="Texture2D" uid="uid://dursxelwwxe8u" path="res://sprites/common/placeholder/player.png" id="1_g5hs8"]
+[ext_resource type="PackedScene" uid="uid://dpudp1d2wpryc" path="res://sprites/common/natasha/natasha.tscn" id="2_5cnwp"]
+[ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_slxde"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1jr1w"]
 size = Vector2(20, 761)
@@ -9,14 +10,14 @@ size = Vector2(20, 761)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iptg6"]
 size = Vector2(1283, 20)
 
-[node name="Testboss" type="Node2D"]
+[node name="Bullethell" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 583.0
 offset_top = 4.0
 offset_right = 711.0
 offset_bottom = 260.0
-texture = ExtResource("1_hxdyl")
+texture = ExtResource("1_g5hs8")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 327.0
@@ -50,5 +51,8 @@ shape = SubResource("RectangleShape2D_iptg6")
 position = Vector2(644, 731)
 shape = SubResource("RectangleShape2D_iptg6")
 
-[node name="Lily" parent="." instance=ExtResource("2_ccp01")]
+[node name="Natasha" parent="." instance=ExtResource("2_5cnwp")]
 position = Vector2(644, 133)
+
+[node name="Player" parent="." instance=ExtResource("3_slxde")]
+position = Vector2(652, 590)

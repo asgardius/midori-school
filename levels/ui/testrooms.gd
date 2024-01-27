@@ -52,7 +52,19 @@ func _on_testspawn_pressed():
 	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
 
 
-func _on_testboss_pressed():
+func _on_lilytest_pressed():
 	Global.dplace = [0, 1, 1]
+	Global.live = 1
+	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+
+
+func _on_dialogtest_pressed():
+	Global.dplace = [0, 2, 0]
+	Global.live = 1
+	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+
+
+func _on_bullethell_pressed():
+	Global.dplace = [0, 1, 0]
 	Global.live = 1
 	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")

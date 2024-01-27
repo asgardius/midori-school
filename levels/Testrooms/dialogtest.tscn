@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5cxd2rmstnpt"]
+[gd_scene load_steps=5 format=3 uid="uid://cs2dkktcbaptx"]
 
-[ext_resource type="Script" path="res://levels/Testrooms/testspawn.gd" id="1_ps8y8"]
-[ext_resource type="Texture2D" uid="uid://kxvipok4tnuw" path="res://backgounds/wip.jpg" id="1_yw0he"]
-[ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_iqxlc"]
+[ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="2_lfw71"]
+[ext_resource type="Texture2D" uid="uid://kxvipok4tnuw" path="res://backgounds/wip.jpg" id="2_xoavp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nytv7"]
 size = Vector2(20, 761)
@@ -10,13 +9,12 @@ size = Vector2(20, 761)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wkumn"]
 size = Vector2(1283, 20)
 
-[node name="Testspawn" type="Node2D"]
-script = ExtResource("1_ps8y8")
+[node name="Dialogtest" type="Node2D"]
 
 [node name="WIP" type="TextureRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_yw0he")
+texture = ExtResource("2_xoavp")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -42,5 +40,5 @@ shape = SubResource("RectangleShape2D_wkumn")
 position = Vector2(644, 731)
 shape = SubResource("RectangleShape2D_wkumn")
 
-[node name="Player" parent="." instance=ExtResource("3_iqxlc")]
-position = Vector2(633, 590)
+[node name="Player" parent="." instance=ExtResource("2_lfw71")]
+position = Vector2(597, 591)
