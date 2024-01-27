@@ -8,4 +8,4 @@ func _process(delta):
 	#20*623/633=19.6840442338
 	#Roll velocity calculator
 	#(14.0866856839 * music duration (seconds)) / Line count
-	position.y -= delta * 12
+	position.y -= delta * 150

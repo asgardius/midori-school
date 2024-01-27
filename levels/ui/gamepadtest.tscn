@@ -83,7 +83,31 @@ text = "DPAD Up"
 
 [node name="DPAD Left" type="Label" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "X Axis"
+text = "DPAD Left"
+
+[node name="Left Trigger" type="Label" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Left Trigger"
+
+[node name="Left Shoulder" type="Label" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Left Shoulder"
+
+[node name="Left Stick" type="Label" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Left Stick"
+
+[node name="View" type="Label" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "View"
+
+[node name="X" type="Label" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "X"
+
+[node name="A" type="Label" parent="BoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "A"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
 layout_mode = 2
@@ -103,7 +127,31 @@ text = "DPAD Down
 
 [node name="DPAD Right" type="Label" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
-text = "Y Axis"
+text = "DPAD Right"
+
+[node name="Right Trigger" type="Label" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Right Trigger"
+
+[node name="Right Shoulder" type="Label" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Right Shoulder"
+
+[node name="Right Stick" type="Label" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Right Stick"
+
+[node name="Menu" type="Label" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Menu"
+
+[node name="Y" type="Label" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Y"
+
+[node name="B" type="Label" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "B"
 
 [node name="Bottomhud" parent="." instance=ExtResource("4_88ejd")]
 layout_mode = 1
