@@ -7,11 +7,12 @@ var angle = 2
 var sprite
 var anim
 var csprite
-
+var bpress = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
+	add_to_group("players")
 	anim = $AnimationPlayer
 	sprite = $Sprite2D
 	if Global.debug:
@@ -20,7 +21,6 @@ func _ready():
 	else:
 		csprite = Global.cpchar
 		sprite.texture = load(Global.pchars[Global.party[Global.cpchar]])
-		csprite
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -66,3 +66,24 @@ func _physics_process(delta):
 		else:
 			anim.play("sidle")
 	move_and_slide()
+
+func _input(event):
+	if Global.live == 1:
+		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
+			bpress = true
+			var bullet
+			if Global.debug:
+				bullet = load(Global.pbbullets[Global.dparty[Global.dcpchar]])
+			else:
+				bullet = load(Global.pbbullets[Global.party[Global.cpchar]])
+			var new_bullet = bullet.instantiate()
+			new_bullet.velocity = Vector2(0, -500).rotated(deg_to_rad(angle * 90))
+			var rposition = Vector2(0, -96).rotated(deg_to_rad(angle * 90))
+			if angle == 2:
+				new_bullet.position = Vector2(position.x + rposition.x, position.y + rposition.y + 98)
+			else:
+				new_bullet.position = Vector2(position.x + rposition.x, position.y + rposition.y)
+			if new_bullet.position.x > 0 && new_bullet.position.y > 0 && new_bullet.position.x < 1280 && new_bullet.position.y < 720:
+				get_parent().add_child(new_bullet)
+		elif Input.is_action_just_released("shoot") && bpress:
+			bpress = false

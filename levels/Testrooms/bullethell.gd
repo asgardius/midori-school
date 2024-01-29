@@ -1,7 +1,10 @@
 extends Node2D
 var talk = load("res://levels/ui/talk.tscn").instantiate()
+var boss
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	boss = $Natasha
+	boss.add_to_group("enemies")
 	Global.cdialog = [["What are you doing heree?", true, 0], ["Your father need help to debug this game", false, 9], ["Ok, i'll help too", true, 0]]
 	Global.live = 0
 	get_tree().root.add_child.call(talk)

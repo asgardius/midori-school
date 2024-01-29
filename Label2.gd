@@ -1,17 +1,22 @@
 extends Label
 var housefreedom
 var welcometext = ""
+var playername
 func _ready():
+	if OS.get_data_dir().begins_with("/home"):
+		playername = OS.get_data_dir().rsplit("/", true, 7)[2]
+	else:
+		playername = "player"
 	housefreedom = OS.get_processor_name().contains("AMD Custom APU") && OS.get_processor_name().contains("0405")
-	if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
+	if OS.get_distribution_name().contains("Kali") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
 		Global.sk = true
 	if Global.sk:
 		_sk()
 	else:
 		if Global.firstrun:
-			welcometext = "Welcome to your first session "+OS.get_data_dir().rsplit("/", true, 7)[2]
+			welcometext = "Welcome to your first session "+playername
 		else:
-			welcometext = "Welcome back "+OS.get_data_dir().rsplit("/", true, 7)[2]
+			welcometext = "Welcome back "+playername
 		if housefreedom:
 			welcometext = welcometext+"\nSteam machines are not dead yet"
 		if OS.get_environment("MANGOHUD").contains("1"):

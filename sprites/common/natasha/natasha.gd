@@ -48,4 +48,4 @@ func _physics_process(delta):
 			anim.play("widle")
 		else:
 			anim.play("sidle")
-	move_and_slide()
+	#move_and_slide()

@@ -34,7 +34,7 @@ func _input(event):
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()
-	if Input.is_key_pressed(KEY_X) || Input.is_joy_button_pressed(0,JOY_BUTTON_X):
+	if Input.is_action_just_pressed("stopmusic"):
 		infobox.set_text("")
 		player.stop()
 		#print("Mouse Click/Unclick at: ", event.position)
