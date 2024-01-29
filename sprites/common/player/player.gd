@@ -76,14 +76,15 @@ func _input(event):
 				bullet = load(Global.pbbullets[Global.dparty[Global.dcpchar]])
 			else:
 				bullet = load(Global.pbbullets[Global.party[Global.cpchar]])
-			var new_bullet = bullet.instantiate()
-			new_bullet.velocity = Vector2(0, -500).rotated(deg_to_rad(angle * 90))
+			var new_pbullet = bullet.instantiate()
+			new_pbullet.btype = "players"
+			new_pbullet.velocity = Vector2(0, -500).rotated(deg_to_rad(angle * 90))
 			var rposition = Vector2(0, -96).rotated(deg_to_rad(angle * 90))
 			if angle == 2:
-				new_bullet.position = Vector2(position.x + rposition.x, position.y + rposition.y + 98)
+				new_pbullet.position = Vector2(position.x + rposition.x, position.y + rposition.y + 98)
 			else:
-				new_bullet.position = Vector2(position.x + rposition.x, position.y + rposition.y)
-			if new_bullet.position.x > 0 && new_bullet.position.y > 0 && new_bullet.position.x < 1280 && new_bullet.position.y < 720:
-				get_parent().add_child(new_bullet)
+				new_pbullet.position = Vector2(position.x + rposition.x, position.y + rposition.y)
+			if new_pbullet.position.x > 0 && new_pbullet.position.y > 0 && new_pbullet.position.x < 1280 && new_pbullet.position.y < 720:
+				get_parent().add_child(new_pbullet)
 		elif Input.is_action_just_released("shoot") && bpress:
 			bpress = false

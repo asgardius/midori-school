@@ -1,9 +1,16 @@
 extends CharacterBody2D
 
+var theta: float = 0.0
+@export_range(0,2*PI) var alpha: float = 1.5
+var bullet = load("res://sprites/common/bullet/fireball.tscn")
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-var angle = 2
+var vangle = 2
+
+func get_vector(angle):
+	theta = angle + alpha
+	return Vector2(cos(theta),sin(theta))
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -23,29 +30,40 @@ func _physics_process(delta):
 		#position += velocity
 	position += velocity
 	if velocity.y > 0.3:
-		angle = 2
+		vangle = 2
 	elif velocity.y < -0.3:
-		angle = 0
+		vangle = 0
 	elif velocity.x > 0.3:
-		angle = 1
+		vangle = 1
 	elif velocity.x < -0.3:
-		angle = 3
+		vangle = 3
 	if velocity.y != 0 || velocity.x != 0:
-		if angle == 0:
+		if vangle == 0:
 			anim.play("nwalk")
-		elif angle == 1:
+		elif vangle == 1:
 			anim.play("ewalk")
-		elif angle == 3:
+		elif vangle == 3:
 			anim.play("wwalk")
 		else:
 			anim.play("swalk")
 	else:
-		if angle == 0:
+		if vangle == 0:
 			anim.play("nidle")
-		elif angle == 1:
+		elif vangle == 1:
 			anim.play("eidle")
-		elif angle == 3:
+		elif vangle == 3:
 			anim.play("widle")
 		else:
 			anim.play("sidle")
 	#move_and_slide()
+func shoot(angle):
+	var new_bullet = bullet.instantiate()
+	new_bullet.position = Vector2(position.x, position.y)
+	new_bullet.direction = get_vector(angle)
+	new_bullet.btype = "boss"
+	get_parent().call_deferred("add_child",new_bullet)
+
+
+func _on_speed_timeout():
+	if Global.live == 1:
+		shoot(theta)
