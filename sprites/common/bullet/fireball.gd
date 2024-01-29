@@ -19,6 +19,8 @@ func _on_body_entered(body):
 	#	Global.live = 2
 	#elif body.is_in_group("enemies"):
 	#	Global.live = 3
+	#elif body.is_in_group("boss"):
+	#	Global.live = 3
 	queue_free()
 
 
