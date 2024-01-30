@@ -10,31 +10,20 @@ var csprite
 var bpress = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var weakness
 
 func _ready():
 	add_to_group("players")
 	anim = $AnimationPlayer
 	sprite = $Sprite2D
-	if Global.debug:
-		csprite = Global.dcpchar
-		sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar]])
-	else:
-		csprite = Global.cpchar
-		sprite.texture = load(Global.pchars[Global.party[Global.cpchar]])
+	_charswitch()
 
 func _physics_process(delta):
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
 	if Global.live == 1:
 		velocity = (Vector2.RIGHT.rotated(rotation) * 500 * Global.xm * delta)-Vector2.UP.rotated(rotation) * 500 * Global.ym * delta
-		if Global.debug:
-			if Global.dcpchar != csprite:
-				csprite = Global.dcpchar
-				sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar]])
-		else:
-			if Global.cpchar != csprite:
-				csprite = Global.cpchar
-				sprite.texture = load(Global.pchars[Global.party[Global.cpchar]])
+		_charswitch()
 		#origmpos = get_viewport().get_mouse_position()
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
@@ -88,3 +77,15 @@ func _input(event):
 				get_parent().add_child(new_pbullet)
 		elif Input.is_action_just_released("shoot") && bpress:
 			bpress = false
+
+func _charswitch():
+	if Global.debug:
+		if Global.dcpchar != csprite:
+			csprite = Global.dcpchar
+			sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar]])
+			weakness = Global.specialities[Global.pcspecialities[Global.dparty[Global.dcpchar]]]
+	else:
+		if Global.cpchar != csprite:
+			csprite = Global.cpchar
+			sprite.texture = load(Global.pchars[Global.party[Global.cpchar]])
+			weakness = Global.specialities[Global.pcspecialities[Global.party[Global.cpchar]]]

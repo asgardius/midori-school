@@ -1,0 +1,379 @@
+[gd_scene load_steps=7 format=3 uid="uid://coaup7cuj7qev"]
+
+[ext_resource type="Script" path="res://levels/ui/tophud.gd" id="1_pntuv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ualpu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_patnr"]
+bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_05pau"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u3vj7"]
+bg_color = Color(1, 0.498039, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftyws"]
+
+[node name="Tophud" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pntuv")
+
+[node name="Topleftbg" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 377.0
+offset_bottom = 476.0
+color = Color(0.254902, 0.254902, 0.254902, 0.788235)
+
+[node name="Topleft" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 377.0
+offset_bottom = 476.0
+
+[node name="Character1" type="HBoxContainer" parent="Topleft"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Topleft/Character1"]
+custom_minimum_size = Vector2(116, 116)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character1"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(174, 0)
+layout_mode = 2
+text = "Name"
+
+[node name="Label3" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "R1 + ↑"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Health"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character1/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+
+[node name="Label2" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Stamina"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character1/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
+theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+
+[node name="Label2" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Skill"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character1/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+
+[node name="Label2" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Topleft/Character1"]
+custom_minimum_size = Vector2(12, 64)
+layout_mode = 2
+
+[node name="Character2" type="HBoxContainer" parent="Topleft"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Topleft/Character2"]
+custom_minimum_size = Vector2(116, 116)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(174, 0)
+layout_mode = 2
+text = "Name"
+
+[node name="Label3" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "R1 + →"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Health"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character2/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+
+[node name="Label2" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Stamina"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character2/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
+theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+
+[node name="Label2" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Skill"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character2/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+
+[node name="Label2" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Topleft/Character2"]
+custom_minimum_size = Vector2(12, 64)
+layout_mode = 2
+
+[node name="Character3" type="HBoxContainer" parent="Topleft"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Topleft/Character3"]
+custom_minimum_size = Vector2(116, 116)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character3"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(174, 0)
+layout_mode = 2
+text = "Name"
+
+[node name="Label3" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "R1 + ↓"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Health"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character3/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+
+[node name="Label2" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Stamina"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character3/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
+theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+
+[node name="Label2" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Skill"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character3/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+
+[node name="Label2" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Topleft/Character3"]
+custom_minimum_size = Vector2(12, 64)
+layout_mode = 2
+
+[node name="Character4" type="HBoxContainer" parent="Topleft"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Topleft/Character4"]
+custom_minimum_size = Vector2(116, 116)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character4"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(174, 0)
+layout_mode = 2
+text = "Name"
+
+[node name="Label3" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "R1 + ←"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Health"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character4/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+
+[node name="Label2" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Stamina"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character4/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
+theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+
+[node name="Label2" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Skill"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character4/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+
+[node name="Label2" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Topleft/Character4"]
+custom_minimum_size = Vector2(12, 64)
+layout_mode = 2

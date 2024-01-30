@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cma7ddp0r4rm"]
+[gd_scene load_steps=7 format=3 uid="uid://cma7ddp0r4rm"]
 
+[ext_resource type="Script" path="res://levels/Testrooms/lilytest.gd" id="1_b1yf3"]
 [ext_resource type="Texture2D" uid="uid://dursxelwwxe8u" path="res://sprites/common/placeholder/player.png" id="1_bch3a"]
 [ext_resource type="PackedScene" uid="uid://b216q83uw4c45" path="res://sprites/common/midori/lily.tscn" id="2_v1fc7"]
 [ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_h02gt"]
@@ -11,6 +12,7 @@ size = Vector2(20, 761)
 size = Vector2(1283, 20)
 
 [node name="Lilytest" type="Node2D"]
+script = ExtResource("1_b1yf3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 583.0

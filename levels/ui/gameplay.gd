@@ -7,6 +7,8 @@ var sfx1 := AudioStreamPlayer.new()
 var musictrack
 var isboss
 var bhud = load("res://levels/bottomhud.tscn").instantiate()
+var thud = load("res://levels/ui/tophud.tscn").instantiate()
+var ishud = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -34,6 +36,7 @@ func _ready():
 	music = load(musictrack)
 	get_tree().root.add_child.call_deferred(level)
 	get_tree().root.add_child.call_deferred(bhud)
+	get_tree().root.add_child.call_deferred(thud)
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
 	if !isboss:
@@ -65,6 +68,7 @@ func _input(event):
 	if Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK):
 		Global.live = 0
 		Global.bossready = false
+		get_tree().root.remove_child(thud)
 		get_tree().root.remove_child(bhud)
 		get_tree().root.remove_child(player)
 		get_tree().root.remove_child(level)
@@ -72,28 +76,28 @@ func _input(event):
 			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
 		else:
 			get_tree().change_scene_to_file("res://title.tscn")
-	if (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_UP)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_UP)):
+	if (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_UP)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_UP))):
 		if Global.debug:
 			if Global.dparty[0] != null:
 				Global.dcpchar = 0
 		else:
 			if Global.party[0] != null:
 				Global.cpchar = 0
-	elif (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_RIGHT)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_RIGHT)):
+	elif (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_RIGHT)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_RIGHT))):
 		if Global.debug:
 			if Global.dparty[1] != null:
 				Global.dcpchar = 1
 		else:
 			if Global.party[1] != null:
 				Global.cpchar = 1
-	elif (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_DOWN)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_DOWN)):
+	elif (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_DOWN)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_DOWN))):
 		if Global.debug:
 			if Global.dparty[2] != null:
 				Global.dcpchar = 2
 		else:
 			if Global.party[2] != null:
 				Global.cpchar = 2
-	elif (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_LEFT)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_LEFT)):
+	elif (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_LEFT)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_LEFT))):
 		if Global.debug:
 			if Global.dparty[3] != null:
 				Global.dcpchar = 3
@@ -105,3 +109,9 @@ func _input(event):
 		sfx1.stream = load(Global.sfxtracks[1])
 		sfx1.play(0)
 		bgsound.play(0)
+	if Global.cdialog.size() != 0 && ishud:
+		get_tree().root.remove_child(thud)
+		ishud = false
+	elif Global.cdialog.size() == 0&& !ishud:
+		get_tree().root.add_child.call_deferred(thud)
+		ishud = true

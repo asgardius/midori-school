@@ -23,8 +23,8 @@ func _physics_process(delta):
 func _on_body_entered(body):
 	if !body.is_in_group(btype):
 		if body.is_in_group("players") || body.is_in_group("boss") || body.is_in_group("enemies"):
-			if body.weakness == 3:
-				print("weak to fire")
+			if body.weakness == 0:
+				print("weak to ice")
 	#if body.is_in_group("players"):
 	#	Global.live = 2
 	#elif body.is_in_group("enemies"):

@@ -2,11 +2,12 @@ extends CharacterBody2D
 
 var theta: float = 0.0
 @export_range(0,2*PI) var alpha: float = 1.5
-var bullet = load("res://sprites/common/bullet/fireball.tscn")
+var bullet = load("res://sprites/common/bullet/snowflake.tscn")
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var vangle = 2
+var weakness = 2
 
 func get_vector(angle):
 	theta = angle + alpha

@@ -12,10 +12,10 @@ func _ready():
 	pface = $Playerface
 	if Global.cdialog[dindex][1]:
 		cname.set_text(Global.pcnames[Global.cdialog[dindex][2]])
-		pface.texture = load((Global.pcfaces[Global.cdialog[dindex][2]]))
+		pface.texture = load(Global.pcfaces[Global.cdialog[dindex][2]])
 	else:
 		cname.set_text(Global.npcnames[Global.cdialog[dindex][2]])
-		pface.texture = load((Global.npcfaces[Global.cdialog[dindex][2]]))
+		pface.texture = load(Global.npcfaces[Global.cdialog[dindex][2]])
 	dialog.set_text(Global.cdialog[dindex][0])
 
 
