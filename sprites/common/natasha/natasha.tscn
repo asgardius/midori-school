@@ -164,6 +164,7 @@ _data = {
 
 [node name="Natasha" type="CharacterBody2D"]
 script = ExtResource("1_kycyt")
+alpha = 1.699
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_grplw")

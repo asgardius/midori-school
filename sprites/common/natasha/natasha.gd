@@ -9,6 +9,11 @@ const JUMP_VELOCITY = -400.0
 var vangle = 2
 var weakness = 2
 
+
+func _ready():
+	var stimer = $Speed
+	stimer.start(0.05)
+
 func get_vector(angle):
 	theta = angle + alpha
 	return Vector2(cos(theta),sin(theta))
