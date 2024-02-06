@@ -13,18 +13,14 @@ offset_bottom = 40.0
 texture = ExtResource("2_lrfja")
 
 [node name="Label" type="Label" parent="."]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
-offset_left = 503.0
-offset_top = 172.0
-offset_right = 997.0
-offset_bottom = 221.0
+offset_left = 444.0
+offset_top = 33.0
+offset_right = 938.0
+offset_bottom = 82.0
 text = "This game is under developmnt
 More content will be added in following releases"
 
 [node name="Label2" type="Label" parent="."]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
 offset_left = 346.0
 offset_top = 361.0
 offset_right = 1004.0

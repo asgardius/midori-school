@@ -13,12 +13,10 @@ offset_bottom = 40.0
 texture = ExtResource("2_jril2")
 
 [node name="Label" type="Label" parent="."]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
-offset_left = 559.0
-offset_top = 68.0
-offset_right = 963.0
-offset_bottom = 230.0
+offset_left = 667.0
+offset_top = 17.0
+offset_right = 1071.0
+offset_bottom = 179.0
 theme_override_font_sizes/font_size = 21
 text = "Defeated enemies: 0
 Clear time: 0
@@ -27,8 +25,6 @@ Damage received: 0
 Earned experience: 0"
 
 [node name="Label2" type="Label" parent="."]
-modulate = Color(0, 0, 0, 1)
-self_modulate = Color(0, 0, 0, 1)
 offset_left = 346.0
 offset_top = 361.0
 offset_right = 1004.0
