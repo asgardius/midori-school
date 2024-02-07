@@ -6,4 +6,6 @@ An Action Role Playing Game inspired by TLOZ A Link to the Past, Touhou Project,
 At the moment this game is only a proof of concept. If you want to help send me an email to asgardius@asgardius.company
 You can find game documentation at https://cloud.asgardius.company/s/3tPKHsMznzMjzEc?path=%2Fgame%20documentation%2FMidori%20in%20the%20Magic%20School
 
+A beta build will be released at septembre 28 2024 (unfunaversary build) and First stable release is scheduled near Half Life 3 release
+
 Official video channel https://video.asgardius.company/c/asgardius_virtualx
