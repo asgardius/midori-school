@@ -9,3 +9,11 @@ You can find game documentation at https://cloud.asgardius.company/s/3tPKHsMznzM
 A beta build will be released at septembre 28 2024 (unfunaversary build) and First stable release is scheduled near Half Life 3 release
 
 Official video channel https://video.asgardius.company/c/asgardius_virtualx
+
+Join community matrix channel at https://matrix.to/#/!gRTRfIdWGKLyCVEusd:asgardius.company?via=asgardius.company
+
+If you want to help in game development ask at https://matrix.to/#/!bqRfvdEXZATmMsQTSf:asgardius.company?via=asgardius.company
+
+# Plot
+
+Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since much before than Earth. Most Asteroid Belt natives have pointy ears. There are also animal-based humanoids. All humans from the universe lives here since their planet was destroyed by the Alcohol Discs, but very few of them remains. You are Midori Asgardius, a 15 years old elf girl also know as "The Walking Explosive". You are a student at Kaizo Magic School. Your best friends are Diana Asgardius "The Tuna" and Rikka Grub "The Chuunibyou Cat". 10+ playable characters are awaiting for you (optional gacha machine sold separately). Deal Kung Fu Troublemakers, fight against bullet hell themed bosses, solve exciting puzzles, dig inside trashcans, find beautiful Multi Vector Submarines, defeat martians and Discover the truth of this universe. If you are maniac try our super hardcore mode. Be kind and have a happy unfunaversary this year. If you have any doubt about this game ask to your father and Kaizo's principal: Page Asgardius

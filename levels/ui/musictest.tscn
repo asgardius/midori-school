@@ -193,7 +193,7 @@ text = "Credits 3"
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "The Magic School"
+text = "Kaizo Magic School"
 
 [node name="Deep Forest" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
