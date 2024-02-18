@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nr3805p1uaxd"
-path="res://.godot/imported/face.png-61681eed419e1281db85ad47cd2cad15.ctex"
+uid="uid://b4iaxlfdqpl00"
+path="res://.godot/imported/face.png-a53f671e81b1cbeb683540f0b0863620.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/common/midori/face.png"
-dest_files=["res://.godot/imported/face.png-61681eed419e1281db85ad47cd2cad15.ctex"]
+source_file="res://sprites/common/elysium/face.png"
+dest_files=["res://.godot/imported/face.png-a53f671e81b1cbeb683540f0b0863620.ctex"]
 
 [params]
 
