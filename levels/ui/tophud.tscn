@@ -23,11 +23,105 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pntuv")
 
+[node name="Topminibg" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 377.0
+offset_bottom = 116.0
+color = Color(0.254902, 0.254902, 0.254902, 1)
+
+[node name="Topmini" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 377.0
+offset_bottom = 116.0
+
+[node name="TextureRect" type="TextureRect" parent="Topmini"]
+custom_minimum_size = Vector2(116, 116)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Topmini"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(174, 0)
+layout_mode = 2
+text = "Name"
+
+[node name="Label3" type="Label" parent="Topmini/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "R1"
+horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Health"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topmini/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+
+[node name="Label2" type="Label" parent="Topmini/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Stamina"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topmini/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
+theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+
+[node name="Label2" type="Label" parent="Topmini/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Skill"
+
+[node name="ProgressBar" type="ProgressBar" parent="Topmini/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+
+[node name="Label2" type="Label" parent="Topmini/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Topmini"]
+custom_minimum_size = Vector2(12, 64)
+layout_mode = 2
+
 [node name="Topleftbg" type="ColorRect" parent="."]
 layout_mode = 0
 offset_right = 377.0
 offset_bottom = 476.0
-color = Color(0.254902, 0.254902, 0.254902, 0.788235)
+color = Color(0.254902, 0.254902, 0.254902, 1)
 
 [node name="Topleft" type="VBoxContainer" parent="."]
 layout_mode = 0

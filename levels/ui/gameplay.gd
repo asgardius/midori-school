@@ -65,7 +65,7 @@ func _process(delta):
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
-	if Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK):
+	if (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK)) && Global.cdialog == []:
 		Global.live = 0
 		Global.bossready = false
 		get_tree().root.remove_child(thud)

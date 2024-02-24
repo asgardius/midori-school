@@ -13,11 +13,15 @@ var focus1
 var focus2
 var focus3
 var focus4
+var topmini
+var topminibg
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	topleft = $Topleft
 	topleftbg = $Topleftbg
+	topmini = $Topmini
+	topminibg = $Topminibg
 	cn1 = $Topleft/Character1/VBoxContainer/HBoxContainer/Label
 	cn2 = $Topleft/Character2/VBoxContainer/HBoxContainer/Label
 	cn3 = $Topleft/Character3/VBoxContainer/HBoxContainer/Label
@@ -30,9 +34,13 @@ func _ready():
 	focus2 = $Topleft/Character2/ColorRect2
 	focus3 = $Topleft/Character3/ColorRect2
 	focus4 = $Topleft/Character4/ColorRect2
+	topleft.visible = false
+	topleftbg.visible = false
 	if Global.mangohud:
 		topleft.position.y = 244
 		topleftbg.position.y = 244
+		topmini.position.y = 601
+		topminibg.position.y = 601
 	_charrefresh()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -40,6 +48,12 @@ func _process(delta):
 	pass
 
 func _input(event):
+	if Input.is_key_pressed(KEY_V) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER):
+		topleft.visible = true
+		topleftbg.visible = true
+	else:
+		topleft.visible = false
+		topleftbg.visible = false
 	_charrefresh()
 func _charrefresh():
 	if Global.debug:
