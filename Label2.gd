@@ -22,6 +22,7 @@ func _ready():
 		if OS.get_environment("MANGOHUD").contains("1"):
 			Global.mangohud = true
 			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"
+		welcometext = welcometext+"\nVirtual machine boot process completed"
 		#This can be used to detect background process, may be useful later
 		#var output = []
 		# Execute "get-process" in powershell and save data in "output":
