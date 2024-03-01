@@ -9,6 +9,8 @@ var cf1
 var cf2
 var cf3
 var cf4
+var cff
+var cnf
 var focus1
 var focus2
 var focus3
@@ -34,6 +36,8 @@ func _ready():
 	focus2 = $Topleft/Character2/ColorRect2
 	focus3 = $Topleft/Character3/ColorRect2
 	focus4 = $Topleft/Character4/ColorRect2
+	cnf = $Topmini/VBoxContainer/HBoxContainer/Label
+	cff = $Topmini/TextureRect
 	topleft.visible = false
 	topleftbg.visible = false
 	if Global.mangohud:
@@ -56,93 +60,102 @@ func _input(event):
 		topleftbg.visible = false
 	_charrefresh()
 func _charrefresh():
-	if Global.debug:
-		if Global.dparty[0] != null:
-			cn1.set_text(Global.pcnames[Global.dparty[0]])
-			cf1.texture = load(Global.hudfaces[Global.dparty[0]])
-			if Global.dcpchar == 0:
-				focus1.set_color(Color(0, 0, 1, 1))
+	if topleft.visible:
+		if Global.debug:
+			if Global.dparty[0] != null:
+				cn1.set_text(Global.pcnames[Global.dparty[0]])
+				cf1.texture = load(Global.hudfaces[Global.dparty[0]])
+				if Global.dcpchar == 0:
+					focus1.set_color(Color(0, 0, 1, 1))
+				else:
+					focus1.set_color(Color(1, 1, 1, 1))
 			else:
+				cn1.set_text("")
+				cf1.texture = null
 				focus1.set_color(Color(1, 1, 1, 1))
-		else:
-			cn1.set_text("")
-			cf1.texture = null
-			focus1.set_color(Color(1, 1, 1, 1))
-		if Global.dparty[1] != null:
-			cn2.set_text(Global.pcnames[Global.dparty[1]])
-			cf2.texture = load(Global.hudfaces[Global.dparty[1]])
-			if Global.dcpchar == 1:
-				focus2.set_color(Color(0, 0, 1, 1))
+			if Global.dparty[1] != null:
+				cn2.set_text(Global.pcnames[Global.dparty[1]])
+				cf2.texture = load(Global.hudfaces[Global.dparty[1]])
+				if Global.dcpchar == 1:
+					focus2.set_color(Color(0, 0, 1, 1))
+				else:
+					focus2.set_color(Color(1, 1, 1, 1))
 			else:
+				cn2.set_text("")
+				cf2.texture = null
 				focus2.set_color(Color(1, 1, 1, 1))
-		else:
-			cn2.set_text("")
-			cf2.texture = null
-			focus2.set_color(Color(1, 1, 1, 1))
-		if Global.dparty[2] != null:
-			cn3.set_text(Global.pcnames[Global.dparty[2]])
-			cf3.texture = load(Global.hudfaces[Global.dparty[2]])
-			if Global.dcpchar == 2:
-				focus3.set_color(Color(0, 0, 1, 1))
+			if Global.dparty[2] != null:
+				cn3.set_text(Global.pcnames[Global.dparty[2]])
+				cf3.texture = load(Global.hudfaces[Global.dparty[2]])
+				if Global.dcpchar == 2:
+					focus3.set_color(Color(0, 0, 1, 1))
+				else:
+					focus3.set_color(Color(1, 1, 1, 1))
 			else:
+				cn3.set_text("")
+				cf3.texture = null
 				focus3.set_color(Color(1, 1, 1, 1))
-		else:
-			cn3.set_text("")
-			cf3.texture = null
-			focus3.set_color(Color(1, 1, 1, 1))
-		if Global.dparty[3] != null:
-			cn4.set_text(Global.pcnames[Global.dparty[3]])
-			cf4.texture = load(Global.hudfaces[Global.dparty[3]])
-			if Global.dcpchar == 3:
-				focus4.set_color(Color(0, 0, 1, 1))
+			if Global.dparty[3] != null:
+				cn4.set_text(Global.pcnames[Global.dparty[3]])
+				cf4.texture = load(Global.hudfaces[Global.dparty[3]])
+				if Global.dcpchar == 3:
+					focus4.set_color(Color(0, 0, 1, 1))
+				else:
+					focus4.set_color(Color(1, 1, 1, 1))
 			else:
+				cn4.set_text("")
+				cf4.texture = null
 				focus4.set_color(Color(1, 1, 1, 1))
 		else:
-			cn4.set_text("")
-			cf4.texture = null
-			focus4.set_color(Color(1, 1, 1, 1))
+			if Global.party[0] != null:
+				cn1.set_text(Global.pcnames[Global.party[0]])
+				cf1.texture = load(Global.hudfaces[Global.party[0]])
+				if Global.dcpchar == 0:
+					focus1.set_color(Color(0, 0, 1, 1))
+				else:
+					focus1.set_color(Color(1, 1, 1, 1))
+			else:
+				cn1.set_text("")
+				cf1.texture = null
+				focus1.set_color(Color(1, 1, 1, 1))
+			if Global.party[1] != null:
+				cn2.set_text(Global.pcnames[Global.party[1]])
+				cf2.texture = load(Global.hudfaces[Global.party[1]])
+				if Global.dcpchar == 1:
+					focus2.set_color(Color(0, 0, 1, 1))
+				else:
+					focus2.set_color(Color(1, 1, 1, 1))
+			else:
+				cn2.set_text("")
+				cf2.texture = null
+				focus2.set_color(Color(1, 1, 1, 1))
+			if Global.party[2] != null:
+				cn3.set_text(Global.pcnames[Global.party[0]])
+				cf3.texture = load(Global.hudfaces[Global.party[0]])
+				if Global.dcpchar == 2:
+					focus3.set_color(Color(0, 0, 1, 1))
+				else:
+					focus3.set_color(Color(1, 1, 1, 1))
+			else:
+				cn3.set_text("")
+				cf3.texture = null
+				focus3.set_color(Color(1, 1, 1, 1))
+			if Global.party[3] != null:
+				cn4.set_text(Global.pcnames[Global.party[3]])
+				cf4.texture = load(Global.hudfaces[Global.party[3]])
+				if Global.dcpchar == 3:
+					focus4.set_color(Color(0, 0, 1, 1))
+				else:
+					focus4.set_color(Color(1, 1, 1, 1))
+			else:
+				cn4.set_text("")
+				cf4.texture = null
+				focus4.set_color(Color(1, 1, 1, 1))
 	else:
-		if Global.party[0] != null:
-			cn1.set_text(Global.pcnames[Global.party[0]])
-			cf1.texture = load(Global.hudfaces[Global.party[0]])
-			if Global.dcpchar == 0:
-				focus1.set_color(Color(0, 0, 1, 1))
-			else:
-				focus1.set_color(Color(1, 1, 1, 1))
+		if Global.debug:
+			cnf.set_text(Global.pcnames[Global.dparty[Global.dcpchar]])
+			cff.texture = load(Global.hudfaces[Global.dparty[Global.dcpchar]])
 		else:
-			cn1.set_text("")
-			cf1.texture = null
-			focus1.set_color(Color(1, 1, 1, 1))
-		if Global.party[1] != null:
-			cn2.set_text(Global.pcnames[Global.party[1]])
-			cf2.texture = load(Global.hudfaces[Global.party[1]])
-			if Global.dcpchar == 1:
-				focus2.set_color(Color(0, 0, 1, 1))
-			else:
-				focus2.set_color(Color(1, 1, 1, 1))
-		else:
-			cn2.set_text("")
-			cf2.texture = null
-			focus2.set_color(Color(1, 1, 1, 1))
-		if Global.party[2] != null:
-			cn3.set_text(Global.pcnames[Global.party[0]])
-			cf3.texture = load(Global.hudfaces[Global.party[0]])
-			if Global.dcpchar == 2:
-				focus3.set_color(Color(0, 0, 1, 1))
-			else:
-				focus3.set_color(Color(1, 1, 1, 1))
-		else:
-			cn3.set_text("")
-			cf3.texture = null
-			focus3.set_color(Color(1, 1, 1, 1))
-		if Global.party[3] != null:
-			cn4.set_text(Global.pcnames[Global.party[3]])
-			cf4.texture = load(Global.hudfaces[Global.party[3]])
-			if Global.dcpchar == 3:
-				focus4.set_color(Color(0, 0, 1, 1))
-			else:
-				focus4.set_color(Color(1, 1, 1, 1))
-		else:
-			cn4.set_text("")
-			cf4.texture = null
-			focus4.set_color(Color(1, 1, 1, 1))
+			cnf.set_text(Global.pcnames[Global.party[Global.cpchar]])
+			cff.texture = load(Global.hudfaces[Global.party[Global.cpchar]])
+			

@@ -116,14 +116,17 @@ horizontal_alignment = 2
 [node name="ColorRect2" type="ColorRect" parent="Topmini"]
 custom_minimum_size = Vector2(12, 64)
 layout_mode = 2
+color = Color(0, 0, 1, 1)
 
 [node name="Topleftbg" type="ColorRect" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 377.0
 offset_bottom = 476.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
 [node name="Topleft" type="VBoxContainer" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 377.0
 offset_bottom = 476.0

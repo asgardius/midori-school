@@ -23,7 +23,6 @@ func _physics_process(delta):
 	#var velocity = Vector2.ZERO
 	if Global.live == 1:
 		velocity = (Vector2.RIGHT.rotated(rotation) * 500 * Global.xm * delta)-Vector2.UP.rotated(rotation) * 500 * Global.ym * delta
-		_charswitch()
 		#origmpos = get_viewport().get_mouse_position()
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
@@ -58,6 +57,7 @@ func _physics_process(delta):
 
 func _input(event):
 	if Global.live == 1:
+		_charswitch()
 		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
 			bpress = true
 			var bullet
