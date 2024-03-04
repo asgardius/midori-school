@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccckve5n0xbh4"]
+[gd_scene load_steps=7 format=3 uid="uid://ccckve5n0xbh4"]
 
 [ext_resource type="Script" path="res://title.gd" id="1_fbo7u"]
 [ext_resource type="Script" path="res://Game name.gd" id="2_bbb0f"]
-[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_dxhuu"]
-[ext_resource type="Script" path="res://nebula.gd" id="3_bn1r3"]
+[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_ena11"]
 [ext_resource type="Script" path="res://start.gd" id="4_cc41w"]
 [ext_resource type="Script" path="res://exit.gd" id="5_scoec"]
 [ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="7_yq7ke"]
@@ -17,14 +16,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fbo7u")
 
-[node name="nebula" type="VideoStreamPlayer" parent="."]
+[node name="Night Sky" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(2, 1.96)
-stream = ExtResource("2_dxhuu")
-autoplay = true
-script = ExtResource("3_bn1r3")
+texture = ExtResource("2_ena11")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
@@ -67,5 +63,3 @@ text = "2023-2024 Page Asgardius GNU General Public License 3
 
 [node name="Bottomhud" parent="." instance=ExtResource("7_yq7ke")]
 layout_mode = 1
-
-[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
