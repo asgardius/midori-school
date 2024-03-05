@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be7tyjioxnloy"
-path="res://.godot/imported/face.png-f7ac612177ab22b86f5e040fc0797cad.ctex"
+uid="uid://yxd6ql8k2ovl"
+path="res://.godot/imported/face.png-f6d5648b863093b27300f9b6bf4104c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/ceres/lety/face.png"
-dest_files=["res://.godot/imported/face.png-f7ac612177ab22b86f5e040fc0797cad.ctex"]
+source_file="res://sprites/ceres/pamela/face.png"
+dest_files=["res://.godot/imported/face.png-f6d5648b863093b27300f9b6bf4104c6.ctex"]
 
 [params]
 

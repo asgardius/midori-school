@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gjbebctteg7j"
-path="res://.godot/imported/fullbody.png-afea90fc01b1b1db10f64896ad5c0d50.ctex"
+uid="uid://ccfagd31r3eii"
+path="res://.godot/imported/fullbody.png-813c24022039724d0859f76340e30440.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/ceres/lety/fullbody.png"
-dest_files=["res://.godot/imported/fullbody.png-afea90fc01b1b1db10f64896ad5c0d50.ctex"]
+source_file="res://sprites/ceres/pamela/fullbody.png"
+dest_files=["res://.godot/imported/fullbody.png-813c24022039724d0859f76340e30440.ctex"]
 
 [params]
 
