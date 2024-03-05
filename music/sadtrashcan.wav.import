@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://d355ec8l0niu7"
-path="res://.godot/imported/XsEdzesSs.wav-379399bc761c58e4b6769227e1c9905d.sample"
+uid="uid://dghkqd7s7cj57"
+path="res://.godot/imported/sadtrashcan.wav-921da80e74e8a4c932982d5c4a8f9c41.sample"
 
 [deps]
 
-source_file="res://music/XsEdzesSs.wav"
-dest_files=["res://.godot/imported/XsEdzesSs.wav-379399bc761c58e4b6769227e1c9905d.sample"]
+source_file="res://music/sadtrashcan.wav"
+dest_files=["res://.godot/imported/sadtrashcan.wav-921da80e74e8a4c932982d5c4a8f9c41.sample"]
 
 [params]
 

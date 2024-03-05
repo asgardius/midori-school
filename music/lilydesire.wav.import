@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dm8yye02hk7dj"
-path="res://.godot/imported/portello.wav-c8e47f1d78a01b083a9b5e3eb8bc39d6.sample"
+path="res://.godot/imported/lilydesire.wav-53d7bb6bf0d21eb2dc46d1b911c8805a.sample"
 
 [deps]
 
-source_file="res://music/portello.wav"
-dest_files=["res://.godot/imported/portello.wav-c8e47f1d78a01b083a9b5e3eb8bc39d6.sample"]
+source_file="res://music/lilydesire.wav"
+dest_files=["res://.godot/imported/lilydesire.wav-53d7bb6bf0d21eb2dc46d1b911c8805a.sample"]
 
 [params]
 

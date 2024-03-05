@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dfoy0j52bw0oo"
-path="res://.godot/imported/kaveh.wav-3bd8e2436f1e96b4d30fa3b88eafca80.sample"
+path="res://.godot/imported/blacksmithofdestruction.wav-7476ee0369748adc3be10eb1669cd52c.sample"
 
 [deps]
 
-source_file="res://music/kaveh.wav"
-dest_files=["res://.godot/imported/kaveh.wav-3bd8e2436f1e96b4d30fa3b88eafca80.sample"]
+source_file="res://music/blacksmithofdestruction.wav"
+dest_files=["res://.godot/imported/blacksmithofdestruction.wav-7476ee0369748adc3be10eb1669cd52c.sample"]
 
 [params]
 

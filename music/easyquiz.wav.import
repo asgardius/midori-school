@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://bhxuxsfb6anni"
-path="res://.godot/imported/func.wav-58a3be4440f8abc6f0be28261f571238.sample"
+uid="uid://d355ec8l0niu7"
+path="res://.godot/imported/easyquiz.wav-6213d850b9decf0892ed8d4149d07e2f.sample"
 
 [deps]
 
-source_file="res://music/func.wav"
-dest_files=["res://.godot/imported/func.wav-58a3be4440f8abc6f0be28261f571238.sample"]
+source_file="res://music/easyquiz.wav"
+dest_files=["res://.godot/imported/easyquiz.wav-6213d850b9decf0892ed8d4149d07e2f.sample"]
 
 [params]
 

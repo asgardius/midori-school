@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bqqo1l61f0mwf"
-path="res://.godot/imported/zubmarine.wav-c85459d1ba836834c57efe7adba16ceb.sample"
+path="res://.godot/imported/multivectorsubmarines.wav-9e5fa8d87800ed4627a418e03b52562a.sample"
 
 [deps]
 
-source_file="res://music/zubmarine.wav"
-dest_files=["res://.godot/imported/zubmarine.wav-c85459d1ba836834c57efe7adba16ceb.sample"]
+source_file="res://music/multivectorsubmarines.wav"
+dest_files=["res://.godot/imported/multivectorsubmarines.wav-9e5fa8d87800ed4627a418e03b52562a.sample"]
 
 [params]
 

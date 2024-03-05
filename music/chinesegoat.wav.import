@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://dxr5osnvkyygn"
-path="res://.godot/imported/reloaded.wav-1ebd07a17eda8ffb2d6c5c06bcc56aa1.sample"
+uid="uid://heuh4letqmua"
+path="res://.godot/imported/chinesegoat.wav-6a86ef6ed56ebfdf9ffe93cbfa3071c5.sample"
 
 [deps]
 
-source_file="res://music/reloaded.wav"
-dest_files=["res://.godot/imported/reloaded.wav-1ebd07a17eda8ffb2d6c5c06bcc56aa1.sample"]
+source_file="res://music/chinesegoat.wav"
+dest_files=["res://.godot/imported/chinesegoat.wav-6a86ef6ed56ebfdf9ffe93cbfa3071c5.sample"]
 
 [params]
 

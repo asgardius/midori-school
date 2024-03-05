@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://dkkwx2elo0jxk"
-path="res://.godot/imported/oskars.wav-748b759985aeacf983ebbe58e2f4b438.sample"
+uid="uid://dg5grwi51twra"
+path="res://.godot/imported/seahorse.wav-44e2a86ff56ac315802a0ece083cddf6.sample"
 
 [deps]
 
-source_file="res://music/oskars.wav"
-dest_files=["res://.godot/imported/oskars.wav-748b759985aeacf983ebbe58e2f4b438.sample"]
+source_file="res://music/seahorse.wav"
+dest_files=["res://.godot/imported/seahorse.wav-44e2a86ff56ac315802a0ece083cddf6.sample"]
 
 [params]
 

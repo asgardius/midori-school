@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://dghkqd7s7cj57"
-path="res://.godot/imported/milkyway.wav-c7ff354d8919cde40ee19e0743538e50.sample"
+uid="uid://dtlljlphi3sur"
+path="res://.godot/imported/neowave.wav-52f7a455ac1e04e4c41bdefd3fe1fe8f.sample"
 
 [deps]
 
-source_file="res://music/milkyway.wav"
-dest_files=["res://.godot/imported/milkyway.wav-c7ff354d8919cde40ee19e0743538e50.sample"]
+source_file="res://music/neowave.wav"
+dest_files=["res://.godot/imported/neowave.wav-52f7a455ac1e04e4c41bdefd3fe1fe8f.sample"]
 
 [params]
 

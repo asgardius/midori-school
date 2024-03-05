@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://daneha07ex3rr"
-path="res://.godot/imported/rock.wav-e3359062c3afe81a0bdd88a06dc6cd71.sample"
+path="res://.godot/imported/shininglikefireworks.wav-07ba68cefcc16ab66d9a52af8c592c86.sample"
 
 [deps]
 
-source_file="res://music/rock.wav"
-dest_files=["res://.godot/imported/rock.wav-e3359062c3afe81a0bdd88a06dc6cd71.sample"]
+source_file="res://music/shininglikefireworks.wav"
+dest_files=["res://.godot/imported/shininglikefireworks.wav-07ba68cefcc16ab66d9a52af8c592c86.sample"]
 
 [params]
 

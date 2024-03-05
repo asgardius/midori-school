@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://0ahlhvx8kvtq"
-path="res://.godot/imported/sweetener.wav-0b0c54fa542353ed7e204d8ba2430b24.sample"
+path="res://.godot/imported/akikoletter.wav-dcd1e099a549dbde87748a4fe998aeb9.sample"
 
 [deps]
 
-source_file="res://music/sweetener.wav"
-dest_files=["res://.godot/imported/sweetener.wav-0b0c54fa542353ed7e204d8ba2430b24.sample"]
+source_file="res://music/akikoletter.wav"
+dest_files=["res://.godot/imported/akikoletter.wav-dcd1e099a549dbde87748a4fe998aeb9.sample"]
 
 [params]
 
