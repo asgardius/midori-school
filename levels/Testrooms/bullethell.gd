@@ -5,7 +5,7 @@ var boss
 func _ready():
 	boss = $Natasha
 	boss.add_to_group("boss")
-	Global.cdialog = [["What are you doing here?", true, 0], ["Your father need help to debug this game", false, 9], ["Ok, i'll help too", true, 0]]
+	Global.cdialog = [["What are you doing here?", true, 0, 0], ["Your father need help to debug this game", false, 9], ["Ok, i'll help too", true, 0, 0]]
 	Global.live = 0
 	get_tree().root.add_child.call(talk)
 

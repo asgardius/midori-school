@@ -2,7 +2,7 @@ extends Node2D
 var talk = load("res://levels/ui/talk.tscn").instantiate()
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Global.cdialog = [["What is this place?", true, 0], ["I'm here", false, 9], ["I got you, cheap copy", false, 0]]
+	Global.cdialog = [["What is this place?", true, 0, 0], ["I'm here", false, 9], ["I got you, cheap copy", false, 0]]
 	Global.live = 0
 	get_tree().root.add_child.call(talk)
 

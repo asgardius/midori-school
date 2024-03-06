@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://levels/Testrooms/lilytest.gd" id="1_b1yf3"]
 [ext_resource type="Texture2D" uid="uid://dursxelwwxe8u" path="res://sprites/common/placeholder/player.png" id="1_bch3a"]
-[ext_resource type="PackedScene" uid="uid://b216q83uw4c45" path="res://sprites/common/midori/lily.tscn" id="2_v1fc7"]
+[ext_resource type="PackedScene" uid="uid://ba1erruilgjxo" path="res://sprites/common/midori/lily.tscn" id="2_v1fc7"]
 [ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_h02gt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1jr1w"]

@@ -62,9 +62,9 @@ func _input(event):
 			bpress = true
 			var bullet
 			if Global.debug:
-				bullet = load(Global.pbbullets[Global.dparty[Global.dcpchar]])
+				bullet = load(Global.pbbullets[Global.dparty[Global.dcpchar][0]])
 			else:
-				bullet = load(Global.pbbullets[Global.party[Global.cpchar]])
+				bullet = load(Global.pbbullets[Global.party[Global.cpchar][0]])
 			var new_pbullet = bullet.instantiate()
 			new_pbullet.btype = "players"
 			new_pbullet.velocity = Vector2(0, -500).rotated(deg_to_rad(angle * 90))
@@ -82,10 +82,10 @@ func _charswitch():
 	if Global.debug:
 		if Global.dcpchar != csprite:
 			csprite = Global.dcpchar
-			sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar]])
-			weakness = Global.specialities[Global.pcspecialities[Global.dparty[Global.dcpchar]]]
+			sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
+			weakness = Global.specialities[Global.pcspecialities[Global.dparty[Global.dcpchar][0]]]
 	else:
 		if Global.cpchar != csprite:
 			csprite = Global.cpchar
-			sprite.texture = load(Global.pchars[Global.party[Global.cpchar]])
-			weakness = Global.specialities[Global.pcspecialities[Global.party[Global.cpchar]]]
+			sprite.texture = load(Global.pchars[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
+			weakness = Global.specialities[Global.pcspecialities[Global.party[Global.cpchar][0]]]

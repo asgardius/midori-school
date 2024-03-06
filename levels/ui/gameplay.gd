@@ -78,31 +78,31 @@ func _input(event):
 			get_tree().change_scene_to_file("res://title.tscn")
 	if (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_UP)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_UP))):
 		if Global.debug:
-			if Global.dparty[0] != null:
+			if Global.dparty[0][0] != null:
 				Global.dcpchar = 0
 		else:
-			if Global.party[0] != null:
+			if Global.party[0][0] != null:
 				Global.cpchar = 0
 	elif (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_RIGHT)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_RIGHT))):
 		if Global.debug:
-			if Global.dparty[1] != null:
+			if Global.dparty[1][0] != null:
 				Global.dcpchar = 1
 		else:
-			if Global.party[1] != null:
+			if Global.party[1][0] != null:
 				Global.cpchar = 1
 	elif (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_DOWN)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_DOWN))):
 		if Global.debug:
-			if Global.dparty[2] != null:
+			if Global.dparty[2][0] != null:
 				Global.dcpchar = 2
 		else:
-			if Global.party[2] != null:
+			if Global.party[2][0] != null:
 				Global.cpchar = 2
 	elif (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_LEFT)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_LEFT))):
 		if Global.debug:
-			if Global.dparty[3] != null:
+			if Global.dparty[3][0] != null:
 				Global.dcpchar = 3
 		else:
-			if Global.party[3] != null:
+			if Global.party[3][0] != null:
 				Global.cpchar = 3
 	if Global.bossready:
 		Global.bossready = false

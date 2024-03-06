@@ -12,7 +12,7 @@ func _ready():
 	pface = $Playerface
 	if Global.cdialog[dindex][1]:
 		cname.set_text(Global.pcnames[Global.cdialog[dindex][2]])
-		pface.texture = load(Global.pcfaces[Global.cdialog[dindex][2]])
+		pface.texture = load(Global.pcfaces[Global.cdialog[dindex][2]][Global.cdialog[dindex][3]])
 	else:
 		cname.set_text(Global.npcnames[Global.cdialog[dindex][2]])
 		pface.texture = load(Global.npcfaces[Global.cdialog[dindex][2]])
@@ -31,7 +31,7 @@ func _input(event):
 		if dindex < Global.cdialog.size():
 			if Global.cdialog[dindex][1]:
 				cname.set_text(Global.pcnames[Global.cdialog[dindex][2]])
-				pface.texture = load((Global.pcfaces[Global.cdialog[dindex][2]]))
+				pface.texture = load((Global.pcfaces[Global.cdialog[dindex][2]][Global.cdialog[dindex][2]]))
 			else:
 				cname.set_text(Global.npcnames[Global.cdialog[dindex][2]])
 				pface.texture = load((Global.npcfaces[Global.cdialog[dindex][2]]))
@@ -44,6 +44,6 @@ func _input(event):
 				isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 			if isboss:
 				Global.bossready = true
-				Global.live = 1
+			Global.live = 1
 			Global.cdialog = []
 		press = false
