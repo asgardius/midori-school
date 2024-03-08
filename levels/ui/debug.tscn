@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://brrta1s63r2q2"]
+[gd_scene load_steps=7 format=3 uid="uid://brrta1s63r2q2"]
 
 [ext_resource type="Script" path="res://levels/ui/debug.gd" id="1_gm5qw"]
-[ext_resource type="VideoStream" path="res://backgounds/nebula_-_6044 (720p).ogv" id="2_l51wy"]
-[ext_resource type="Script" path="res://nebula.gd" id="3_0jyxj"]
+[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_1w2er"]
 [ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_ogmre"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
@@ -23,14 +22,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gm5qw")
 
-[node name="nebula" type="VideoStreamPlayer" parent="."]
-layout_mode = 0
-offset_right = 640.0
-offset_bottom = 368.0
-scale = Vector2(2, 1.96)
-stream = ExtResource("2_l51wy")
-autoplay = true
-script = ExtResource("3_0jyxj")
+[node name="Night Sky" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_1w2er")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
@@ -81,7 +76,6 @@ text = "Back"
 [node name="Bottomhud" parent="." instance=ExtResource("4_ogmre")]
 layout_mode = 1
 
-[connection signal="finished" from="nebula" to="nebula" method="_on_finished"]
 [connection signal="pressed" from="VBoxContainer/Gamepad Test" to="." method="_on_gamepad_test_pressed"]
 [connection signal="pressed" from="VBoxContainer/Scene Selector2" to="." method="_on_scene_selector_pressed"]
 [connection signal="pressed" from="VBoxContainer/Sound Test" to="." method="_on_sound_test_pressed"]

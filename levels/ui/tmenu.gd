@@ -23,7 +23,9 @@ func _level():
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
 
-#func _input(event):
+func _input(event):
+	if Input.is_action_just_pressed("ui_cancel"):
+		get_tree().change_scene_to_file("res://title.tscn")
    # Mouse in viewport coordinates.
 #	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
 		#print("Mouse Click/Unclick at: ", event.position)
