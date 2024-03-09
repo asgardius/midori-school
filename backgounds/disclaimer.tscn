@@ -21,7 +21,7 @@ theme_override_font_sizes/font_size = 22
 text = "Disclaimer
 Playing with fireworks inside a videogame can give hours of fun,
 but in real life is dangerous
-Life assurance services exists only on fiction"
+Life insurance exists only on fiction"
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 346.0

@@ -30,7 +30,7 @@ func _input(event):
 func _title():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-		get_tree().change_scene_to_file("res://title.tscn")
+		get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

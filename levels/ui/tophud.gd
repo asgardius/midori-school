@@ -20,24 +20,24 @@ var topminibg
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	topleft = $Topleft
-	topleftbg = $Topleftbg
-	topmini = $Topmini
-	topminibg = $Topminibg
-	cn1 = $Topleft/Character1/VBoxContainer/HBoxContainer/Label
-	cn2 = $Topleft/Character2/VBoxContainer/HBoxContainer/Label
-	cn3 = $Topleft/Character3/VBoxContainer/HBoxContainer/Label
-	cn4 = $Topleft/Character4/VBoxContainer/HBoxContainer/Label
-	cf1 = $Topleft/Character1/TextureRect
-	cf2 = $Topleft/Character2/TextureRect
-	cf3 = $Topleft/Character3/TextureRect
-	cf4 = $Topleft/Character4/TextureRect
-	focus1 = $Topleft/Character1/ColorRect2
-	focus2 = $Topleft/Character2/ColorRect2
-	focus3 = $Topleft/Character3/ColorRect2
-	focus4 = $Topleft/Character4/ColorRect2
-	cnf = $Topmini/VBoxContainer/HBoxContainer/Label
-	cff = $Topmini/TextureRect
+	topleft = $CanvasLayer/Topleft
+	topleftbg = $CanvasLayer/Topleftbg
+	topmini = $CanvasLayer/Topmini
+	topminibg = $CanvasLayer/Topminibg
+	cn1 = $CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer/Label
+	cn2 = $CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer/Label
+	cn3 = $CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer/Label
+	cn4 = $CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer/Label
+	cf1 = $CanvasLayer/Topleft/Character1/TextureRect
+	cf2 = $CanvasLayer/Topleft/Character2/TextureRect
+	cf3 = $CanvasLayer/Topleft/Character3/TextureRect
+	cf4 = $CanvasLayer/Topleft/Character4/TextureRect
+	focus1 = $CanvasLayer/Topleft/Character1/ColorRect2
+	focus2 = $CanvasLayer/Topleft/Character2/ColorRect2
+	focus3 = $CanvasLayer/Topleft/Character3/ColorRect2
+	focus4 = $CanvasLayer/Topleft/Character4/ColorRect2
+	cnf = $CanvasLayer/Topmini/VBoxContainer/HBoxContainer/Label
+	cff = $CanvasLayer/Topmini/TextureRect
 	topleft.visible = false
 	topleftbg.visible = false
 	if Global.mangohud:

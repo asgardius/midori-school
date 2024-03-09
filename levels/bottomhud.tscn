@@ -11,16 +11,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="fps" type="Label" parent="."]
-layout_mode = 0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="fps" type="Label" parent="CanvasLayer"]
 offset_left = 5.0
 offset_top = 697.0
 offset_right = 45.0
 offset_bottom = 720.0
 script = ExtResource("1_15gcj")
 
-[node name="Version" type="Label" parent="."]
-layout_mode = 0
+[node name="Version" type="Label" parent="CanvasLayer"]
 offset_left = 1166.0
 offset_top = 691.0
 offset_right = 1246.0

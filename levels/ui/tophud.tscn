@@ -23,454 +23,452 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pntuv")
 
-[node name="Topminibg" type="ColorRect" parent="."]
-layout_mode = 0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Topminibg" type="ColorRect" parent="CanvasLayer"]
 offset_right = 377.0
 offset_bottom = 116.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
-[node name="Topmini" type="HBoxContainer" parent="."]
-layout_mode = 2
+[node name="Topmini" type="HBoxContainer" parent="CanvasLayer"]
 offset_right = 377.0
 offset_bottom = 116.0
 
-[node name="TextureRect" type="TextureRect" parent="Topmini"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topmini"]
 custom_minimum_size = Vector2(116, 116)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Topmini"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topmini"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(174, 0)
 layout_mode = 2
 text = "Name"
 
-[node name="Label3" type="Label" parent="Topmini/VBoxContainer/HBoxContainer"]
+[node name="Label3" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "R1"
 horizontal_alignment = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Health"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topmini/VBoxContainer/HBoxContainer2"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
-[node name="Label2" type="Label" parent="Topmini/VBoxContainer/HBoxContainer2"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Stamina"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topmini/VBoxContainer/HBoxContainer3"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
-[node name="Label2" type="Label" parent="Topmini/VBoxContainer/HBoxContainer3"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="Topmini/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topmini/VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Skill"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topmini/VBoxContainer/HBoxContainer4"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
-[node name="Label2" type="Label" parent="Topmini/VBoxContainer/HBoxContainer4"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="ColorRect2" type="ColorRect" parent="Topmini"]
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topmini"]
 custom_minimum_size = Vector2(12, 64)
 layout_mode = 2
 color = Color(0, 0, 1, 1)
 
-[node name="Topleftbg" type="ColorRect" parent="."]
+[node name="Topleftbg" type="ColorRect" parent="CanvasLayer"]
 visible = false
-layout_mode = 0
 offset_right = 377.0
 offset_bottom = 476.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
-[node name="Topleft" type="VBoxContainer" parent="."]
+[node name="Topleft" type="VBoxContainer" parent="CanvasLayer"]
 visible = false
-layout_mode = 0
 offset_right = 377.0
 offset_bottom = 476.0
 
-[node name="Character1" type="HBoxContainer" parent="Topleft"]
+[node name="Character1" type="HBoxContainer" parent="CanvasLayer/Topleft"]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Topleft/Character1"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character1"]
 custom_minimum_size = Vector2(116, 116)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character1"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character1"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(174, 0)
 layout_mode = 2
 text = "Name"
 
-[node name="Label3" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer"]
+[node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "R1 + ↑"
 horizontal_alignment = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Health"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character1/VBoxContainer/HBoxContainer2"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
-[node name="Label2" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer2"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Stamina"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character1/VBoxContainer/HBoxContainer3"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
-[node name="Label2" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer3"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character1/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Skill"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character1/VBoxContainer/HBoxContainer4"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
-[node name="Label2" type="Label" parent="Topleft/Character1/VBoxContainer/HBoxContainer4"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="ColorRect2" type="ColorRect" parent="Topleft/Character1"]
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character1"]
 custom_minimum_size = Vector2(12, 64)
 layout_mode = 2
 
-[node name="Character2" type="HBoxContainer" parent="Topleft"]
+[node name="Character2" type="HBoxContainer" parent="CanvasLayer/Topleft"]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Topleft/Character2"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character2"]
 custom_minimum_size = Vector2(116, 116)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character2"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(174, 0)
 layout_mode = 2
 text = "Name"
 
-[node name="Label3" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer"]
+[node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "R1 + →"
 horizontal_alignment = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Health"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character2/VBoxContainer/HBoxContainer2"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
-[node name="Label2" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer2"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Stamina"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character2/VBoxContainer/HBoxContainer3"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
-[node name="Label2" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer3"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character2/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Skill"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character2/VBoxContainer/HBoxContainer4"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
-[node name="Label2" type="Label" parent="Topleft/Character2/VBoxContainer/HBoxContainer4"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="ColorRect2" type="ColorRect" parent="Topleft/Character2"]
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character2"]
 custom_minimum_size = Vector2(12, 64)
 layout_mode = 2
 
-[node name="Character3" type="HBoxContainer" parent="Topleft"]
+[node name="Character3" type="HBoxContainer" parent="CanvasLayer/Topleft"]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Topleft/Character3"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character3"]
 custom_minimum_size = Vector2(116, 116)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character3"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character3"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(174, 0)
 layout_mode = 2
 text = "Name"
 
-[node name="Label3" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer"]
+[node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "R1 + ↓"
 horizontal_alignment = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Health"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character3/VBoxContainer/HBoxContainer2"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
-[node name="Label2" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer2"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Stamina"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character3/VBoxContainer/HBoxContainer3"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
-[node name="Label2" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer3"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character3/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Skill"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character3/VBoxContainer/HBoxContainer4"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
-[node name="Label2" type="Label" parent="Topleft/Character3/VBoxContainer/HBoxContainer4"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="ColorRect2" type="ColorRect" parent="Topleft/Character3"]
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character3"]
 custom_minimum_size = Vector2(12, 64)
 layout_mode = 2
 
-[node name="Character4" type="HBoxContainer" parent="Topleft"]
+[node name="Character4" type="HBoxContainer" parent="CanvasLayer/Topleft"]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Topleft/Character4"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character4"]
 custom_minimum_size = Vector2(116, 116)
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Topleft/Character4"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character4"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(174, 0)
 layout_mode = 2
 text = "Name"
 
-[node name="Label3" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer"]
+[node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "R1 + ←"
 horizontal_alignment = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Health"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character4/VBoxContainer/HBoxContainer2"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
-[node name="Label2" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer2"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Stamina"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character4/VBoxContainer/HBoxContainer3"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
-[node name="Label2" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer3"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer3"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="Topleft/Character4/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "Skill"
 
-[node name="ProgressBar" type="ProgressBar" parent="Topleft/Character4/VBoxContainer/HBoxContainer4"]
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
-[node name="Label2" type="Label" parent="Topleft/Character4/VBoxContainer/HBoxContainer4"]
+[node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(63, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
-[node name="ColorRect2" type="ColorRect" parent="Topleft/Character4"]
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character4"]
 custom_minimum_size = Vector2(12, 64)
 layout_mode = 2

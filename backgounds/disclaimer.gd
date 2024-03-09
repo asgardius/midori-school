@@ -21,13 +21,14 @@ func _input(event):
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
-		_title()
+		get_tree().change_scene_to_file("res://title.tscn")
+		#_title()
 
 func _title():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 	if Global.debug:
-		get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+		get_tree().change_scene_to_file("res://titl")
 	else:
 		get_tree().change_scene_to_file("res://levels/ui/credits.tscn")
 		#get_tree().root.add_child(title)

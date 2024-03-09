@@ -7,9 +7,9 @@ var pface
 var press = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	cname = $Cname
-	dialog = $Dialog
-	pface = $Playerface
+	cname = $CanvasLayer/Cname
+	dialog = $CanvasLayer/Dialog
+	pface = $CanvasLayer/Playerface
 	if Global.cdialog[dindex][1]:
 		cname.set_text(Global.pcnames[Global.cdialog[dindex][2]])
 		pface.texture = load(Global.pcfaces[Global.cdialog[dindex][2]][Global.cdialog[dindex][3]])
