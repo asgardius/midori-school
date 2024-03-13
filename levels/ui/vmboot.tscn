@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdshjqabxu1aj"]
+
+[ext_resource type="Script" path="res://levels/ui/vmboot.gd" id="1_dhver"]
+
+[node name="Vmboot" type="Node2D"]
+script = ExtResource("1_dhver")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 3.0
+autostart = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
