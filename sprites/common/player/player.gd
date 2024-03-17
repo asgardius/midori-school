@@ -6,6 +6,7 @@ const JUMP_VELOCITY = -400.0
 var angle = 2
 var sprite
 var anim
+var speed
 var csprite
 var bpress = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -16,13 +17,14 @@ func _ready():
 	add_to_group("players")
 	anim = $AnimationPlayer
 	sprite = $Sprite2D
-	_charswitch()
+	#_charswitch()
+	_charinit()
 
 func _physics_process(delta):
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
 	if Global.live == 1:
-		velocity = (Vector2.RIGHT.rotated(rotation) * 500 * Global.xm * delta)-Vector2.UP.rotated(rotation) * 500 * Global.ym * delta
+		velocity = (Vector2.RIGHT.rotated(rotation) * speed * Global.xm * delta)-Vector2.UP.rotated(rotation) * speed * Global.ym * delta
 		#origmpos = get_viewport().get_mouse_position()
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
@@ -57,7 +59,8 @@ func _physics_process(delta):
 
 func _input(event):
 	if Global.live == 1:
-		_charswitch()
+		if Input.is_action_pressed("schar"):
+			_charswitch()
 		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
 			bpress = true
 			var bullet
@@ -67,7 +70,7 @@ func _input(event):
 				bullet = load(Global.pbbullets[Global.party[Global.cpchar][0]])
 			var new_pbullet = bullet.instantiate()
 			new_pbullet.btype = "players"
-			new_pbullet.velocity = Vector2(0, -500).rotated(deg_to_rad(angle * 90))
+			new_pbullet.velocity = Vector2(0, -speed).rotated(deg_to_rad(angle * 90))
 			var rposition = Vector2(0, -96).rotated(deg_to_rad(angle * 90))
 			if angle == 2:
 				new_pbullet.position = Vector2(position.x + rposition.x, position.y + rposition.y + 98)
@@ -78,13 +81,36 @@ func _input(event):
 		elif Input.is_action_just_released("shoot") && bpress:
 			bpress = false
 
+func _charinit():
+	if Global.debug:
+		speed = Global.basestats[Global.dparty[Global.dcpchar][0]][6]
+		#print(Global.dparty[Global.dcpchar][0])
+		#print(speed)
+	else:
+		speed = Global.basestats[Global.party[Global.cpchar][0]][6]
+		#print(Global.dparty[Global.cpchar][0])
+		#print(speed)
+	_charswitch()
+
 func _charswitch():
 	if Global.debug:
+		if csprite != null && speed!=Global.basestats[Global.dparty[csprite][0]][6]:
+			print("Script Kiddie")
+			speed = Global.dparty/800
+		else:
+			speed = Global.basestats[Global.dparty[Global.dcpchar][0]][6]
 		if Global.dcpchar != csprite:
 			csprite = Global.dcpchar
 			sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
 			weakness = Global.specialities[Global.pcspecialities[Global.dparty[Global.dcpchar][0]]]
+		print(Global.dparty[Global.dcpchar][0])
+		print(speed)
 	else:
+		if csprite != null && speed!=Global.basestats[Global.party[Global.cpchar][0]][6]:
+			print("Script Kiddie")
+			speed = Global.party/800
+		else:
+			speed = Global.basestats[Global.party[Global.dcpchar][0]][6]
 		if Global.cpchar != csprite:
 			csprite = Global.cpchar
 			sprite.texture = load(Global.pchars[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])

@@ -58,6 +58,7 @@ func _on_results_pressed():
 
 
 func _on_disclaimer_pressed():
+	Global.debug = false
 	get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
 
 
