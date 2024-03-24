@@ -1,10 +1,11 @@
 extends Area2D
 var velocity: Vector2 = Vector2()
 var direction
-var speciality = 3
+var speciality
 var btype
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	speciality = Global.pcspecialities[Global.dparty[Global.dcpchar][0]]
 	add_to_group(btype)
 	#pass # Replace with function body.
 
@@ -18,8 +19,8 @@ func _physics_process(delta):
 
 func _on_body_entered(body):if !body.is_in_group(btype):
 		if body.is_in_group("players") || body.is_in_group("boss") || body.is_in_group("enemies"):
-			if body.weakness == 3:
-				print("weak to fire")
+			if body.weakness == speciality:
+				print("weakness")
 	#if body.is_in_group("players"):
 	#	Global.live = 2
 	#elif body.is_in_group("enemies"):
