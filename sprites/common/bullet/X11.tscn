@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnufhjr63cddd"]
+
+[ext_resource type="Script" path="res://sprites/common/bullet/X11.gd" id="1_sd1jl"]
+[ext_resource type="Texture2D" uid="uid://dr52x3yif0wtw" path="res://sprites/common/bullet/X11.svg" id="2_nkqom"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g125y"]
+
+[node name="X11" type="Area2D"]
+script = ExtResource("1_sd1jl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_nkqom")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_g125y")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

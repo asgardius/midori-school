@@ -3,8 +3,10 @@ var velocity: Vector2 = Vector2()
 var direction
 var speed = 100
 var btype
+var isvisible
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	isvisible = $VisibleOnScreenNotifier2D
 	add_to_group(btype)
 	#pass # Replace with function body.
 
@@ -14,10 +16,11 @@ func _process(delta):
 	pass
 	
 func _physics_process(delta):
-	if direction == null:
-		position += velocity * delta
-	else:
-		position += speed * delta * direction
+	if isvisible.is_on_screen():
+		if direction == null:
+			position += velocity * delta
+		else:
+			position += speed * delta * direction
 
 
 func _on_body_entered(body):
@@ -34,8 +37,6 @@ func _on_body_entered(body):
 		queue_free()
 
 
-func _on_screen_exited():
-	queue_free()
 
 
 func _on_area_entered(area):
