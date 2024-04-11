@@ -20,7 +20,7 @@ offset_top = 258.0
 offset_right = 949.0
 offset_bottom = 326.0
 theme_override_font_sizes/font_size = 49
-text = "Press enter or B to continue"
+text = "TEXT_CONTINUE"
 horizontal_alignment = 1
 vertical_alignment = 1
 

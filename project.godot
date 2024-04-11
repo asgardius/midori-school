@@ -61,6 +61,10 @@ schar={
 ]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://text.en.translation", "res://text.es.translation", "res://text.ja.translation")
+
 [physics]
 
 2d/default_gravity_vector=Vector2(0, 0)
