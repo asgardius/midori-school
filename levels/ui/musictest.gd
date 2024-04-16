@@ -56,12 +56,12 @@ func _on_back_pressed():
 
 func _on_title_screen_pressed():
 	player.stream = load(Global.musictracks[0])
-	infobox.set_text("RELOADED\nRELOADED THEME\nMidori is now RELOADED")
+	infobox.set_text(tr("SONG0_INFO"))
 	player.play(0)
 
 func _on_disclaimer_settings_stores_pressed():
 	player.stream = load(Global.musictracks[1])
-	infobox.set_text("Vince Kaichan\nJellies in the Sea\nA relaxing sea music to prepare you for this explosive Action RPG")
+	infobox.set_text(tr("SONG1_INFO"))
 	player.play(0)
 
 
@@ -69,96 +69,96 @@ func _on_disclaimer_settings_stores_pressed():
 
 func _on_testrooms_pressed():
 	player.stream = load(Global.musictracks[2])
-	infobox.set_text("Fearofdark\nGet A Brain Morans\nMeme Music for a meme themed stage.\nYou can enter here using Test Milk and\nget something interesting")
+	infobox.set_text(tr("SONG2_INFO"))
 	player.play(0)
 
 
 func _on_friendly_challenge_pressed():
 	player.stream = load(Global.musictracks[3])
-	infobox.set_text("MrGamer\nOskars Skarmslackare\nPlayer Piano and Mechanical Drummer makes a great duo\nCenturies pass in the blink of an eye\nDo you feel old with this song? I too")
+	infobox.set_text(tr("SONG3_INFO"))
 	player.play(0)
 
 
 func _on_school_nursery_pressed():
 	player.stream = load(Global.musictracks[4])
-	infobox.set_text("JosSs\nExtra Life\nDo you want an Extra Life?\nYou need them")
+	infobox.set_text(tr("SONG4_INFO"))
 	player.play(0)
 
 
 func _on_overworld_ceres_pressed():
 	player.stream = load(Global.musictracks[5])
-	infobox.set_text("Ceekayed\nLayers\nGame graphics are made with a lot of texture layers\nmerged inside a single canvas")
+	infobox.set_text(tr("SONG5_INFO"))
 	player.play(0)
 
 
 func _on_boss_fight_ceres_pressed():
 	player.stream = load(Global.musictracks[6])
-	infobox.set_text("ko0x\ncaramel condition\nPamela stole your candy using her Kung Fu Powers\nYou have a better weapon: Fireballs")
+	infobox.set_text(tr("SONG6_INFO"))
 	player.play(0)
 
 
 func _on_result_pressed():
 	player.stream = load(Global.musictracks[7])
-	infobox.set_text("JosSs\nXs EdzesSs\nMost players can be confused by\nthe ways to earn experience in this game")
+	infobox.set_text(tr("SONG7_INFO"))
 	player.play(0)
 
 
 func _on_overworld_earth_pressed():
 	player.stream = load(Global.musictracks[8])
-	infobox.set_text("Vince Kaichan\nShakeshack Galaxy\nA song composed at Earth made to spread across the Galaxy\nYour father can give you an asteroid to achieve that")
+	infobox.set_text(tr("SONG8_INFO"))
 	player.play(0)
 
 
 func _on_the_zubmarine_zone_pressed():
 	player.stream = load(Global.musictracks[9])
-	infobox.set_text("Vince Kaichan\nThe Zubmarine Zone\nA militar base fill with Zubmarines and fire weapons\nYou can find a lot of Heavy Machine Guns here")
+	infobox.set_text(tr("SONG9_INFO"))
 	player.play(0)
 
 
 func _on_radioactive_desert_pressed():
 	player.stream = load(Global.musictracks[10])
-	infobox.set_text("Vince Kaichan\ncrammin jammin\nDesert radiation can kill humans instantly\nBut you can stay here without issues\nAt June 2, 2002 a Half Genie Girl born here\nIf you think that this game has an unique humour\nhere is the answer")
+	infobox.set_text(tr("SONG10_INFO"))
 	player.play(0)
 
 func _on_natashas_theme_pressed():
 	player.stream = load(Global.musictracks[11])
-	infobox.set_text("Vince Kaichan\nThe Func\nYou are fighting against a Maverick Fairy with a sad past\nand a hate against humans.\nA Lunate Elf like you can change her mind\nbecause that fairy also has pointy ears")
+	infobox.set_text(tr("SONG11_INFO"))
 	player.play(0)
 
 
 func _on_dungeon_of_destruction_pressed():
 	player.stream = load(Global.musictracks[12])
-	infobox.set_text("xerxes\nKaveh's theme\nThe Blacksmith of Destruction gave his name to a former untitled theme\nHe can give you the best weapon set from the universe,\nbut you must earn them\nThe Chosen One has a harder life that normal people")
+	infobox.set_text(tr("SONG12_INFO"))
 	player.play(0)
 
 
 func _on_final_boss_fight_pressed():
 	player.stream = load(Global.musictracks[13])
-	infobox.set_text("ko0x\nzenon\nYou trained for this\nIt's time to shine like Zenon Lights\nand make you final explosion")
+	infobox.set_text(tr("SONG13_INFO"))
 	player.play(0)
 
 
 func _on_ending_theme_pressed():
 	player.stream = load(Global.musictracks[14])
-	infobox.set_text("Vince Kaichan\nMilky Way\nWe won, but at what cost?")
+	infobox.set_text(tr("SONG14_INFO"))
 	player.play(0)
 
 
 func _on_credits_1_pressed():
 	player.stream = load(Global.musictracks[15])
-	infobox.set_text("Funky Fish and raina\nartificial sweetener\nThat candy was a fake one?\nNow that you are dead doesn't matter")
+	infobox.set_text(tr("SONG15_INFO"))
 	player.play(0)
 
 
 func _on_credits_2_pressed():
 	player.stream = load(Global.musictracks[16])
-	infobox.set_text("tj technoiZ\ntoo old\nI'm too old to see my daughter dying")
+	infobox.set_text(tr("SONG16_INFO"))
 	player.play(0)
 
 
 func _on_credits_3_pressed():
 	player.stream = load(Global.musictracks[17])
-	infobox.set_text("motherchip\nportello\nI said that you are dead?\nForget it\nThis is the true beggining")
+	infobox.set_text(tr("SONG17_INFO"))
 	player.play(0)
 
 
@@ -166,17 +166,17 @@ func _on_credits_3_pressed():
 
 func _on_the_magic_school_pressed():
 	player.stream = load(Global.musictracks[18])
-	infobox.set_text("Vince Kaichan\nsongbirds playground\nA happy song to forget that Kimberly will pull your ears\nwhen classes end\nYou know, that way to punish naughty elves like you")
+	infobox.set_text(tr("SONG18_INFO"))
 	player.play(0)
 
 
 func _on_deep_forest_pressed():
 	player.stream = load(Global.musictracks[19])
-	infobox.set_text("Vince Kaichan\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\n and the origin of that quamtum ice")
+	infobox.set_text(tr("SONG19_INFO"))
 	player.play(0)
 
 
 func _on_boss_fight_earth_pressed():
 	player.stream = load(Global.musictracks[20])
-	infobox.set_text("rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better")
+	infobox.set_text(tr("SONG20_INFO"))
 	player.play(0)

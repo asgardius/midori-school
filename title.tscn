@@ -24,32 +24,35 @@ texture = ExtResource("2_ena11")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 31.0
+offset_left = 35.0
 offset_top = 308.0
-offset_right = 235.0
-offset_bottom = 331.0
+offset_right = 1241.0
+offset_bottom = 438.0
 theme_override_font_sizes/font_size = 95
-text = "Midori in the Magic School"
+text = "GAME_NAME"
+horizontal_alignment = 1
 script = ExtResource("2_bbb0f")
 
 [node name="start" type="Label" parent="."]
 layout_mode = 0
-offset_left = 446.0
+offset_left = 46.0
 offset_top = 92.0
-offset_right = 610.0
-offset_bottom = 118.0
+offset_right = 1224.0
+offset_bottom = 147.0
 theme_override_font_sizes/font_size = 40
-text = "Press B or Enter start"
+text = "TEXT_START"
+horizontal_alignment = 1
 script = ExtResource("4_cc41w")
 
 [node name="exit" type="Label" parent="."]
 layout_mode = 0
-offset_left = 364.0
+offset_left = 47.0
 offset_top = 602.0
-offset_right = 568.0
-offset_bottom = 628.0
+offset_right = 1208.0
+offset_bottom = 657.0
 theme_override_font_sizes/font_size = 40
-text = "Press escape or A to exit"
+text = "TEXT_EXIT"
+horizontal_alignment = 1
 script = ExtResource("5_scoec")
 
 [node name="Label" type="Label" parent="."]

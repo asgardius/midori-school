@@ -2,3 +2,6 @@
 .godot/
 # nonfree placeholders must be excluded
 nonfree/
+text.en.translation
+text.es.translation
+text.ja.translation
