@@ -37,6 +37,9 @@ offset_bottom = 73.0
 theme_override_font_sizes/font_size = 40
 text = "Sound Test"
 
+[node name="Bottomhud" parent="." instance=ExtResource("4_2a53a")]
+layout_mode = 1
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 7
@@ -44,9 +47,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -129.5
+offset_left = -342.0
 offset_top = -362.0
-offset_right = 129.5
+offset_right = 342.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -67,9 +70,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_wro6j")
 text = "BUTTON_RETURN"
-
-[node name="Bottomhud" parent="." instance=ExtResource("4_2a53a")]
-layout_mode = 1
 
 [connection signal="pressed" from="VBoxContainer/Music" to="." method="_on_music_pressed"]
 [connection signal="pressed" from="VBoxContainer/Sfx" to="." method="_on_sfx_pressed"]

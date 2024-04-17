@@ -5,14 +5,19 @@ var theta: float = 0.0
 var bullet = load("res://sprites/common/bullet/snowflake.tscn")
 
 const SPEED = 300.0
+const fspeed = 100.0
 const JUMP_VELOCITY = -400.0
 var vangle = 2
 var weakness = 2
+var player
+var movex = 0
+var movey = 0
 
 
 func _ready():
 	var stimer = $Speed
 	stimer.start(0.05)
+	#player = get_parent().root.get_node("Player")
 
 func get_vector(angle):
 	theta = angle + alpha
@@ -24,8 +29,24 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var anim := $AnimationPlayer
 
 func _physics_process(delta):
-	velocity.x = 0
-	velocity.y = 0
+	if Global.live == 1:
+		if Global.playerx < position.x && (position.x - Global.playerx) > 200:
+			movex = -1
+		elif Global.playerx > position.x && (Global.playerx - position.x) > 200:
+			movex = 1
+		else:
+			movex = 0
+		if Global.playery < position.y && (position.y - Global.playery) > 200:
+			movey = -1
+		elif Global.playery > position.y && (Global.playery - position.y) > 200:
+			movey = 1
+		else:
+			movey = 0
+	else:
+			movex = 0
+			movey = 0
+	velocity.x = movex * fspeed * delta
+	velocity.y = movey * fspeed * delta
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
 	#if Global.live == 1:

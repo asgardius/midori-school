@@ -29,6 +29,8 @@ func _physics_process(delta):
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
 	position += velocity
+	Global.playerx = position.x
+	Global.playery = position.y
 	if Global.ym > 0.3:
 		angle = 2
 	elif Global.ym < -0.3:
