@@ -3,6 +3,11 @@ TEXT_CONTINUE;Press Enter or B to continue;Presiona Intro o B para continuar;Ent
 TEXT_START;Press Enter or B to start;Presiona Intro o B para iniciar;EnterまたはBを押して開始します
 TEXT_EXIT;Press Escape or A to exit;Presiona Escape o A para salir;終了するにはEscまたはAを押してください
 GAME_NAME;Midori in the Magic School;Midori in the Magic School;改造魔法学校のミドリ
+BUTTON_START;Start;Iniciar;始める
+BUTTON_DEBUG;Debug;Depurar;デバッグ
+MENU_DEBUG;Debug Menu;Menú de Depuración;デバッグメニュー
+BUTTON_EXIT;Exit;Salir;このゲームを終了する
+BUTTON_RETURN;Return;Atrás;戻る
 SONG0_INFO;RELOADED\nRELOADED THEME\nMidori is now RELOADED;RELOADED\nRELOADED THEME\nMidori ahora esta RELOADED;RELOADED\nRELOADED THEME\n緑は今 RELOADED
 SONG1_INFO; Vince Kaichan\nJellies in the Sea\nA relaxing sea music to prepare you for this explosive Action RPG;Vince Kaichan\nJellies in the Sea\nUna relajante música marina que te preparará para este explosivo Action RPG;ヴィンス・カイチャン\nJellies in the Sea\n爆発的なアクションRPGに備えてリラックスできる海の音楽
 SONG2_INFO;Fearofdark\nGet A Brain Morans\nMeme Music for a meme themed stage.\nYou can enter here using Test Milk and\nget something interesting;Fearofdark\nGet A Brain Morans\nMúsica de Meme para un escenario con temática de memes.\nPuedes ingresar aquí usando la Leche de Pruebas y obtener algo interesante.;Fearofdark\nGet A Brain Morans\nミームをテーマにしたステージのミームミュージック\nTest Milkを使用してここに参加して、\t何か面白いものを手に入れましょう
@@ -24,3 +29,7 @@ SONG17_INFO;motherchip\nportello\nI said that you are dead?\nForget it\nThis is 
 SONG18_INFO;Vince Kaichan\nsongbirds playground\nA happy song to forget that Kimberly will pull your ears\nwhen classes end\nYou know, that way to punish naughty elves like you;Vince Kaichan\nsongbirds playground\nA happy song to forget that Kimberly will pull your ears\nwhen classes end\nYou know, that way to punish naughty elves like you;ヴィンス・カイチャン\nsongbirds playground\nA happy song to forget that Kimberly will pull your ears\nwhen classes end\nYou know, that way to punish naughty elves like you
 SONG19_INFO;Vince Kaichan\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\n and the origin of that quamtum ice;Vince Kaichan\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\n and the origin of that quamtum ice;ヴィンス・カイチャン\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\n and the origin of that quamtum ice
 SONG20_INFO;rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better;rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better;rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better
+DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラーにはなりません
+DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso, El perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
+DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
+CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦

@@ -30,12 +30,16 @@ texture = ExtResource("2_1w2er")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 339.0
+offset_left = 44.0
 offset_top = 61.0
-offset_right = 991.0
+offset_right = 1234.0
 offset_bottom = 207.0
 theme_override_font_sizes/font_size = 106
-text = "Debug Menu"
+text = "MENU_DEBUG"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("4_ogmre")]
+layout_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -44,9 +48,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -129.5
-offset_top = -362.0
-offset_right = 129.5
+offset_left = -342.0
+offset_top = -484.0
+offset_right = 342.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -72,10 +76,7 @@ text = "Sound Test"
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
-text = "Back"
-
-[node name="Bottomhud" parent="." instance=ExtResource("4_ogmre")]
-layout_mode = 1
+text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="VBoxContainer/Gamepad Test" to="." method="_on_gamepad_test_pressed"]
 [connection signal="pressed" from="VBoxContainer/Scene Selector2" to="." method="_on_scene_selector_pressed"]
