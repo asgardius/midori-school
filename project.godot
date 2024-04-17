@@ -64,7 +64,6 @@ schar={
 [internationalization]
 
 locale/translations=PackedStringArray("res://text.en.translation", "res://text.es.translation", "res://text.ja.translation")
-locale/test="ja"
 
 [physics]
 

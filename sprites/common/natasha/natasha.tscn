@@ -182,6 +182,5 @@ libraries = {
 
 [node name="Speed" type="Timer" parent="."]
 wait_time = 0.1
-autostart = true
 
 [connection signal="timeout" from="Speed" to="." method="_on_speed_timeout"]
