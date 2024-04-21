@@ -27,12 +27,13 @@ texture = ExtResource("2_uuurj")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 496.0
+offset_left = 39.0
 offset_top = 3.0
-offset_right = 790.0
+offset_right = 1232.0
 offset_bottom = 73.0
 theme_override_font_sizes/font_size = 40
-text = "Sound Effect Test"
+text = "MENU_SFXTEST"
+horizontal_alignment = 1
 
 [node name="Stop" type="Label" parent="."]
 layout_mode = 0

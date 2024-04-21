@@ -58,19 +58,19 @@ grow_vertical = 0
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
-text = "Gamepad Test"
+text = "BUTTON_GAMEPADTEST"
 
 [node name="Scene Selector2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
-text = "Scene Selector"
+text = "BUTTON_SCENESELECT"
 
 [node name="Sound Test" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "Sound Test"
+text = "BUTTON_SOUNDTEST"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
 layout_mode = 2

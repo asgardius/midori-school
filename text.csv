@@ -8,12 +8,39 @@ BUTTON_DEBUG;Debug;Depurar;デバッグ
 MENU_DEBUG;Debug Menu;Menú de Depuración;デバッグメニュー
 BUTTON_EXIT;Exit;Salir;このゲームを終了する
 BUTTON_RETURN;Return;Atrás;戻る
+BUTTON_GAMEPADTEST;Gamepad Test;Prueba de mando;ゲームパッドテスト
+BUTTON_SCENESELECT;Scene Selector;Selector de escena;シーンセレクター
+BUTTON_SOUNDTEST;Sound Test;Prueba de sonido;サウンドテスト
+BUTTON_GAMEPADTEST_DONE;Press Escape or A + B to return;Presione Escape o A + B para regresar;戻るにはEscまたはA + Bを押してください
+BUTTON_SCENE_DISCLAIMER;Disclaimer;Descargo de responsabilidad;免責事項
+BUTTON_TESTROOMS;Shrine of the doomed souls;Santuario de las almas condenadas;呪われた魂の聖域
+BUTTON_CERES;Ceres;Ceres;ケレス
+BUTTON_SCORESCREEN;Result Screen;Pantalla de resultados;結果を表示
+BUTTON_CREDITS;Credits;Creditos;クレジット画面
+BUTTON_WIP;Work in Progress;Aún en desarrollo;まだ開発中
+BUTTON_SPAWNTEST;Spawn Test;Prueba de generación;スポーンテスト
+BUTTOM_TESTBOSS;Test Boss (Lily);Jefe de prueba (Lily);テストボス（リリー）
+BUTTON_DIALOGTEST;Dialog Test;Prueba de diálogos;ダイアログテスト
+BUTTON_DANMAKUTEST;Bullet hell test (Natasha);Prueba del infierno de balas (Natasha);弾幕テスト（ナターシャ）
+BUTTON_PLACEHOLDER;Unused; Sin utilizar;未使用
+BUTTON_MUSICTEST;Music;Música;音楽
+BUTTON_SFXTEST;Sound Effects;Efectos de Sonido;音響効果
+MENU_SFXTEST;Sound Effects Test;Prueba de efectos de sonido;音響効果テスト
+MENU_MUSICTEST;Music Test;Prueba de música;音楽テスト
+LABEL_STOPPLAYBACK;Press X to stop playback;Presione X para detener la reproducción;再生を停止するにはXを押してください
+SONG0_LABEL;Title Screen;Pantalla de título;タイトル画面
 SONG0_INFO;RELOADED\nRELOADED THEME\nMidori is now RELOADED;RELOADED\nRELOADED THEME\nMidori ahora esta RELOADED;RELOADED\nRELOADED THEME\n緑は今 RELOADED
-SONG1_INFO; Vince Kaichan\nJellies in the Sea\nA relaxing sea music to prepare you for this explosive Action RPG;Vince Kaichan\nJellies in the Sea\nUna relajante música marina que te preparará para este explosivo Action RPG;ヴィンス・カイチャン\nJellies in the Sea\n爆発的なアクションRPGに備えてリラックスできる海の音楽
+SONG1_LABEL;Disclaimer;Descargo de responsabilidad;免責事項
+SONG1_INFO;Vince Kaichan\nJellies in the Sea\nA relaxing sea music to prepare you for this explosive Action RPG;Vince Kaichan\nJellies in the Sea\nUna relajante música marina que te preparará para este explosivo Action RPG;ヴィンス・カイチャン\nJellies in the Sea\n爆発的なアクションRPGに備えてリラックスできる海の音楽
+SONG2_LABEL;Shrine of the doomed souls;Santuario de las almas condenadas;呪われた魂の聖域
 SONG2_INFO;Fearofdark\nGet A Brain Morans\nMeme Music for a meme themed stage.\nYou can enter here using Test Milk and\nget something interesting;Fearofdark\nGet A Brain Morans\nMúsica de Meme para un escenario con temática de memes.\nPuedes ingresar aquí usando la Leche de Pruebas y obtener algo interesante.;Fearofdark\nGet A Brain Morans\nミームをテーマにしたステージのミームミュージック\nTest Milkを使用してここに参加して、\t何か面白いものを手に入れましょう
+SONG3_LABEL;Friendly challenge;Reto amistoso;フレンドリーなチャレンジ
 SONG3_INFO;MrGamer\nOskars Skarmslackare\nPianola and Mechanical Drummer makes a great duo\nCenturies pass in the blink of an eye\nDo you feel old with this song? I too;MrGamer\nOskars Skarmslackare\nLa Pianola y el Baterista Mecánico hacen un gran dúo\nLos siglos pasan en un abrir y cerrar de ojos.\n¿Te sientes viejo con esta canción?  Yo también;MrGamer\nOskars Skarmslackare\nピアノラとメカニカルドラマーは素晴らしいデュオです\n瞬く間に何世紀も経つ\nこの曲を聞くと年をとったように感じますか？ 私も
+SONG4_LABEL;school nursing;enfermería escolar;学校看護
 SONG4_INFO;JosSs\nExtra Life\nDo you want an Extra Life?\nYou need them;JosSs\nExtra Life\nDo you want an Extra Life?\nYou need them;JosSs\nExtra Life\nDo you want an Extra Life?\nYou need them
+SONG5_LABEL;Overworld (Ceres);Mundo superior (Ceres);オーバーワールド（ケレス）
 SONG5_INFO;Ceekayed\nLayers\nGame graphics are made with a lot of texture layers\nmerged inside a single canvas;Ceekayed\nLayers\nGame graphics are made with a lot of texture layers\nmerged inside a single canvas;Ceekayed\nLayers\nGame graphics are made with a lot of texture layers\nmerged inside a single canvas
+SONG6_LABEL;Boss fight (Ceres);Pelea de jefes (Ceres);ボス戦（ケレス）
 SONG6_INFO;ko0x\ncaramel condition\nPamela stole your candy using her Kung Fu Powers\nYou have a better weapon: Fireballs;ko0x\ncaramel condition\nPamela stole your candy using her Kung Fu Powers\nYou have a better weapon: Fireballs;ko0x\ncaramel condition\nPamela stole your candy using her Kung Fu Powers\nYou have a better weapon: Fireballs
 SONG7_INFO;JosSs\nXs EdzesSs\nMost players can be confused by\nthe ways to earn experience in this game;JosSs\nXs EdzesSs\nMost players can be confused by\nthe ways to earn experience in this game;JosSs\nXs EdzesSs\nMost players can be confused by\nthe ways to earn experience in this game
 SONG8_INFO;Vince Kaichan\nShakeshack Galaxy\nA song composed at Earth made to spread across the Galaxy\nYour father can give you an asteroid to achieve that;Vince Kaichan\nShakeshack Galaxy\nA song composed at Earth made to spread across the Galaxy\nYour father can give you an asteroid to achieve that;ヴィンス・カイチャン\nShakeshack Galaxy\nA song composed at Earth made to spread across the Galaxy\nYour father can give you an asteroid to achieve that
@@ -33,3 +60,4 @@ DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラ�
 DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso, El perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
 DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
+CUTSCENE_0_0;most underrated children will be the best magicians - Falcighol Arch, Kaizo Magic School founder;Los niños más subestimados serán los mejores magos - Falcighol Arch, fundador de la Escuela de Magia Kaizo;最も過小評価されている子供たちが最高のマジシャンになるだろう - ファルシゴール・アーチ、カイゾー・マジック・スクール創設者

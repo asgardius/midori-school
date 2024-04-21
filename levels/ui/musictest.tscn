@@ -35,12 +35,13 @@ offset_bottom = 23.0
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 496.0
+offset_left = 57.0
 offset_top = 3.0
-offset_right = 790.0
+offset_right = 1229.0
 offset_bottom = 73.0
 theme_override_font_sizes/font_size = 40
-text = "Music Test"
+text = "MENU_MUSICTEST"
+horizontal_alignment = 1
 
 [node name="Info" type="Label" parent="."]
 layout_mode = 0
@@ -57,7 +58,7 @@ offset_top = 672.0
 offset_right = 444.0
 offset_bottom = 708.0
 theme_override_font_sizes/font_size = 22
-text = "Press X to stop playback"
+text = "LABEL_STOPPLAYBACK"
 
 [node name="Bottomhud" parent="." instance=ExtResource("4_a1ux8")]
 layout_mode = 1
@@ -82,43 +83,43 @@ layout_mode = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
-text = "Title Screen"
+text = "SONG0_LABEL"
 
 [node name="Disclaimer, Settings, Stores" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
-text = "Disclaimer, Settings, Stores"
+text = "SONG1_LABEL"
 
 [node name="Testrooms" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Testrooms"
+text = "SONG2_LABEL"
 
 [node name="Friendly challenge" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Friendly challenge"
+text = "SONG3_LABEL"
 
 [node name="School nursery" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "School nursery"
+text = "SONG4_LABEL"
 
 [node name="Overworld (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Overworld (Ceres)"
+text = "SONG5_LABEL"
 
 [node name="Boss fight (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Boss fight (Ceres)"
+text = "SONG6_LABEL"
 
 [node name="Result" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2

@@ -30,12 +30,13 @@ texture = ExtResource("2_x41qm")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 496.0
+offset_left = 64.0
 offset_top = 3.0
-offset_right = 790.0
+offset_right = 1213.0
 offset_bottom = 73.0
 theme_override_font_sizes/font_size = 40
-text = "Sound Test"
+text = "BUTTON_SOUNDTEST"
+horizontal_alignment = 1
 
 [node name="Bottomhud" parent="." instance=ExtResource("4_2a53a")]
 layout_mode = 1
@@ -57,13 +58,13 @@ grow_vertical = 0
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_wtbgt")
-text = "Music"
+text = "BUTTON_MUSIC"
 
 [node name="Sfx" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_4arqn")
-text = "Sound Effects"
+text = "BUTTON_SFXTEST"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
 layout_mode = 2

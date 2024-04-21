@@ -26,12 +26,13 @@ offset_bottom = 23.0
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
-offset_left = 496.0
+offset_left = 71.0
 offset_top = 3.0
-offset_right = 790.0
+offset_right = 1209.0
 offset_bottom = 73.0
 theme_override_font_sizes/font_size = 40
-text = "Gamepad Test"
+text = "BUTTON_GAMEPADTEST"
+horizontal_alignment = 1
 
 [node name="Info" type="Label" parent="."]
 layout_mode = 0
@@ -48,7 +49,7 @@ offset_top = 672.0
 offset_right = 444.0
 offset_bottom = 708.0
 theme_override_font_sizes/font_size = 22
-text = "Press Escape or A + B to return"
+text = "BUTTON_GAMEPADTEST_DONE"
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 layout_mode = 1
