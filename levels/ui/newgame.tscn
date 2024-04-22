@@ -1,0 +1,91 @@
+[gd_scene load_steps=7 format=3 uid="uid://bpotg1c8rsa8f"]
+
+[ext_resource type="Script" path="res://levels/ui/newgame.gd" id="1_b1c5v"]
+[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_p7hqh"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_3l41g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6u0xs"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[node name="Tmenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b1c5v")
+
+[node name="Night Sky" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_p7hqh")
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = -5.0
+offset_right = 1237.0
+offset_bottom = 125.0
+theme_override_font_sizes/font_size = 95
+text = "BUTTON_START"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("3_3l41g")]
+layout_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -322.0
+offset_top = -362.0
+offset_right = 322.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Noob" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
+text = "START_NOOB"
+
+[node name="Thisfirst" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "START_THISFIRST"
+
+[node name="Challenge" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
+text = "START_CHALLENGE"
+
+[node name="Maniac" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+text = "START_MANIAC"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
+text = "BUTTON_RETURN"
+
+[connection signal="pressed" from="VBoxContainer/Noob" to="." method="_on_noob_pressed"]
+[connection signal="pressed" from="VBoxContainer/Thisfirst" to="." method="_on_thisfirst_pressed"]
+[connection signal="pressed" from="VBoxContainer/Challenge" to="." method="_on_challenge_pressed"]
+[connection signal="pressed" from="VBoxContainer/Maniac" to="." method="_on_maniac_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]

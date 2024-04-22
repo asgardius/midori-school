@@ -7,6 +7,10 @@ BUTTON_START;Start;Iniciar;始める
 BUTTON_DEBUG;Debug;Depurar;デバッグ
 MENU_DEBUG;Debug Menu;Menú de Depuración;デバッグメニュー
 BUTTON_EXIT;Exit;Salir;このゲームを終了する
+START_NOOB;Coward;Cobarde;腰抜け
+START_THISFIRST;Try this First;Prueba Esto Primero;まずはこれを試してください
+START_CHALLENGE;True Challenge;Reto Verdadero;真の挑戦
+START_MANIAC;Madness;Locura;弾幕
 BUTTON_RETURN;Return;Atrás;戻る
 BUTTON_GAMEPADTEST;Gamepad Test;Prueba de mando;ゲームパッドテスト
 BUTTON_SCENESELECT;Scene Selector;Selector de escena;シーンセレクター
@@ -60,4 +64,4 @@ DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラ�
 DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso, El perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
 DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
-CUTSCENE_0_0;most underrated children will be the best magicians - Falcighol Arch, Kaizo Magic School founder;Los niños más subestimados serán los mejores magos - Falcighol Arch, fundador de la Escuela de Magia Kaizo;最も過小評価されている子供たちが最高のマジシャンになるだろう - ファルシゴール・アーチ、カイゾー・マジック・スクール創設者
+CUTSCENE_0_0;most underrated children will be the best magicians\nFalcighol Arch, Kaizo Magic School founder;Los niños más subestimados serán los mejores magos\nFalcighol Arch, fundador de la Escuela de Magia Kaizo;最も過小評価されている子供たちが最高のマジシャンになるだろう\nファルシゴール・アーチ、カイゾー・マジック・スクール創設者

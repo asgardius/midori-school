@@ -25,9 +25,15 @@ func _physics_process(delta):
 
 func _on_body_entered(body):
 	if !body.is_in_group(btype):
-		if body.is_in_group("players") || body.is_in_group("boss") || body.is_in_group("enemies"):
+		if body.is_in_group("players"):
 			if body.weakness == 3:
-				print("weak to fire")
+				print("weakness")
+				Input.start_joy_vibration(0,0,1,3)
+			else:
+				Input.start_joy_vibration(0,1,0,2)
+		elif body.is_in_group("boss") || body.is_in_group("enemies"):
+			if body.weakness == 3:
+				print("weakness")
 	#if body.is_in_group("players"):
 	#	Global.live = 2
 	#elif body.is_in_group("enemies"):
