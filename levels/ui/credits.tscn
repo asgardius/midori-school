@@ -75,10 +75,11 @@ Beachkid
 Sakura Nakayama
 El Profe
 Goldfish
+Kawaielli (Aka Kimberly Arch)
 
 Midori No Akuma background by geralt (Pixabay)
 
-Made with Virtualx Engine (a Godot fork)
+Made with Godot Engine
 
 Testing Devices
 
@@ -107,6 +108,7 @@ Beachkid
 Sakura Nakayama
 El Profe
 Goldfish
+Kawaielli (Aka Kimberly Arch)
 
 Music
 Soundtrack provided by archive.org and Bandcamp
@@ -227,7 +229,7 @@ Asset design tools
 
 Stable Diffusion
 CompVis
-Used only for placeholders and title screen background
+Used only for placeholders and backgrounds
 
 Krita
 KDE Community
@@ -561,6 +563,34 @@ For that great development device
 Naomi Ubuntu
 For helping at Character Design
 
+Kawaielli
+For helping with my best character:
+Kimberly Arch
+
+HoYoVerse
+For create those great characters
+
+Paul Klee
+For inspiring my own art
+
+David Sandberg
+For your Kung Fu Style
+
+Tood
+For let me know that i need my own style
+
+RELOADED
+For never giving up
+
+Bill Gates III
+For let me know that nothing is impossible
+
+Steve Jobs
+For thinking different
+
+Richard Stallman
+For let me know that we need more open source videogames
+
 Contact info
 
 Email
@@ -570,7 +600,6 @@ Activitypub
 @asgardius@social.asgardius.company
 
 Matrix Chat
-
 @asgardius:asgardius.company
 
 XMPP
@@ -586,9 +615,11 @@ You are free to create guides, but i suggest avoiding cheat codes
 
 Buy Tracker Works from Vince Kaichan at
 https://vincekaichan.bandcamp.com/album/tracker-works-2014-2018
-You will find all tracks from this composer that was used here
+You will find all tracks from this composer that were used here
 
-You can reuse assets for non-commercial purposes only"
+You can reuse assets for non-commercial purposes only
+
+Don't give up and fight for your dreams"
 horizontal_alignment = 1
 script = ExtResource("6_3q8sp")
 
