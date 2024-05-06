@@ -25,6 +25,45 @@ script = ExtResource("1_pntuv")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="Bossbg" type="ColorRect" parent="CanvasLayer"]
+offset_left = 467.0
+offset_right = 708.0
+offset_bottom = 50.0
+color = Color(0.254902, 0.254902, 0.254902, 1)
+
+[node name="Boss" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 467.0
+offset_right = 708.0
+offset_bottom = 50.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Boss"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Boss/HBoxContainer"]
+custom_minimum_size = Vector2(174, 0)
+layout_mode = 2
+text = "Name"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Boss"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Boss/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Health"
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Boss/HBoxContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
+theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+
+[node name="Label2" type="Label" parent="CanvasLayer/Boss/HBoxContainer2"]
+custom_minimum_size = Vector2(63, 0)
+layout_mode = 2
+text = "100/100"
+horizontal_alignment = 2
+
 [node name="Topminibg" type="ColorRect" parent="CanvasLayer"]
 offset_right = 377.0
 offset_bottom = 116.0
