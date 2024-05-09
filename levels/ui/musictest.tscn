@@ -125,25 +125,25 @@ text = "SONG6_LABEL"
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Result Screen"
+text = "SONG7_LABEL"
 
 [node name="Overworld (Earth)" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Overworld (Earth)"
+text = "SONG8_LABEL"
 
 [node name="The Zubmarine Zone" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "The Submarine base"
+text = "SONG9_LABEL"
 
 [node name="Radioactive Desert" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Radioactive Desert"
+text = "SONG10_LABEL"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
 layout_mode = 2
@@ -152,61 +152,61 @@ layout_mode = 2
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Natasha’s Theme"
+text = "SONG11_LABEL"
 
 [node name="Dungeon of Destruction" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Dungeon of Destruction"
+text = "SONG12_LABEL"
 
 [node name="Final Boss Fight" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Final Boss Fight"
+text = "SONG13_LABEL"
 
 [node name="Ending Theme" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Ending Theme"
+text = "SONG14_LABEL"
 
 [node name="Credits 1" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Credits 1"
+text = "SONG15_LABEL"
 
 [node name="Credits 2" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Credits 2"
+text = "SONG16_LABEL"
 
 [node name="Credits 3" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Credits 3"
+text = "SONG17_LABEL"
 
 [node name="The Magic School" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Kaizo Magic School"
+text = "SONG18_LABEL"
 
 [node name="Deep Forest" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Deep Forest"
+text = "SONG19_LABEL"
 
 [node name="Boss Fight (Earth)" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
-text = "Boss Fight (Earth)"
+text = "SONG20_LABEL"
 
 [node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
