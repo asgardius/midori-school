@@ -13,7 +13,7 @@ bg_color = Color(0, 0.8, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
 bg_color = Color(0, 0.8, 0, 1)
 
-[node name="Tmenu" type="Control"]
+[node name="Newgame" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

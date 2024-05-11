@@ -1,4 +1,6 @@
 ;en;es;ja
+TEXT_DISCLAIMER;Disclaimer\nPlaying with fireworks inside a videogame can give hours of fun,\nbut in real life is dangerous\nLife insurance exists only on fiction;Descargo de responsabilidad\nJugar con explosivos dentro de un videojuego puede dar horas de diversión\npero en la vida real es peligroso\nLos seguros de vida solamente existen en la ficción;免責事項\nビデオゲームの中で花火で遊ぶと何時間も楽しめます。\nしかし現実では危険である\n生命保険はフィクションの上にのみ存在する
+TEXT_WIP;This game is under development\nMore content will be added in following releases;Este juego está en desarrollo\nMás contenido se agregará en los siguientes lanzamientos;このゲームは現在開発中です\n今後のリリースではさらにコンテンツが追加される予定です
 TEXT_CONTINUE;Press Enter or B to continue;Presiona Intro o B para continuar;Enter または B を押して続行します
 TEXT_START;Press Enter or B to start;Presiona Intro o B para iniciar;EnterまたはBを押して開始します
 TEXT_EXIT;Press Escape or A to exit;Presiona Escape o A para salir;終了するにはEscまたはAを押してください
@@ -10,7 +12,7 @@ BUTTON_EXIT;Exit;Salir;このゲームを終了する
 START_NOOB;Coward;Cobarde;腰抜け
 START_THISFIRST;Try this First;Prueba Esto Primero;まずはこれを試してください
 START_CHALLENGE;True Challenge;Reto Verdadero;真の挑戦
-START_MANIAC;Madness;Locura;弾幕
+START_MANIAC;Maniac;Maniático;一事狂
 BUTTON_RETURN;Return;Atrás;戻る
 BUTTON_GAMEPADTEST;Gamepad Test;Prueba de mando;ゲームパッドテスト
 BUTTON_SCENESELECT;Scene Selector;Selector de escena;シーンセレクター
@@ -37,7 +39,7 @@ SONG0_INFO;RELOADED\nRELOADED THEME\nMidori is now RELOADED;RELOADED\nRELOADED T
 SONG1_LABEL;Disclaimer;Descargo de responsabilidad;免責事項
 SONG1_INFO;Vince Kaichan\nJellies in the Sea\nA relaxing sea music to prepare you for this explosive Action RPG;Vince Kaichan\nJellies in the Sea\nUna relajante música marina que te preparará\npara este explosivo Action RPG;ヴィンス・カイチャン\nJellies in the Sea\n爆発的なアクションRPGに備えてリラックスできる海の音楽
 SONG2_LABEL;Shrine of the doomed souls;Santuario de las almas condenadas;呪われた魂の聖域
-SONG2_INFO;Fearofdark\nGet A Brain Morans\nMeme Music for a meme themed stage.\nYou can enter here using Test Milk and\nget something interesting;Fearofdark\nGet A Brain Morans\nMúsica de Meme para un escenario de memes.\nPuedes ingresar con la Leche de Pruebas y\nsorprenderte;Fearofdark\nGet A Brain Morans\nミームをテーマにしたステージのミームミュージック\nTest Milkを使用してここに参加して、\t何か面白いものを手に入れましょう
+SONG2_INFO;Fearofdark\nGet A Brain Morans\nMeme Music for a meme themed stage.\nYou can enter here using Test Milk and\nget something interesting;Fearofdark\nGet A Brain Morans\nMúsica de Meme para un escenario de memes.\nPuedes ingresar con la Leche de Pruebas y\nsorprenderte;Fearofdark\nGet A Brain Morans\nミームをテーマにしたステージのミームミュージック\nTest Milkを使用してここに参加して、\n何か面白いものを手に入れましょう
 SONG3_LABEL;Friendly challenge;Reto amistoso;フレンドリーなチャレンジ
 SONG3_INFO;MrGamer\nOskars Skarmslackare\nPianola and Mechanical Drummer makes a great duo\nCenturies pass in the blink of an eye\nDo you feel old with this song? I too;MrGamer\nOskars Skarmslackare\nLa Pianola y el Baterista Mecánico hacen un gran\ndúo. Los siglos pasan en un abrir y cerrar de ojos.\n¿Te sientes viejo con esta canción?  Yo también;MrGamer\nOskars Skarmslackare\nピアノラとメカニカルドラマーは素晴らしいデュオです\n瞬く間に何世紀も経つ\nこの曲を聞くと年をとったように感じますか？ 私も
 SONG4_LABEL;school nursing;enfermería escolar;学校看護
@@ -55,9 +57,9 @@ SONG9_INFO;Vince Kaichan\nThe Zubmarine Zone\nA militar base fill with Zubmarine
 SONG10_LABEL;Radioactive Desert;Desierto Radioactivo;放射能砂漠
 SONG10_INFO;Vince Kaichan\ncrammin jammin\nDesert radiation can kill humans instantly\nBut you can stay here without issues\nAt June 2 2002 a Half Genie Girl born here\nIf you think that this game has an unique humour\nhere is the answer;Vince Kaichan\ncrammin jammin\nLa radiación del desierto puede matar a los\nhumanos al instante,\npero puedes estar aquí sin problemas.\nEl 2 de junio de 2002 nació aquí una\nNiña Semi Genio.\nSi crees que este juego tiene un humor\núnico, aquí tienes la respuesta;ヴィンス・カイチャン\ncrammin jammin\n砂漠の放射線は人間を瞬時に死に至らしめる\nしかし、問題なくここに滞在できます\n2002年6月2日、ハーフジーニーガールが誕生しました\nこのゲームに独特のユーモアがあると思うなら\n答えはここにあります
 SONG11_LABEL;Natasha’s Theme;Tema de Natasha;ナターシャのテーマ
-SONG11_INFO;Vince Kaichan\nThe Func\nYou are fighting against a Maverick Fairy with a sad past\nand a hate against humans.\nA Lunate Elf like you can change her mind\nbecause that fairy also has pointy ears;Vince Kaichan\nThe Func\nEstás luchando contra una Hada Rebelde con un\npasado triste y un odio hacia los humanos.\nUna elfa lunar como tú puede hacerla cambiar\ndeopinión porque esa hada también tiene\norejas puntiagudas.;ヴィンス・カイチャン\nThe Func\nあなたは悲しい過去と人間への憎しみを持つ反抗的な妖精と戦っています。.\nあなたのようなルナテエルフなら彼女の考えを変えることができるだろう、なぜならあの妖精も尖った耳を持っているからだ
+SONG11_INFO;Vince Kaichan\nThe Func\nYou are fighting against a Maverick Fairy with a sad past\nand a hate against humans.\nA Lunate Elf like you can change her mind\nbecause that fairy also has pointy ears;Vince Kaichan\nThe Func\nEstás luchando contra una Hada Rebelde con un\npasado triste y un odio hacia los humanos.\nUna elfa lunar como tú puede hacerla cambiar\ndeopinión porque esa hada también tiene\norejas puntiagudas.;ヴィンス・カイチャン\nThe Func\nあなたは悲しい過去と人間への憎しみを持\nつ反抗的な妖精と戦っています\nあなたのようなルナテエルフなら彼女の考えを変えるこ\nとができるだろう、なぜならあの妖精も尖った耳を持っているからだ
 SONG12_LABEL;Dungeon of Destruction;Calabozo de la Destrucción;破壊のダンジョン
-SONG12_INFO;xerxes\nKaveh's theme\nThe Blacksmith of Destruction gave his name to a former untitled theme\nHe can give you the best weapon set from the universe\nbut you must earn them\nThe Chosen One has a harder life that normal people;xerxes\nKaveh's theme\nThe Blacksmith of Destruction dio su nombre a\nun tema anteriormente sin título\nÉl puede darte el mejor conjunto de armas del\nuniverso, pero debes ganartelas\nEl elegido tiene una vida mas dificil que las\npersonas normales;xerxes\nKaveh's theme\n破壊の鍛冶屋は、以前の無題のテーマに彼の名前を与えました\n彼は宇宙最高の武器セットをあなたに与えることができますが、それを獲得する必要があります\n選ばれし者は普通の人よりも厳しい人生を送る
+SONG12_INFO;xerxes\nKaveh's theme\nThe Blacksmith of Destruction gave his name to a former untitled theme\nHe can give you the best weapon set from the universe\nbut you must earn them\nThe Chosen One has a harder life that normal people;xerxes\nKaveh's theme\nThe Blacksmith of Destruction dio su nombre a\nun tema anteriormente sin título\nÉl puede darte el mejor conjunto de armas del\nuniverso, pero debes ganartelas\nEl elegido tiene una vida mas dificil que las\npersonas normales;xerxes\nKaveh's theme\n破壊の鍛冶屋は、以前の無題のテーマに彼の名前を与えました\n彼は宇宙最高の武器セットをあなたに与えることができますが、\nそれを獲得する必要があります\n選ばれし者は普通の人よりも厳しい人生を送る
 SONG13_LABEL;Final Boss Fight;Jefe Final;最終ボス戦
 SONG13_INFO;ko0x\nzenon\nYou trained for this\nIt's time to shine like fireworks\nand make you final explosion;ko0x\nzenon\nEntrenaste para esto\nEs hora de brillar como fuegos artificiales\ny hacer tu explosión final;ko0x\nzenon\nあなたはこれのために訓練した\n花火のように輝き、最後の爆発を起こす時が来た
 SONG14_LABEL;Ending Theme;Tema final;エンディングテーマ
@@ -69,11 +71,17 @@ SONG16_INFO;tj technoiZ\ntoo old\nI'm too old to see my daughter dying;tj techno
 SONG17_LABEL;Credits 3;Creditos 3;クレジット 3
 SONG17_INFO;motherchip\nportello\nI said that you are dead?\nForget it\nThis is the true beggining;motherchip\nportello\n¿Dije que habias muerto?\nOlvídalo. Este es el verdadero comienzo;motherchip\nportello\n死んでるの？\n忘れてくださいこれが本当の始まりです
 SONG18_LABEL;Kaizo Magic School;Escuela de Magia Kaizo;カイゾー魔法学校
-SONG18_INFO;Vince Kaichan\nsongbirds playground\nA happy song to forget that Kimberly will pull your ears\nwhen classes end\nYou know, that way to punish naughty elves like you;Vince Kaichan\nsongbirds playground\nUna canción alegre para olvidar que Kimberly te\njalará de las orejas\nCuando las clases terminen\nya sabes, esamanera de castigar a elfos traviesos como tu;ヴィンス・カイチャン\nsongbirds playground\nA happy 授業の終わりにキンバリーがあなたの耳を引っ張るということを忘れる幸せな歌\nご存知のように、彼らはあなたのようないたずらなエルフをこのように罰するのですか？
+SONG18_INFO;Vince Kaichan\nsongbirds playground\nA happy song for a magic school at Ceres;Vince Kaichan\nsongbirds playground\nUna canción alegre para una escuela de magia en Ceres;ヴィンス・カイチャン\nsongbirds playground\nケレスの魔法学校のための楽しい歌
 SONG19_LABEL;Deep Forest;Bosque Profundo;深い森
-SONG19_INFO;Vince Kaichan\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\n and the origin of that quamtum ice;Vince Kaichan\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\n and the origin of that quamtum ice;ヴィンス・カイチャン\nGotanda Lights\nこの森は量子氷の影響下にある\nさらに進むと凍った湖とその霜の原因が見つかります
+SONG19_INFO;Vince Kaichan\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\nand the origin of that quamtum ice;Vince Kaichan\nGotanda Lights\nEste bosque está bajo el efecto del hielo cuántico\nAvanza más y encontrarás un lago helado\ny el origen de dicho hielo cuántico;ヴィンス・カイチャン\nGotanda Lights\nこの森は量子氷の影響下にある\nさらに進むと凍った湖とその霜の原因が見つかります
 SONG20_LABEL;Boss Fight (Earth);Pelea de jefes (Tierra);ボス戦（地球）
-SONG20_INFO;rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better;rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better;rez-kenet\nunreeeal superhero 3\n本物のスーパーヒーローは主流すぎる\nあなたはもっと良い人間になれる
+SONG20_INFO;rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better;rez-kenet\nunreeeal superhero 3\nSuperheroes reales son demasiado comunes\nPuedes ser alguien mejor;rez-kenet\nunreeeal superhero 3\n本物のスーパーヒーローは主流すぎる\nあなたはもっと良い人間になれる
+DIALOG_TEST_0;What is this place?;¿Qué es este lugar?;この場所は何ですか？
+DIALOG_TEST_1;I'm here;Estoy aquí;私はここにいます
+DIALOG_TEST_2;I got you, cheap copy;Te atrapé, copia barata;手に入れたよ、安物コピー
+DIALOG_DANMAKUTEST_0;What are you doing here?;¿Qué haces aquí?;ここで何をしているの？
+DIALOG_DANMAKUTEST_1;Your father need help to debug this game;Tu padre necesita ayuda para depurar este juego;あなたのお父さんはこのゲー\nムのデバッグを手伝ってほしいと思っています
+DIALOG_DANMAKUTEST_2;Ok, i'll help too;Bien, entonces yo también ayudaré;わかった、私も手伝うよ
 DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラーにはなりません
 DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso, El perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
 DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓

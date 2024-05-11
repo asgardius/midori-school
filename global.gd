@@ -29,6 +29,7 @@ var party = [[0,0], [1,0], [9,0], [3,0]]
 const specialities = [2, 0, 3, 1, 5, 4]
 var dparty = [[0,0], [1,0], [9,0], [3,0]]
 var cpchar = 0
+var dificulty = 0
 var dcpchar = 0
 var mangohud = false
 var cspawnarea = [null, null]

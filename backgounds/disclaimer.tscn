@@ -13,22 +13,21 @@ offset_bottom = 40.0
 texture = ExtResource("2_kljhy")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 326.0
+offset_left = 23.0
 offset_top = 11.0
-offset_right = 1009.0
+offset_right = 1250.0
 offset_bottom = 144.0
 theme_override_font_sizes/font_size = 22
-text = "Disclaimer
-Playing with fireworks inside a videogame can give hours of fun,
-but in real life is dangerous
-Life insurance exists only on fiction"
+text = "TEXT_DISCLAIMER"
+horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 346.0
+offset_left = 30.0
 offset_top = 361.0
-offset_right = 1004.0
+offset_right = 1247.0
 offset_bottom = 429.0
 theme_override_font_sizes/font_size = 49
-text = "Press Enter or B to continue"
+text = "TEXT_CONTINUE"
+horizontal_alignment = 1
 
 [node name="Bottomhud" parent="." instance=ExtResource("3_sdx6y")]
