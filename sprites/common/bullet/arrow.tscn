@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bxbokpmpq22mg" path="res://sprites/common/bullet/arrow.png" id="2_1l581"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g125y"]
-size = Vector2(129, 60)
+size = Vector2(129, 20)
 
 [node name="Arrow" type="Area2D"]
 script = ExtResource("1_xh7h3")
@@ -18,8 +18,8 @@ position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_g125y")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(-7.15256e-07, -1.43051e-06)
-scale = Vector2(3, 3)
+position = Vector2(0.5, 0)
+scale = Vector2(6.45, 1)
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

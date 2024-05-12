@@ -9,6 +9,8 @@ var wait
 var bossready = false
 var playerx
 var playery
+var ccutscene
+const cutscenes = [["res://levels/Cutscenes/opening.tscn", "res://levels/ui/gameplay.tscn", "res://music/scholartrip.wav", true]]
 const pcnames = ["Midori Asgardius", "Diana Asgardius", null, "Kimberly Arch", null, null, null, null, null, "Natasha Dostoyevsky"]
 const npcnames = ["Lily", null, null, "Kimberly Arch", null, null, null, null, null, "Natasha Dostoyevsky"]
 const pcfaces = [["res://sprites/common/midori/face.png"], ["res://sprites/common/tuna/face.png"], [null], ["res://sprites/common/kimberly/face.png"], [null], [null], [null], [null], [null], ["res://sprites/common/natasha/face.png"]]

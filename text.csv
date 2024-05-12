@@ -24,6 +24,7 @@ BUTTON_CERES;Ceres;Ceres;ケレス
 BUTTON_SCORESCREEN;Result Screen;Pantalla de resultados;結果を表示
 BUTTON_CREDITS;Credits;Creditos;クレジット画面
 BUTTON_WIP;Work in Progress;Aún en desarrollo;まだ開発中
+BUTTON_CUTSCENES;Cutscenes;Escenas;カットシーン
 BUTTON_SPAWNTEST;Spawn Test;Prueba de generación;スポーンテスト
 BUTTOM_TESTBOSS;Test Boss (Lily);Jefe de prueba (Lily);テストボス（リリー）
 BUTTON_DIALOGTEST;Dialog Test;Prueba de diálogos;ダイアログテスト
@@ -86,4 +87,5 @@ DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラ�
 DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso, El perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
 DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
+CUTSCENE_0_NAME;Prologue;Prólogo;プロローグ
 CUTSCENE_0_0;most underrated children will be the best magicians\nFalcighol Arch, Kaizo Magic School founder;Los niños más subestimados serán los mejores magos\nFalcighol Arch, fundador de la Escuela de Magia Kaizo;最も過小評価されている子供たちが最高のマジシャンになるだろう\nファルシゴール・アーチ、カイゾー・マジック・スクール創設者

@@ -11,7 +11,10 @@ func _ready():
 		speciality = Global.pcspecialities[Global.dparty[Global.dcpchar][0]]
 	isvisible = $VisibleOnScreenNotifier2D
 	add_to_group(btype)
-	rotation = velocity.angle()
+	if direction == null:
+		rotation = velocity.angle()
+	else:
+		rotation = direction.angle()
 	#pass # Replace with function body.
 
 

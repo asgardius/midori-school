@@ -46,29 +46,31 @@ func _on_back_pressed():
 	get_tree().change_scene_to_file("res://levels/ui/debug.tscn")
 
 func _on_credits_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/credits.tscn")
+	#get_tree().change_scene_to_file("res://levels/ui/credits.tscn")
+	pass
 
 
 func _on_wip_pressed():
-	get_tree().change_scene_to_file("res://backgounds/wip.tscn")
+	#get_tree().change_scene_to_file("res://backgounds/wip.tscn")
+	pass
 
 
 func _on_results_pressed():
-	get_tree().change_scene_to_file("res://backgounds/result.tscn")
+	#get_tree().change_scene_to_file("res://backgounds/result.tscn")
+	pass
 
 
 func _on_disclaimer_pressed():
-	Global.debug = false
-	get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
+	#Global.debug = false
+	Global.ccutscene = 0
+	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
 
 
 func _on_testrooms_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/testrooms.tscn")
+	#get_tree().change_scene_to_file("res://levels/ui/testrooms.tscn")
+	pass
 
 
 func _on_ceres_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/ceres.tscn")
-
-
-func _on_cutscene_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/cscene.tscn")
+	#get_tree().change_scene_to_file("res://levels/ui/ceres.tscn")
+	pass
