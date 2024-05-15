@@ -28,6 +28,8 @@ const pbbullets = ["res://sprites/common/bullet/fireball.tscn", "res://sprites/c
 const pcspecialities = [1, 2, null, 3, null, null, null, null, null, 0]
 const pchars = [["res://sprites/common/midori/sprite.png"], ["res://sprites/common/tuna/sprite.png"], [null], ["res://sprites/common/kimberly/sprite.png"], [null], [null], [null], [null], [null], ["res://sprites/common/natasha/sprite.png"]]
 const npchars = ["res://sprites/common/midori/sprite.png", null, null, null, null, null, null, null, null, "res://sprites/common/natasha/sprite.png"]
+var cboss = [null, null, null]
+var isboss
 var party = [[0,0], [1,0], [9,0], [3,0]]
 const specialities = [2, 0, 3, 1, 5, 4]
 var dparty = [[0,0], [1,0], [9,0], [3,0]]

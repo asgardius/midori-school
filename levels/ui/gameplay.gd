@@ -5,7 +5,6 @@ var music
 var bgsound := AudioStreamPlayer.new()
 var sfx1 := AudioStreamPlayer.new()
 var musictrack
-var isboss
 var bhud = load("res://levels/bottomhud.tscn").instantiate()
 var thud = load("res://levels/ui/tophud.tscn").instantiate()
 var ishud = true
@@ -19,12 +18,12 @@ func _ready():
 		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instantiate()
 		#player = load(Global.pchars[Global.dcpchar]).instantiate()
 		musictrack = Global.musictracks[Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]]
-		isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
+		Global.isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
 	else:
 		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instantiate()
 	#	player = load(Global.pchars[Global.cpchar]).instantiate()
 		musictrack = Global.musictracks[Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]]
-		isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
+		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	#if Global.cspawnarea[0] != null && Global.cspawnarea[0] != null:
 	#	player.position.x = Global.cspawnarea[0]
 	#	player.position.y = Global.cspawnarea[1]
@@ -40,7 +39,7 @@ func _ready():
 	get_tree().root.add_child.call_deferred(thud)
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
-	if !isboss:
+	if !Global.isboss:
 		bgsound.play(0)
 		
 
@@ -69,6 +68,7 @@ func _input(event):
 	if (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK)) && Global.cdialog == []:
 		Global.live = 0
 		Global.bossready = false
+		Global.cboss = [null, null, null]
 		get_tree().root.remove_child(thud)
 		get_tree().root.remove_child(bhud)
 		get_tree().root.remove_child(player)

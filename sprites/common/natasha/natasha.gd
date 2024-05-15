@@ -12,9 +12,13 @@ var weakness = 2
 var player
 var movex = 0
 var movey = 0
+var attack = 87
+var crit = 7
 
 
 func _ready():
+	if Global.isboss:
+		Global.cboss = ["Natasha Dostoyevsky",20520,20520]
 	var stimer = $Speed
 	stimer.start(0.05)
 	#player = get_parent().root.get_node("Player")
@@ -88,6 +92,8 @@ func shoot(angle):
 	new_bullet.position = Vector2(position.x, position.y)
 	new_bullet.direction = get_vector(angle)
 	new_bullet.btype = "boss"
+	new_bullet.attack = attack
+	new_bullet.crit = crit
 	get_parent().call_deferred("add_child",new_bullet)
 
 
