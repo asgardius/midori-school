@@ -110,19 +110,19 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 		if Global.debug:
-			chealthf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.basestats[Global.dparty[Global.dcpchar][0]][0]))
-			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.basestats[Global.dparty[Global.dcpchar][0]][1]))
-			cskillf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][4])+"/"+str(Global.basestats[Global.dparty[Global.dcpchar][0]][4]))
-			bhealthf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][0] * 100) / Global.basestats[Global.dparty[Global.dcpchar][0]][0]
-			bstaminaf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][1] * 100) / Global.basestats[Global.dparty[Global.dcpchar][0]][1]
-			bskillf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][4] * 100) / Global.basestats[Global.dparty[Global.dcpchar][0]][4]
+			chealthf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
+			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][1]))
+			cskillf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][4])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][4]))
+			bhealthf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][0] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][0]
+			bstaminaf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][1] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][1]
+			bskillf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][4] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][4]
 		else:
-			chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.basestats[Global.dparty[Global.cpchar][0]][0]))
-			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][1])+"/"+str(Global.basestats[Global.dparty[Global.cpchar][0]][1]))
-			cskillf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][4])+"/"+str(Global.basestats[Global.dparty[Global.cpchar][0]][4]))
-			bhealthf.value = (Global.cstats[Global.party[Global.cpchar][0]][0] * 100) / Global.basestats[Global.party[Global.cpchar][0]][0]
-			bstaminaf.value = (Global.cstats[Global.party[Global.cpchar][0]][1] * 100) / Global.basestats[Global.party[Global.cpchar][0]][1]
-			bskillf.value = (Global.cstats[Global.party[Global.cpchar][0]][4] * 100) / Global.basestats[Global.party[Global.cpchar][0]][4]
+			chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][0]))
+			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][1]))
+			cskillf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][4])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][4]))
+			bhealthf.value = (Global.cstats[Global.party[Global.cpchar][0]][0] * 100) / Global.mstats[Global.party[Global.cpchar][0]][0]
+			bstaminaf.value = (Global.cstats[Global.party[Global.cpchar][0]][1] * 100) / Global.mstats[Global.party[Global.cpchar][0]][1]
+			bskillf.value = (Global.cstats[Global.party[Global.cpchar][0]][4] * 100) / Global.mstats[Global.party[Global.cpchar][0]][4]
 
 
 func _input(event):
@@ -139,12 +139,12 @@ func _charrefresh():
 			if Global.dparty[0][0] != null:
 				cn1.set_text(Global.pcnames[Global.dparty[0][0]])
 				cf1.texture = load(Global.hudfaces[Global.dparty[0][0]][Global.dparty[0][1]])
-				chealth1.set_text(str(Global.cstats[Global.dparty[0][0]][0])+"/"+str(Global.basestats[Global.dparty[0][0]][0]))
-				cstamina1.set_text(str(Global.cstats[Global.dparty[0][0]][1])+"/"+str(Global.basestats[Global.dparty[0][0]][1]))
-				cskill1.set_text(str(Global.cstats[Global.dparty[0][0]][4])+"/"+str(Global.basestats[Global.dparty[0][0]][4]))
-				bhealth1.value = (Global.cstats[Global.dparty[0][0]][0] * 100) / Global.basestats[Global.dparty[0][0]][0]
-				bstamina1.value = (Global.cstats[Global.dparty[0][0]][1] * 100) / Global.basestats[Global.dparty[0][0]][1]
-				bskill1.value = (Global.cstats[Global.dparty[0][0]][4] * 100) / Global.basestats[Global.dparty[0][0]][4]
+				chealth1.set_text(str(Global.cstats[Global.dparty[0][0]][0])+"/"+str(Global.mstats[Global.dparty[0][0]][0]))
+				cstamina1.set_text(str(Global.cstats[Global.dparty[0][0]][1])+"/"+str(Global.mstats[Global.dparty[0][0]][1]))
+				cskill1.set_text(str(Global.cstats[Global.dparty[0][0]][4])+"/"+str(Global.mstats[Global.dparty[0][0]][4]))
+				bhealth1.value = (Global.cstats[Global.dparty[0][0]][0] * 100) / Global.mstats[Global.dparty[0][0]][0]
+				bstamina1.value = (Global.cstats[Global.dparty[0][0]][1] * 100) / Global.mstats[Global.dparty[0][0]][1]
+				bskill1.value = (Global.cstats[Global.dparty[0][0]][4] * 100) / Global.mstats[Global.dparty[0][0]][4]
 				if Global.dcpchar == 0:
 					focus1.set_color(Color(0, 0, 1, 1))
 				else:
@@ -162,12 +162,12 @@ func _charrefresh():
 			if Global.dparty[1][0] != null:
 				cn2.set_text(Global.pcnames[Global.dparty[1][0]])
 				cf2.texture = load(Global.hudfaces[Global.dparty[1][0]][Global.dparty[1][1]])
-				chealth2.set_text(str(Global.cstats[Global.dparty[1][0]][0])+"/"+str(Global.basestats[Global.dparty[1][0]][0]))
-				cstamina2.set_text(str(Global.cstats[Global.dparty[1][0]][1])+"/"+str(Global.basestats[Global.dparty[1][0]][1]))
-				cskill2.set_text(str(Global.cstats[Global.dparty[1][0]][4])+"/"+str(Global.basestats[Global.dparty[1][0]][4]))
-				bhealth2.value = (Global.cstats[Global.dparty[1][0]][0] * 100) / Global.basestats[Global.dparty[1][0]][0]
-				bstamina2.value = (Global.cstats[Global.dparty[1][0]][1] * 100) / Global.basestats[Global.dparty[1][0]][1]
-				bskill2.value = (Global.cstats[Global.dparty[1][0]][4] * 100) / Global.basestats[Global.dparty[1][0]][4]
+				chealth2.set_text(str(Global.cstats[Global.dparty[1][0]][0])+"/"+str(Global.mstats[Global.dparty[1][0]][0]))
+				cstamina2.set_text(str(Global.cstats[Global.dparty[1][0]][1])+"/"+str(Global.mstats[Global.dparty[1][0]][1]))
+				cskill2.set_text(str(Global.cstats[Global.dparty[1][0]][4])+"/"+str(Global.mstats[Global.dparty[1][0]][4]))
+				bhealth2.value = (Global.cstats[Global.dparty[1][0]][0] * 100) / Global.mstats[Global.dparty[1][0]][0]
+				bstamina2.value = (Global.cstats[Global.dparty[1][0]][1] * 100) / Global.mstats[Global.dparty[1][0]][1]
+				bskill2.value = (Global.cstats[Global.dparty[1][0]][4] * 100) / Global.mstats[Global.dparty[1][0]][4]
 				if Global.dcpchar == 1:
 					focus2.set_color(Color(0, 0, 1, 1))
 				else:
@@ -185,12 +185,12 @@ func _charrefresh():
 			if Global.dparty[2][0] != null:
 				cn3.set_text(Global.pcnames[Global.dparty[2][0]])
 				cf3.texture = load(Global.hudfaces[Global.dparty[2][0]][Global.dparty[2][1]])
-				chealth3.set_text(str(Global.cstats[Global.dparty[2][0]][0])+"/"+str(Global.basestats[Global.dparty[2][0]][0]))
-				cstamina3.set_text(str(Global.cstats[Global.dparty[2][0]][1])+"/"+str(Global.basestats[Global.dparty[2][0]][1]))
-				cskill3.set_text(str(Global.cstats[Global.dparty[2][0]][4])+"/"+str(Global.basestats[Global.dparty[2][0]][4]))
-				bhealth3.value = (Global.cstats[Global.dparty[2][0]][0] * 100) / Global.basestats[Global.dparty[2][0]][0]
-				bstamina3.value = (Global.cstats[Global.dparty[2][0]][1] * 100) / Global.basestats[Global.dparty[2][0]][1]
-				bskill3.value = (Global.cstats[Global.dparty[2][0]][4] * 100) / Global.basestats[Global.dparty[2][0]][4]
+				chealth3.set_text(str(Global.cstats[Global.dparty[2][0]][0])+"/"+str(Global.mstats[Global.dparty[2][0]][0]))
+				cstamina3.set_text(str(Global.cstats[Global.dparty[2][0]][1])+"/"+str(Global.mstats[Global.dparty[2][0]][1]))
+				cskill3.set_text(str(Global.cstats[Global.dparty[2][0]][4])+"/"+str(Global.mstats[Global.dparty[2][0]][4]))
+				bhealth3.value = (Global.cstats[Global.dparty[2][0]][0] * 100) / Global.mstats[Global.dparty[2][0]][0]
+				bstamina3.value = (Global.cstats[Global.dparty[2][0]][1] * 100) / Global.mstats[Global.dparty[2][0]][1]
+				bskill3.value = (Global.cstats[Global.dparty[2][0]][4] * 100) / Global.mstats[Global.dparty[2][0]][4]
 				if Global.dcpchar == 2:
 					focus3.set_color(Color(0, 0, 1, 1))
 				else:
@@ -208,12 +208,12 @@ func _charrefresh():
 			if Global.dparty[3][0] != null:
 				cn4.set_text(Global.pcnames[Global.dparty[3][0]])
 				cf4.texture = load(Global.hudfaces[Global.dparty[3][0]][Global.dparty[3][1]])
-				chealth4.set_text(str(Global.cstats[Global.dparty[3][0]][0])+"/"+str(Global.basestats[Global.dparty[3][0]][0]))
-				cstamina4.set_text(str(Global.cstats[Global.dparty[3][0]][1])+"/"+str(Global.basestats[Global.dparty[3][0]][1]))
-				cskill4.set_text(str(Global.cstats[Global.dparty[3][0]][4])+"/"+str(Global.basestats[Global.dparty[3][0]][4]))
-				bhealth4.value = (Global.cstats[Global.dparty[3][0]][0] * 100) / Global.basestats[Global.dparty[3][0]][0]
-				bstamina4.value = (Global.cstats[Global.dparty[3][0]][1] * 100) / Global.basestats[Global.dparty[3][0]][1]
-				bskill4.value = (Global.cstats[Global.dparty[3][0]][4] * 100) / Global.basestats[Global.dparty[3][0]][4]
+				chealth4.set_text(str(Global.cstats[Global.dparty[3][0]][0])+"/"+str(Global.mstats[Global.dparty[3][0]][0]))
+				cstamina4.set_text(str(Global.cstats[Global.dparty[3][0]][1])+"/"+str(Global.mstats[Global.dparty[3][0]][1]))
+				cskill4.set_text(str(Global.cstats[Global.dparty[3][0]][4])+"/"+str(Global.mstats[Global.dparty[3][0]][4]))
+				bhealth4.value = (Global.cstats[Global.dparty[3][0]][0] * 100) / Global.mstats[Global.dparty[3][0]][0]
+				bstamina4.value = (Global.cstats[Global.dparty[3][0]][1] * 100) / Global.mstats[Global.dparty[3][0]][1]
+				bskill4.value = (Global.cstats[Global.dparty[3][0]][4] * 100) / Global.mstats[Global.dparty[3][0]][4]
 				if Global.dcpchar == 3:
 					focus4.set_color(Color(0, 0, 1, 1))
 				else:
@@ -232,12 +232,12 @@ func _charrefresh():
 			if Global.party[0][0] != null:
 				cn1.set_text(Global.pcnames[Global.party[0][0]])
 				cf1.texture = load(Global.hudfaces[Global.party[0][0]][Global.party[0][1]])
-				chealth1.set_text(str(Global.cstats[Global.party[0][0]][0])+"/"+str(Global.basestats[Global.party[0][0]][0]))
-				cstamina1.set_text(str(Global.cstats[Global.party[0][0]][1])+"/"+str(Global.basestats[Global.party[0][0]][1]))
-				cskill1.set_text(str(Global.cstats[Global.party[0][0]][4])+"/"+str(Global.basestats[Global.party[0][0]][4]))
-				bhealth1.value = (Global.cstats[Global.party[0][0]][0] * 100) / Global.basestats[Global.party[0][0]][0]
-				bstamina1.value = (Global.cstats[Global.party[0][0]][1] * 100) / Global.basestats[Global.party[0][0]][1]
-				bskill1.value = (Global.cstats[Global.party[0][0]][4] * 100) / Global.basestats[Global.party[0][0]][4]
+				chealth1.set_text(str(Global.cstats[Global.party[0][0]][0])+"/"+str(Global.mstats[Global.party[0][0]][0]))
+				cstamina1.set_text(str(Global.cstats[Global.party[0][0]][1])+"/"+str(Global.mstats[Global.party[0][0]][1]))
+				cskill1.set_text(str(Global.cstats[Global.party[0][0]][4])+"/"+str(Global.mstats[Global.party[0][0]][4]))
+				bhealth1.value = (Global.cstats[Global.party[0][0]][0] * 100) / Global.mstats[Global.party[0][0]][0]
+				bstamina1.value = (Global.cstats[Global.party[0][0]][1] * 100) / Global.mstats[Global.party[0][0]][1]
+				bskill1.value = (Global.cstats[Global.party[0][0]][4] * 100) / Global.mstats[Global.party[0][0]][4]
 				if Global.dcpchar == 0:
 					focus1.set_color(Color(0, 0, 1, 1))
 				else:
@@ -255,12 +255,12 @@ func _charrefresh():
 			if Global.party[1][0] != null:
 				cn2.set_text(Global.pcnames[Global.party[1][0]])
 				cf2.texture = load(Global.hudfaces[Global.party[1][0]][Global.party[1][1]])
-				chealth2.set_text(str(Global.cstats[Global.party[1][0]][0])+"/"+str(Global.basestats[Global.party[1][0]][0]))
-				cstamina2.set_text(str(Global.cstats[Global.party[1][0]][1])+"/"+str(Global.basestats[Global.party[1][0]][1]))
-				cskill2.set_text(str(Global.cstats[Global.party[1][0]][4])+"/"+str(Global.basestats[Global.party[1][0]][4]))
-				bhealth2.value = (Global.cstats[Global.party[1][0]][0] * 100) / Global.basestats[Global.party[1][0]][0]
-				bstamina2.value = (Global.cstats[Global.party[1][0]][1] * 100) / Global.basestats[Global.party[1][0]][1]
-				bskill2.value = (Global.cstats[Global.party[1][0]][4] * 100) / Global.basestats[Global.party[1][0]][4]
+				chealth2.set_text(str(Global.cstats[Global.party[1][0]][0])+"/"+str(Global.mstats[Global.party[1][0]][0]))
+				cstamina2.set_text(str(Global.cstats[Global.party[1][0]][1])+"/"+str(Global.mstats[Global.party[1][0]][1]))
+				cskill2.set_text(str(Global.cstats[Global.party[1][0]][4])+"/"+str(Global.mstats[Global.party[1][0]][4]))
+				bhealth2.value = (Global.cstats[Global.party[1][0]][0] * 100) / Global.mstats[Global.party[1][0]][0]
+				bstamina2.value = (Global.cstats[Global.party[1][0]][1] * 100) / Global.mstats[Global.party[1][0]][1]
+				bskill2.value = (Global.cstats[Global.party[1][0]][4] * 100) / Global.mstats[Global.party[1][0]][4]
 				if Global.dcpchar == 1:
 					focus2.set_color(Color(0, 0, 1, 1))
 				else:
@@ -278,12 +278,12 @@ func _charrefresh():
 			if Global.party[2][0] != null:
 				cn3.set_text(Global.pcnames[Global.party[2][0]])
 				cf3.texture = load(Global.hudfaces[Global.party[2][0]][Global.party[2][1]])
-				chealth3.set_text(str(Global.cstats[Global.party[2][0]][0])+"/"+str(Global.basestats[Global.party[2][0]][0]))
-				cstamina3.set_text(str(Global.cstats[Global.party[2][0]][1])+"/"+str(Global.basestats[Global.party[2][0]][1]))
-				cskill3.set_text(str(Global.cstats[Global.party[2][0]][4])+"/"+str(Global.basestats[Global.party[2][0]][4]))
-				bhealth3.value = (Global.cstats[Global.party[2][0]][0] * 100) / Global.basestats[Global.party[2][0]][0]
-				bstamina3.value = (Global.cstats[Global.party[2][0]][1] * 100) / Global.basestats[Global.party[2][0]][1]
-				bskill3.value = (Global.cstats[Global.party[2][0]][4] * 100) / Global.basestats[Global.party[2][0]][4]
+				chealth3.set_text(str(Global.cstats[Global.party[2][0]][0])+"/"+str(Global.mstats[Global.party[2][0]][0]))
+				cstamina3.set_text(str(Global.cstats[Global.party[2][0]][1])+"/"+str(Global.mstats[Global.party[2][0]][1]))
+				cskill3.set_text(str(Global.cstats[Global.party[2][0]][4])+"/"+str(Global.mstats[Global.party[2][0]][4]))
+				bhealth3.value = (Global.cstats[Global.party[2][0]][0] * 100) / Global.mstats[Global.party[2][0]][0]
+				bstamina3.value = (Global.cstats[Global.party[2][0]][1] * 100) / Global.mstats[Global.party[2][0]][1]
+				bskill3.value = (Global.cstats[Global.party[2][0]][4] * 100) / Global.mstats[Global.party[2][0]][4]
 				if Global.dcpchar == 2:
 					focus3.set_color(Color(0, 0, 1, 1))
 				else:
@@ -301,12 +301,12 @@ func _charrefresh():
 			if Global.party[3][0] != null:
 				cn4.set_text(Global.pcnames[Global.party[3][0]])
 				cf4.texture = load(Global.hudfaces[Global.party[3][0]][Global.party[3][1]])
-				chealth4.set_text(str(Global.cstats[Global.party[3][0]][0])+"/"+str(Global.basestats[Global.party[3][0]][0]))
-				cstamina4.set_text(str(Global.cstats[Global.party[3][0]][1])+"/"+str(Global.basestats[Global.party[3][0]][1]))
-				cskill4.set_text(str(Global.cstats[Global.party[3][0]][4])+"/"+str(Global.basestats[Global.party[3][0]][4]))
-				bhealth4.value = (Global.cstats[Global.party[3][0]][0] * 100) / Global.basestats[Global.party[3][0]][0]
-				bstamina4.value = (Global.cstats[Global.party[3][0]][1] * 100) / Global.basestats[Global.party[3][0]][1]
-				bskill4.value = (Global.cstats[Global.party[3][0]][4] * 100) / Global.basestats[Global.party[3][0]][4]
+				chealth4.set_text(str(Global.cstats[Global.party[3][0]][0])+"/"+str(Global.mstats[Global.party[3][0]][0]))
+				cstamina4.set_text(str(Global.cstats[Global.party[3][0]][1])+"/"+str(Global.mstats[Global.party[3][0]][1]))
+				cskill4.set_text(str(Global.cstats[Global.party[3][0]][4])+"/"+str(Global.mstats[Global.party[3][0]][4]))
+				bhealth4.value = (Global.cstats[Global.party[3][0]][0] * 100) / Global.mstats[Global.party[3][0]][0]
+				bstamina4.value = (Global.cstats[Global.party[3][0]][1] * 100) / Global.mstats[Global.party[3][0]][1]
+				bskill4.value = (Global.cstats[Global.party[3][0]][4] * 100) / Global.mstats[Global.party[3][0]][4]
 				if Global.dcpchar == 3:
 					focus4.set_color(Color(0, 0, 1, 1))
 				else:
@@ -325,19 +325,19 @@ func _charrefresh():
 		if Global.debug:
 			cnf.set_text(Global.pcnames[Global.dparty[Global.dcpchar][0]])
 			cff.texture = load(Global.hudfaces[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
-			chealthf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.basestats[Global.dparty[Global.dcpchar][0]][0]))
-			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.basestats[Global.dparty[Global.dcpchar][0]][1]))
-			cskillf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][4])+"/"+str(Global.basestats[Global.dparty[Global.dcpchar][0]][4]))
-			bhealthf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][0] * 100) / Global.basestats[Global.dparty[Global.dcpchar][0]][0]
-			bstaminaf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][1] * 100) / Global.basestats[Global.dparty[Global.dcpchar][0]][1]
-			bskillf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][4] * 100) / Global.basestats[Global.dparty[Global.dcpchar][0]][4]
+			chealthf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
+			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][1]))
+			cskillf.set_text(str(Global.cstats[Global.dparty[Global.dcpchar][0]][4])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][4]))
+			bhealthf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][0] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][0]
+			bstaminaf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][1] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][1]
+			bskillf.value = (Global.cstats[Global.dparty[Global.dcpchar][0]][4] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][4]
 		else:
 			cnf.set_text(Global.pcnames[Global.party[Global.cpchar][0]])
 			cff.texture = load(Global.hudfaces[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
-			chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.basestats[Global.dparty[Global.cpchar][0]][0]))
-			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][1])+"/"+str(Global.basestats[Global.dparty[Global.cpchar][0]][1]))
-			cskillf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][4])+"/"+str(Global.basestats[Global.dparty[Global.cpchar][0]][4]))
-			bhealthf.value = (Global.cstats[Global.party[Global.cpchar][0]][0] * 100) / Global.basestats[Global.party[Global.cpchar][0]][0]
-			bstaminaf.value = (Global.cstats[Global.party[Global.cpchar][0]][1] * 100) / Global.basestats[Global.party[Global.cpchar][0]][1]
-			bskillf.value = (Global.cstats[Global.party[Global.cpchar][0]][4] * 100) / Global.basestats[Global.party[Global.cpchar][0]][4]
+			chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][0]))
+			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][1]))
+			cskillf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][4])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][4]))
+			bhealthf.value = (Global.cstats[Global.party[Global.cpchar][0]][0] * 100) / Global.mstats[Global.party[Global.cpchar][0]][0]
+			bstaminaf.value = (Global.cstats[Global.party[Global.cpchar][0]][1] * 100) / Global.mstats[Global.party[Global.cpchar][0]][1]
+			bskillf.value = (Global.cstats[Global.party[Global.cpchar][0]][4] * 100) / Global.mstats[Global.party[Global.cpchar][0]][4]
 			

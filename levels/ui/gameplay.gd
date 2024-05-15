@@ -12,6 +12,7 @@ var ishud = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	_statrebase()
 	add_child(bgsound)
 	add_child(sfx1)
 	if Global.debug:
@@ -115,3 +116,14 @@ func _input(event):
 	elif Global.cdialog.size() == 0&& !ishud:
 		get_tree().root.add_child.call_deferred(thud)
 		ishud = true
+func _statrebase():
+	if Global.debug:
+		for i in 4:
+			if Global.dparty[i][0] != null:
+				for j in 7:
+					Global.mstats[Global.dparty[i][0]][j] = Global.basestats[Global.dparty[i][0]][j] * Global.dlevel[Global.dparty[i][0]]
+	else:
+		for i in 4:
+			if Global.party[i][0] != null:
+				for j in 7:
+					Global.mstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.dparty[i][0]]

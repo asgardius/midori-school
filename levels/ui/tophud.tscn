@@ -27,7 +27,7 @@ script = ExtResource("1_pntuv")
 
 [node name="Bossbg" type="ColorRect" parent="CanvasLayer"]
 offset_left = 467.0
-offset_right = 728.0
+offset_right = 768.0
 offset_bottom = 50.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
@@ -59,13 +59,13 @@ theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Boss/HBoxContainer2"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
 
 [node name="Topminibg" type="ColorRect" parent="CanvasLayer"]
-offset_right = 397.0
+offset_right = 438.0
 offset_bottom = 116.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
@@ -108,7 +108,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -128,7 +128,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -147,7 +147,7 @@ layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -159,7 +159,7 @@ color = Color(0, 0, 1, 1)
 
 [node name="Topleftbg" type="ColorRect" parent="CanvasLayer"]
 visible = false
-offset_right = 397.0
+offset_right = 437.0
 offset_bottom = 476.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
@@ -206,7 +206,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -226,7 +226,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -245,7 +245,7 @@ layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -292,7 +292,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -312,7 +312,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -331,7 +331,7 @@ layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -378,7 +378,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -398,7 +398,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -417,7 +417,7 @@ layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -464,7 +464,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
 theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -484,7 +484,7 @@ theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
 theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
@@ -503,7 +503,7 @@ layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(83, 0)
+custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2

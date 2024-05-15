@@ -49,7 +49,8 @@ func _on_noob_pressed():
 	Global.dificulty = 1
 	Global.cplace = [1, 11, 19]
 	Global.live = 1
-	Global.party = [[0,0], null, null, null]
+	Global.cpchar = 0
+	Global.party = [[0,0], [null,null], [null,null], [null,null]]
 	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
 	pass # Replace with function body.
 
