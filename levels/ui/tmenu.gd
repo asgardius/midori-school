@@ -26,9 +26,9 @@ func _level():
 func _input(event):
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().change_scene_to_file("res://title.tscn")
-   # Mouse in viewport coordinates.
+#    Mouse in viewport coordinates.
 #	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
-		#print("Mouse Click/Unclick at: ", event.position)
+#		print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
 #			_on_debug_pressed()
 #		if highlighted == 2:
@@ -40,7 +40,8 @@ func _input(event):
 			
 
 func _on_start_pressed():
-	_level()
+	get_tree().change_scene_to_file("res://levels/ui/newgame.tscn")
+	#_level()
 	#pass # Replace with function body.
 
 

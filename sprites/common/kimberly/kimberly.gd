@@ -15,6 +15,7 @@ var attack = 59
 var crit = 5
 
 
+
 func _ready():
 	if Global.isboss:
 		Global.cboss = ["Kimberly Arch",0,0]

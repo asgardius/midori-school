@@ -46,17 +46,28 @@ func _on_exit_pressed():
 
 
 func _on_noob_pressed():
+	_statrebase()
 	Global.dificulty = 1
 	Global.cplace = [1, 11, 19]
 	Global.live = 1
 	Global.cpchar = 0
 	Global.party = [[0,0], [null,null], [null,null], [null,null]]
-	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
-	pass # Replace with function body.
+	Global.ccutscene = 0
+	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
+	#pass # Replace with function body.
 
 
 func _on_thisfirst_pressed():
-	pass # Replace with function body.
+	_statrebase()
+	Global.dificulty = 2
+	Global.cplace = [1, 11, 19]
+	Global.live = 1
+	Global.cpchar = 0
+	Global.party = [[0,0], [null,null], [null,null], [null,null]]
+	Global.ccutscene = 0
+	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
+	#pass # Replace with function body.
+
 
 
 func _on_challenge_pressed():
@@ -65,3 +76,10 @@ func _on_challenge_pressed():
 
 func _on_maniac_pressed():
 	pass # Replace with function body.
+
+
+func _statrebase():
+	for i in 4:
+		if Global.party[i][0] != null:
+			for j in 7:
+				Global.cstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.dparty[i][0]]

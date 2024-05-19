@@ -85,22 +85,22 @@ func _input(event):
 
 func _charinit():
 	if Global.debug:
-		speed = Global.basestats[Global.dparty[Global.dcpchar][0]][6]
+		speed = Global.mstats[Global.dparty[Global.dcpchar][0]][6]
 		#print(Global.dparty[Global.dcpchar][0])
 		#print(speed)
 	else:
-		speed = Global.basestats[Global.party[Global.cpchar][0]][6]
+		speed = Global.mstats[Global.party[Global.cpchar][0]][6]
 		#print(Global.dparty[Global.cpchar][0])
 		#print(speed)
 	_charswitch()
 
 func _charswitch():
 	if Global.debug:
-		if csprite != null && speed!=Global.basestats[Global.dparty[csprite][0]][6]:
+		if csprite != null && speed!=Global.mstats[Global.dparty[csprite][0]][6]:
 			print("Script Kiddie")
-			speed = Global.dparty/800
+			speed = Global.dparty/0
 		else:
-			speed = Global.basestats[Global.dparty[Global.dcpchar][0]][6]
+			speed = Global.mstats[Global.dparty[Global.dcpchar][0]][6]
 		if Global.dcpchar != csprite:
 			csprite = Global.dcpchar
 			sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
@@ -108,11 +108,11 @@ func _charswitch():
 		print(Global.dparty[Global.dcpchar][0])
 		print(speed)
 	else:
-		if csprite != null && speed!=Global.basestats[Global.party[Global.cpchar][0]][6]:
+		if csprite != null && speed!=Global.mstats[Global.party[Global.cpchar][0]][6]:
 			print("Script Kiddie")
-			speed = Global.party/800
+			speed = Global.party/0
 		else:
-			speed = Global.basestats[Global.party[Global.dcpchar][0]][6]
+			speed = Global.mstats[Global.party[Global.dcpchar][0]][6]
 		if Global.cpchar != csprite:
 			csprite = Global.cpchar
 			sprite.texture = load(Global.pchars[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])

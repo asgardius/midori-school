@@ -20,28 +20,47 @@ func _process(delta):
 func _physics_process(delta):
 	pass
 
-func _on_body_entered(body):if !body.is_in_group(btype):
-		if body.is_in_group("players") || body.is_in_group("boss") || body.is_in_group("enemies"):
+func _on_body_entered(body):
+	if !body.is_in_group(btype) && Global.live == 1:
+		if body.is_in_group("players") && Global.dificulty != 1:
 			if body.weakness == speciality:
 				print("weakness")
 				Input.start_joy_vibration(0,0,1,3)
 				if Global.debug:
-					Global.dstats[Global.dparty[Global.dcpchar][0]][0] -= attack * crit
+					if Global.dstats[Global.dparty[Global.dcpchar][0]][0] > (attack * crit):
+						Global.dstats[Global.dparty[Global.dcpchar][0]][0] -= attack * crit
+					else:
+						Global.dstats[Global.dparty[Global.dcpchar][0]][0] = 0
 				else:
-					Global.dstats[Global.party[Global.cpchar][0]][0] -= attack * crit
+					if Global.cstats[Global.party[Global.cpchar][0]][0] > (attack * crit):
+						Global.cstats[Global.party[Global.cpchar][0]][0] -= attack * crit
+					else:
+						Global.cstats[Global.party[Global.cpchar][0]][0] = 0
 			else:
 				Input.start_joy_vibration(0,1,0,2)
 				if Global.debug:
-					Global.dstats[Global.dparty[Global.dcpchar][0]][0] -= attack
+					if Global.dstats[Global.dparty[Global.dcpchar][0]][0] > attack:
+						Global.dstats[Global.dparty[Global.dcpchar][0]][0] -= attack
+					else:
+						Global.dstats[Global.dparty[Global.dcpchar][0]][0] = 0
 				else:
-					Global.dstats[Global.party[Global.cpchar][0]][0] -= attack
+					if Global.cstats[Global.party[Global.cpchar][0]][0] > attack:
+						Global.cstats[Global.party[Global.cpchar][0]][0] -= attack
+					else:
+						Global.cstats[Global.party[Global.cpchar][0]][0] = 0
+		elif body.is_in_group("boss") && Global.dificulty != 1:
+			if body.weakness == 0:
+				print("weakness")
+		elif body.is_in_group("enemies") && Global.dificulty != 1:
+			if body.weakness == 0:
+				print("weakness")
 	#if body.is_in_group("players"):
 	#	Global.live = 2
 	#elif body.is_in_group("enemies"):
 	#	Global.live = 3
 	#elif body.is_in_group("boss"):
 	#	Global.live = 3
-		#queue_free()
+		queue_free()
 
 
 

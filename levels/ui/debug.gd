@@ -1,5 +1,6 @@
 extends Control
 func _ready():
+	_statrebase()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Global.debug = true
 	$"VBoxContainer/Gamepad Test".grab_focus()
@@ -55,3 +56,9 @@ func _on_back_pressed():
 
 func _on_gamepad_test_pressed():
 	get_tree().change_scene_to_file("res://levels/ui/gamepadtest.tscn")
+
+func _statrebase():
+	for i in 4:
+		if Global.dparty[i][0] != null:
+			for j in 7:
+				Global.dstats[Global.dparty[i][0]][j] = Global.basestats[Global.dparty[i][0]][j] * Global.dlevel[Global.dparty[i][0]]

@@ -55,6 +55,26 @@ func _input(event):
 			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
 		else:
 			get_tree().change_scene_to_file("res://title.tscn")
+	if Input.is_action_just_pressed("ui_accept"):
+		if Global.cutscenes[Global.ccutscene][3]:
+			get_tree().root.remove_child(bhud)
+			get_tree().root.remove_child(level)
+			bgsound.stop()
+			if Global.debug:
+				get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+			else:
+				get_tree().change_scene_to_file(Global.cutscenes[Global.ccutscene][1])
+		else:
+			Global.ccutscene += 1
+			get_tree().root.remove_child(level)
+			level = load(Global.cutscenes[Global.ccutscene][0]).instantiate()
+			if musictrack != Global.cutscenes[Global.ccutscene][2]:
+				bgsound.stop()
+				musictrack = Global.cutscenes[Global.ccutscene][2]
+				music = load(musictrack)
+				bgsound.stream = music
+				bgsound.play(0)
+			get_tree().root.add_child.call_deferred(level)
 	#if (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_UP)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_UP))):
 	#	if Global.debug:
 	#		if Global.dparty[0][0] != null:
