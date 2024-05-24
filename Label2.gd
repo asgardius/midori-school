@@ -8,7 +8,7 @@ func _ready():
 	else:
 		playername = "player"
 	housefreedom = OS.get_processor_name().contains("AMD Custom APU") && OS.get_processor_name().contains("0405")
-	if OS.get_distribution_name().contains("Kali") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
+	if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
 		Global.sk = true
 	if Global.sk:
 		_sk()
