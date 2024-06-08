@@ -7,6 +7,8 @@ var sfx1 := AudioStreamPlayer.new()
 var musictrack
 var bhud = load("res://levels/bottomhud.tscn").instantiate()
 var thud = load("res://levels/ui/tophud.tscn").instantiate()
+var pmenu = load("res://levels/ui/pause.tscn").instantiate()
+var ispaused = false
 var ishud = true
 
 # Called when the node enters the scene tree for the first time.
@@ -66,13 +68,14 @@ func _process(delta):
 
 func _input(event):
 	if (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK)) && Global.cdialog == []:
-		Global.live = 0
+		ishud = false
 		Global.bossready = false
 		Global.cboss = [null, null, null]
 		get_tree().root.remove_child(thud)
 		get_tree().root.remove_child(bhud)
 		get_tree().root.remove_child(player)
 		get_tree().root.remove_child(level)
+		Global.live = 0
 		if Global.debug:
 			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
 		else:
@@ -110,10 +113,10 @@ func _input(event):
 		sfx1.stream = load(Global.sfxtracks[1])
 		sfx1.play(0)
 		bgsound.play(0)
-	if Global.cdialog.size() != 0 && ishud:
+	if Global.live != 1 && ishud:
 		get_tree().root.remove_child(thud)
 		ishud = false
-	elif Global.cdialog.size() == 0&& !ishud:
+	elif Global.live == 1 && !ishud:
 		get_tree().root.add_child.call_deferred(thud)
 		ishud = true
 func _statrebase():
