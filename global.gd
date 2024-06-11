@@ -5,6 +5,7 @@ var time
 var origmpos
 var mousepos
 var timelimit = 15000
+var exitgame = false
 var wait
 var bossready = false
 var playerx

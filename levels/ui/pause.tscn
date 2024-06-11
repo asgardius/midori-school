@@ -48,3 +48,17 @@ custom_minimum_size = Vector2(123, 0)
 layout_mode = 2
 text = "100/100"
 horizontal_alignment = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+text = "Level"
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(123, 0)
+layout_mode = 2
+text = "99"
+horizontal_alignment = 2

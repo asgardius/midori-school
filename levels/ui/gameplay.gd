@@ -67,19 +67,8 @@ func _process(delta):
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
-	if (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK)) && Global.cdialog == []:
-		ishud = false
-		Global.bossready = false
-		Global.cboss = [null, null, null]
-		get_tree().root.remove_child(thud)
-		get_tree().root.remove_child(bhud)
-		get_tree().root.remove_child(player)
-		get_tree().root.remove_child(level)
-		Global.live = 0
-		if Global.debug:
-			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
-		else:
-			get_tree().change_scene_to_file("res://title.tscn")
+	if Input.is_action_just_pressed("Pause") && Global.cdialog == []:
+		_exit()
 	if Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_up"):
 		if Global.debug:
 			if Global.dparty[0][0] != null:
@@ -130,3 +119,21 @@ func _statrebase():
 			if Global.party[i][0] != null:
 				for j in 7:
 					Global.mstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.dparty[i][0]]
+func _pausemenu():
+	if Global.live == 4 && !ispaused:
+		get_tree().root.remove_child(bhud)
+	elif Global.live != 4 && ispaused:
+		get_tree().root.add_child.call_deferred(bhud)
+func _exit():
+	ishud = false
+	Global.bossready = false
+	Global.cboss = [null, null, null]
+	get_tree().root.remove_child(thud)
+	get_tree().root.remove_child(bhud)
+	get_tree().root.remove_child(player)
+	get_tree().root.remove_child(level)
+	Global.live = 0
+	if Global.debug:
+		get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+	else:
+		get_tree().change_scene_to_file("res://title.tscn")
