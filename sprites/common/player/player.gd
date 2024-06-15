@@ -61,7 +61,7 @@ func _physics_process(delta):
 
 func _input(event):
 	if Global.live == 1:
-		if Input.is_action_pressed("schar"):
+		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
 			_charswitch()
 		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
 			bpress = true

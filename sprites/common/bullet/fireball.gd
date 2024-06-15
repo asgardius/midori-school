@@ -18,7 +18,7 @@ func _process(delta):
 	pass
 	
 func _physics_process(delta):
-	if isvisible.is_on_screen():
+	if isvisible.is_on_screen() && Global.live != 4:
 		if direction == null:
 			position += velocity * delta
 		else:

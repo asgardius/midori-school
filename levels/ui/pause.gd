@@ -11,6 +11,7 @@ func _ready():
 	chealthf = $CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer/Label2
 	clevel = $CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2/Label2
 	_fetchdata()
+	$CanvasLayer/HBoxContainer2/VBoxContainer2/Exit.grab_focus()
 	#pass # Replace with function body.
 
 
@@ -32,3 +33,8 @@ func _fetchdata():
 		cff.texture = load(Global.hudfaces[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
 		chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][0]))
 		clevel.set_text(str(Global.level[Global.party[Global.cpchar][0]]))
+
+
+func _on_exit_pressed():
+	Global.exitgame = true
+	#pass # Replace with function body.
