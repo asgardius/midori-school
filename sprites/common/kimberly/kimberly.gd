@@ -93,6 +93,7 @@ func shoot(angle):
 	new_bullet.btype = "boss"
 	new_bullet.attack = attack
 	new_bullet.crit = crit
+	new_bullet.speciality = 3
 	get_parent().call_deferred("add_child",new_bullet)
 
 

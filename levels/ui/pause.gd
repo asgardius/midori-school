@@ -10,8 +10,8 @@ func _ready():
 	cnf = $CanvasLayer/HBoxContainer/VBoxContainer/Cname
 	chealthf = $CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer/Label2
 	clevel = $CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2/Label2
-	_fetchdata()
 	$CanvasLayer/HBoxContainer2/VBoxContainer2/Exit.grab_focus()
+	_fetchdata()
 	#pass # Replace with function body.
 
 

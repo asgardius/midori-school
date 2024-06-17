@@ -8,10 +8,13 @@ var sprite
 var anim
 var speed
 var csprite
+var attack
+var crit
 var bpress = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var weakness
+var speciality
 
 func _ready():
 	add_to_group("players")
@@ -72,6 +75,9 @@ func _input(event):
 				bullet = load(Global.pbbullets[Global.party[Global.cpchar][0]])
 			var new_pbullet = bullet.instantiate()
 			new_pbullet.btype = "players"
+			new_pbullet.attack = attack
+			new_pbullet.crit = crit
+			new_pbullet.speciality = speciality
 			new_pbullet.velocity = Vector2(0, -speed).rotated(deg_to_rad(angle * 90))
 			var rposition = Vector2(0, -96).rotated(deg_to_rad(angle * 90))
 			if angle == 2:
@@ -86,10 +92,14 @@ func _input(event):
 func _charinit():
 	if Global.debug:
 		speed = Global.mstats[Global.dparty[Global.dcpchar][0]][6]
+		attack = Global.mstats[Global.dparty[Global.dcpchar][0]][2]
+		crit = Global.mstats[Global.dparty[Global.dcpchar][0]][3]
 		#print(Global.dparty[Global.dcpchar][0])
 		#print(speed)
 	else:
 		speed = Global.mstats[Global.party[Global.cpchar][0]][6]
+		attack = Global.mstats[Global.party[Global.cpchar][0]][2]
+		crit = Global.mstats[Global.party[Global.cpchar][0]][3]
 		#print(Global.dparty[Global.cpchar][0])
 		#print(speed)
 	_charswitch()
@@ -105,6 +115,7 @@ func _charswitch():
 			csprite = Global.dcpchar
 			sprite.texture = load(Global.pchars[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
 			weakness = Global.specialities[Global.pcspecialities[Global.dparty[Global.dcpchar][0]]]
+			speciality = Global.pcspecialities[Global.dparty[Global.dcpchar][0]]
 		print(Global.dparty[Global.dcpchar][0])
 		print(speed)
 	else:
@@ -117,3 +128,4 @@ func _charswitch():
 			csprite = Global.cpchar
 			sprite.texture = load(Global.pchars[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
 			weakness = Global.specialities[Global.pcspecialities[Global.party[Global.cpchar][0]]]
+			speciality = Global.pcspecialities[Global.party[Global.cpchar][0]]

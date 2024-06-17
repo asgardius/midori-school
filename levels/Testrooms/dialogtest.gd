@@ -12,5 +12,6 @@ func _process(delta):
 	pass
 
 func _input(event):
-	if Global.cdialog.size() == 0:
+	if Global.cdialog.size() != 0 && Global.live == 1:
 		get_tree().root.remove_child(talk)
+		Global.cdialog = []

@@ -45,5 +45,4 @@ func _input(event):
 			if isboss:
 				Global.bossready = true
 			Global.live = 1
-			Global.cdialog = []
 		press = false

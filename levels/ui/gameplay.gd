@@ -132,6 +132,7 @@ func _pausemenu():
 		get_tree().root.remove_child(pmenu)
 		get_tree().root.add_child.call_deferred(bhud)
 		ispaused = false
+		pmenu = load("res://levels/ui/pause.tscn").instantiate()
 		Global.live = 1
 func _exit():
 	Global.exitgame = false

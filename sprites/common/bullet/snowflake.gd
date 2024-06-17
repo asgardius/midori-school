@@ -4,6 +4,7 @@ var direction
 var speed = 100
 var btype
 var isvisible
+var speciality
 var attack
 var crit
 # Called when the node enters the scene tree for the first time.
@@ -30,7 +31,7 @@ func _on_body_entered(body):
 		if body.is_in_group("players") && Global.dificulty != 1:
 			if body.weakness == 0:
 				print("weakness")
-				Input.start_joy_vibration(0,0,1,3)
+				#Input.start_joy_vibration(0,0,1,3)
 				if Global.debug:
 					if Global.dstats[Global.dparty[Global.dcpchar][0]][0] > (attack * crit):
 						Global.dstats[Global.dparty[Global.dcpchar][0]][0] -= attack * crit
@@ -42,7 +43,7 @@ func _on_body_entered(body):
 					else:
 						Global.cstats[Global.party[Global.cpchar][0]][0] = 0
 			else:
-				Input.start_joy_vibration(0,1,0,2)
+				#Input.start_joy_vibration(0,1,0,2)
 				if Global.debug:
 					if Global.dstats[Global.dparty[Global.dcpchar][0]][0] > attack:
 						Global.dstats[Global.dparty[Global.dcpchar][0]][0] -= attack
@@ -56,6 +57,15 @@ func _on_body_entered(body):
 		elif body.is_in_group("boss") && Global.dificulty != 1:
 			if body.weakness == 0:
 				print("weakness")
+				if Global.cboss[1] >= (attack * crit):
+						Global.cboss[1] -= attack * crit
+				else:
+					Global.cboss[1] = 0
+			else:
+				if Global.cboss[1] >= (attack):
+						Global.cboss[1] -= attack
+				else:
+					Global.cboss[1] = 0
 		elif body.is_in_group("enemies") && Global.dificulty != 1:
 			if body.weakness == 0:
 				print("weakness")
