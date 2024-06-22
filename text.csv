@@ -87,5 +87,18 @@ DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラ�
 DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso, El perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
 DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
+MENU_CHARACTER;Character List;Lista de Personajes;キャラクター一覧
+MENU_TEAM;Team List;Lista de Equipos;チーム
+MENU_MAP;World Map;Mapa Mundial;世界地図
+MENU_SETTINGS;Settings;Ajustes;設定
+MENU_BOUKEN;Adventure Journal;Diario de Aventura;冒険日記
+MENU_CHALLENGES;Challenges;Desafíos;チャレンジリスト
+MENU_BACKPACK;Backpack;Mochila;バックパック
+MENU_EXIT;Return to Title;Regresar a Título;タイトルに戻る
 CUTSCENE_0_NAME;Prologue;Prólogo;プロローグ
 CUTSCENE_0_0;most underrated children will be the best magicians\nFalcighol Arch, Kaizo Magic School founder;Los niños más subestimados serán los mejores magos\nFalcighol Arch, fundador de la Escuela de Magia Kaizo;最も過小評価されている子供たちが最高のマジシャンになるだろう\nファルシゴール・アーチ、カイゾー・マジック・スクール創設者
+CUTSCENE_0_1;Hello, my name is Midori Asgardius, I am a 15 year old elf girl;Hola, mi nombre es Midori Asgardius,\nSoy una niña elfo de 15 años;こんにちは、私の名前はミドリ・アスガルディウスです。\n15歳のエルフの女の子です
+CUTSCENE_0_2;They say I run around here and there as if fear didn't exist;Dicen que corro de aquí para allá como si el miedo no existiera;まるで恐怖が存在しないかのように、私はあちこち走り回っていると彼らは言う
+CUTSCENE_0_3;But I'm actually a pretty shy and reserved girl;Pero en realidad soy una niña bastante tímida y reservada;でも実際は私はかなり内気で控えめな女の子です
+CUTSCENE_0_4;I love reading, when I concentrate\nno one will bother me;Me encanta leer, cueando me\nconcentro nadie me molestará;私は読書が大好きです。集中すれば誰にも邪魔されません
+CUTSCENE_0_5;A very funny anecdote was when I set fire to\nmy adoptive mother's, trophy room;Una anécdota muy divertida fue cuando incendié la\nsala de trofeos de mi madre adoptiva;とても面白い逸話は、\n私が養母のトロフィールームに火をつけた時のことです

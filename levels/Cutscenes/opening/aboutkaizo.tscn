@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://coc14j3ju0w16" path="res://backgounds/kaizoclassroom.jpg" id="1_lebbt"]
 [ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_qhxdm"]
 
-[node name="Opening" type="Node2D"]
+[node name="Aboutkaizo" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 40.0

@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmmmmfcc0lp5"]
+
+[ext_resource type="Texture2D" uid="uid://chr01sorihbb2" path="res://backgounds/Midori No Akuma.jpg" id="1_v5r6a"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_fog7h"]
+
+[node name="Fearlessmidori" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1278.0
+offset_bottom = 600.0
+texture = ExtResource("1_v5r6a")
+
+[node name="Text" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 606.0
+offset_right = 1224.0
+offset_bottom = 714.0
+theme_override_font_sizes/font_size = 40
+text = "CUTSCENE_0_2"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("2_fog7h")]

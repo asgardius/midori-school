@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://v4ge140gc645"]
+
+[ext_resource type="Texture2D" uid="uid://dnmdgwuabqg58" path="res://backgounds/Midori Asgardius Sleeping on Grass.jpg" id="1_uqps8"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_j60n0"]
+
+[node name="Midorihello" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1278.0
+offset_bottom = 600.0
+texture = ExtResource("1_uqps8")
+
+[node name="Text" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 606.0
+offset_right = 1224.0
+offset_bottom = 714.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "CUTSCENE_0_1"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("2_j60n0")]

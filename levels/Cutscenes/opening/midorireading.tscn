@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi8dsxjedvmxw"]
+
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_0wcve"]
+
+[node name="Midorireading" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1278.0
+offset_bottom = 600.0
+
+[node name="Text" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 606.0
+offset_right = 1224.0
+offset_bottom = 714.0
+theme_override_font_sizes/font_size = 40
+text = "CUTSCENE_0_4"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("2_0wcve")]
