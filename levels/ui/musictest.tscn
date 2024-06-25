@@ -145,14 +145,14 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
 text = "SONG10_LABEL"
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
-layout_mode = 2
-
-[node name="Natasha’s Theme" type="Button" parent="BoxContainer/VBoxContainer2"]
+[node name="Natasha’s Theme" type="Button" parent="BoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
 text = "SONG11_LABEL"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
 
 [node name="Dungeon of Destruction" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
@@ -208,6 +208,18 @@ theme_override_font_sizes/font_size = 25
 theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
 text = "SONG20_LABEL"
 
+[node name="ALSA" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "SONG21_LABEL"
+
+[node name="Elysium" type="Button" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+text = "SONG22_LABEL"
+
 [node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
@@ -225,7 +237,7 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Overworld (Earth)" to="." method="_on_overworld_earth_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/The Zubmarine Zone" to="." method="_on_the_zubmarine_zone_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Radioactive Desert" to="." method="_on_radioactive_desert_pressed"]
-[connection signal="pressed" from="BoxContainer/VBoxContainer2/Natasha’s Theme" to="." method="_on_natashas_theme_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Natasha’s Theme" to="." method="_on_natashas_theme_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Dungeon of Destruction" to="." method="_on_dungeon_of_destruction_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Final Boss Fight" to="." method="_on_final_boss_fight_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Ending Theme" to="." method="_on_ending_theme_pressed"]
@@ -235,4 +247,6 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/The Magic School" to="." method="_on_the_magic_school_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Deep Forest" to="." method="_on_deep_forest_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Boss Fight (Earth)" to="." method="_on_boss_fight_earth_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/ALSA" to="." method="_on_alsa_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Elysium" to="." method="_on_elysium_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Back" to="." method="_on_back_pressed"]

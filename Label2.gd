@@ -8,7 +8,7 @@ func _ready():
 	else:
 		playername = "player"
 	housefreedom = OS.get_processor_name().contains("AMD Custom APU") && OS.get_processor_name().contains("0405")
-	if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
+	if OS.get_distribution_name().contains("Kali") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
 		Global.sk = true
 	if Global.sk:
 		_sk()
@@ -22,6 +22,8 @@ func _ready():
 		if OS.get_environment("MANGOHUD").contains("1"):
 			Global.mangohud = true
 			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"
+		if OS.get_environment("WAYLAND_DISPLAY").length() > 0:
+			welcometext = welcometext+"\nKung Fury was Willy’s first victim, Wright’s wife his second one, and a robot avoided a third one"
 		welcometext = welcometext+"\nbooting virtual machine"
 		#This can be used to detect background process, may be useful later
 		#var output = []

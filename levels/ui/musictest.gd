@@ -180,3 +180,15 @@ func _on_boss_fight_earth_pressed():
 	player.stream = load(Global.musictracks[20])
 	infobox.set_text(tr("SONG20_INFO"))
 	player.play(0)
+
+
+func _on_alsa_pressed() -> void:
+	player.stream = load(Global.musictracks[21])
+	infobox.set_text(tr("SONG21_INFO"))
+	player.play(0)
+
+
+func _on_elysium_pressed() -> void:
+	player.stream = load(Global.musictracks[22])
+	infobox.set_text(tr("SONG22_INFO"))
+	player.play(0)

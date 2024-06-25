@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://sprites/common/player/player.gd" id="1_6vvcv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dj8gt"]
-size = Vector2(86, 68)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6crqd"]
+size = Vector2(86, 256)
 
 [sub_resource type="Animation" id="Animation_i5rhc"]
 length = 0.001
@@ -169,9 +169,7 @@ hframes = 3
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 94)
-shape = SubResource("RectangleShape2D_dj8gt")
-debug_color = Color(0, 1, 0, 1)
+shape = SubResource("RectangleShape2D_6crqd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
