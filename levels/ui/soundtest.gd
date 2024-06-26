@@ -1,7 +1,11 @@
 extends Control
+var alsatest
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	alsatest = $VBoxContainer/ALSA
 	$"VBoxContainer/Music".grab_focus()
+	if OS.get_name() == "Linux":
+		alsatest.disabled = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -38,3 +42,7 @@ func _on_music_pressed():
 
 func _on_sfx_pressed():
 	get_tree().change_scene_to_file("res://levels/ui/sfxtest.tscn")
+
+
+func _on_alsa_pressed() -> void:
+	get_tree().change_scene_to_file("res://levels/ui/alsatest.tscn")

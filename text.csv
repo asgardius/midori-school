@@ -81,6 +81,8 @@ SONG21_LABEL;ALSA Audio Calibration;Calibración de Audio ALSA;ALSA オーディ
 SONG21_INFO;MrGamer\nHostlov\nA song made to calibrate your sound system while playing this game.\nThis does not work with bluetooth headset or weird kernels;MrGamer\nHostlov\nUna canción hecha para calibrar tu sistema de sonido mientras juegas a este juego.\nEsto no funciona con auriculares bluetooth o kernels extraños;MrGamer\nHostlov\nこのゲームをプレイ中にサウンドシステムを調整するために作られた曲。Bluetoothヘッドセットや奇妙なカーネルでは動作しません
 SONG22_LABEL;Elysium Fields;Campos Elíseos;エリジウム フィールド
 SONG22_INFO;4mat\nEternity\nA song about eternity and immutability;4mat\nEternity\nUna canción sobre la eternidad y la inmutabilidad;4mat\nEternity\n永遠と不変性についての歌
+ALSA_TEST_MENU;ALSA Audio Calibration;Calibración de Audio ALSA;ALSA オーディオキャリブレーション
+ALSA_TEST_SPK;Use Left and Right to test speakers;Utilice izquierda y derecha para probar los altavoces;左と右を使ってスピーカーをテストする
 DIALOG_TEST_0;What is this place?;¿Qué es este lugar?;この場所は何ですか？
 DIALOG_TEST_1;I'm here;Estoy aquí;私はここにいます
 DIALOG_TEST_2;I got you, cheap copy;Te atrapé, copia barata;手に入れたよ、安物コピー

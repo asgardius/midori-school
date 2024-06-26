@@ -66,6 +66,13 @@ theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_4arqn")
 text = "BUTTON_SFXTEST"
 
+[node name="ALSA" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_4arqn")
+disabled = true
+text = "ALSA_TEST_MENU"
+
 [node name="Back" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
@@ -74,4 +81,5 @@ text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="VBoxContainer/Music" to="." method="_on_music_pressed"]
 [connection signal="pressed" from="VBoxContainer/Sfx" to="." method="_on_sfx_pressed"]
+[connection signal="pressed" from="VBoxContainer/ALSA" to="." method="_on_alsa_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]
