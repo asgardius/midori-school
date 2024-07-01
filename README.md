@@ -23,3 +23,15 @@ Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since mu
 # What is a Genshin Killer?
 
 From my point of view, a Genshin Killer is an Anime RPG which include elves among its playable Characters. This term is used since Genshin Impact gained popularity. Midori in the Magic School is a Genshin Killer because most of its playable characters are elves. Genshin Impact has 3 playable characters that look like elves. Honkai Impact 3rd has a playable elf (Elysia). Wuthering Waves also has an elf as a playable character (Yinlin, a tribute to Kimberly Arch from Midori in the Magic School). Tower of Fantasy and Honkai Star Rail aren't Genshin Killers because those games haven't playable characters that look like elves. Somebody else might have another point of view about this term, but won't be used here
+
+# Why this game doesn't have builds for Microsoft Windows? Most players are using that OS
+
+Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better
+
+# Why a 2d game?
+
+I don't have experience creating 3d models, but i have experience drawing on paper. For this reason a drawing tablet, GIMP and Krita are a perfect combo for me. After doing some tests, alpha builds from this game can be played on Steam Deck for 10 hours, while mainstream 3d games like Cyberpunk 2077 can be played for 90 minutes. A videogame created for handheld devices is focused on fun mechanincs, not fancy graphics
+
+# How much text have in-game dialogs?
+
+Almost nothing. If you want to know game plot, you can read it separately as an ebook
