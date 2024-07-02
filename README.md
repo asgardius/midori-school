@@ -35,3 +35,7 @@ I don't have experience creating 3d models, but i have experience drawing on pap
 # How much text have in-game dialogs?
 
 Almost nothing. If you want to know game plot, you can read it separately as an ebook
+
+# About Falcighol Setalth Anticheat System
+
+This game is the first to use Falcighol Stealth Anticheat, an anticheat system based on integrity check which is part of game code. Some player actions will trigger an integrity check, if checksum match, you can play without issues. If checksum mismatch, game will crash. You can use memory scanners to check current game data, but you must avoid changing some value, otherwise checksum will fail and this game will crash. Popful Mail for Sega CD has a similar anticheat system, and cheaters must change unchecked variables to avoid a game crash (hp meter is only checked value on that game, but you can set infifite ressurrect elixir instead)
