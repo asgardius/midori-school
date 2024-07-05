@@ -49,7 +49,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO
-	if Global.exitgame:
+	if Global.live == 6:
 		_exit()
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
@@ -139,11 +139,11 @@ func _exit():
 	ishud = false
 	Global.bossready = false
 	Global.cboss = [null, null, null]
-	if Global.live == 4:
-		get_tree().root.remove_child(pmenu)
-	else:
-		get_tree().root.remove_child(thud)
-		get_tree().root.remove_child(bhud)
+	#if Global.live == 4:
+	get_tree().root.remove_child(pmenu)
+	#else:
+	#	get_tree().root.remove_child(thud)
+	#	get_tree().root.remove_child(bhud)
 	#get_tree().root.remove_child(player)
 	get_tree().root.remove_child(level)
 	Global.live = 0

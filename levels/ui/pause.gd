@@ -36,5 +36,5 @@ func _fetchdata():
 
 
 func _on_exit_pressed():
-	Global.exitgame = true
+	Global.live = 6
 	#pass # Replace with function body.

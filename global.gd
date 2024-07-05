@@ -49,7 +49,7 @@ var firstrun
 const musictracks = ["res://music/midorinoakuma.wav", "res://music/seahorse.wav", "res://music/chinesegoat.wav", "res://music/doyoufeelold.wav", "res://music/doyiuneedahealer.wav", "res://music/adayatceres.wav", "res://music/twintroublemakers.wav", "res://music/easyquiz.wav", "res://music/neowave.wav", "res://music/multivectorsubmarines.wav", "res://music/halfgeniegirls.wav", "res://music/rusianmaverickfairy.wav", "res://music/blacksmithofdestruction.wav", "res://music/shininglikefireworks.wav", "res://music/sadtrashcan.wav", "res://music/akikoletter.wav", "res://music/asadcat.wav", "res://music/lilydesire.wav", "res://music/scholartrip.wav", "res://music/quantumice.wav", "res://music/unreeeal.wav", "res://music/alsa.wav", "res://music/silverblue.wav"]
 const sfxtracks = ["res://sfx/braindamage.wav", "res://sfx/gaugefill.wav", "res://sfx/boomboombakudan.wav"]
 var debug = false
-const release = "R0.1.9-alpha"
+const release = "R0.1.9-dev"
 var sk = false
 var xm = 0
 var ym = 0
