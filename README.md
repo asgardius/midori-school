@@ -2,8 +2,8 @@
 
 <img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/icon.png>
 
-An Action Role Playing Game inspired by Alundra, Touhou Project, Megaman X, among others. The only Open Source Genshin Killer and the only game at the moment that offers official bittorrent downloads. This game is made using Godot Engine. You can find engine source code at https://git.asgardius.company/asgardius/virtualx-engine
-At the moment this game is only a proof of concept. If you want to help send me an email to asgardius@asgardius.company
+An Action Role Playing Game inspired by Alundra, Touhou Project, Megaman X, among others. The only Open Source Genshin Killer and the only game at the moment that offers official bittorrent downloads. This game is made using Godot Engine
+At the moment this game is in alpha development stage. If you want to help send me an email to asgardius@asgardius.company
 You can find game documentation at https://cloud.asgardius.company/s/3tPKHsMznzMjzEc?path=%2Fgame%20documentation%2FMidori%20in%20the%20Magic%20School
 
 A beta build will be released at septembre 28 2024 (unfunaversary build) and First stable release is scheduled near Half Life 3 release
@@ -17,8 +17,6 @@ If you want to help in game development ask at https://matrix.to/#/!bqRfvdEXZATm
 # Plot
 
 Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since much before than Earth. Most Asteroid Belt natives have pointy ears. There are also animal-based humanoids. All humans from the universe lives here since their planet was destroyed by the Alcohol Discs, but very few of them remains. You are Midori Asgardius, a 15 years old elf girl also know as "The Walking Explosive". You are a student at Kaizo Magic School. Your best friends are Diana Asgardius "The Tuna" and Rikka Grub "The Chuunibyou Cat". 10+ playable characters are awaiting for you (optional gacha machine sold separately). Deal Kung Fu Troublemakers, fight against bullet hell themed bosses, solve exciting puzzles, dig inside trashcans, find beautiful Multi Vector Submarines, defeat martians and Discover the truth of this universe from an unique point of view. If you are maniac try our super hardcore mode. Be kind and have a happy unfunaversary this year. If you have any doubt about this game ask to your father and Kaizo's principal: Page Asgardius. Will you be able to find the secret behind Midori's explosive personality?
-
-# Midori in the Magic School
 
 # What is a Genshin Killer?
 
@@ -38,4 +36,8 @@ Almost nothing. If you want to know game plot, you can read it separately as an 
 
 # About Falcighol Setalth Anticheat System
 
-This game is the first to use Falcighol Stealth Anticheat, an anticheat system based on integrity check which is part of game code. Some player actions will trigger an integrity check, if checksum match, you can play without issues. If checksum mismatch, game will crash. You can use memory scanners to check current game data, but you must avoid changing some value, otherwise checksum will fail and this game will crash. Popful Mail for Sega CD has a similar anticheat system, and cheaters must change unchecked variables to avoid a game crash (hp meter is only checked value on that game, but you can set infifite ressurrect elixir instead)
+This game is the first to use Falcighol Stealth Anticheat, an anticheat system based on integrity check which is part of game code. Some player actions will trigger an integrity check, if checksum match, you can play without issues. If checksum mismatch, game will crash. You can use memory scanners to check current game data, but you must avoid changing some value, otherwise checksum will fail and this game will crash. Popful Mail for Sega CD has a similar anticheat system, and cheaters must change unchecked variables to cheat without crashing that game (hp meter is only checked value on that game, but you can set infifite ressurrect elixir instead). A 4 player LAN mode is planned. This anticheat system will be used at Asgardius Online MMO (that game will be ready at Half Life 4 release day)
+
+# What is virtualxrpg?
+
+Virtualxrpg is the codename used for this game. This is an attempt to create a Role Playing Game based on Asgardius Virtualx. I tried creating one with Page Asgardius as Main Character, but i ran out of ideas. My second attempt was a photorealistic RPG (something like Zelda's Adenture for CDI) with 2 playable elf girls. These characters became Pamela and Lety. My third attempt is a minimalistic Anime RPG with an elf girl that loves fireworks (Inspired by Lily Klee from Genshin Impact: 4th Honkai). This is the reason why this game is promoted as a Genshin Killer
