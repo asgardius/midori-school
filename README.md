@@ -6,7 +6,7 @@ An Action Role Playing Game inspired by Alundra, Touhou Project, Megaman X, amon
 At the moment this game is in alpha development stage. If you want to help send me an email to asgardius@asgardius.company
 You can find game documentation at https://cloud.asgardius.company/s/3tPKHsMznzMjzEc?path=%2Fgame%20documentation%2FMidori%20in%20the%20Magic%20School
 
-A beta build will be released at septembre 28 2024 (unfunaversary build) and First stable release is scheduled near Half Life 3 release
+A beta build will be released at september 28 2024 (unfunaversary build) and First stable release is scheduled near Half Life 3 release
 
 Official video channel https://video.asgardius.company/c/asgardius_virtualx
 
@@ -36,8 +36,16 @@ Almost nothing. If you want to know game plot, you can read it separately as an 
 
 # About Falcighol Setalth Anticheat System
 
-This game is the first to use Falcighol Stealth Anticheat, an anticheat system based on integrity check which is part of game code. Some player actions will trigger an integrity check, if checksum match, you can play without issues. If checksum mismatch, game will crash. You can use memory scanners to check current game data, but you must avoid changing some value, otherwise checksum will fail and this game will crash. Popful Mail for Sega CD has a similar anticheat system, and cheaters must change unchecked variables to cheat without crashing that game (hp meter is only checked value on that game, but you can set infifite ressurrect elixir instead). A 4 player LAN mode is planned. This anticheat system will be used at Asgardius Online MMO (that game will be ready at Half Life 4 release day)
+This game is the first to use Falcighol Stealth Anticheat, an anticheat system based on integrity check which is part of game code. Some player actions will trigger an integrity check, if checksum match, you can play without issues. If checksum mismatch, game will crash. You can use memory scanners to check current game data, but you must avoid changing some value, otherwise checksum will fail and this game will crash. Popful Mail for Sega CD has a similar anticheat system, and cheaters must change unchecked variables to cheat without crashing that game (hp meter is only checked value on that game, but you can set infinite ressurrect elixir instead). A 4 player LAN mode is planned. This anticheat system will be used at Asgardius Online MMO (that game may be ready at Half Life 4 release day)
 
 # What is virtualxrpg?
 
 Virtualxrpg is the codename used for this game. This is an attempt to create a Role Playing Game based on Asgardius Virtualx. I tried creating one with Page Asgardius as Main Character, but i ran out of ideas. My second attempt was a photorealistic RPG (something like Zelda's Adenture for CDI) with 2 playable elf girls. These characters became Pamela and Lety. My third attempt is a minimalistic Anime RPG with an elf girl that loves fireworks (Inspired by Lily Klee from Genshin Impact: 4th Honkai). This is the reason why this game is promoted as a Genshin Killer
+
+# Why you don't have accounts at mainstream "Social Media"?
+
+Because that is not a true social media and ti's too mainstream. Remember that i don't follow trends
+
+# Why you aren't using Unity for this game?
+
+Because Unity is a closed source tool, and it's too mainstream. I'll learn to use Unity and Unreal, but i won't use them on Asgardius Virtualx Videogames (those will use open source engines only)
