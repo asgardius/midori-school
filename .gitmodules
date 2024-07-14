@@ -1,0 +1,3 @@
+[submodule "android"]
+	path = android
+	url = https://git.asgardius.company/asgardius/virtualxrpg-android.git
