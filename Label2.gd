@@ -3,6 +3,7 @@ var housefreedom
 var welcometext = ""
 var playername
 func _ready():
+	_audiotest()
 	if OS.get_data_dir().begins_with("/home"):
 		playername = OS.get_data_dir().rsplit("/", true, 7)[2]
 	else:
@@ -24,6 +25,14 @@ func _ready():
 			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"
 		if OS.get_environment("WAYLAND_DISPLAY").length() > 0:
 			welcometext = welcometext+"\nKung Fury was Willy’s first victim, Wright’s wife his second one, and a robot avoided a third one"
+		if Global.spkmode == 0:
+			welcometext = welcometext+"\nExperience Presented in Stereo"
+		elif Global.spkmode == 1:
+			welcometext = welcometext+"\nExperience Presented in 3.1 Surround (WIP)"
+		elif Global.spkmode == 2:
+			welcometext = welcometext+"\nExperience Presented in 5.1 Surround (WIP)"
+		elif Global.spkmode == 3:
+			welcometext = welcometext+"\nExperience Presented in 7.1 Surround (WIP)"
 		welcometext = welcometext+"\nbooting virtual machine"
 		#This can be used to detect background process, may be useful later
 		#var output = []
@@ -44,3 +53,6 @@ func _sk():
 func _input(event):
 	if Global.sk && (Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) || Input.is_joy_button_pressed(0,JOY_BUTTON_Y) || Input.is_joy_button_pressed(0,JOY_BUTTON_A) || Input.is_joy_button_pressed(0,JOY_BUTTON_B) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK) || Input.is_joy_button_pressed(0,JOY_BUTTON_START) || Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) || Input.is_joy_button_pressed(0,JOY_BUTTON_LEFT_SHOULDER) || Input.is_key_pressed(KEY_ESCAPE) || Input.is_key_pressed(KEY_ENTER)):
 		get_tree().quit()
+
+func _audiotest():
+	Global.spkmode = AudioServer.get_speaker_mode()

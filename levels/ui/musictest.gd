@@ -6,6 +6,8 @@ var infobox
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
+	player.mix_target = 1
+	player.bus = &"Music"
 	$"BoxContainer/VBoxContainer/Title Screen".grab_focus()
 	infobox = $Info
 

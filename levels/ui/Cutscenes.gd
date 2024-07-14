@@ -20,6 +20,7 @@ func _ready():
 	get_tree().root.add_child.call_deferred(bhud)
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
+	bgsound.mix_target = 1
 	bgsound.play(0)
 		
 

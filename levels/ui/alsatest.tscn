@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bivi1ncwnunrp"]
+[gd_scene load_steps=11 format=3 uid="uid://bivi1ncwnunrp"]
 
 [ext_resource type="Script" path="res://levels/ui/alsatest.gd" id="1_hqlyt"]
 [ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_ribwb"]
@@ -6,6 +6,10 @@
 [ext_resource type="Script" path="res://Game name.gd" id="3_iuwjb"]
 [ext_resource type="Script" path="res://start.gd" id="4_cp7hy"]
 [ext_resource type="Script" path="res://exit.gd" id="5_aogyx"]
+[ext_resource type="AudioStream" uid="uid://blllkdxk3sj0g" path="res://sfx/Front_Left.wav" id="7_msbfk"]
+[ext_resource type="AudioStream" uid="uid://dpn17gurdra0l" path="res://sfx/Front_Right.wav" id="8_tqilb"]
+[ext_resource type="AudioStream" uid="uid://by6uoipfuc23n" path="res://sfx/Rear_Left.wav" id="9_skj4n"]
+[ext_resource type="AudioStream" uid="uid://w1c1uvatrkbn" path="res://sfx/Rear_Right.wav" id="10_v8t5w"]
 
 [node name="Alsatest" type="Control"]
 layout_mode = 3
@@ -58,3 +62,37 @@ script = ExtResource("5_aogyx")
 
 [node name="Bottomhud" parent="." instance=ExtResource("3_2tyrv")]
 layout_mode = 1
+
+[node name="Front_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5)
+stream = ExtResource("7_msbfk")
+volume_db = 80.0
+max_distance = 30.0
+panning_strength = 50.0
+bus = &"SFX1"
+
+[node name="Front_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+stream = ExtResource("8_tqilb")
+volume_db = 80.0
+max_distance = 30.0
+panning_strength = 50.0
+bus = &"SFX1"
+
+[node name="Rear_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5)
+stream = ExtResource("9_skj4n")
+volume_db = 80.0
+max_distance = 30.0
+panning_strength = 50.0
+bus = &"SFX1"
+
+[node name="Rear_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5)
+stream = ExtResource("10_v8t5w")
+volume_db = 80.0
+max_distance = 30.0
+panning_strength = 50.0
+bus = &"SFX1"
+
+[node name="Camera3D" type="Camera3D" parent="."]

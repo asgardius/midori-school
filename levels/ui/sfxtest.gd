@@ -5,6 +5,8 @@ var player := AudioStreamPlayer.new()
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
+	player.mix_target = 1
+	player.bus = &"SFX1"
 	$"BoxContainer/VBoxContainer/Game Over".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

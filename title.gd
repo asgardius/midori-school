@@ -15,7 +15,9 @@ func _ready():
 	add_child(bgsound)
 	var titlemusic = load(Global.musictracks[0])
 	bgsound.stream = titlemusic
+	bgsound.mix_target = 1
 	bgsound.play(0)
+	bgsound.bus = &"Music"
 	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.
 

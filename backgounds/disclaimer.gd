@@ -8,7 +8,9 @@ func _ready():
 	add_child(rmusic)
 	var titlemusic = load(Global.musictracks[1])
 	rmusic.stream = titlemusic
+	rmusic.mix_target = 1
 	rmusic.play(0)
+	rmusic.bus = &"Music"
 	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.
 

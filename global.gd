@@ -2,6 +2,7 @@ extends Node
 
 var live = 0
 var time
+var spkmode
 var origmpos
 var mousepos
 var timelimit = 15000
@@ -25,7 +26,7 @@ var cdialog = []
 const places = [[[[null, null, false], [null, null, false]], [["res://levels/Testrooms/bullethell.tscn", 11, true], ["res://levels/Testrooms/lilytest.tscn", 6, false]], [["res://levels/Testrooms/dialogtest.tscn", 19, false], ["res://levels/Testrooms/testspawn.tscn", 2 ,false]]], [null, null, null, null, null, null, null, null, null, null, null, [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, ["res://levels/Ceres/L20.tscn", 3, true]]]]
 var cplace = [0,2,1]
 var dplace = [null, null, null]
-const pbbullets = ["res://sprites/common/bullet/fireball.tscn", "res://sprites/common/bullet/X11.tscn", null, "res://sprites/common/bullet/arrow.tscn", null, null, null, null, null, "res://sprites/common/bullet/snowflake.tscn"]
+const pbbullets = ["res://sprites/common/bullet/fireball.tscn", "res://sprites/common/bullet/sword.tscn", null, "res://sprites/common/bullet/arrow.tscn", null, null, null, null, null, "res://sprites/common/bullet/snowflake.tscn"]
 const pcspecialities = [1, 2, null, 3, null, null, null, null, null, 0]
 const pchars = [["res://sprites/common/midori/sprite.png"], ["res://sprites/common/tuna/sprite.png"], [null], ["res://sprites/common/kimberly/sprite.png"], [null], [null], [null], [null], [null], ["res://sprites/common/natasha/sprite.png"]]
 const npchars = ["res://sprites/common/midori/sprite.png", null, null, null, null, null, null, null, null, "res://sprites/common/natasha/sprite.png"]

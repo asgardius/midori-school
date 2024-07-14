@@ -10,10 +10,12 @@ var playstart = false
 var playindex = 0
 
 func _ready():
+	bgsound.mix_target = 1
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(bgsound)
 	bgsound.stream = song1
 	bgsound.play(0)
+	bgsound.bus = &"Music"
 	#pass # Replace with function body.
 
 

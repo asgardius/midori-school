@@ -41,6 +41,10 @@ func _ready():
 	get_tree().root.add_child.call_deferred(thud)
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
+	bgsound.bus = &"Music"
+	bgsound.mix_target = 1
+	sfx1.mix_target = 1
+	sfx1.bus = &"SFX1"
 	if !Global.isboss:
 		bgsound.play(0)
 		
