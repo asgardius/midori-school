@@ -24,9 +24,21 @@ func _physics_process(delta):
 		elif player.position.y > boss.position.y && player.get_index() < boss.get_index():
 			move_child(player, boss.get_index() + 1)
 			print("move down")
+	if Global.debug:
+		if Global.dstats[Global.dparty[0][0]][0] <= 0 && Global.live == 1:
+			_winner()
+	else:
+		if Global.cstats[Global.party[0][0]][0] <= 0 && Global.live == 1:
+			_winner()
 
 func _input(event):
 	if Global.cdialog.size() != 0 && Global.live == 1:
 		get_tree().root.remove_child(talk)
 		Global.cdialog = []
 	
+func _winner():
+	Global.cdialog = [[tr("DIALOG_CERES_L20_3"), true, 0, 0], [tr("DIALOG_CERES_L20_4"), false, 3], [tr("DIALOG_CERES_L20_5"), true, 0, 0]]
+	Global.live = 3
+	#talk.queue_free()
+	talk = load("res://levels/ui/talk.tscn").instantiate()
+	get_tree().root.add_child.call(talk)

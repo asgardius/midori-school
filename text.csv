@@ -89,9 +89,15 @@ DIALOG_TEST_2;I got you, cheap copy;Te atrapé, copia barata;手に入れたよ�
 DIALOG_DANMAKUTEST_0;What are you doing here?;¿Qué haces aquí?;ここで何をしているの？
 DIALOG_DANMAKUTEST_1;Your father need help to debug this game;Tu padre necesita ayuda para depurar este juego;あなたのお父さんはこのゲー\nムのデバッグを手伝ってほしいと思っています
 DIALOG_DANMAKUTEST_2;Ok, i'll help too;Bien, entonces yo también ayudaré;わかった、私も手伝うよ
+DIALOG_DANMAKUTEST_3;are you OK?;¿estás bien?;大丈夫ですか？
+DIALOG_DANMAKUTEST_4;I'm just a bit tired;Solo estoy un poco cansada;ちょっと疲れただけ
+DIALOG_DANMAKUTEST_5;I'm leaving for now;Me voy por ahora;とりあえず出発します
 DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラーにはなりません
 DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso, El perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
 DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
+DIALOG_CERES_L20_3;I'm tired;Estoy cansada;私は疲れている
+DIALOG_CERES_L20_4;You must study at Kaizo Magic School as you promised;Debes estudiar en la escuela de Magia Kaizo como prometiste;約束通りカイゾー魔法学校で勉強しなくちゃ
+DIALOG_CERES_L20_5;It seems I'm lucky;Parece que tengo suerte;私は幸運のようです
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
 MENU_CHARACTER;Character List;Lista de Personajes;キャラクター一覧
 MENU_TEAM;Team List;Lista de Equipos;チーム

@@ -42,7 +42,15 @@ func _input(event):
 				isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
 			else:
 				isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
-			if isboss:
-				Global.bossready = true
-			Global.live = 1
+			if Global.live == 0:
+				if isboss:
+					Global.bossready = true
+				Global.live = 1
+				queue_free()
+			elif Global.live == 3:
+				if Global.ccutscene == null:
+					Global.live = 7
+				else:
+					Global.live = 8
+				queue_free()
 		press = false

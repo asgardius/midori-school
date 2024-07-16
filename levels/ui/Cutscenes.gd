@@ -58,13 +58,15 @@ func _input(event):
 			get_tree().change_scene_to_file("res://title.tscn")
 	if Input.is_action_just_pressed("ui_accept"):
 		if Global.cutscenes[Global.ccutscene][3]:
+			var ccutscene = Global.ccutscene
+			Global.ccutscene = null
 			get_tree().root.remove_child(bhud)
 			get_tree().root.remove_child(level)
 			bgsound.stop()
 			if Global.debug:
 				get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
 			else:
-				get_tree().change_scene_to_file(Global.cutscenes[Global.ccutscene][1])
+				get_tree().change_scene_to_file(Global.cutscenes[ccutscene][1])
 		else:
 			Global.ccutscene += 1
 			get_tree().root.remove_child(level)

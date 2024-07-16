@@ -53,7 +53,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO
-	if Global.live == 6:
+	if Global.live > 4 && Global.live < 9:
 		_exit()
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
@@ -150,8 +150,14 @@ func _exit():
 	#	get_tree().root.remove_child(bhud)
 	#get_tree().root.remove_child(player)
 	get_tree().root.remove_child(level)
-	Global.live = 0
-	if Global.debug:
-		get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
-	else:
-		get_tree().change_scene_to_file("res://title.tscn")
+	if Global.live == 7:
+		get_tree().change_scene_to_file("res://backgounds/result.tscn")
+	elif Global.live == 8:
+		get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
+	elif Global.live == 6:
+		if Global.debug:
+			Global.live = 0
+			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+		else:
+			Global.live = 0
+			get_tree().change_scene_to_file("res://title.tscn")
