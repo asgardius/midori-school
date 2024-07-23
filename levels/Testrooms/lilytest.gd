@@ -13,11 +13,5 @@ func _ready():
 func _process(delta):
 	pass
 
-func _physics_process(delta):
-	if player.velocity.x >= 0 && player.velocity.y >= 0:
-		if player.position.y < boss.position.y && player.get_index() > boss.get_index():
-			move_child(player, boss.get_index() - 1)
-			print("move up")
-		elif player.position.y > boss.position.y && player.get_index() < boss.get_index():
-			move_child(player, boss.get_index() + 1)
-			print("move down")
+#func _physics_process(delta):
+#	pass

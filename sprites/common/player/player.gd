@@ -26,8 +26,8 @@ func _ready():
 func _physics_process(delta):
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
-	if Global.live == 1:
-		velocity = (Vector2.RIGHT.rotated(rotation) * speed * Global.xm * delta)-Vector2.UP.rotated(rotation) * speed * Global.ym * delta
+	#if Global.live == 1 || (Global.xm == 0 && Global.ym == 0):
+	velocity = (Vector2.RIGHT.rotated(rotation) * speed * Global.xm * delta)-Vector2.UP.rotated(rotation) * speed * Global.ym * delta
 		#origmpos = get_viewport().get_mouse_position()
 	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
@@ -119,11 +119,11 @@ func _charswitch():
 		print(Global.dparty[Global.dcpchar][0])
 		print(speed)
 	else:
-		if csprite != null && speed!=Global.mstats[Global.party[Global.cpchar][0]][6]:
+		if csprite != null && speed!=Global.mstats[Global.party[csprite][0]][6]:
 			print("Script Kiddie")
 			speed = Global.party/0
 		else:
-			speed = Global.mstats[Global.party[Global.dcpchar][0]][6]
+			speed = Global.mstats[Global.party[Global.cpchar][0]][6]
 		if Global.cpchar != csprite:
 			csprite = Global.cpchar
 			sprite.texture = load(Global.pchars[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
