@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1t2vu12bpoki"]
+
+[ext_resource type="Texture2D" uid="uid://bybvtya0upglf" path="res://backgounds/Midori Asgardius boom boom torofi.jpg" id="1_o7sdm"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_ww2qm"]
+
+[node name="Chasing" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1278.0
+offset_bottom = 600.0
+texture = ExtResource("1_o7sdm")
+
+[node name="Text" type="Label" parent="."]
+offset_left = 45.0
+offset_top = 59.0
+offset_right = 1217.0
+offset_bottom = 167.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "CUTSCENE_0_5"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("2_ww2qm")]

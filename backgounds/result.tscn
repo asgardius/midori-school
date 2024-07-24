@@ -25,11 +25,12 @@ Damage received: 0
 Earned experience: 0"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 346.0
+offset_left = 30.0
 offset_top = 361.0
-offset_right = 1004.0
+offset_right = 1247.0
 offset_bottom = 429.0
 theme_override_font_sizes/font_size = 49
-text = "Press Enter or B to continue"
+text = "TEXT_CONTINUE"
+horizontal_alignment = 1
 
 [node name="Bottomhud" parent="." instance=ExtResource("3_sdx6y")]
