@@ -139,7 +139,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
-text = "Skill"
+text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
@@ -237,7 +237,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
-text = "Skill"
+text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
@@ -323,7 +323,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
-text = "Skill"
+text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
@@ -409,7 +409,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
-text = "Skill"
+text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
@@ -495,7 +495,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
-text = "Skill"
+text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(100, 0)
