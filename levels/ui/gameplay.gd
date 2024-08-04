@@ -139,6 +139,7 @@ func _pausemenu():
 		pmenu = load("res://levels/ui/pause.tscn").instantiate()
 		Global.live = 1
 func _exit():
+	Global.cdialog = []
 	Global.exitgame = false
 	ishud = false
 	Global.bossready = false

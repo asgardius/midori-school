@@ -19,7 +19,7 @@ func _ready():
 		else:
 			welcometext = "Welcome back "+playername
 		if housefreedom:
-			welcometext = welcometext+"\nSteam machines are not dead yet"
+			welcometext = welcometext+"\nValve corporation promotes enviromental pollution"
 		if OS.get_environment("MANGOHUD").contains("1"):
 			Global.mangohud = true
 			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"

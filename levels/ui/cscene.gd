@@ -67,8 +67,9 @@ func _on_disclaimer_pressed():
 
 
 func _on_testrooms_pressed():
-	#get_tree().change_scene_to_file("res://levels/ui/testrooms.tscn")
-	pass
+	#Global.debug = false
+	Global.ccutscene = 6
+	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
 
 
 func _on_ceres_pressed():

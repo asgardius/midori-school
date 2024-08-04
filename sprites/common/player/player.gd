@@ -27,40 +27,41 @@ func _physics_process(delta):
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
 	#if Global.live == 1 || (Global.xm == 0 && Global.ym == 0):
-	velocity = (Vector2.RIGHT.rotated(rotation) * speed * Global.xm * delta)-Vector2.UP.rotated(rotation) * speed * Global.ym * delta
-		#origmpos = get_viewport().get_mouse_position()
-	#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
-	#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
-	position += velocity
-	Global.playerx = position.x
-	Global.playery = position.y
-	if Global.ym > 0.3:
-		angle = 2
-	elif Global.ym < -0.3:
-		angle = 0
-	elif Global.xm > 0.3:
-		angle = 1
-	elif Global.xm < -0.3:
-		angle = 3
-	if velocity.y != 0 || velocity.x != 0:
-		if angle == 0:
-			anim.play("nwalk")
-		elif angle == 1:
-			anim.play("ewalk")
-		elif angle == 3:
-			anim.play("wwalk")
+	if speed != null:
+		velocity = (Vector2.RIGHT.rotated(rotation) * speed * Global.xm * delta)-Vector2.UP.rotated(rotation) * speed * Global.ym * delta
+			#origmpos = get_viewport().get_mouse_position()
+		#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
+		#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
+		position += velocity
+		Global.playerx = position.x
+		Global.playery = position.y
+		if Global.ym > 0.3:
+			angle = 2
+		elif Global.ym < -0.3:
+			angle = 0
+		elif Global.xm > 0.3:
+			angle = 1
+		elif Global.xm < -0.3:
+			angle = 3
+		if velocity.y != 0 || velocity.x != 0:
+			if angle == 0:
+				anim.play("nwalk")
+			elif angle == 1:
+				anim.play("ewalk")
+			elif angle == 3:
+				anim.play("wwalk")
+			else:
+				anim.play("swalk")
 		else:
-			anim.play("swalk")
-	else:
-		if angle == 0:
-			anim.play("nidle")
-		elif angle == 1:
-			anim.play("eidle")
-		elif angle == 3:
-			anim.play("widle")
-		else:
-			anim.play("sidle")
-	move_and_slide()
+			if angle == 0:
+				anim.play("nidle")
+			elif angle == 1:
+				anim.play("eidle")
+			elif angle == 3:
+				anim.play("widle")
+			else:
+				anim.play("sidle")
+		move_and_slide()
 
 func _input(event):
 	if Global.live == 1:

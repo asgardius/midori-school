@@ -50,3 +50,9 @@ func _on_l_20_pressed():
 	Global.dplace = [1, 11, 19]
 	Global.live = 1
 	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+
+
+func _on_lilytest_pressed() -> void:
+	Global.dplace = [0, 0, 0]
+	Global.live = 1
+	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")

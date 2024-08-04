@@ -11,10 +11,11 @@ var ishud = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.live = 1
 	add_child(bgsound)
 	add_child(sfx1)
 	level = load(Global.cutscenes[Global.ccutscene][0]).instantiate()
-	musictrack = Global.cutscenes[Global.ccutscene][2]
+	musictrack = Global.musictracks[Global.cutscenes[Global.ccutscene][2]]
 	music = load(musictrack)
 	get_tree().root.add_child.call_deferred(level)
 	get_tree().root.add_child.call_deferred(bhud)
@@ -71,9 +72,9 @@ func _input(event):
 			Global.ccutscene += 1
 			get_tree().root.remove_child(level)
 			level = load(Global.cutscenes[Global.ccutscene][0]).instantiate()
-			if musictrack != Global.cutscenes[Global.ccutscene][2]:
+			if musictrack != Global.musictracks[Global.cutscenes[Global.ccutscene][2]]:
 				bgsound.stop()
-				musictrack = Global.cutscenes[Global.ccutscene][2]
+				musictrack = Global.musictracks[Global.cutscenes[Global.ccutscene][2]]
 				music = load(musictrack)
 				bgsound.stream = music
 				bgsound.play(0)

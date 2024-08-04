@@ -87,29 +87,28 @@ visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Character"
+text = "MENU_CHARACTER"
 
 [node name="Team" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Team"
+text = "MENU_TEAM"
 
 [node name="Warp" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Warp
-"
+text = "MENU_MAP"
 
 [node name="Settings" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Settings"
+text = "MENU_SETTINGS"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer2"]
 layout_mode = 2
@@ -119,26 +118,26 @@ visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Journal"
+text = "MENU_BOUKEN"
 
 [node name="Challenges" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Challenges"
+text = "MENU_CHALLENGES"
 
 [node name="Backpack" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
 visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Backpack"
+text = "MENU_BACKPACK"
 
 [node name="Exit" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
-text = "Exit"
+text = "MENU_EXIT"
 
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Exit" to="." method="_on_exit_pressed"]
