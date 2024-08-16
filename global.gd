@@ -23,7 +23,7 @@ var cstats = [[800, 200, 52, 12, 136, 25, 800], [1094, 200, 54, 7, 106, 48, 600]
 var dstats = [[800, 200, 52, 12, 136, 25, 800], [1094, 200, 54, 7, 106, 48, 600], [null], [1143, 200, 59, 5, 117, 18, 650], [null], [null], [null], [null], [null], [1026, 200, 87, 7, 105, 49, 115]]
 var mstats = [[null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null], [null, null, null, null, null, null, null]]
 var cdialog = []
-const places = [[[["res://levels/Ceres/map.tscn", 5, false], [null, null, false]], [["res://levels/Testrooms/bullethell.tscn", 11, true], ["res://levels/Testrooms/lilytest.tscn", 6, false]], [["res://levels/Testrooms/dialogtest.tscn", 19, false], ["res://levels/Testrooms/testspawn.tscn", 2 ,false]]], [null, null, null, null, null, null, null, null, null, null, null, [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, ["res://levels/Ceres/L20.tscn", 3, true]]]]
+const places = [[[["res://levels/Ceres/map.tscn", 5, false], [null, null, false]], [["res://levels/Testrooms/bullethell.tscn", 11, true], ["res://levels/Testrooms/lilytest.tscn", 6, false]], [["res://levels/Testrooms/dialogtest.tscn", 19, false], ["res://levels/Testrooms/testspawn.tscn", 2 ,false]]], [null, null, null, null, null, null, null, null, [null, null, null, null, null, null, null, null, null, null, null, ["res://levels/Ceres/honkerrailway.tscn", 19, false]], null, null, [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, ["res://levels/Ceres/L20.tscn", 3, true]]]]
 var cplace = [0,2,1]
 var dplace = [null, null, null]
 const pbbullets = ["res://sprites/common/bullet/fireball.tscn", "res://sprites/common/bullet/sword.tscn", null, "res://sprites/common/bullet/arrow.tscn", null, null, null, null, null, "res://sprites/common/bullet/snowflake.tscn"]
@@ -52,8 +52,7 @@ const sfxtracks = ["res://sfx/braindamage.wav", "res://sfx/gaugefill.wav", "res:
 var debug = false
 const release = "R0.1.11-dev"
 var sk = false
-var xm = 0
-var ym = 0
+var gamepad = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

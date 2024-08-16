@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
+var xm = 0
+var ym = 0
 const JUMP_VELOCITY = -400.0
 var angle = 2
 var sprite
@@ -26,22 +28,22 @@ func _ready():
 func _physics_process(delta):
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
-	#if Global.live == 1 || (Global.xm == 0 && Global.ym == 0):
+	#if Global.live == 1 || (xm == 0 && ym == 0):
 	if speed != null:
-		velocity = (Vector2.RIGHT.rotated(rotation) * speed * Global.xm * delta)-Vector2.UP.rotated(rotation) * speed * Global.ym * delta
+		velocity = (Vector2.RIGHT.rotated(rotation) * speed * xm * delta)-Vector2.UP.rotated(rotation) * speed * ym * delta
 			#origmpos = get_viewport().get_mouse_position()
 		#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 		#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
 		position += velocity
 		Global.playerx = position.x
 		Global.playery = position.y
-		if Global.ym > 0.3:
+		if ym > 0.3:
 			angle = 2
-		elif Global.ym < -0.3:
+		elif ym < -0.3:
 			angle = 0
-		elif Global.xm > 0.3:
+		elif xm > 0.3:
 			angle = 1
-		elif Global.xm < -0.3:
+		elif xm < -0.3:
 			angle = 3
 		if velocity.y != 0 || velocity.x != 0:
 			if angle == 0:
@@ -64,10 +66,25 @@ func _physics_process(delta):
 		move_and_slide()
 
 func _input(event):
+	xm = 0
+	ym = 0
 	if Global.live == 1:
+		if Global.live == 1 && !Input.is_action_pressed("schar"):
+			if Input.get_joy_axis(0,JOY_AXIS_LEFT_X) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_X) < -0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) < -0.2:
+				xm = Input.get_joy_axis(0,JOY_AXIS_LEFT_X)
+				ym = Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
+			else:
+				if Input.is_action_pressed("ui_left"):
+					xm = -1
+				if Input.is_action_pressed("ui_right"):
+					xm = 1
+				if Input.is_action_pressed("ui_up"):
+					ym = -1
+				if Input.is_action_pressed("ui_down"):
+					ym = 1
 		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
 			_charswitch()
-		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
+		if Input.is_action_just_pressed("button0") && !bpress && Global.live == 1:
 			bpress = true
 			var bullet
 			if Global.debug:
@@ -87,7 +104,7 @@ func _input(event):
 				new_pbullet.position = Vector2(position.x + rposition.x, position.y + rposition.y)
 			if new_pbullet.position.x > 0 && new_pbullet.position.y > 0 && new_pbullet.position.x < 1280 && new_pbullet.position.y < 720:
 				get_parent().add_child(new_pbullet)
-		elif Input.is_action_just_released("shoot") && bpress:
+		elif Input.is_action_just_released("button0") && bpress:
 			bpress = false
 
 func _charinit():

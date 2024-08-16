@@ -67,7 +67,7 @@ text = "MENU_MAP"
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "BUTTON_PLACEHOLDER"
+text = "Honker Railway"
 
 [node name="Bullethell" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -95,4 +95,5 @@ text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="VBoxContainer/L20" to="." method="_on_l_20_pressed"]
 [connection signal="pressed" from="VBoxContainer/Lilytest" to="." method="_on_lilytest_pressed"]
+[connection signal="pressed" from="VBoxContainer/Dialogtest" to="." method="_on_dialogtest_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

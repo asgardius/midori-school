@@ -2,8 +2,20 @@
 TEXT_DISCLAIMER;Disclaimer\nPlaying with fireworks inside a videogame can give hours of fun,\nbut in real life is dangerous\nLife insurance exists only on fiction;Descargo de responsabilidad\nJugar con explosivos dentro de un videojuego puede dar horas de diversión\npero en la vida real es peligroso\nLos seguros de vida solamente existen en la ficción;免責事項\nビデオゲームの中で花火で遊ぶと何時間も楽しめます。\nしかし現実では危険である\n生命保険はフィクションの上にのみ存在する
 TEXT_WIP;This game is under development\nMore content will be added in following releases;Este juego está en desarrollo\nMás contenido se agregará en los siguientes lanzamientos;このゲームは現在開発中です\n今後のリリースではさらにコンテンツが追加される予定です
 TEXT_CONTINUE;Press Enter or B to continue;Presiona Intro o B para continuar;Enter または B を押して続行します
+TEXT_CONTINUE_KB;Press Enter to continue;Presiona Intro para continuar;Enterを押して続行します
+TEXT_CONTINUE_JA;Press A to continue;Presiona A para continuar;Aを押して続行します
+TEXT_CONTINUE_US;Press B to continue;Presiona B para continuar;Bを押して続行します
+TEXT_CONTINUE_GEO;Press ○ to continue;Presiona ○ para continuar;○を押して続行します
 TEXT_START;Press Enter or B to start;Presiona Intro o B para iniciar;EnterまたはBを押して開始します
+TEXT_START_KB;Press Enter to start;Presiona Intro para iniciar;Enterを押して開始
+TEXT_START_JP;Press A to start;Presiona A para iniciar;Aを押して開始
+TEXT_START_US;Press B to start;Presiona B para iniciar;Bを押して開始
+TEXT_START_GEO;Press ○ to start;Presiona ○ para iniciar;○を押して開始
 TEXT_EXIT;Press Escape or A to exit;Presiona Escape o A para salir;終了するにはEscまたはAを押してください
+TEXT_EXIT_KB;Press Escape to exit;Presiona Escape para salir;終了するにはEscキーを押してください
+TEXT_EXIT_JP;Press B to exit;Presiona B para salir;終了するにはBキーを押してください
+TEXT_EXIT_US;Press A to exit;Presiona A para salir;終了するにはAキーを押してください
+TEXT_EXIT_GEO;Press X to exit;Presiona X para salir;終了するにはXキーを押してください
 GAME_NAME;Midori in the Magic School;Midori in the Magic School;改造魔法学校のミドリ
 BUTTON_START;Start;Iniciar;始める
 BUTTON_DEBUG;Debug;Depurar;デバッグ

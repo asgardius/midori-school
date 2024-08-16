@@ -1,5 +1,6 @@
 extends Control
 
+const gamepadtest = preload("res://gamepad.gd")
 var joyname
 var lxaxis
 var lyaxis
@@ -56,7 +57,15 @@ func _process(delta):
 func _input(event):
 	if Input.is_key_pressed(KEY_ESCAPE) || (Input.is_joy_button_pressed(0,JOY_BUTTON_A) && (Input.is_joy_button_pressed(0,JOY_BUTTON_B))):
 		get_tree().change_scene_to_file("res://levels/ui/debug.tscn")
-	joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+	gamepadtest.new(event)
+	if Global.gamepad == 1:
+		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Western"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+	elif Global.gamepad == 2:
+		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Japanese"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+	elif Global.gamepad == 3:
+		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Geo"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+	elif Global.gamepad == 0:
+		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Keyboard"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
 	lxaxis.set_text("Left X Axis "+str(Input.get_joy_axis(0,JOY_AXIS_LEFT_X)))
 	lyaxis.set_text("Left Y Axis "+str(Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)))
 	rxaxis.set_text("Right X Axis "+str(Input.get_joy_axis(0,JOY_AXIS_RIGHT_X)))

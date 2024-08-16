@@ -4,11 +4,12 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
 var wait
+const gamepadtest = preload("res://gamepad.gd")
 #var galaxy = preload("res://backgounds/galaxy.tscn").instantiate()
 #var wormhole = preload("res://backgounds/wormhole.tscn").instantiate()
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	#if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
 	#	Global.sk = true
 	Global.gamelevel = null
@@ -28,6 +29,7 @@ func _process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates.
+	gamepadtest.new(event)
 	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")

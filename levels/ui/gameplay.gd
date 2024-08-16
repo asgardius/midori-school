@@ -1,4 +1,5 @@
 extends Node2D
+const gamepadtest = preload("res://gamepad.gd")
 var level
 var player
 var music
@@ -58,21 +59,7 @@ func _process(delta):
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
-	Global.xm = 0
-	Global.ym = 0
-	if Global.live == 1 && !Input.is_action_pressed("schar"):
-		if Input.get_joy_axis(0,JOY_AXIS_LEFT_X) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_X) < -0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) < -0.2:
-			Global.xm = Input.get_joy_axis(0,JOY_AXIS_LEFT_X)
-			Global.ym = Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
-		else:
-			if Input.is_action_pressed("ui_left"):
-				Global.xm = -1
-			if Input.is_action_pressed("ui_right"):
-				Global.xm = 1
-			if Input.is_action_pressed("ui_up"):
-				Global.ym = -1
-			if Input.is_action_pressed("ui_down"):
-				Global.ym = 1
+	gamepadtest.new(event)
 	if Input.is_action_just_pressed("Pause") && Global.cdialog == []:
 		_pausemenu()
 		#Global.exitgame = true
