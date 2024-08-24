@@ -26,6 +26,7 @@ color = Color(0, 0, 0, 1)
 [node name="Bottomhud" parent="CanvasLayer" instance=ExtResource("2_jnb0v")]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+layout_direction = 3
 offset_right = 40.0
 offset_bottom = 40.0
 

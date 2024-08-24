@@ -31,7 +31,7 @@ func _input(event):
 		if dindex < Global.cdialog.size():
 			if Global.cdialog[dindex][1]:
 				cname.set_text(Global.pcnames[Global.cdialog[dindex][2]])
-				pface.texture = load((Global.pcfaces[Global.cdialog[dindex][2]][Global.cdialog[dindex][2]]))
+				pface.texture = load((Global.pcfaces[Global.cdialog[dindex][2]][Global.cdialog[dindex][3]]))
 			else:
 				cname.set_text(Global.npcnames[Global.cdialog[dindex][2]])
 				pface.texture = load((Global.npcfaces[Global.cdialog[dindex][2]]))

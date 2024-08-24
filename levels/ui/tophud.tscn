@@ -65,11 +65,13 @@ text = "100/100"
 horizontal_alignment = 2
 
 [node name="Topminibg" type="ColorRect" parent="CanvasLayer"]
+layout_direction = 3
 offset_right = 438.0
 offset_bottom = 116.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
 [node name="Topmini" type="HBoxContainer" parent="CanvasLayer"]
+layout_direction = 3
 offset_right = 377.0
 offset_bottom = 116.0
 
@@ -159,12 +161,14 @@ color = Color(0, 0, 1, 1)
 
 [node name="Topleftbg" type="ColorRect" parent="CanvasLayer"]
 visible = false
+layout_direction = 3
 offset_right = 437.0
 offset_bottom = 476.0
 color = Color(0.254902, 0.254902, 0.254902, 1)
 
 [node name="Topleft" type="VBoxContainer" parent="CanvasLayer"]
 visible = false
+layout_direction = 3
 offset_right = 377.0
 offset_bottom = 476.0
 

@@ -1,24 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://c4ldh7ydn78bh"]
+[gd_scene load_steps=14 format=3 uid="uid://dya2jipk8eq2s"]
 
-[ext_resource type="Script" path="res://levels/Ceres/honkerrailway.gd" id="1_75qhf"]
-[ext_resource type="Texture2D" uid="uid://l26qimo56l1w" path="res://sprites/ceres/items/hkr.png" id="2_qaay0"]
-[ext_resource type="Texture2D" uid="uid://dhrj7a0xr4bh1" path="res://sprites/ceres/items/ltc.png" id="3_4ekhw"]
-[ext_resource type="Texture2D" uid="uid://c1jjhut8fuf1w" path="res://sprites/ceres/railway/sprite.png" id="3_4r2wm"]
-[ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_uvwc3"]
+[ext_resource type="Script" path="res://sprites/ceres/pamela/pamela.gd" id="1_6fvfy"]
+[ext_resource type="Texture2D" uid="uid://dt8ufdvgghipy" path="res://sprites/ceres/pamela/sprite.png" id="2_v1g13"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nytv7"]
-size = Vector2(20, 761)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wkumn"]
-size = Vector2(1283, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dw13o"]
-size = Vector2(224, 409)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6hhd2"]
-size = Vector2(68, 152)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hyd1a"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcaff"]
 size = Vector2(86, 256)
 
 [sub_resource type="Animation" id="Animation_i5rhc"]
@@ -177,74 +162,23 @@ _data = {
 "wwalk": SubResource("Animation_letwb")
 }
 
-[node name="Honkerrailway" type="Node2D"]
-script = ExtResource("1_75qhf")
-metadata/_edit_horizontal_guides_ = [0.0]
+[node name="Pamela" type="CharacterBody2D"]
+script = ExtResource("1_6fvfy")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(1280, 720)
-offset_right = 1280.0
-offset_bottom = 720.0
-color = Color(0.839216, 0.658824, 0.32549, 1)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-11, 361.5)
-shape = SubResource("RectangleShape2D_nytv7")
-
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(1293, 358)
-shape = SubResource("RectangleShape2D_nytv7")
-
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(641.5, -9)
-shape = SubResource("RectangleShape2D_wkumn")
-
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-position = Vector2(644, 731)
-shape = SubResource("RectangleShape2D_wkumn")
-
-[node name="StaticBody2D5" type="StaticBody2D" parent="."]
-position = Vector2(635, 214)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D5"]
-texture = ExtResource("2_qaay0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
-position = Vector2(1, -4.5)
-shape = SubResource("RectangleShape2D_dw13o")
-
-[node name="StaticBody2D6" type="StaticBody2D" parent="."]
-position = Vector2(384, 186)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D6"]
-texture = ExtResource("3_4ekhw")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
-shape = SubResource("RectangleShape2D_6hhd2")
-
-[node name="Railwaygirl" type="CharacterBody2D" parent="."]
-position = Vector2(473, 133)
-
-[node name="Sprite2D" type="Sprite2D" parent="Railwaygirl"]
-texture = ExtResource("3_4r2wm")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_v1g13")
 hframes = 3
 vframes = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Railwaygirl"]
-shape = SubResource("RectangleShape2D_hyd1a")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mcaff")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Railwaygirl"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_mh65y")
 }
 
-[node name="Player" parent="." instance=ExtResource("3_uvwc3")]
-position = Vector2(633, 590)
+[node name="Speed" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="timeout" from="Speed" to="." method="_on_speed_timeout"]
