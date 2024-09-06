@@ -141,4 +141,5 @@ theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_yb7nc")
 text = "MENU_EXIT"
 
+[connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer/Warp" to="." method="_on_warp_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Exit" to="." method="_on_exit_pressed"]

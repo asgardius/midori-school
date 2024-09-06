@@ -1,46 +1,245 @@
-[gd_scene load_steps=6 format=3 uid="uid://bomoy5hvs8ldt"]
+[gd_scene load_steps=18 format=3 uid="uid://bomoy5hvs8ldt"]
 
 [ext_resource type="Script" path="res://levels/Ceres/map.gd" id="1_fb2vd"]
-[ext_resource type="Texture2D" uid="uid://kxvipok4tnuw" path="res://backgounds/wip.jpg" id="2_jxya4"]
+[ext_resource type="Texture2D" uid="uid://c1jjhut8fuf1w" path="res://sprites/ceres/railway/sprite.png" id="3_cek1k"]
 [ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_q2e1y"]
+[ext_resource type="Texture2D" uid="uid://dt8ufdvgghipy" path="res://sprites/ceres/pamela/sprite.png" id="4_1nkxu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nytv7"]
-size = Vector2(20, 761)
+size = Vector2(20, 1385.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wkumn"]
-size = Vector2(1283, 20)
+size = Vector2(2248, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmcf2"]
+size = Vector2(86, 256)
+
+[sub_resource type="Animation" id="Animation_i5rhc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_8my4d"]
+resource_name = "eidle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [6]
+}
+
+[sub_resource type="Animation" id="Animation_op07l"]
+resource_name = "ewalk"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [7, 6, 8]
+}
+
+[sub_resource type="Animation" id="Animation_cajcr"]
+resource_name = "nidle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+
+[sub_resource type="Animation" id="Animation_7lhgw"]
+resource_name = "nwalk"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [4, 3, 5]
+}
+
+[sub_resource type="Animation" id="Animation_w3ius"]
+resource_name = "sidle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_u56r5"]
+resource_name = "swalk"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [1, 0, 2]
+}
+
+[sub_resource type="Animation" id="Animation_isodq"]
+resource_name = "widle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+
+[sub_resource type="Animation" id="Animation_letwb"]
+resource_name = "wwalk"
+length = 0.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [10, 9, 11]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mh65y"]
+_data = {
+"RESET": SubResource("Animation_i5rhc"),
+"eidle": SubResource("Animation_8my4d"),
+"ewalk": SubResource("Animation_op07l"),
+"nidle": SubResource("Animation_cajcr"),
+"nwalk": SubResource("Animation_7lhgw"),
+"sidle": SubResource("Animation_w3ius"),
+"swalk": SubResource("Animation_u56r5"),
+"widle": SubResource("Animation_isodq"),
+"wwalk": SubResource("Animation_letwb")
+}
 
 [node name="Map" type="Node2D"]
 script = ExtResource("1_fb2vd")
 
-[node name="WIP" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_jxya4")
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -939.0
+offset_top = -613.0
+offset_right = 1282.0
+offset_bottom = 715.0
+color = Color(0.209938, 0.552296, 0.377152, 1)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-11, 361.5)
+position = Vector2(-958, 54.625)
 shape = SubResource("RectangleShape2D_nytv7")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(1293, 358)
+position = Vector2(1293, 49.25)
 shape = SubResource("RectangleShape2D_nytv7")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(641.5, -9)
+position = Vector2(176, -629)
 shape = SubResource("RectangleShape2D_wkumn")
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-position = Vector2(644, 731)
+position = Vector2(189.125, 731)
 shape = SubResource("RectangleShape2D_wkumn")
+
+[node name="Railwaygirl" type="Area2D" parent="."]
+position = Vector2(615, -444)
+
+[node name="Sprite2D" type="Sprite2D" parent="Railwaygirl"]
+texture = ExtResource("3_cek1k")
+hframes = 3
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Railwaygirl"]
+shape = SubResource("RectangleShape2D_tmcf2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Railwaygirl"]
+libraries = {
+"": SubResource("AnimationLibrary_mh65y")
+}
+
+[node name="Pamela" type="Area2D" parent="."]
+position = Vector2(-651, 133)
+
+[node name="Sprite2D" type="Sprite2D" parent="Pamela"]
+texture = ExtResource("4_1nkxu")
+hframes = 3
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pamela"]
+shape = SubResource("RectangleShape2D_tmcf2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Pamela"]
+libraries = {
+"": SubResource("AnimationLibrary_mh65y")
+}
 
 [node name="Player" parent="." instance=ExtResource("3_q2e1y")]
 position = Vector2(633, 590)
+
+[connection signal="body_entered" from="Railwaygirl" to="." method="_on_railwaygirl_body_entered"]
+[connection signal="body_exited" from="Railwaygirl" to="." method="_on_railwaygirl_body_exited"]
+[connection signal="body_entered" from="Pamela" to="." method="_on_pamela_body_entered"]
+[connection signal="body_exited" from="Pamela" to="." method="_on_pamela_body_exited"]

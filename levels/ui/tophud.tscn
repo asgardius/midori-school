@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://coaup7cuj7qev"]
+[gd_scene load_steps=12 format=3 uid="uid://coaup7cuj7qev"]
 
 [ext_resource type="Script" path="res://levels/ui/tophud.gd" id="1_pntuv"]
 
@@ -13,6 +13,21 @@ bg_color = Color(1, 0, 0, 1)
 bg_color = Color(1, 0.498039, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftyws"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pwjrs"]
+bg_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_124wc"]
+bg_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8qre"]
+bg_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2pkui"]
+bg_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig4lq"]
+bg_color = Color(0, 0, 1, 1)
 
 [node name="Tophud" type="Control"]
 layout_mode = 3
@@ -147,6 +162,7 @@ text = "OC Skill"
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+theme_override_styles/fill = SubResource("StyleBoxFlat_pwjrs")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(123, 0)
@@ -247,6 +263,7 @@ text = "OC Skill"
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+theme_override_styles/fill = SubResource("StyleBoxFlat_124wc")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(123, 0)
@@ -333,6 +350,7 @@ text = "OC Skill"
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+theme_override_styles/fill = SubResource("StyleBoxFlat_o8qre")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(123, 0)
@@ -419,6 +437,7 @@ text = "OC Skill"
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2pkui")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(123, 0)
@@ -505,6 +524,7 @@ text = "OC Skill"
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ig4lq")
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
 custom_minimum_size = Vector2(123, 0)

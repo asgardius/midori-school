@@ -26,6 +26,40 @@ func _ready():
 	_charinit()
 
 func _physics_process(delta):
+	if Global.debug:
+		if Global.dplace != [1, 11, 19]:
+			if Global.dstats[Global.dparty[Global.dcpchar][0]][0] <= 0 && Global.live == 1:
+				if Global.dparty[0][0] != null && Global.dstats[Global.dparty[0][0]][0] > 0:
+					Global.dcpchar = 0
+					_charswitch()
+				elif Global.dparty[1][0] != null && Global.dstats[Global.dparty[1][0]][0] > 0:
+					Global.dcpchar = 1
+					_charswitch()
+				elif Global.dparty[2][0] != null && Global.dstats[Global.dparty[2][0]][0] > 0:
+					Global.dcpchar = 2
+					_charswitch()
+				elif Global.dparty[3][0] != null && Global.dstats[Global.dparty[3][0]][0] > 0:
+					Global.dcpchar = 3
+					_charswitch()
+				else:
+					Global.live = 2
+	else:
+		if Global.cplace != [1, 11, 19]:
+			if Global.cstats[Global.party[Global.cpchar][0]][0] <= 0 && Global.live == 1:
+				if Global.party[0][0] != null && Global.cstats[Global.party[0][0]][0] > 0:
+					Global.cpchar = 0
+					_charswitch()
+				elif Global.party[1][0] != null && Global.cstats[Global.party[1][0]][0] > 0:
+					Global.cpchar = 1
+					_charswitch()
+				elif Global.party[2][0] != null && Global.cstats[Global.party[2][0]][0] > 0:
+					Global.cpchar = 2
+					_charswitch()
+				elif Global.party[3][0] != null && Global.cstats[Global.party[3][0]][0] > 0:
+					Global.cpchar = 3
+					_charswitch()
+				else:
+					Global.live = 2
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
 	#if Global.live == 1 || (xm == 0 && ym == 0):

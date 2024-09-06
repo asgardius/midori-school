@@ -54,7 +54,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO
-	if Global.live > 4 && Global.live < 9:
+	if (Global.live > 4 && Global.live < 9) || Global.live == 2:
 		_exit()
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
@@ -65,31 +65,31 @@ func _input(event):
 		#Global.exitgame = true
 	if Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_up"):
 		if Global.debug:
-			if Global.dparty[0][0] != null:
+			if Global.dparty[0][0] != null && Global.dstats[Global.dparty[0][0]][0] > 0:
 				Global.dcpchar = 0
 		else:
-			if Global.party[0][0] != null:
+			if Global.party[0][0] != null && Global.cstats[Global.party[0][0]][0] > 0:
 				Global.cpchar = 0
 	elif Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_right"):
 		if Global.debug:
-			if Global.dparty[1][0] != null:
+			if Global.dparty[1][0] != null && Global.dstats[Global.dparty[1][0]][0] > 0:
 				Global.dcpchar = 1
 		else:
-			if Global.party[1][0] != null:
+			if Global.party[1][0] != null && Global.cstats[Global.party[1][0]][0] > 0:
 				Global.cpchar = 1
 	elif Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_down"):
 		if Global.debug:
-			if Global.dparty[2][0] != null:
+			if Global.dparty[2][0] != null && Global.dstats[Global.dparty[2][0]][0] > 0:
 				Global.dcpchar = 2
 		else:
-			if Global.party[2][0] != null:
+			if Global.party[2][0] != null && Global.cstats[Global.party[2][0]][0] > 0:
 				Global.cpchar = 2
 	elif Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_left"):
 		if Global.debug:
-			if Global.dparty[3][0] != null:
+			if Global.dparty[3][0] != null && Global.dstats[Global.dparty[3][0]][0] > 0:
 				Global.dcpchar = 3
 		else:
-			if Global.party[3][0] != null:
+			if Global.party[3][0] != null && Global.cstats[Global.party[3][0]][0] > 0:
 				Global.cpchar = 3
 	if Global.bossready:
 		Global.bossready = false
@@ -108,11 +108,13 @@ func _statrebase():
 			if Global.dparty[i][0] != null:
 				for j in 7:
 					Global.mstats[Global.dparty[i][0]][j] = Global.basestats[Global.dparty[i][0]][j] * Global.dlevel[Global.dparty[i][0]]
+					Global.cstats[Global.dparty[i][0]][j] = Global.basestats[Global.dparty[i][0]][j] * Global.dlevel[Global.dparty[i][0]]
 	else:
 		for i in 4:
 			if Global.party[i][0] != null:
 				for j in 7:
-					Global.mstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.dparty[i][0]]
+					Global.mstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.party[i][0]]
+					Global.cstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.party[i][0]]
 func _pausemenu():
 	if Global.live == 1 && !ispaused:
 		get_tree().root.remove_child(bhud)
@@ -139,9 +141,18 @@ func _exit():
 	#get_tree().root.remove_child(player)
 	get_tree().root.remove_child(level)
 	if Global.live == 7:
+		if !Global.debug:
+			Global.cplace = [0, 0, 0]
 		get_tree().change_scene_to_file("res://backgounds/result.tscn")
 	elif Global.live == 8:
 		get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
+	elif Global.live == 5:
+		_statrebase()
+		get_tree().change_scene_to_file("res://backgounds/warp.tscn")
+	elif Global.live == 2:
+		_statrebase()
+		get_tree().root.remove_child(thud)
+		get_tree().change_scene_to_file("res://backgounds/gameover.tscn")
 	elif Global.live == 6:
 		if Global.debug:
 			Global.live = 0

@@ -3,9 +3,11 @@ var cff
 var cnf
 var chealthf
 var clevel
+var warpmenu
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	warpmenu = $CanvasLayer/HBoxContainer2/VBoxContainer/Warp
 	cff = $CanvasLayer/HBoxContainer/TextureRect
 	cnf = $CanvasLayer/HBoxContainer/VBoxContainer/Cname
 	chealthf = $CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer/Label2
@@ -24,6 +26,16 @@ func _input(event):
 
 func _fetchdata():
 	if Global.debug:
+		if Global.dplace != [1, 11, 19] && (Global.dplace[0] == 1 || Global.dplace[0] == 2):
+			warpmenu.visible = true
+		else:
+			warpmenu.visible = false
+	else:
+		if Global.cplace != [1, 11, 19] && (Global.cplace[0] == 1 || Global.dplace[0] == 2):
+			warpmenu.visible = true
+		else:
+			warpmenu.visible = false
+	if Global.debug:
 		cnf.set_text(Global.pcnames[Global.dparty[Global.dcpchar][0]])
 		cff.texture = load(Global.hudfaces[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
 		chealthf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
@@ -38,3 +50,11 @@ func _fetchdata():
 func _on_exit_pressed():
 	Global.live = 6
 	#pass # Replace with function body.
+
+
+func _on_warp_pressed() -> void:
+	if Global.debug:
+		Global.dplace = [0, 0, 0]
+	else:
+		Global.cplace = [0, 0, 0]
+	Global.live = 5

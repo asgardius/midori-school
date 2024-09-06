@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://i46ouafr1o3t"]
+
+[ext_resource type="Script" path="res://backgounds/gameover.gd" id="1_5r0kb"]
+
+[node name="Gameover" type="Node2D"]
+script = ExtResource("1_5r0kb")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 178.0
+offset_top = 214.0
+offset_right = 1046.0
+offset_bottom = 433.0
+theme_override_font_sizes/font_size = 160
+text = "Game Over"
