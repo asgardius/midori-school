@@ -1,6 +1,7 @@
 extends Control
+const gamepadtest = preload("res://gamepad.gd")
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$VBoxContainer/L20.grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,6 +25,7 @@ func _level():
 		#boot.queue_free()
 
 func _input(event):
+	gamepadtest.new(event)
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()

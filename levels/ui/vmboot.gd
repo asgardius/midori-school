@@ -4,6 +4,7 @@ var stage = 0
 var bg
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	bg = $TextureRect
 	bg.texture = load(backgrounds[stage])
 	#pass # Replace with function body.

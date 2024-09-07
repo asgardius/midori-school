@@ -1,7 +1,8 @@
 extends Control
+const gamepadtest = preload("res://gamepad.gd")
 func _ready():
 	_statrebase()
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	Global.debug = true
 	$"VBoxContainer/Gamepad Test".grab_focus()
 
@@ -26,6 +27,7 @@ func _level():
 		#boot.queue_free()
 
 func _input(event):
+	gamepadtest.new(event)
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()

@@ -1,10 +1,13 @@
 extends Node2D
+var presscontinue
 
 var rmusic := AudioStreamPlayer.new()
 var wait
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	presscontinue = $Label2
+	updatehud()
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(rmusic)
 	var titlemusic = load(Global.musictracks[1])
 	rmusic.stream = titlemusic
@@ -19,6 +22,7 @@ func _process(delta):
 	pass
 
 func _input(event):
+	updatehud()
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
@@ -34,3 +38,13 @@ func _title():
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
+
+func updatehud():
+	if Global.gamepad == 0:
+		presscontinue.set_text(tr("TEXT_CONTINUE_KB"))
+	elif Global.gamepad == 1:
+		presscontinue.set_text(tr("TEXT_CONTINUE_US"))
+	elif Global.gamepad == 2:
+		presscontinue.set_text(tr("TEXT_CONTINUE_JA"))
+	elif Global.gamepad == 3:
+		presscontinue.set_text(tr("TEXT_CONTINUE_GEO"))

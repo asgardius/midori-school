@@ -1,4 +1,5 @@
 extends Control
+const gamepadtest = preload("res://gamepad.gd")
 var bgsound := AudioStreamPlayer.new()
 var fl
 var fr
@@ -27,6 +28,7 @@ func _ready() -> void:
 	bgsound.play(0)
 
 func _input(event):
+	gamepadtest.new(event)
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().change_scene_to_file("res://levels/ui/soundtest.tscn")

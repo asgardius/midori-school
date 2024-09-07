@@ -1,10 +1,11 @@
 extends Control
 
+const gamepadtest = preload("res://gamepad.gd")
 var player := AudioStreamPlayer.new()
 var infobox
 
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
 	player.mix_target = 1
 	player.bus = &"Music"
@@ -33,6 +34,7 @@ func _level():
 		#boot.queue_free()
 
 func _input(event):
+	gamepadtest.new(event)
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()

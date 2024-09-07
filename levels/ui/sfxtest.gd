@@ -1,4 +1,5 @@
 extends Control
+const gamepadtest = preload("res://gamepad.gd")
 
 var player := AudioStreamPlayer.new()
 
@@ -31,6 +32,7 @@ func _level():
 		#boot.queue_free()
 
 func _input(event):
+	gamepadtest.new(event)
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()

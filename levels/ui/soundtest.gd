@@ -1,7 +1,8 @@
 extends Control
+const gamepadtest = preload("res://gamepad.gd")
 var alsatest
 func _ready():
-	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	alsatest = $VBoxContainer/ALSA
 	$"VBoxContainer/Music".grab_focus()
 	if OS.get_name() == "Linux":
@@ -13,6 +14,7 @@ func _process(delta):
 
 
 func _input(event):
+	gamepadtest.new(event)
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_back_pressed()
