@@ -52,9 +52,11 @@ var cboss
 var nboss
 var boss
 var bossbg
+var ctime
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	ctime = $CanvasLayer/Time
 	topleft = $CanvasLayer/Topleft
 	topleftbg = $CanvasLayer/Topleftbg
 	topmini = $CanvasLayer/Topmini
@@ -130,6 +132,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+		_charrefresh()
+		ctime.set_text(Time.get_time_string_from_system(false).erase(5, 3))
 		if Global.debug:
 			chealthf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
 			cstaminaf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][1]))
@@ -163,7 +167,7 @@ func _input(event):
 	elif Input.is_action_just_released("schar"):
 		topleft.visible = false
 		topleftbg.visible = false
-	_charrefresh()
+	#_charrefresh()
 func _charrefresh():
 	if topleft.visible:
 		if Global.debug:
