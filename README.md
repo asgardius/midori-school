@@ -15,7 +15,8 @@ Join community matrix channel at https://matrix.to/#/!gRTRfIdWGKLyCVEusd:asgardi
 If you want to help in game development ask at https://matrix.to/#/!bqRfvdEXZATmMsQTSf:asgardius.company?via=asgardius.company
 
 Download links https://elda.asgardius.company/virtualxrpg-dl/
-bittorrent downloads https://elda.asgardius.company/virtualxrpg-dl/
+
+Bittorrent downloads https://elda.asgardius.company/virtualxrpg-torrent/
 
 # Plot
 
