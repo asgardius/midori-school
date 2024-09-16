@@ -47,7 +47,7 @@ var hiscoresfile = "user://hiscores.save"
 var gamelevel
 var levelmax
 var firstrun
-const musictracks = ["res://music/midorinoakuma.wav", "res://music/seahorse.wav", "res://music/chinesegoat.wav", "res://music/doyoufeelold.wav", "res://music/doyiuneedahealer.wav", "res://music/adayatceres.wav", "res://music/twintroublemakers.wav", "res://music/easyquiz.wav", "res://music/neowave.wav", "res://music/multivectorsubmarines.wav", "res://music/halfgeniegirls.wav", "res://music/rusianmaverickfairy.wav", "res://music/blacksmithofdestruction.wav", "res://music/shininglikefireworks.wav", "res://music/sadtrashcan.wav", "res://music/akikoletter.wav", "res://music/asadcat.wav", "res://music/lilydesire.wav", "res://music/scholartrip.wav", "res://music/quantumice.wav", "res://music/unreeeal.wav", "res://music/alsa.wav", "res://music/silverblue.wav"]
+const musictracks = ["res://music/midorinoyume.ogg", "res://music/seahorse.ogg", "res://music/chinesegoat.ogg", "res://music/doyoufeelold.ogg", "res://music/doyiuneedahealer.ogg", "res://music/adayatceres.ogg", "res://music/twintroublemakers.ogg", "res://music/easyquiz.ogg", "res://music/neowave.ogg", "res://music/multivectorsubmarines.ogg", "res://music/halfgeniegirls.ogg", "res://music/rusianmaverickfairy.ogg", "res://music/blacksmithofdestruction.ogg", "res://music/shininglikefireworks.ogg", "res://music/sadtrashcan.ogg", "res://music/akikoletter.ogg", "res://music/asadcat.ogg", "res://music/lilydesire.ogg", "res://music/scholartrip.ogg", "res://music/quantumice.ogg", "res://music/unreeeal.ogg", "res://music/alsa.ogg", "res://music/silverblue.ogg"]
 const sfxtracks = ["res://sfx/braindamage.wav", "res://sfx/gaugefill.wav", "res://sfx/boomboombakudan.wav"]
 var debug = false
 const release = "R0.1.11-alpha"
