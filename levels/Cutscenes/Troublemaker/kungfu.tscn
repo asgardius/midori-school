@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgndmlvrvfetr"]
+
+[ext_resource type="Script" path="res://levels/Cutscenes/Troublemaker/kungfu.gd" id="1_dab6h"]
+[ext_resource type="Texture2D" uid="uid://rurrmoxngtek" path="res://backgounds/Pamela Hashimoto fury.jpg" id="1_rcce4"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_4y4yi"]
+
+[node name="Kungfu" type="Node2D"]
+script = ExtResource("1_dab6h")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1278.0
+offset_bottom = 600.0
+texture = ExtResource("1_rcce4")
+
+[node name="Text" type="Label" parent="."]
+offset_left = 52.0
+offset_top = 606.0
+offset_right = 1224.0
+offset_bottom = 714.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "CUTSCENE_3_2"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("2_4y4yi")]

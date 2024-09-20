@@ -20,11 +20,14 @@ func _process(delta):
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_accept") && travel != null:
-		if Global.debug:
-			Global.dplace = travel
+		if Global.ccutscene == null:
+			if Global.debug:
+				Global.dplace = travel
+			else:
+				Global.cplace = travel
+			Global.live = 5
 		else:
-			Global.cplace = travel
-		Global.live = 5
+			Global.live = 8
 
 func _statrebase():
 	for i in 4:
@@ -34,6 +37,7 @@ func _statrebase():
 
 
 func _on_railwaygirl_body_entered(body: Node2D) -> void:
+	Global.ccutscene = 10
 	travel = [1, 8, 11]
 
 
@@ -42,6 +46,7 @@ func _on_railwaygirl_body_exited(body: Node2D) -> void:
 
 
 func _on_pamela_body_entered(body: Node2D) -> void:
+	Global.ccutscene = 13
 	travel = [1, 1, 17]
 
 

@@ -67,13 +67,13 @@ text = "CUTSCENE_1_NAME"
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "BUTTON_PLACEHOLDER"
+text = "Honker Railway"
 
 [node name="Results" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "BUTTON_PLACEHOLDER"
+text = "TWIN_TROUBLEMAKERS"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
 layout_mode = 2

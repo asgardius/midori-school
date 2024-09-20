@@ -59,7 +59,8 @@ func _on_wip_pressed():
 
 func _on_results_pressed():
 	#get_tree().change_scene_to_file("res://backgounds/result.tscn")
-	pass
+	Global.ccutscene = 13
+	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
 
 
 func _on_disclaimer_pressed():
@@ -76,4 +77,5 @@ func _on_testrooms_pressed():
 
 func _on_ceres_pressed():
 	#get_tree().change_scene_to_file("res://levels/ui/ceres.tscn")
-	pass
+	Global.ccutscene = 10
+	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
