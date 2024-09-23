@@ -1,18 +1,18 @@
 [gd_scene load_steps=4 format=3 uid="uid://bex0xeqbq5uci"]
 
-[ext_resource type="Script" path="res://sprites/common/bullet/sword.gd" id="1_7tric"]
-[ext_resource type="Texture2D" uid="uid://ca17ddf0kokpv" path="res://sprites/common/bullet/sword.png" id="2_pgywo"]
+[ext_resource type="Script" path="res://sprites/common/bullet/aero.gd" id="1_rovd1"]
+[ext_resource type="Texture2D" uid="uid://ca17ddf0kokpv" path="res://sprites/common/bullet/aero.png" id="2_omcs8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g125y"]
 size = Vector2(128, 28)
 
-[node name="Sword" type="Area2D"]
-script = ExtResource("1_7tric")
+[node name="Aero" type="Area2D"]
+script = ExtResource("1_rovd1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 64)
 rotation = 1.5708
-texture = ExtResource("2_pgywo")
+texture = ExtResource("2_omcs8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 64)
