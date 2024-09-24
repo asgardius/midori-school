@@ -4,9 +4,7 @@ var startbutton
 func _ready():
 	startbutton = $VBoxContainer/Start
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	$VBoxContainer/Start.grab_focus()
-	if Global.dificulty != 0:
-		startbutton.set_text(tr("BUTTON_CONTINUE"))
+	$VBoxContainer/Load.grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -31,7 +29,7 @@ func _level():
 func _input(event):
 	gamepadtest.new(event)
 	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().change_scene_to_file("res://title.tscn")
+		get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")
 #    Mouse in viewport coordinates.
 #	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
 #		print("Mouse Click/Unclick at: ", event.position)
@@ -45,24 +43,14 @@ func _input(event):
 #		focus_next
 			
 
-func _on_start_pressed():
-	if Global.dificulty == 0:
-		get_tree().change_scene_to_file("res://levels/ui/newgame.tscn")
-	else:
-		Global.live = 1
-		get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
-	#_level()
-	#pass # Replace with function body.
+
+func _on_load_pressed() -> void:
+	pass # Replace with function body.
 
 
-func _on_debug_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/debug.tscn")
+func _on_save_pressed() -> void:
+	pass # Replace with function body.
 
 
-func _on_exit_pressed():
-	get_tree().quit()
-	#pass # Replace with function body.
-
-
-func _on_savefile_pressed() -> void:
-	get_tree().change_scene_to_file("res://levels/ui/savefile.tscn")
+func _on_erase_pressed() -> void:
+	Global.dificulty = 0

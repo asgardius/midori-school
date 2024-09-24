@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://s8ttuboef06k"]
+[gd_scene load_steps=7 format=3 uid="uid://dxegyw736dnig"]
 
-[ext_resource type="Script" path="res://levels/ui/tmenu.gd" id="1_w3aym"]
-[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_sqp06"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_0qcfw"]
+[ext_resource type="Script" path="res://levels/ui/savefile.gd" id="1_6r0p0"]
+[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_nirgk"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_bpp6x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
 bg_color = Color(0, 0.8, 0, 1)
@@ -13,20 +13,20 @@ bg_color = Color(0, 0.8, 0, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
 bg_color = Color(0, 0.8, 0, 1)
 
-[node name="Tmenu" type="Control"]
+[node name="Savefile" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_w3aym")
+script = ExtResource("1_6r0p0")
 
 [node name="Night Sky" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 720.0
-texture = ExtResource("2_sqp06")
+texture = ExtResource("2_nirgk")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
@@ -35,10 +35,10 @@ offset_top = 113.0
 offset_right = 1237.0
 offset_bottom = 243.0
 theme_override_font_sizes/font_size = 95
-text = "GAME_NAME"
+text = "BUTTON_PERSISTENCE"
 horizontal_alignment = 1
 
-[node name="Bottomhud" parent="." instance=ExtResource("4_0qcfw")]
+[node name="Bottomhud" parent="." instance=ExtResource("3_bpp6x")]
 layout_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -54,31 +54,24 @@ offset_right = 322.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Start" type="Button" parent="VBoxContainer"]
+[node name="Load" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
-text = "BUTTON_START"
+text = "BUTTON_LOAD"
 
-[node name="Debug" type="Button" parent="VBoxContainer"]
+[node name="Save" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "BUTTON_DEBUG"
+text = "BUTTON_SAVE"
 
-[node name="Savefile" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 80
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "BUTTON_PERSISTENCE"
-
-[node name="Exit" type="Button" parent="VBoxContainer"]
+[node name="Erase" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
-text = "BUTTON_EXIT"
+text = "BUTTON_ERASE"
 
-[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Debug" to="." method="_on_debug_pressed"]
-[connection signal="pressed" from="VBoxContainer/Savefile" to="." method="_on_savefile_pressed"]
-[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer/Load" to="." method="_on_load_pressed"]
+[connection signal="pressed" from="VBoxContainer/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="VBoxContainer/Erase" to="." method="_on_erase_pressed"]
