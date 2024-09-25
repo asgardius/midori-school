@@ -10,6 +10,8 @@ func _ready():
 	Global.cdialog = [[tr("DIALOG_CERES_L20_0"), true, 0, 0], [tr("DIALOG_CERES_L20_1"), false, 3], [tr("DIALOG_CERES_L20_2"), true, 0, 0]]
 	Global.live = 0
 	get_tree().root.add_child.call(talk)
+	if !Global.debug:
+		Global.quest[0] = 1
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -30,6 +32,8 @@ func _input(event):
 		Global.cdialog = []
 	
 func _winner():
+	Global.quest[0] = 3
+	Global.quest[1] = 1
 	Global.cdialog = [[tr("DIALOG_CERES_L20_3"), true, 0, 0], [tr("DIALOG_CERES_L20_4"), false, 3], [tr("DIALOG_CERES_L20_5"), true, 0, 0]]
 	Global.live = 3
 	Global.ccutscene = 6

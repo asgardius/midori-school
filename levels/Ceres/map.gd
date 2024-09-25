@@ -11,6 +11,10 @@ func _ready():
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
+	if Global.quest[1] == 0:
+		hkr.queue_free()
+	if Global.quest[2] == 0:
+		troublemaker.queue_free()
 	#pass # Replace with function body.
 
 
