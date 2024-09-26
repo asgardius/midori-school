@@ -43,10 +43,6 @@ var dcpchar = 0
 var mangohud = false
 var cspawnarea = [null, null]
 var owlocation = [[null, null], [null, null]]
-var hiscoresfile = "user://hiscores.save"
-var gamelevel
-var levelmax
-var firstrun
 const musictracks = ["res://music/midorinoyume.ogg", "res://music/seahorse.ogg", "res://music/chinesegoat.ogg", "res://music/doyoufeelold.ogg", "res://music/doyiuneedahealer.ogg", "res://music/adayatceres.ogg", "res://music/twintroublemakers.ogg", "res://music/easyquiz.ogg", "res://music/neowave.ogg", "res://music/multivectorsubmarines.ogg", "res://music/halfgeniegirls.ogg", "res://music/rusianmaverickfairy.ogg", "res://music/blacksmithofdestruction.ogg", "res://music/shininglikefireworks.ogg", "res://music/sadtrashcan.ogg", "res://music/akikoletter.ogg", "res://music/asadcat.ogg", "res://music/lilydesire.ogg", "res://music/scholartrip.ogg", "res://music/quantumice.ogg", "res://music/unreeeal.ogg", "res://music/alsa.ogg", "res://music/silverblue.ogg"]
 const sfxtracks = ["res://sfx/braindamage.wav", "res://sfx/gaugefill.wav", "res://sfx/boomboombakudan.wav"]
 var debug = false

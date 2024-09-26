@@ -14,10 +14,7 @@ func _ready():
 	if Global.sk:
 		_sk()
 	else:
-		if Global.firstrun:
-			welcometext = "Welcome to your first session "+playername
-		else:
-			welcometext = "Welcome back "+playername
+		welcometext = "Welcome "+playername
 		if housefreedom:
 			welcometext = welcometext+"\nValve corporation promotes enviromental pollution"
 		if OS.get_environment("MANGOHUD").contains("1"):

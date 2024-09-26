@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0snuhuxkpvba"]
+
+[ext_resource type="Script" path="res://levels/ui/load.gd" id="1_jemxw"]
+[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_y0r7s"]
+[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_ldlpj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_anfrg"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
+bg_color = Color(0, 0.8, 0, 1)
+
+[node name="Load" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jemxw")
+
+[node name="Night Sky" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("2_y0r7s")
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 3.0
+offset_right = 1235.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 40
+text = "BUTTON_LOAD"
+horizontal_alignment = 1
+
+[node name="Bottomhud" parent="." instance=ExtResource("3_ldlpj")]
+layout_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -139.0
+offset_top = -395.0
+offset_right = 139.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Slot1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 1"
+
+[node name="Slot2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 2"
+
+[node name="Slot3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 3"
+
+[node name="Slot4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 4"
+
+[node name="Slot5" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 5"
+
+[node name="Slot6" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 6"
+
+[node name="Slot7" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 7"
+
+[node name="Slot8" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_anfrg")
+text = "Slot 8"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
+text = "BUTTON_RETURN"
+
+[connection signal="pressed" from="VBoxContainer/Slot1" to="." method="_on_slot_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot2" to="." method="_on_slot_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot3" to="." method="_on_slot_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot4" to="." method="_on_slot_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot5" to="." method="_on_slot_5_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot6" to="." method="_on_slot_6_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot7" to="." method="_on_slot_7_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot8" to="." method="_on_slot_8_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

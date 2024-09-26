@@ -31,9 +31,9 @@ texture = ExtResource("2_nirgk")
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
 offset_left = 31.0
-offset_top = 113.0
+offset_top = 77.0
 offset_right = 1237.0
-offset_bottom = 243.0
+offset_bottom = 207.0
 theme_override_font_sizes/font_size = 95
 text = "BUTTON_PERSISTENCE"
 horizontal_alignment = 1
@@ -72,6 +72,13 @@ theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
 text = "BUTTON_ERASE"
 
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 80
+theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
+text = "BUTTON_RETURN"
+
 [connection signal="pressed" from="VBoxContainer/Load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="VBoxContainer/Save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="VBoxContainer/Erase" to="." method="_on_erase_pressed"]
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

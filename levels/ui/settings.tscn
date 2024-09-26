@@ -73,7 +73,7 @@ text = "BUTTON_DEBUG"
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "BUTTON_PLACEHOLDER"
+text = "BUTTON_PERSISTENCE"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
 layout_mode = 2

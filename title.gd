@@ -16,7 +16,6 @@ func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	#if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
 	#	Global.sk = true
-	Global.gamelevel = null
 	add_child(bgsound)
 	var titlemusic = load(Global.musictracks[0])
 	bgsound.stream = titlemusic

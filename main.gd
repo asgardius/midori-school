@@ -12,7 +12,7 @@ func _ready():
 	updatehud()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	#OS.get_data_dir().rsplit("/", true, 7)[2]
-	#loadgame.new()
+	loadgame.new(0)
 	#print(OS.get_processor_name())
 	#pass # Replace with function body.
 	#add_child(title)

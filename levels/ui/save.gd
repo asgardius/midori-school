@@ -1,12 +1,10 @@
 extends Control
 const gamepadtest = preload("res://gamepad.gd")
-var startbutton
+const savegame = preload("res://save.gd")
 func _ready():
-	startbutton = $VBoxContainer/Start
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	$VBoxContainer/Start.grab_focus()
-	if Global.dificulty != 0:
-		startbutton.set_text(tr("BUTTON_CONTINUE"))
+	$VBoxContainer/Slot1.grab_focus()
+		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -15,7 +13,7 @@ func _process(delta):
 func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-	get_tree().change_scene_to_file("res://backgounds/wip.tscn")
+	get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
 		#Global.live = 1
 		#Global.gamelevel = randi() % 3
 		#if Global.gamelevel == 0:
@@ -30,11 +28,10 @@ func _level():
 
 func _input(event):
 	gamepadtest.new(event)
+   # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().change_scene_to_file("res://title.tscn")
-#    Mouse in viewport coordinates.
-#	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
-#		print("Mouse Click/Unclick at: ", event.position)
+		_on_back_pressed()
+		#print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
 #			_on_debug_pressed()
 #		if highlighted == 2:
@@ -45,20 +42,48 @@ func _input(event):
 #		focus_next
 			
 
-func _on_start_pressed():
-	if Global.dificulty == 0:
-		get_tree().change_scene_to_file("res://levels/ui/newgame.tscn")
-	else:
-		Global.live = 1
-		get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
-	#_level()
-	#pass # Replace with function body.
 
 
-func _on_debug_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/settings.tscn")
 
 
-func _on_exit_pressed():
-	get_tree().quit()
-	#pass # Replace with functio
+func _on_back_pressed():
+	get_tree().change_scene_to_file("res://levels/ui/savefile.tscn")
+
+func _on_slot_1_pressed() -> void:
+	savegame.new(1, false)
+	_on_back_pressed()
+
+
+func _on_slot_2_pressed() -> void:
+	savegame.new(2, false)
+	_on_back_pressed()
+
+
+func _on_slot_3_pressed() -> void:
+	savegame.new(3, false)
+	_on_back_pressed()
+
+
+func _on_slot_4_pressed() -> void:
+	savegame.new(4, false)
+	_on_back_pressed()
+
+
+func _on_slot_5_pressed() -> void:
+	savegame.new(5, false)
+	_on_back_pressed()
+
+
+func _on_slot_6_pressed() -> void:
+	savegame.new(6, false)
+	_on_back_pressed()
+
+
+func _on_slot_7_pressed() -> void:
+	savegame.new(7, false)
+	_on_back_pressed()
+
+
+func _on_slot_8_pressed() -> void:
+	savegame.new(8, false)
+	_on_back_pressed()
