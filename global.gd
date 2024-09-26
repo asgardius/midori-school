@@ -38,6 +38,7 @@ var dparty = [[0,0], [1,0], [3,0], [9,0]]
 var level = [1,1,1,1,1,1,1,1,1,1]
 var dlevel = [1,1,1,1,1,1,1,1,1,1]
 var cpchar = 0
+var result = [0, 0, 0, 0, 0]
 var dificulty = 0
 var dcpchar = 0
 var mangohud = false

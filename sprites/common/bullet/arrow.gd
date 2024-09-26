@@ -36,7 +36,7 @@ func _on_body_entered(body):
 	if !body.is_in_group(btype):
 		if body.is_in_group("players") && Global.dificulty != 1:
 			if body.weakness == speciality:
-				print("weakness")
+				Global.result[3] += attack * crit
 				#Input.start_joy_vibration(0,0,1,3)
 				if Global.debug:
 					if Global.dstats[Global.dparty[Global.dcpchar][0]][0] > (attack * crit):
@@ -49,6 +49,7 @@ func _on_body_entered(body):
 					else:
 						Global.cstats[Global.party[Global.cpchar][0]][0] = 0
 			else:
+				Global.result[3] += attack
 				#Input.start_joy_vibration(0,1,0,2)
 				if Global.debug:
 					if Global.dstats[Global.dparty[Global.dcpchar][0]][0] > attack:

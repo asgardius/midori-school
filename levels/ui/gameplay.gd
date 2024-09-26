@@ -46,6 +46,7 @@ func _ready():
 	bgsound.mix_target = 1
 	sfx1.mix_target = 1
 	sfx1.bus = &"SFX1"
+	Global.wait = Time.get_ticks_msec()
 	if !Global.isboss:
 		bgsound.play(0)
 		
@@ -141,19 +142,20 @@ func _exit():
 	#get_tree().root.remove_child(player)
 	get_tree().root.remove_child(level)
 	if Global.live == 7:
-		if !Global.debug:
-			Global.cplace = [0, 0, 0]
 		get_tree().change_scene_to_file("res://backgounds/result.tscn")
 	elif Global.live == 8:
 		get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
 	elif Global.live == 5:
+		Global.result = [0, 0, 0, 0, 0]
 		_statrebase()
 		get_tree().change_scene_to_file("res://backgounds/warp.tscn")
 	elif Global.live == 2:
+		Global.result = [0, 0, 0, 0, 0]
 		_statrebase()
 		get_tree().root.remove_child(thud)
 		get_tree().change_scene_to_file("res://backgounds/gameover.tscn")
 	elif Global.live == 6:
+		Global.result = [0, 0, 0, 0, 0]
 		if Global.debug:
 			Global.live = 0
 			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
