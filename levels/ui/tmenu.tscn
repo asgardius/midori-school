@@ -64,7 +64,7 @@ text = "BUTTON_START"
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
-text = "BUTTON_DEBUG"
+text = "BUTTON_SETTINGS"
 
 [node name="Savefile" type="Button" parent="VBoxContainer"]
 layout_mode = 2
