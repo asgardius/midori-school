@@ -3,10 +3,10 @@
 <img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/icon.png>
 
 An Action Role Playing Game inspired by Alundra, Touhou Project, Megaman X, among others. The only Open Source Genshin Killer and the only game at the moment that offers official bittorrent downloads. This game is made using Godot Engine
-At the moment this game is in alpha development stage. If you want to help send me an email to asgardius@asgardius.company
+At the moment this game is in beta development stage. If you want to help send me an email to asgardius@asgardius.company
 You can find game documentation at https://cloud.asgardius.company/s/3tPKHsMznzMjzEc?path=%2Fgame%20documentation%2FMidori%20in%20the%20Magic%20School
 
-A beta build will be released at september 28 2024 (unfunaversary build) and First stable release is scheduled near Half Life 3 release
+First stable release is scheduled near Half Life 3 release (or maybe an Unfunaversary Day)
 
 Official video channel https://video.asgardius.company/c/asgardius_virtualx
 
@@ -24,7 +24,7 @@ Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since mu
 
 # What is a Genshin Killer?
 
-From my point of view, a Genshin Killer is an Anime RPG which include elves among its playable Characters. This term is used since Genshin Impact gained popularity. Midori in the Magic School is a Genshin Killer because most of its playable characters are elves. Genshin Impact has 3 playable characters that look like elves. Honkai Impact 3rd has a playable elf (Elysia). Wuthering Waves also has an elf as a playable character (Yinlin, a tribute to Kimberly Arch from Midori in the Magic School). Tower of Fantasy and Honkai Star Rail aren't Genshin Killers because those games haven't playable characters that look like elves. Somebody else might have another point of view about this term, but won't be used here
+From my point of view, a Genshin Killer is an Anime RPG which include elves among its playable Characters. This term is used since Genshin Impact gained popularity. Midori in the Magic School is a Genshin Killer because most of its playable characters are elves. Genshin Impact has 3 playable characters that look like elves (+1 upcoming one). Honkai Impact 3rd has a playable elf (Elysia). Wuthering Waves also has an elf as a playable character (Yinlin, a tribute to Kimberly Arch from Midori in the Magic School). Honkai: Star Rail has a playable dragon girl that look like an elf (Lingsha). Tower of Fantasy is not a Genshin Killer because that game hasn't playable characters that look like elves. Somebody else might have another point of view about this term, but won't be used here. This is a Genshin Killer, not a Genshin Like
 
 # Why this game doesn't have builds for Microsoft Windows? Most players are using that OS
 
@@ -38,7 +38,11 @@ I don't have experience creating 3d models, but i have experience drawing on pap
 
 Almost nothing. If you want to know game plot, you can read it separately as an ebook
 
-# About Falcighol Setalth Anticheat System
+# Why your game looks like a Paul Klee Painting?
+
+Because Midori Asgardius loves fireworks. You know, because this is a Genshin Killer
+
+# About Falcighol Stealth Anticheat System
 
 This game is the first to use Falcighol Stealth Anticheat, an anticheat system based on integrity check which is part of game code. Some player actions will trigger an integrity check, if checksum match, you can play without issues. If checksum mismatch, game will crash. You can use memory scanners to check current game data, but you must avoid changing some value, otherwise checksum will fail and this game will crash. Popful Mail for Sega CD has a similar anticheat system, and cheaters must change unchecked variables to cheat without crashing that game (hp meter is only checked value on that game, but you can set infinite ressurrect elixir instead). A 4 player LAN mode is planned. This anticheat system will be used at Asgardius Online MMO (that game may be ready at Half Life 4 release day)
 
