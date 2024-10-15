@@ -52,7 +52,7 @@ Virtualxrpg is the codename used for this game. This is an attempt to create a R
 
 # Why you don't have accounts at mainstream "Social Media"?
 
-Because that is not a true social media and ti's too mainstream. Remember that i don't follow trends
+Because that is not a true social media and it's too mainstream. Remember that i don't follow trends
 
 # Why you aren't using Unity for this game?
 
