@@ -17,6 +17,7 @@ var bpress = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var weakness
 var speciality
+var rboost = 1
 
 func _ready():
 	add_to_group("players")
@@ -64,7 +65,7 @@ func _physics_process(delta):
 	#var velocity = Vector2.ZERO
 	#if Global.live == 1 || (xm == 0 && ym == 0):
 	if speed != null:
-		velocity = (Vector2.RIGHT.rotated(rotation) * speed * xm * delta)-Vector2.UP.rotated(rotation) * speed * ym * delta
+		velocity = (Vector2.RIGHT.rotated(rotation) * speed * xm * delta * rboost)-Vector2.UP.rotated(rotation) * speed * ym * delta * rboost
 			#origmpos = get_viewport().get_mouse_position()
 		#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 		#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
@@ -116,9 +117,15 @@ func _input(event):
 					ym = -1
 				if Input.is_action_pressed("ui_down"):
 					ym = 1
+			if Input.is_action_pressed("run"):
+				rboost = 4
+			elif Global.gamepad > 0:
+				rboost = (Input.get_joy_axis(0,JOY_AXIS_TRIGGER_RIGHT) + 1)*2
+			else:
+				rboost = 1
 		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
 			_charswitch()
-		if Input.is_action_just_pressed("button0") && !bpress && Global.live == 1:
+		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
 			bpress = true
 			var bullet
 			if Global.debug:
@@ -138,7 +145,7 @@ func _input(event):
 				new_pbullet.position = Vector2(position.x + rposition.x, position.y + rposition.y)
 			if new_pbullet.position.x > 0 && new_pbullet.position.y > 0 && new_pbullet.position.x < 1280 && new_pbullet.position.y < 720:
 				get_parent().add_child(new_pbullet)
-		elif Input.is_action_just_released("button0") && bpress:
+		elif Input.is_action_just_released("shoot") && bpress:
 			bpress = false
 
 func _charinit():
