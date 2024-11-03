@@ -1,49 +1,63 @@
 extends Node
-var file
+var file = File.new()
 var fileslot
 func _init(slot):
-	if FileAccess.file_exists("user://userprefs"):
+	if file.file_exists("user://userprefs"):
 		
 		
-		file = FileAccess.open("user://userprefs", FileAccess.READ)
+		file.open("user://userprefs", File.READ)
 		var savefile = file.get_as_text().rsplit(",", true, 7)
 		file.close()
-		DisplayServer.window_set_vsync_mode(int(savefile[1]))
-		DisplayServer.window_set_mode(int(savefile[2]))
+		if int(savefile[1]) > 0:
+			OS.set_use_vsync(true)
+		else:
+			OS.set_use_vsync(false)
+		if int(savefile[2]) > 0:
+			OS.set_window_fullscreen(true)
+		else:
+			OS.set_window_fullscreen(false)
 		if slot == 0:
 			fileslot = int(savefile[0])
 		else:
 			fileslot = slot
 		if fileslot == 1:
-			file = FileAccess.open("user://slot1", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot1", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		elif fileslot == 2:
-			file = FileAccess.open("user://slot2", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot2", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		elif fileslot == 3:
-			file = FileAccess.open("user://slot3", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot3", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		elif fileslot == 4:
-			file = FileAccess.open("user://slot4", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot4", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		elif fileslot == 5:
-			file = FileAccess.open("user://slot5", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot5", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		elif fileslot == 6:
-			file = FileAccess.open("user://slot6", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot6", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		elif fileslot == 7:
-			file = FileAccess.open("user://slot7", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot7", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		elif fileslot == 8:
-			file = FileAccess.open("user://slot8", FileAccess.READ)
+			file = File.new()
+			file.open("user://slot8", File.READ)
 			savefile = file.get_as_text().rsplit("\n", true, 7)
 			file.close()
 		if fileslot != 0:
@@ -56,19 +70,19 @@ func _init(slot):
 			quest = savefile[0].rsplit(",", true, 9)
 			Global.party[0][0] = int(quest[0])
 			Global.party[0][1] = int(quest[1])
-			if quest[2].is_valid_int():
+			if quest[2] is int:
 				Global.party[1][0] = int(quest[2])
 				Global.party[1][1] = int(quest[3])
 			else:
 				Global.party[1][0] = null
 				Global.party[1][1] = null
-			if quest[4].is_valid_int():
+			if quest[4] is int:
 				Global.party[2][0] = int(quest[4])
 				Global.party[2][1] = int(quest[5])
 			else:
 				Global.party[2][0] = null
 				Global.party[2][1] = null
-			if quest[6].is_valid_int():
+			if quest[6] is int:
 				Global.party[3][0] = int(quest[6])
 				Global.party[3][1] = int(quest[7])
 			else:
@@ -86,32 +100,41 @@ func _init(slot):
 	# the object it represents.
 	else:
 		#Global.firstrun = true
-		var saveinit = "0,1,3"
-		var file = FileAccess.open("user://userprefs", FileAccess.WRITE)
+		var saveinit = "0,1,1"
+		var file = File.new()
+		file.open("user://userprefs", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 		saveinit = "0,0,<null>,<null>,<null>,<null>,<null>,<null>\n0\n0\n1,11,19\n0,0,0,0,0,0"
-		file = FileAccess.open("user://slot1", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot1", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		file = FileAccess.open("user://slot2", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot2", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		file = FileAccess.open("user://slot3", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot3", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		file = FileAccess.open("user://slot4", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot4", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		file = FileAccess.open("user://slot5", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot5", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		file = FileAccess.open("user://slot6", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot6", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		file = FileAccess.open("user://slot7", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot7", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		file = FileAccess.open("user://slot8", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot8", File.WRITE)
 		file.store_string(saveinit)
 		file.close()

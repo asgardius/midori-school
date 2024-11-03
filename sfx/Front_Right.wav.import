@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://dpn17gurdra0l"
-path="res://.godot/imported/Front_Right.wav-5dd70c9f039cc4ed6c8a029a67225842.sample"
+type="AudioStreamSample"
+path="res://.import/Front_Right.wav-5dd70c9f039cc4ed6c8a029a67225842.sample"
 
 [deps]
 
 source_file="res://sfx/Front_Right.wav"
-dest_files=["res://.godot/imported/Front_Right.wav-5dd70c9f039cc4ed6c8a029a67225842.sample"]
+dest_files=[ "res://.import/Front_Right.wav-5dd70c9f039cc4ed6c8a029a67225842.sample" ]
 
 [params]
 

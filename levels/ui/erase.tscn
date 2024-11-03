@@ -1,123 +1,129 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbdi41u4i0yy4"]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource type="Script" path="res://levels/ui/erase.gd" id="1_csqu8"]
-[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_6n1ip"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_72nl0"]
+[ext_resource path="res://backgounds/night-sky-at-ceres.jpg" type="Texture" id=1]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
+[ext_resource path="res://levels/ui/erase.gd" type="Script" id=3]
+[ext_resource path="res://fonts/start.tres" type="DynamicFont" id=4]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6u0xs"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0.8, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0.8, 0, 1 )
 
 [node name="Erase" type="Control"]
-layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_csqu8")
+script = ExtResource( 3 )
 
 [node name="Night Sky" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 720.0
-texture = ExtResource("2_6n1ip")
+margin_right = 1280.0
+margin_bottom = 720.0
+texture = ExtResource( 1 )
 
 [node name="Game name" type="Label" parent="."]
-layout_mode = 0
-offset_left = 35.0
-offset_top = 3.0
-offset_right = 1235.0
-offset_bottom = 73.0
-theme_override_font_sizes/font_size = 40
+margin_top = 3.0
+margin_right = 1280.0
+margin_bottom = 73.0
+custom_fonts/font = ExtResource( 4 )
 text = "BUTTON_ERASE"
-horizontal_alignment = 1
+align = 1
+valign = 1
 
-[node name="Bottomhud" parent="." instance=ExtResource("3_72nl0")]
-layout_mode = 1
+[node name="Bottomhud" parent="." instance=ExtResource( 2 )]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -139.0
-offset_top = -395.0
-offset_right = 139.0
-grow_horizontal = 2
-grow_vertical = 0
+margin_left = 510.5
+margin_top = 97.0
+margin_right = 769.5
+margin_bottom = 808.0
 
 [node name="Ram" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_right = 392.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Game Data in RAM"
 
 [node name="Slot1" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 58.0
+margin_right = 392.0
+margin_bottom = 112.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 1"
 
 [node name="Slot2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 116.0
+margin_right = 392.0
+margin_bottom = 170.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 2"
 
 [node name="Slot3" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 174.0
+margin_right = 392.0
+margin_bottom = 228.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 3"
 
 [node name="Slot4" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 232.0
+margin_right = 392.0
+margin_bottom = 286.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 4"
 
 [node name="Slot5" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 290.0
+margin_right = 392.0
+margin_bottom = 344.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 5"
 
 [node name="Slot6" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 348.0
+margin_right = 392.0
+margin_bottom = 402.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 6"
 
 [node name="Slot7" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 406.0
+margin_right = 392.0
+margin_bottom = 460.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 7"
 
 [node name="Slot8" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 464.0
+margin_right = 392.0
+margin_bottom = 518.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 1 )
 text = "Slot 8"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
+margin_top = 522.0
+margin_right = 392.0
+margin_bottom = 576.0
+custom_fonts/font = ExtResource( 4 )
+custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="VBoxContainer/Ram" to="." method="_on_ram_pressed"]
 [connection signal="pressed" from="VBoxContainer/Slot1" to="." method="_on_slot_1_pressed"]
-[connection signal="pressed" from="VBoxContainer/Slot2" to="." method="_on_slot_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot2" to="." method="_on_slot_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/Slot3" to="." method="_on_slot_3_pressed"]
 [connection signal="pressed" from="VBoxContainer/Slot4" to="." method="_on_slot_4_pressed"]
 [connection signal="pressed" from="VBoxContainer/Slot5" to="." method="_on_slot_5_pressed"]
 [connection signal="pressed" from="VBoxContainer/Slot6" to="." method="_on_slot_6_pressed"]
 [connection signal="pressed" from="VBoxContainer/Slot7" to="." method="_on_slot_7_pressed"]
-[connection signal="pressed" from="VBoxContainer/Slot8" to="." method="_on_slot_8_pressed"]
+[connection signal="pressed" from="VBoxContainer/Slot8" to="." method="_on_slot_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

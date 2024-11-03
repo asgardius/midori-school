@@ -1,19 +1,15 @@
 [remap]
 
-importer="oggvorbisstr"
-type="AudioStreamOggVorbis"
-uid="uid://d0d5xn018p56l"
-path="res://.godot/imported/blacksmithofdestruction.ogg-4c80faea3d55689e6c592dfaf3f6a9bf.oggvorbisstr"
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/blacksmithofdestruction.ogg-4c80faea3d55689e6c592dfaf3f6a9bf.oggstr"
 
 [deps]
 
 source_file="res://music/blacksmithofdestruction.ogg"
-dest_files=["res://.godot/imported/blacksmithofdestruction.ogg-4c80faea3d55689e6c592dfaf3f6a9bf.oggvorbisstr"]
+dest_files=[ "res://.import/blacksmithofdestruction.ogg-4c80faea3d55689e6c592dfaf3f6a9bf.oggstr" ]
 
 [params]
 
 loop=true
 loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4

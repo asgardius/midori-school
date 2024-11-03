@@ -13,15 +13,15 @@ func _process(delta):
 func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-	get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
+	get_tree().change_scene("res://backgounds/disclaimer.tscn")
 		#Global.live = 1
 		#Global.gamelevel = randi() % 3
 		#if Global.gamelevel == 0:
-		#	get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
+		#	get_tree().change_scene("res://backgounds/galaxy.tscn")
 		#elif Global.gamelevel == 1:
-		#	get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
+		#	get_tree().change_scene("res://backgounds/wormhole.tscn")
 		#else:
-		#	get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
+		#	get_tree().change_scene("res://backgounds/abstract.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
@@ -44,20 +44,20 @@ func _input(event):
 
 
 func _on_scene_selector_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+	get_tree().change_scene("res://levels/ui/scene.tscn")
 
 
 func _on_sound_test_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/soundtest.tscn")
+	get_tree().change_scene("res://levels/ui/soundtest.tscn")
 
 
 func _on_back_pressed():
 	Global.debug = false
-	get_tree().change_scene_to_file("res://levels/ui/settings.tscn")
+	get_tree().change_scene("res://levels/ui/settings.tscn")
 
 
 func _on_gamepad_test_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/gamepadtest.tscn")
+	get_tree().change_scene("res://levels/ui/gamepadtest.tscn")
 
 func _statrebase():
 	for i in 4:

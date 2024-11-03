@@ -1,19 +1,15 @@
 [remap]
 
-importer="oggvorbisstr"
-type="AudioStreamOggVorbis"
-uid="uid://cwhqgs1lemo7u"
-path="res://.godot/imported/shininglikefireworks.ogg-70a04a5db935db9dbda2d5113e639afe.oggvorbisstr"
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/shininglikefireworks.ogg-70a04a5db935db9dbda2d5113e639afe.oggstr"
 
 [deps]
 
 source_file="res://music/shininglikefireworks.ogg"
-dest_files=["res://.godot/imported/shininglikefireworks.ogg-70a04a5db935db9dbda2d5113e639afe.oggvorbisstr"]
+dest_files=[ "res://.import/shininglikefireworks.ogg-70a04a5db935db9dbda2d5113e639afe.oggstr" ]
 
 [params]
 
 loop=true
 loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4

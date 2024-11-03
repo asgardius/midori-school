@@ -1,19 +1,15 @@
 [remap]
 
-importer="oggvorbisstr"
-type="AudioStreamOggVorbis"
-uid="uid://djetsbrrd68nj"
-path="res://.godot/imported/doyiuneedahealer.ogg-31bf7c324e5053fefc29ef60a5c5188b.oggvorbisstr"
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/doyiuneedahealer.ogg-31bf7c324e5053fefc29ef60a5c5188b.oggstr"
 
 [deps]
 
 source_file="res://music/doyiuneedahealer.ogg"
-dest_files=["res://.godot/imported/doyiuneedahealer.ogg-31bf7c324e5053fefc29ef60a5c5188b.oggvorbisstr"]
+dest_files=[ "res://.import/doyiuneedahealer.ogg-31bf7c324e5053fefc29ef60a5c5188b.oggstr" ]
 
 [params]
 
 loop=true
 loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4

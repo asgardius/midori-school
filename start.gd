@@ -13,4 +13,4 @@ func _process(delta):
 	#pass
 	time += delta
 	var movement = cos(time*frequency)*amplitude
-	position.x+=movement * delta
+	set_position(get_position() + Vector2(movement * delta, 0))

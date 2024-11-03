@@ -1,6 +1,6 @@
-extends CharacterBody2D
+extends KinematicBody2D
 
-
+var velocity
 const SPEED = 300.0
 var xm = 0
 var ym = 0
@@ -22,7 +22,7 @@ var rboost = 1
 func _ready():
 	add_to_group("players")
 	anim = $AnimationPlayer
-	sprite = $Sprite2D
+	sprite = $Sprite
 	#_charswitch()
 	_charinit()
 
@@ -69,7 +69,6 @@ func _physics_process(delta):
 			#origmpos = get_viewport().get_mouse_position()
 		#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 		#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
-		position += velocity
 		Global.playerx = position.x
 		Global.playery = position.y
 		if ym > 0.3:
@@ -98,16 +97,18 @@ func _physics_process(delta):
 				anim.play("widle")
 			else:
 				anim.play("sidle")
-		move_and_slide()
+		position += velocity
+		velocity = move_and_slide(velocity)
+		#move_and_slide(position)
 
 func _input(event):
 	xm = 0
 	ym = 0
 	if Global.live == 1:
 		if Global.live == 1 && !Input.is_action_pressed("schar"):
-			if Input.get_joy_axis(0,JOY_AXIS_LEFT_X) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) > 0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_X) < -0.2 || Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) < -0.2:
-				xm = Input.get_joy_axis(0,JOY_AXIS_LEFT_X)
-				ym = Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
+			if Input.get_joy_axis(0,JOY_ANALOG_LX) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LX) < -0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) < -0.2:
+				xm = Input.get_joy_axis(0,JOY_ANALOG_LX)
+				ym = Input.get_joy_axis(0,JOY_ANALOG_LY)
 			else:
 				if Input.is_action_pressed("ui_left"):
 					xm = -1
@@ -120,7 +121,7 @@ func _input(event):
 			if Input.is_action_pressed("run"):
 				rboost = 4
 			elif Global.gamepad > 0:
-				rboost = (Input.get_joy_axis(0,JOY_AXIS_TRIGGER_RIGHT) + 1)*2
+				rboost = (Input.get_joy_axis(0,JOY_ANALOG_R2) + 1)*2
 			else:
 				rboost = 1
 		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
@@ -132,13 +133,13 @@ func _input(event):
 				bullet = load(Global.pbbullets[Global.dparty[Global.dcpchar][0]])
 			else:
 				bullet = load(Global.pbbullets[Global.party[Global.cpchar][0]])
-			var new_pbullet = bullet.instantiate()
+			var new_pbullet = bullet.instance()
 			new_pbullet.btype = "players"
 			new_pbullet.attack = attack
 			new_pbullet.crit = crit
 			new_pbullet.speciality = speciality
-			new_pbullet.velocity = Vector2(0, -speed).rotated(deg_to_rad(angle * 90))
-			var rposition = Vector2(0, -96).rotated(deg_to_rad(angle * 90))
+			new_pbullet.velocity = Vector2(0, -speed).rotated(deg2rad(angle * 90))
+			var rposition = Vector2(0, -96).rotated(deg2rad(angle * 90))
 			if angle == 2:
 				new_pbullet.position = Vector2(position.x + rposition.x, position.y + rposition.y + 98)
 			else:

@@ -14,7 +14,7 @@ func _ready():
 	rmusic.stream = titlemusic
 	rmusic.mix_target = 1
 	rmusic.play(0)
-	rmusic.bus = &"Music"
+	rmusic.bus = "Music"
 	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.
 
@@ -29,7 +29,7 @@ func _input(event):
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
-		get_tree().change_scene_to_file("res://title.tscn")
+		get_tree().change_scene("res://title.tscn")
 		#_title()
 
 func _title():

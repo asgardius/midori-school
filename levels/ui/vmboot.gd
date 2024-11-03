@@ -20,5 +20,5 @@ func _on_timer_timeout():
 		stage = stage + 1
 		bg.texture = load(backgrounds[stage])
 	else:
-		get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
+		get_tree().change_scene("res://backgounds/disclaimer.tscn")
 	#pass # Replace with function body.

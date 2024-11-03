@@ -1,33 +1,36 @@
-[gd_scene load_steps=4 format=3 uid="uid://bbvpwonm30j2j"]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource type="Script" path="res://backgounds/disclaimer.gd" id="1_wnnd2"]
-[ext_resource type="Texture2D" uid="uid://chr01sorihbb2" path="res://backgounds/Midori No Akuma.jpg" id="2_kljhy"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_sdx6y"]
+[ext_resource path="res://fonts/selftest.tres" type="DynamicFont" id=1]
+[ext_resource path="res://backgounds/Midori No Akuma.jpg" type="Texture" id=2]
+[ext_resource path="res://fonts/about.tres" type="DynamicFont" id=3]
+[ext_resource path="res://backgounds/disclaimer.gd" type="Script" id=4]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=5]
 
 [node name="Disclaimer" type="Node2D"]
-script = ExtResource("1_wnnd2")
+script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_kljhy")
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-offset_left = 23.0
-offset_top = 11.0
-offset_right = 1250.0
-offset_bottom = 144.0
-theme_override_font_sizes/font_size = 22
+margin_left = 23.0
+margin_top = 11.0
+margin_right = 1250.0
+margin_bottom = 144.0
+custom_fonts/font = ExtResource( 3 )
 text = "TEXT_DISCLAIMER"
-horizontal_alignment = 1
+align = 1
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 30.0
-offset_top = 361.0
-offset_right = 1247.0
-offset_bottom = 429.0
-theme_override_font_sizes/font_size = 49
+margin_top = 326.0
+margin_right = 1280.0
+margin_bottom = 394.0
+rect_pivot_offset = Vector2( 1260, 141 )
+custom_fonts/font = ExtResource( 1 )
 text = "TEXT_CONTINUE"
-horizontal_alignment = 1
+align = 1
+valign = 3
 
-[node name="Bottomhud" parent="." instance=ExtResource("3_sdx6y")]
+[node name="Bottomhud" parent="." instance=ExtResource( 5 )]

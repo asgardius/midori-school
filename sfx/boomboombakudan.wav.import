@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://css5w585ww5ew"
-path="res://.godot/imported/boomboombakudan.wav-e838e1fd9a85c8413ee281b27dd6cf47.sample"
+type="AudioStreamSample"
+path="res://.import/boomboombakudan.wav-e838e1fd9a85c8413ee281b27dd6cf47.sample"
 
 [deps]
 
 source_file="res://sfx/boomboombakudan.wav"
-dest_files=["res://.godot/imported/boomboombakudan.wav-e838e1fd9a85c8413ee281b27dd6cf47.sample"]
+dest_files=[ "res://.import/boomboombakudan.wav-e838e1fd9a85c8413ee281b27dd6cf47.sample" ]
 
 [params]
 

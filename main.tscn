@@ -1,35 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0jrygo3ihcdk"]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource type="Script" path="res://main.gd" id="1_51vn3"]
-[ext_resource type="PackedScene" uid="uid://dblfov80ngodu" path="res://selftest.tscn" id="2_jnmxu"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="3_tig2r"]
+[ext_resource path="res://fonts/selftest.tres" type="DynamicFont" id=1]
+[ext_resource path="res://main.gd" type="Script" id=2]
+[ext_resource path="res://Label2.gd" type="Script" id=3]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=4]
 
 [node name="Main" type="Control"]
-layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_51vn3")
+script = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 290.0
-offset_top = 258.0
-offset_right = 949.0
-offset_bottom = 326.0
-theme_override_font_sizes/font_size = 49
+margin_top = 326.0
+margin_right = 1280.0
+margin_bottom = 394.0
+rect_pivot_offset = Vector2( 1260, 141 )
+custom_fonts/font = ExtResource( 1 )
 text = "TEXT_CONTINUE"
-horizontal_alignment = 1
-vertical_alignment = 1
+align = 1
+valign = 3
 
-[node name="Selftest" parent="." instance=ExtResource("2_jnmxu")]
-layout_mode = 0
-offset_left = 57.0
-offset_top = 112.0
-offset_right = 97.0
-offset_bottom = 135.0
+[node name="Selftest" type="Label" parent="."]
+margin_left = 40.0
+margin_top = 23.0
+margin_right = 97.0
+margin_bottom = 135.0
+script = ExtResource( 3 )
 
-[node name="Bottomhud" parent="." instance=ExtResource("3_tig2r")]
-layout_mode = 1
+[node name="Bottomhud" parent="." instance=ExtResource( 4 )]

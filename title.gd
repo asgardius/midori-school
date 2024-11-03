@@ -21,7 +21,7 @@ func _ready():
 	bgsound.stream = titlemusic
 	bgsound.mix_target = 1
 	bgsound.play(0)
-	bgsound.bus = &"Music"
+	bgsound.bus = "Music"
 	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.
 
@@ -36,7 +36,7 @@ func _input(event):
 	updatehud()
 	if Input.is_action_just_pressed("ui_accept"):
 		#print("Mouse Click/Unclick at: ", event.position)
-		get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")
+		get_tree().change_scene("res://levels/ui/tmenu.tscn")
 		#_level()
 	elif Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()

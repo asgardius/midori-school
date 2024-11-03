@@ -15,7 +15,7 @@ func _process(delta):
 func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-	get_tree().change_scene_to_file("res://backgounds/wip.tscn")
+	get_tree().change_scene("res://backgounds/wip.tscn")
 		#Global.live = 1
 		#Global.gamelevel = randi() % 3
 		#if Global.gamelevel == 0:
@@ -31,7 +31,7 @@ func _level():
 func _input(event):
 	gamepadtest.new(event)
 	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().change_scene_to_file("res://title.tscn")
+		get_tree().change_scene("res://title.tscn")
 #    Mouse in viewport coordinates.
 #	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
 #		print("Mouse Click/Unclick at: ", event.position)
@@ -47,16 +47,16 @@ func _input(event):
 
 func _on_start_pressed():
 	if Global.dificulty == 0:
-		get_tree().change_scene_to_file("res://levels/ui/newgame.tscn")
+		get_tree().change_scene("res://levels/ui/newgame.tscn")
 	else:
 		Global.live = 1
-		get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+		get_tree().change_scene("res://levels/ui/gameplay.tscn")
 	#_level()
 	#pass # Replace with function body.
 
 
 func _on_debug_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/settings.tscn")
+	get_tree().change_scene("res://levels/ui/settings.tscn")
 
 
 func _on_exit_pressed():

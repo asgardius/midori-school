@@ -1,229 +1,253 @@
-[gd_scene load_steps=7 format=3 uid="uid://v2cnmd1atfw1"]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource type="Script" path="res://levels/ui/musictest.gd" id="1_mulrj"]
-[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_jgdg2"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_a1ux8"]
+[ext_resource path="res://fonts/about.tres" type="DynamicFont" id=1]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
+[ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
+[ext_resource path="res://backgounds/night-sky-at-ceres.jpg" type="Texture" id=4]
+[ext_resource path="res://levels/ui/musictest.gd" type="Script" id=5]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cprm3"]
-bg_color = Color(0, 0.8, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_alctd"]
-bg_color = Color(0, 0.8, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0dqsq"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0.8, 0, 1 )
 
 [node name="Musictest" type="Control"]
-layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_mulrj")
+script = ExtResource( 5 )
 
 [node name="Night Sky" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 720.0
-texture = ExtResource("2_jgdg2")
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-
-[node name="Game name" type="Label" parent="."]
-layout_mode = 0
-offset_left = 57.0
-offset_top = 3.0
-offset_right = 1229.0
-offset_bottom = 73.0
-theme_override_font_sizes/font_size = 40
-text = "MENU_MUSICTEST"
-horizontal_alignment = 1
+margin_right = 1280.0
+margin_bottom = 720.0
+texture = ExtResource( 4 )
 
 [node name="Info" type="Label" parent="."]
-layout_mode = 0
-offset_left = 28.0
-offset_top = 94.0
-offset_right = 322.0
-offset_bottom = 164.0
-theme_override_font_sizes/font_size = 20
+margin_left = 28.0
+margin_top = 94.0
+margin_right = 322.0
+margin_bottom = 164.0
+custom_fonts/font = ExtResource( 1 )
+
+[node name="Game name" type="Label" parent="."]
+margin_top = 3.0
+margin_right = 1280.0
+margin_bottom = 73.0
+custom_fonts/font = ExtResource( 3 )
+text = "MENU_MUSICTEST"
+align = 1
+valign = 1
 
 [node name="Stop" type="Label" parent="."]
-layout_mode = 0
-offset_left = 5.0
-offset_top = 672.0
-offset_right = 444.0
-offset_bottom = 708.0
-theme_override_font_sizes/font_size = 22
+margin_left = 5.0
+margin_top = 672.0
+margin_right = 230.0
+margin_bottom = 700.0
+custom_fonts/font = ExtResource( 1 )
 text = "LABEL_STOPPLAYBACK"
 
-[node name="Bottomhud" parent="." instance=ExtResource("4_a1ux8")]
-layout_mode = 1
+[node name="Bottomhud" parent="." instance=ExtResource( 2 )]
 
-[node name="BoxContainer" type="BoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -640.0
-offset_top = -582.0
-offset_bottom = -69.0
-grow_horizontal = 0
-grow_vertical = 0
+[node name="BoxContainer" type="HBoxContainer" parent="."]
+margin_left = 640.0
+margin_top = 91.0
+margin_right = 1280.0
+margin_bottom = 651.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer"]
-layout_mode = 2
+margin_right = 171.0
+margin_bottom = 560.0
 
 [node name="Title Screen" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+margin_right = 171.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG0_LABEL"
 
 [node name="Disclaimer, Settings, Stores" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_cprm3")
+margin_top = 34.0
+margin_right = 171.0
+margin_bottom = 64.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG1_LABEL"
 
 [node name="Testrooms" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 68.0
+margin_right = 171.0
+margin_bottom = 98.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG2_LABEL"
 
 [node name="Friendly challenge" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 102.0
+margin_right = 171.0
+margin_bottom = 132.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG3_LABEL"
 
 [node name="School nursery" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 136.0
+margin_right = 171.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG4_LABEL"
 
 [node name="Overworld (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 170.0
+margin_right = 171.0
+margin_bottom = 200.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG5_LABEL"
 
 [node name="Boss fight (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 204.0
+margin_right = 171.0
+margin_bottom = 234.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG6_LABEL"
 
 [node name="Result" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 238.0
+margin_right = 171.0
+margin_bottom = 268.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG7_LABEL"
 
 [node name="Overworld (Earth)" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 272.0
+margin_right = 171.0
+margin_bottom = 302.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG8_LABEL"
 
 [node name="The Zubmarine Zone" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 306.0
+margin_right = 171.0
+margin_bottom = 336.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG9_LABEL"
 
 [node name="Radioactive Desert" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 340.0
+margin_right = 171.0
+margin_bottom = 370.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG10_LABEL"
 
 [node name="Natasha’s Theme" type="Button" parent="BoxContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 374.0
+margin_right = 171.0
+margin_bottom = 404.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG11_LABEL"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
-layout_mode = 2
+margin_left = 175.0
+margin_right = 364.0
+margin_bottom = 560.0
 
 [node name="Dungeon of Destruction" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_right = 189.0
+margin_bottom = 30.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG12_LABEL"
 
 [node name="Final Boss Fight" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 34.0
+margin_right = 189.0
+margin_bottom = 64.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG13_LABEL"
 
 [node name="Ending Theme" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 68.0
+margin_right = 189.0
+margin_bottom = 98.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG14_LABEL"
 
 [node name="Credits 1" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 102.0
+margin_right = 189.0
+margin_bottom = 132.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG15_LABEL"
 
 [node name="Credits 2" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 136.0
+margin_right = 189.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG16_LABEL"
 
 [node name="Credits 3" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 170.0
+margin_right = 189.0
+margin_bottom = 200.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG17_LABEL"
 
 [node name="The Magic School" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 204.0
+margin_right = 189.0
+margin_bottom = 234.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG18_LABEL"
 
 [node name="Deep Forest" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 238.0
+margin_right = 189.0
+margin_bottom = 268.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG19_LABEL"
 
 [node name="Boss Fight (Earth)" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 272.0
+margin_right = 189.0
+margin_bottom = 302.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG20_LABEL"
 
 [node name="ALSA" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 306.0
+margin_right = 189.0
+margin_bottom = 336.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG21_LABEL"
 
 [node name="Elysium" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_alctd")
+margin_top = 340.0
+margin_right = 189.0
+margin_bottom = 370.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "SONG22_LABEL"
 
 [node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = SubResource("StyleBoxFlat_0dqsq")
+margin_top = 374.0
+margin_right = 189.0
+margin_bottom = 404.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]

@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://w1c1uvatrkbn"
-path="res://.godot/imported/Rear_Right.wav-49be52ab60b1f1986754de400fb0756b.sample"
+type="AudioStreamSample"
+path="res://.import/Rear_Right.wav-49be52ab60b1f1986754de400fb0756b.sample"
 
 [deps]
 
 source_file="res://sfx/Rear_Right.wav"
-dest_files=["res://.godot/imported/Rear_Right.wav-49be52ab60b1f1986754de400fb0756b.sample"]
+dest_files=[ "res://.import/Rear_Right.wav-49be52ab60b1f1986754de400fb0756b.sample" ]
 
 [params]
 

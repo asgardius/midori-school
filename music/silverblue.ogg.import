@@ -1,19 +1,15 @@
 [remap]
 
-importer="oggvorbisstr"
-type="AudioStreamOggVorbis"
-uid="uid://bjau5kjjk518q"
-path="res://.godot/imported/silverblue.ogg-3cefa4aff5de66c67ad74d411890bebe.oggvorbisstr"
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/silverblue.ogg-3cefa4aff5de66c67ad74d411890bebe.oggstr"
 
 [deps]
 
 source_file="res://music/silverblue.ogg"
-dest_files=["res://.godot/imported/silverblue.ogg-3cefa4aff5de66c67ad74d411890bebe.oggvorbisstr"]
+dest_files=[ "res://.import/silverblue.ogg-3cefa4aff5de66c67ad74d411890bebe.oggstr" ]
 
 [params]
 
 loop=true
 loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4

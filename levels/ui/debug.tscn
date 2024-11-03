@@ -1,84 +1,81 @@
-[gd_scene load_steps=7 format=3 uid="uid://brrta1s63r2q2"]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource type="Script" path="res://levels/ui/debug.gd" id="1_gm5qw"]
-[ext_resource type="Texture2D" uid="uid://bxa27c7gnivwx" path="res://backgounds/night-sky-at-ceres.jpg" id="2_1w2er"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="4_ogmre"]
+[ext_resource path="res://levels/ui/debug.gd" type="Script" id=1]
+[ext_resource path="res://fonts/button1.tres" type="DynamicFont" id=2]
+[ext_resource path="res://backgounds/night-sky-at-ceres.jpg" type="Texture" id=3]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=4]
+[ext_resource path="res://fonts/title.tres" type="DynamicFont" id=5]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_821nm"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0.8, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6u0xs"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0.8, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qrn"]
-bg_color = Color(0, 0.8, 0, 1)
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0.8, 0, 1 )
 
 [node name="Debug" type="Control"]
-layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_gm5qw")
+script = ExtResource( 1 )
 
 [node name="Night Sky" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 720.0
-texture = ExtResource("2_1w2er")
+margin_right = 1280.0
+margin_bottom = 720.0
+texture = ExtResource( 3 )
 
 [node name="Game name" type="Label" parent="."]
-layout_mode = 0
-offset_left = 44.0
-offset_top = 61.0
-offset_right = 1234.0
-offset_bottom = 207.0
-theme_override_font_sizes/font_size = 106
+margin_top = 61.0
+margin_right = 1280.0
+margin_bottom = 207.0
+custom_fonts/font = ExtResource( 5 )
 text = "MENU_DEBUG"
-horizontal_alignment = 1
+align = 1
+valign = 1
 
-[node name="Bottomhud" parent="." instance=ExtResource("4_ogmre")]
-layout_mode = 1
+[node name="Bottomhud" parent="." instance=ExtResource( 4 )]
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -342.0
-offset_top = -484.0
-offset_right = 342.0
-grow_horizontal = 2
-grow_vertical = 0
+margin_left = 174.0
+margin_top = 236.0
+margin_right = 1157.0
+margin_bottom = 712.0
+alignment = 1
 
 [node name="Gamepad Test" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 80
-theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
+margin_top = 32.0
+margin_right = 983.0
+margin_bottom = 132.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 1 )
 text = "BUTTON_GAMEPADTEST"
 
-[node name="Scene Selector2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 80
-theme_override_styles/focus = SubResource("StyleBoxFlat_821nm")
+[node name="Scene Selector" type="Button" parent="VBoxContainer"]
+margin_top = 136.0
+margin_right = 983.0
+margin_bottom = 236.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 2 )
 text = "BUTTON_SCENESELECT"
 
 [node name="Sound Test" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 80
-theme_override_styles/focus = SubResource("StyleBoxFlat_6u0xs")
+margin_top = 240.0
+margin_right = 983.0
+margin_bottom = 340.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 3 )
 text = "BUTTON_SOUNDTEST"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 80
-theme_override_styles/focus = SubResource("StyleBoxFlat_r2qrn")
+margin_top = 344.0
+margin_right = 983.0
+margin_bottom = 444.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="VBoxContainer/Gamepad Test" to="." method="_on_gamepad_test_pressed"]
-[connection signal="pressed" from="VBoxContainer/Scene Selector2" to="." method="_on_scene_selector_pressed"]
+[connection signal="pressed" from="VBoxContainer/Scene Selector" to="." method="_on_scene_selector_pressed"]
 [connection signal="pressed" from="VBoxContainer/Sound Test" to="." method="_on_sound_test_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

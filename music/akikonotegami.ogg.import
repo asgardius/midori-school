@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/akikonotegami.ogg-099d6fa94216232e92d1994773b87a7d.oggstr"
+
+[deps]
+
+source_file="res://music/akikonotegami.ogg"
+dest_files=[ "res://.import/akikonotegami.ogg-099d6fa94216232e92d1994773b87a7d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

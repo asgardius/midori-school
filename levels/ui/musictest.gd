@@ -8,7 +8,7 @@ func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
 	player.mix_target = 1
-	player.bus = &"Music"
+	player.bus = "Music"
 	$"BoxContainer/VBoxContainer/Title Screen".grab_focus()
 	infobox = $Info
 
@@ -20,15 +20,15 @@ func _process(delta):
 func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-	get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
+	get_tree().change_scene("res://backgounds/disclaimer.tscn")
 		#Global.live = 1
 		#Global.gamelevel = randi() % 3
 		#if Global.gamelevel == 0:
-		#	get_tree().change_scene_to_file("res://backgounds/galaxy.tscn")
+		#	get_tree().change_scene("res://backgounds/galaxy.tscn")
 		#elif Global.gamelevel == 1:
-		#	get_tree().change_scene_to_file("res://backgounds/wormhole.tscn")
+		#	get_tree().change_scene("res://backgounds/wormhole.tscn")
 		#else:
-		#	get_tree().change_scene_to_file("res://backgounds/abstract.tscn")
+		#	get_tree().change_scene("res://backgounds/abstract.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()
@@ -55,7 +55,7 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/soundtest.tscn")
+	get_tree().change_scene("res://levels/ui/soundtest.tscn")
 
 
 func _on_title_screen_pressed():

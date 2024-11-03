@@ -53,6 +53,7 @@ var nboss
 var boss
 var bossbg
 var ctime
+var ctimeset
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -133,7 +134,9 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 		_charrefresh()
-		ctime.set_text(Time.get_time_string_from_system(false).erase(5, 3))
+		ctimeset = Time.get_time_string_from_system(false)
+		ctimeset.erase(5, 3)
+		ctime.set_text(ctimeset)
 		if Global.debug:
 			chealthf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
 			cstaminaf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][1]))
@@ -181,13 +184,13 @@ func _charrefresh():
 				bstamina1.value = (Global.dstats[Global.dparty[0][0]][1] * 100) / Global.mstats[Global.dparty[0][0]][1]
 				bskill1.value = (Global.dstats[Global.dparty[0][0]][4] * 100) / Global.mstats[Global.dparty[0][0]][4]
 				if Global.dcpchar == 0:
-					focus1.set_color(Color(0, 0, 1, 1))
+					focus1.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus1.set_color(Color(1, 1, 1, 1))
+					focus1.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn1.set_text("")
 				cf1.texture = null
-				focus1.set_color(Color(1, 1, 1, 1))
+				focus1.set_frame_color(Color(1, 1, 1, 1))
 				chealth1.set_text("0/0")
 				cstamina1.set_text("0/0")
 				cskill1.set_text("0/0")
@@ -204,13 +207,13 @@ func _charrefresh():
 				bstamina2.value = (Global.dstats[Global.dparty[1][0]][1] * 100) / Global.mstats[Global.dparty[1][0]][1]
 				bskill2.value = (Global.dstats[Global.dparty[1][0]][4] * 100) / Global.mstats[Global.dparty[1][0]][4]
 				if Global.dcpchar == 1:
-					focus2.set_color(Color(0, 0, 1, 1))
+					focus2.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus2.set_color(Color(1, 1, 1, 1))
+					focus2.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn2.set_text("")
 				cf2.texture = null
-				focus2.set_color(Color(1, 1, 1, 1))
+				focus2.set_frame_color(Color(1, 1, 1, 1))
 				chealth2.set_text("0/0")
 				cstamina2.set_text("0/0")
 				cskill2.set_text("0/0")
@@ -227,13 +230,13 @@ func _charrefresh():
 				bstamina3.value = (Global.dstats[Global.dparty[2][0]][1] * 100) / Global.mstats[Global.dparty[2][0]][1]
 				bskill3.value = (Global.dstats[Global.dparty[2][0]][4] * 100) / Global.mstats[Global.dparty[2][0]][4]
 				if Global.dcpchar == 2:
-					focus3.set_color(Color(0, 0, 1, 1))
+					focus3.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus3.set_color(Color(1, 1, 1, 1))
+					focus3.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn3.set_text("")
 				cf3.texture = null
-				focus3.set_color(Color(1, 1, 1, 1))
+				focus3.set_frame_color(Color(1, 1, 1, 1))
 				chealth3.set_text("0/0")
 				cstamina3.set_text("0/0")
 				cskill3.set_text("0/0")
@@ -250,13 +253,13 @@ func _charrefresh():
 				bstamina4.value = (Global.dstats[Global.dparty[3][0]][1] * 100) / Global.mstats[Global.dparty[3][0]][1]
 				bskill4.value = (Global.dstats[Global.dparty[3][0]][4] * 100) / Global.mstats[Global.dparty[3][0]][4]
 				if Global.dcpchar == 3:
-					focus4.set_color(Color(0, 0, 1, 1))
+					focus4.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus4.set_color(Color(1, 1, 1, 1))
+					focus4.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn4.set_text("")
 				cf4.texture = null
-				focus4.set_color(Color(1, 1, 1, 1))
+				focus4.set_frame_color(Color(1, 1, 1, 1))
 				chealth4.set_text("0/0")
 				cstamina4.set_text("0/0")
 				cskill4.set_text("0/0")
@@ -274,9 +277,9 @@ func _charrefresh():
 				bstamina1.value = (Global.cstats[Global.party[0][0]][1] * 100) / Global.mstats[Global.party[0][0]][1]
 				bskill1.value = (Global.cstats[Global.party[0][0]][4] * 100) / Global.mstats[Global.party[0][0]][4]
 				if Global.dcpchar == 0:
-					focus1.set_color(Color(0, 0, 1, 1))
+					focus1.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus1.set_color(Color(1, 1, 1, 1))
+					focus1.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn1.set_text("")
 				cf1.texture = null
@@ -286,7 +289,7 @@ func _charrefresh():
 				bhealth1.value = 0
 				bstamina1.value = 0
 				bskill1.value = 0
-				focus1.set_color(Color(1, 1, 1, 1))
+				focus1.set_frame_color(Color(1, 1, 1, 1))
 			if Global.party[1][0] != null:
 				cn2.set_text(Global.pcnames[Global.party[1][0]])
 				cf2.texture = load(Global.hudfaces[Global.party[1][0]][Global.party[1][1]])
@@ -297,9 +300,9 @@ func _charrefresh():
 				bstamina2.value = (Global.cstats[Global.party[1][0]][1] * 100) / Global.mstats[Global.party[1][0]][1]
 				bskill2.value = (Global.cstats[Global.party[1][0]][4] * 100) / Global.mstats[Global.party[1][0]][4]
 				if Global.dcpchar == 1:
-					focus2.set_color(Color(0, 0, 1, 1))
+					focus2.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus2.set_color(Color(1, 1, 1, 1))
+					focus2.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn2.set_text("")
 				cf2.texture = null
@@ -309,7 +312,7 @@ func _charrefresh():
 				bhealth2.value = 0
 				bstamina2.value = 0
 				bskill2.value = 0
-				focus2.set_color(Color(1, 1, 1, 1))
+				focus2.set_frame_color(Color(1, 1, 1, 1))
 			if Global.party[2][0] != null:
 				cn3.set_text(Global.pcnames[Global.party[2][0]])
 				cf3.texture = load(Global.hudfaces[Global.party[2][0]][Global.party[2][1]])
@@ -320,9 +323,9 @@ func _charrefresh():
 				bstamina3.value = (Global.cstats[Global.party[2][0]][1] * 100) / Global.mstats[Global.party[2][0]][1]
 				bskill3.value = (Global.cstats[Global.party[2][0]][4] * 100) / Global.mstats[Global.party[2][0]][4]
 				if Global.dcpchar == 2:
-					focus3.set_color(Color(0, 0, 1, 1))
+					focus3.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus3.set_color(Color(1, 1, 1, 1))
+					focus3.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn3.set_text("")
 				cf3.texture = null
@@ -332,7 +335,7 @@ func _charrefresh():
 				bhealth3.value = 0
 				bstamina3.value = 0
 				bskill3.value = 0
-				focus3.set_color(Color(1, 1, 1, 1))
+				focus3.set_frame_color(Color(1, 1, 1, 1))
 			if Global.party[3][0] != null:
 				cn4.set_text(Global.pcnames[Global.party[3][0]])
 				cf4.texture = load(Global.hudfaces[Global.party[3][0]][Global.party[3][1]])
@@ -343,9 +346,9 @@ func _charrefresh():
 				bstamina4.value = (Global.cstats[Global.party[3][0]][1] * 100) / Global.mstats[Global.party[3][0]][1]
 				bskill4.value = (Global.cstats[Global.party[3][0]][4] * 100) / Global.mstats[Global.party[3][0]][4]
 				if Global.dcpchar == 3:
-					focus4.set_color(Color(0, 0, 1, 1))
+					focus4.set_frame_color(Color(0, 0, 1, 1))
 				else:
-					focus4.set_color(Color(1, 1, 1, 1))
+					focus4.set_frame_color(Color(1, 1, 1, 1))
 			else:
 				cn4.set_text("")
 				cf4.texture = null
@@ -355,7 +358,7 @@ func _charrefresh():
 				bhealth4.value = 0
 				bstamina4.value = 0
 				bskill4.value = 0
-				focus4.set_color(Color(1, 1, 1, 1))
+				focus4.set_frame_color(Color(1, 1, 1, 1))
 	else:
 		if Global.debug:
 			cnf.set_text(Global.pcnames[Global.dparty[Global.dcpchar][0]])

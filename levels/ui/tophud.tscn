@@ -1,543 +1,742 @@
-[gd_scene load_steps=12 format=3 uid="uid://coaup7cuj7qev"]
+[gd_scene load_steps=10 format=2]
 
-[ext_resource type="Script" path="res://levels/ui/tophud.gd" id="1_pntuv"]
+[ext_resource path="res://fonts/hud.tres" type="DynamicFont" id=1]
+[ext_resource path="res://levels/ui/tophud.gd" type="Script" id=2]
+[ext_resource path="res://fonts/title.tres" type="DynamicFont" id=3]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ualpu"]
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 0, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_patnr"]
-bg_color = Color(1, 0, 0, 1)
+[sub_resource type="StyleBoxFlat" id=2]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_05pau"]
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 1, 0.498039, 0, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u3vj7"]
-bg_color = Color(1, 0.498039, 0, 1)
+[sub_resource type="StyleBoxFlat" id=4]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftyws"]
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0, 1, 1 )
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pwjrs"]
-bg_color = Color(0, 0, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_124wc"]
-bg_color = Color(0, 0, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8qre"]
-bg_color = Color(0, 0, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2pkui"]
-bg_color = Color(0, 0, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig4lq"]
-bg_color = Color(0, 0, 1, 1)
+[sub_resource type="StyleBoxFlat" id=6]
 
 [node name="Tophud" type="Control"]
-layout_mode = 3
-anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_pntuv")
+script = ExtResource( 2 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Bossbg" type="ColorRect" parent="CanvasLayer"]
-offset_left = 467.0
-offset_right = 768.0
-offset_bottom = 50.0
-color = Color(0.254902, 0.254902, 0.254902, 1)
+margin_left = 467.0
+margin_right = 768.0
+margin_bottom = 50.0
+color = Color( 0.254902, 0.254902, 0.254902, 1 )
 
 [node name="Boss" type="VBoxContainer" parent="CanvasLayer"]
-offset_left = 467.0
-offset_right = 708.0
-offset_bottom = 50.0
+margin_left = 467.0
+margin_right = 768.0
+margin_bottom = 50.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Boss"]
-layout_mode = 2
+margin_right = 301.0
+margin_bottom = 23.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Boss/HBoxContainer"]
-custom_minimum_size = Vector2(174, 0)
-layout_mode = 2
+margin_right = 174.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 174, 23 )
+custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Boss"]
-layout_mode = 2
+margin_top = 27.0
+margin_right = 301.0
+margin_bottom = 50.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Boss/HBoxContainer2"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 70.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 70, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Health"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Boss/HBoxContainer2"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
-theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+margin_left = 74.0
+margin_right = 174.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Boss/HBoxContainer2"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 178.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 123, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="Topminibg" type="ColorRect" parent="CanvasLayer"]
-layout_direction = 3
-offset_right = 438.0
-offset_bottom = 116.0
-color = Color(0.254902, 0.254902, 0.254902, 1)
+margin_left = 842.0
+margin_right = 1280.0
+margin_bottom = 116.0
+color = Color( 0.254902, 0.254902, 0.254902, 1 )
 
 [node name="Topmini" type="HBoxContainer" parent="CanvasLayer"]
-layout_direction = 3
-offset_right = 377.0
-offset_bottom = 116.0
+margin_left = 843.0
+margin_right = 1280.0
+margin_bottom = 116.0
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topmini"]
-custom_minimum_size = Vector2(116, 116)
-layout_mode = 2
+margin_right = 116.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 116, 116 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topmini"]
-layout_mode = 2
+margin_left = 120.0
+margin_right = 421.0
+margin_bottom = 116.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
-layout_mode = 2
+margin_right = 301.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(174, 0)
-layout_mode = 2
+margin_right = 174.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 174, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="Label3" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer"]
-layout_mode = 2
+margin_left = 178.0
+margin_right = 202.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 1 )
 text = "R1"
-horizontal_alignment = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
-layout_mode = 2
+margin_top = 27.0
+margin_right = 301.0
+margin_bottom = 50.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Health"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
-theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
-layout_mode = 2
+margin_top = 54.0
+margin_right = 301.0
+margin_bottom = 77.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Stamina"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
-theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
-layout_mode = 2
+margin_top = 81.0
+margin_right = 301.0
+margin_bottom = 104.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
-theme_override_styles/fill = SubResource("StyleBoxFlat_pwjrs")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topmini"]
-custom_minimum_size = Vector2(12, 64)
-layout_mode = 2
-color = Color(0, 0, 1, 1)
+margin_left = 425.0
+margin_right = 437.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 12, 0 )
+color = Color( 0, 0, 1, 1 )
 
 [node name="Topleftbg" type="ColorRect" parent="CanvasLayer"]
 visible = false
-layout_direction = 3
-offset_right = 437.0
-offset_bottom = 476.0
-color = Color(0.254902, 0.254902, 0.254902, 1)
+margin_left = 842.0
+margin_right = 1280.0
+margin_bottom = 476.0
+color = Color( 0.254902, 0.254902, 0.254902, 1 )
 
 [node name="Topleft" type="VBoxContainer" parent="CanvasLayer"]
 visible = false
-layout_direction = 3
-offset_right = 377.0
-offset_bottom = 476.0
+margin_left = 843.0
+margin_right = 1280.0
+margin_bottom = 116.0
 
 [node name="Character1" type="HBoxContainer" parent="CanvasLayer/Topleft"]
-layout_mode = 2
+margin_right = 437.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 437, 116 )
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character1"]
-custom_minimum_size = Vector2(116, 116)
-layout_mode = 2
+margin_right = 116.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 116, 116 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character1"]
-layout_mode = 2
+margin_left = 120.0
+margin_right = 421.0
+margin_bottom = 116.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
-layout_mode = 2
+margin_right = 301.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(174, 0)
-layout_mode = 2
+margin_right = 174.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 174, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer"]
-layout_mode = 2
+margin_left = 178.0
+margin_right = 244.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 1 )
 text = "R1 + ↑"
-horizontal_alignment = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
-layout_mode = 2
+margin_top = 27.0
+margin_right = 301.0
+margin_bottom = 50.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Health"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
-theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
-layout_mode = 2
+margin_top = 54.0
+margin_right = 301.0
+margin_bottom = 77.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Stamina"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
-theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character1/VBoxContainer"]
-layout_mode = 2
+margin_top = 81.0
+margin_right = 301.0
+margin_bottom = 104.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
-theme_override_styles/fill = SubResource("StyleBoxFlat_124wc")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character1/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character1"]
-custom_minimum_size = Vector2(12, 64)
-layout_mode = 2
+margin_left = 425.0
+margin_right = 437.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 12, 0 )
 
 [node name="Character2" type="HBoxContainer" parent="CanvasLayer/Topleft"]
-layout_mode = 2
+margin_top = 120.0
+margin_right = 437.0
+margin_bottom = 236.0
+rect_min_size = Vector2( 437, 116 )
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character2"]
-custom_minimum_size = Vector2(116, 116)
-layout_mode = 2
+margin_right = 116.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 116, 116 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character2"]
-layout_mode = 2
+margin_left = 120.0
+margin_right = 421.0
+margin_bottom = 116.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
-layout_mode = 2
+margin_right = 301.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(174, 0)
-layout_mode = 2
+margin_right = 174.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 174, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer"]
-layout_mode = 2
+margin_left = 178.0
+margin_right = 244.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 1 )
 text = "R1 + →"
-horizontal_alignment = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
-layout_mode = 2
+margin_top = 27.0
+margin_right = 301.0
+margin_bottom = 50.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Health"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
-theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
-layout_mode = 2
+margin_top = 54.0
+margin_right = 301.0
+margin_bottom = 77.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Stamina"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
-theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character2/VBoxContainer"]
-layout_mode = 2
+margin_top = 81.0
+margin_right = 301.0
+margin_bottom = 104.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
-theme_override_styles/fill = SubResource("StyleBoxFlat_o8qre")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character2/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character2"]
-custom_minimum_size = Vector2(12, 64)
-layout_mode = 2
+margin_left = 425.0
+margin_right = 437.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 12, 0 )
 
 [node name="Character3" type="HBoxContainer" parent="CanvasLayer/Topleft"]
-layout_mode = 2
+margin_top = 240.0
+margin_right = 437.0
+margin_bottom = 356.0
+rect_min_size = Vector2( 437, 116 )
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character3"]
-custom_minimum_size = Vector2(116, 116)
-layout_mode = 2
+margin_right = 116.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 116, 116 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character3"]
-layout_mode = 2
+margin_left = 120.0
+margin_right = 421.0
+margin_bottom = 116.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
-layout_mode = 2
+margin_right = 301.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(174, 0)
-layout_mode = 2
+margin_right = 174.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 174, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer"]
-layout_mode = 2
+margin_left = 178.0
+margin_right = 244.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 1 )
 text = "R1 + ↓"
-horizontal_alignment = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
-layout_mode = 2
+margin_top = 27.0
+margin_right = 301.0
+margin_bottom = 50.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Health"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
-theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
-layout_mode = 2
+margin_top = 54.0
+margin_right = 301.0
+margin_bottom = 77.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Stamina"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
-theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character3/VBoxContainer"]
-layout_mode = 2
+margin_top = 81.0
+margin_right = 301.0
+margin_bottom = 104.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
-theme_override_styles/fill = SubResource("StyleBoxFlat_2pkui")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character3/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character3"]
-custom_minimum_size = Vector2(12, 64)
-layout_mode = 2
+margin_left = 425.0
+margin_right = 437.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 12, 0 )
 
 [node name="Character4" type="HBoxContainer" parent="CanvasLayer/Topleft"]
-layout_mode = 2
+margin_top = 360.0
+margin_right = 437.0
+margin_bottom = 476.0
+rect_min_size = Vector2( 437, 116 )
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/Topleft/Character4"]
-custom_minimum_size = Vector2(116, 116)
-layout_mode = 2
+margin_right = 116.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 116, 116 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Topleft/Character4"]
-layout_mode = 2
+margin_left = 120.0
+margin_right = 421.0
+margin_bottom = 116.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
-layout_mode = 2
+margin_right = 301.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 0, 23 )
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(174, 0)
-layout_mode = 2
+margin_right = 174.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 174, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="Label3" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer"]
-layout_mode = 2
+margin_left = 178.0
+margin_right = 244.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 1 )
 text = "R1 + ←"
-horizontal_alignment = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
-layout_mode = 2
+margin_top = 27.0
+margin_right = 301.0
+margin_bottom = 50.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Health"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ualpu")
-theme_override_styles/fill = SubResource("StyleBoxFlat_patnr")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
-layout_mode = 2
+margin_top = 54.0
+margin_right = 301.0
+margin_bottom = 77.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "Stamina"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_05pau")
-theme_override_styles/fill = SubResource("StyleBoxFlat_u3vj7")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = SubResource( 4 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topleft/Character4/VBoxContainer"]
-layout_mode = 2
+margin_top = 81.0
+margin_right = 301.0
+margin_bottom = 104.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(70, 0)
-layout_mode = 2
+margin_right = 74.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 74, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "OC Skill"
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_ftyws")
-theme_override_styles/fill = SubResource("StyleBoxFlat_ig4lq")
+margin_left = 78.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 100, 23 )
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = SubResource( 6 )
 
 [node name="Label2" type="Label" parent="CanvasLayer/Topleft/Character4/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(123, 0)
-layout_mode = 2
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
 text = "100/100"
-horizontal_alignment = 2
+align = 2
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer/Topleft/Character4"]
-custom_minimum_size = Vector2(12, 64)
-layout_mode = 2
+margin_left = 425.0
+margin_right = 437.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 12, 0 )
 
 [node name="Time" type="Label" parent="CanvasLayer"]
-offset_right = 40.0
-offset_bottom = 23.0
-theme_override_font_sizes/font_size = 100
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
 text = "08:00"

@@ -1,7 +1,8 @@
 extends Node
 func _init(slot, erase):
-	var saveinit = str(slot)+","+str(DisplayServer.window_get_vsync_mode())+","+str(DisplayServer.window_get_mode())
-	var file = FileAccess.open("user://userprefs", FileAccess.WRITE)
+	var saveinit = str(slot)+","+str(int(OS.is_vsync_enabled()))+","+str(int(OS.is_window_fullscreen()))
+	var file = File.new()
+	file.open("user://userprefs", File.WRITE)
 	file.store_string(saveinit)
 	file.close()
 	if erase:
@@ -9,34 +10,42 @@ func _init(slot, erase):
 	else:
 		saveinit = str(Global.party[0][0])+","+str(Global.party[0][1])+","+str(Global.party[1][0])+","+str(Global.party[1][1])+","+str(Global.party[2][0])+","+str(Global.party[2][1])+","+str(Global.party[3][0])+","+str(Global.party[3][1])+"\n"+str(Global.cpchar)+"\n"+str(Global.dificulty)+"\n"+str(Global.cplace[0])+","+str(Global.cplace[1])+","+str(Global.cplace[2])+"\n"+str(Global.quest[0])+","+str(Global.quest[1])+","+str(Global.quest[2])+","+str(Global.quest[3])+","+str(Global.quest[4])+","+str(Global.quest[5])
 	if slot == 1:
-		file = FileAccess.open("user://slot1", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot1", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 	elif slot == 2:
-		file = FileAccess.open("user://slot2", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot2", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 	elif slot == 3:
-		file = FileAccess.open("user://slot3", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot3", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 	elif slot == 4:
-		file = FileAccess.open("user://slot4", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot4", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 	elif slot == 5:
-		file = FileAccess.open("user://slot5", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot5", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 	elif slot == 6:
-		file = FileAccess.open("user://slot6", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot6", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 	elif slot == 7:
-		file = FileAccess.open("user://slot7", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot7", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
 	elif slot == 8:
-		file = FileAccess.open("user://slot8", FileAccess.WRITE)
+		file = File.new()
+		file.open("user://slot8", File.WRITE)
 		file.store_string(saveinit)
 		file.close()

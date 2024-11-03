@@ -1,0 +1,17 @@
+[gd_resource type="DynamicFont" load_steps=4 format=2]
+
+[ext_resource path="res://fonts/OpenSans-Regular.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://fonts/HanaMinA.ttf"
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://fonts/HanaMinB.ttf"
+
+[resource]
+size = 80
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+fallback/0 = SubResource( 1 )
+fallback/1 = SubResource( 2 )

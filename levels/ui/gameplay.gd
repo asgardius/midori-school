@@ -6,9 +6,9 @@ var music
 var bgsound := AudioStreamPlayer.new()
 var sfx1 := AudioStreamPlayer.new()
 var musictrack
-var bhud = load("res://levels/bottomhud.tscn").instantiate()
-var thud = load("res://levels/ui/tophud.tscn").instantiate()
-var pmenu = load("res://levels/ui/pause.tscn").instantiate()
+var bhud = load("res://levels/bottomhud.tscn").instance()
+var thud = load("res://levels/ui/tophud.tscn").instance()
+var pmenu = load("res://levels/ui/pause.tscn").instance()
 var ispaused = false
 var ishud = true
 
@@ -18,13 +18,13 @@ func _ready():
 	add_child(bgsound)
 	add_child(sfx1)
 	if Global.debug:
-		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instantiate()
-		#player = load(Global.pchars[Global.dcpchar]).instantiate()
+		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instance()
+		#player = load(Global.pchars[Global.dcpchar]).instance()
 		musictrack = Global.musictracks[Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]]
 		Global.isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
 	else:
-		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instantiate()
-	#	player = load(Global.pchars[Global.cpchar]).instantiate()
+		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instance()
+	#	player = load(Global.pchars[Global.cpchar]).instance()
 		musictrack = Global.musictracks[Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]]
 		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	#if Global.cspawnarea[0] != null && Global.cspawnarea[0] != null:
@@ -37,15 +37,15 @@ func _ready():
 	#	player.position.x = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]
 	#	player.position.y = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	music = load(musictrack)
-	get_tree().root.add_child.call_deferred(level)
-	get_tree().root.add_child.call_deferred(bhud)
-	get_tree().root.add_child.call_deferred(thud)
+	call_deferred("_level")
+	call_deferred("_bhud")
+	call_deferred("_thud")
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
-	bgsound.bus = &"Music"
+	bgsound.bus = "Music"
 	bgsound.mix_target = 1
 	sfx1.mix_target = 1
-	sfx1.bus = &"SFX1"
+	sfx1.bus = "SFX1"
 	Global.wait = Time.get_ticks_msec()
 	if !Global.isboss:
 		bgsound.play(0)
@@ -101,7 +101,7 @@ func _input(event):
 		get_tree().root.remove_child(thud)
 		ishud = false
 	elif Global.live == 1 && !ishud:
-		get_tree().root.add_child.call_deferred(thud)
+		call_deferred("_thud")
 		ishud = true
 func _statrebase():
 	if Global.debug:
@@ -119,14 +119,14 @@ func _statrebase():
 func _pausemenu():
 	if Global.live == 1 && !ispaused:
 		get_tree().root.remove_child(bhud)
-		get_tree().root.add_child.call_deferred(pmenu)
+		call_deferred("_pmenu")
 		ispaused = true
 		Global.live = 4
 	elif Global.live == 4 && ispaused:
 		get_tree().root.remove_child(pmenu)
-		get_tree().root.add_child.call_deferred(bhud)
+		call_deferred("_bhud")
 		ispaused = false
-		pmenu = load("res://levels/ui/pause.tscn").instantiate()
+		pmenu = load("res://levels/ui/pause.tscn").instance()
 		Global.live = 1
 func _exit():
 	Global.cdialog = []
@@ -142,23 +142,35 @@ func _exit():
 	#get_tree().root.remove_child(player)
 	get_tree().root.remove_child(level)
 	if Global.live == 7:
-		get_tree().change_scene_to_file("res://backgounds/result.tscn")
+		get_tree().change_scene("res://backgounds/result.tscn")
 	elif Global.live == 8:
-		get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
+		get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
 	elif Global.live == 5:
 		Global.result = [0, 0, 0, 0, 0]
 		_statrebase()
-		get_tree().change_scene_to_file("res://backgounds/warp.tscn")
+		get_tree().change_scene("res://backgounds/warp.tscn")
 	elif Global.live == 2:
 		Global.result = [0, 0, 0, 0, 0]
 		_statrebase()
 		get_tree().root.remove_child(thud)
-		get_tree().change_scene_to_file("res://backgounds/gameover.tscn")
+		get_tree().change_scene("res://backgounds/gameover.tscn")
 	elif Global.live == 6:
 		Global.result = [0, 0, 0, 0, 0]
 		if Global.debug:
 			Global.live = 0
-			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+			get_tree().change_scene("res://levels/ui/scene.tscn")
 		else:
 			Global.live = 0
-			get_tree().change_scene_to_file("res://title.tscn")
+			get_tree().change_scene("res://title.tscn")
+
+func _level():
+	get_tree().root.add_child(level)
+
+func _thud():
+	get_tree().root.add_child(thud)
+
+func _bhud():
+	get_tree().root.add_child(bhud)
+
+func _pmenu():
+	get_tree().root.add_child(pmenu)

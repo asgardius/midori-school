@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://c8lo3bflm256j"
-path="res://.godot/imported/gaugefill.wav-00170fe6235818b4f23b1012c23d5014.sample"
+type="AudioStreamSample"
+path="res://.import/gaugefill.wav-00170fe6235818b4f23b1012c23d5014.sample"
 
 [deps]
 
 source_file="res://sfx/gaugefill.wav"
-dest_files=["res://.godot/imported/gaugefill.wav-00170fe6235818b4f23b1012c23d5014.sample"]
+dest_files=[ "res://.import/gaugefill.wav-00170fe6235818b4f23b1012c23d5014.sample" ]
 
 [params]
 

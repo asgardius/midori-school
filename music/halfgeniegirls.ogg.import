@@ -1,19 +1,15 @@
 [remap]
 
-importer="oggvorbisstr"
-type="AudioStreamOggVorbis"
-uid="uid://bwogdl7hs86hj"
-path="res://.godot/imported/halfgeniegirls.ogg-77aa8ae87ec1d44e859c0925b39ef5a7.oggvorbisstr"
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/halfgeniegirls.ogg-77aa8ae87ec1d44e859c0925b39ef5a7.oggstr"
 
 [deps]
 
 source_file="res://music/halfgeniegirls.ogg"
-dest_files=["res://.godot/imported/halfgeniegirls.ogg-77aa8ae87ec1d44e859c0925b39ef5a7.oggvorbisstr"]
+dest_files=[ "res://.import/halfgeniegirls.ogg-77aa8ae87ec1d44e859c0925b39ef5a7.oggstr" ]
 
 [params]
 
 loop=true
 loop_offset=0
-bpm=0
-beat_count=0
-bar_beats=4

@@ -15,7 +15,7 @@ func _ready():
 	add_child(bgsound)
 	bgsound.stream = song1
 	bgsound.play(0)
-	bgsound.bus = &"Music"
+	bgsound.bus = "Music"
 	#pass # Replace with function body.
 
 
@@ -25,7 +25,7 @@ func _process(delta):
 	# Compensate for output latency.
 	bgtime -= AudioServer.get_output_latency()
 	#print("Time is: ", bgtime)
-	if bgtime < 0:
+	if (playindex == 0 && bgtime > 190) || (playindex == 1 && bgtime > 114) || (playindex == 2 && bgtime > 171):
 		if playstart:
 			if playindex == 0:
 				playindex = 1
@@ -47,9 +47,9 @@ func _complete():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 	if Global.debug:
-		get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+		get_tree().change_scene("res://levels/ui/scene.tscn")
 	else:
-		get_tree().change_scene_to_file("res://backgounds/result.tscn")
+		get_tree().change_scene("res://backgounds/result.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

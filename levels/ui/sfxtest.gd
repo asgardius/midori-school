@@ -7,7 +7,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
 	player.mix_target = 1
-	player.bus = &"SFX1"
+	player.bus = "SFX1"
 	$"BoxContainer/VBoxContainer/Game Over".grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,7 +18,7 @@ func _process(delta):
 func _level():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
-	get_tree().change_scene_to_file("res://backgounds/disclaimer.tscn")
+	get_tree().change_scene("res://backgounds/disclaimer.tscn")
 		#Global.live = 1
 		#Global.gamelevel = randi() % 3
 		#if Global.gamelevel == 0:
@@ -52,7 +52,7 @@ func _input(event):
 
 
 func _on_back_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/soundtest.tscn")
+	get_tree().change_scene("res://levels/ui/soundtest.tscn")
 
 
 

@@ -1,14 +1,13 @@
 [remap]
 
 importer="wav"
-type="AudioStreamWAV"
-uid="uid://ch4dx8fhxdgun"
-path="res://.godot/imported/braindamage.wav-298698c2444d93b0788ea3d4b41dfa16.sample"
+type="AudioStreamSample"
+path="res://.import/braindamage.wav-298698c2444d93b0788ea3d4b41dfa16.sample"
 
 [deps]
 
 source_file="res://sfx/braindamage.wav"
-dest_files=["res://.godot/imported/braindamage.wav-298698c2444d93b0788ea3d4b41dfa16.sample"]
+dest_files=[ "res://.import/braindamage.wav-298698c2444d93b0788ea3d4b41dfa16.sample" ]
 
 [params]
 
