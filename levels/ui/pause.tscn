@@ -1,5 +1,176 @@
-[gd_scene format=2]
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://fonts/hud.tres" type="DynamicFont" id=1]
+[ext_resource path="res://fonts/start.tres" type="DynamicFont" id=2]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=3]
+[ext_resource path="res://levels/ui/pause.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0, 0.8, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0.8, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0, 0.8, 0, 1 )
 
 [node name="Pause" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Bottomhud" parent="CanvasLayer" instance=ExtResource( 3 )]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer"]
+margin_left = 843.0
+margin_right = 1280.0
+margin_bottom = 116.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HBoxContainer"]
+margin_right = 116.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 116, 116 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer"]
+margin_left = 120.0
+margin_right = 421.0
+margin_bottom = 116.0
+
+[node name="Cname" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 174, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "Name"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
+margin_top = 26.0
+margin_right = 301.0
+margin_bottom = 48.0
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_right = 178.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 178, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "Health"
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "100/100"
+align = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 301.0
+margin_bottom = 74.0
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+margin_right = 178.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 178, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "Level"
+
+[node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 182.0
+margin_right = 301.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 119, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "100/100"
+align = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer"]
+margin_left = 105.0
+margin_top = 265.0
+margin_right = 1183.0
+margin_bottom = 493.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer2"]
+margin_right = 539.0
+margin_bottom = 228.0
+rect_min_size = Vector2( 539, 0 )
+
+[node name="Character" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
+visible = false
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 3 )
+text = "MENU_CHARACTER"
+
+[node name="Team" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
+visible = false
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 4 )
+text = "MENU_TEAM"
+
+[node name="Warp" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
+visible = false
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 4 )
+text = "MENU_MAP"
+
+[node name="Settings" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
+visible = false
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 4 )
+text = "MENU_SETTINGS"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer2"]
+margin_left = 543.0
+margin_right = 1082.0
+margin_bottom = 228.0
+rect_min_size = Vector2( 539, 0 )
+
+[node name="Journal" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
+visible = false
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 5 )
+text = "MENU_BOUKEN"
+
+[node name="Challenges" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
+visible = false
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 5 )
+text = "MENU_CHALLENGES"
+
+[node name="Backpack" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
+visible = false
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 5 )
+text = "MENU_BACKPACK"
+
+[node name="Exit" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
+margin_right = 539.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 5 )
+text = "MENU_EXIT"
+
+[connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer/Warp" to="." method="_on_warp_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Exit" to="." method="_on_exit_pressed"]

@@ -30,7 +30,7 @@ align = 1
 valign = 1
 script = ExtResource( 5 )
 
-[node name="start" type="Label" parent="."]
+[node name="exit" type="Label" parent="."]
 margin_left = 364.0
 margin_top = 602.0
 margin_right = 834.0
@@ -40,7 +40,7 @@ text = "TEXT_EXIT"
 align = 1
 script = ExtResource( 6 )
 
-[node name="exit" type="Label" parent="."]
+[node name="start" type="Label" parent="."]
 margin_left = 446.0
 margin_top = 92.0
 margin_right = 893.0

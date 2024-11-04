@@ -1,7 +1,7 @@
-extends CharacterBody2D
+extends KinematicBody2D
 
 var theta: float = 0.0
-@export_range(0,2*PI) var alpha: float = 1.5
+export(float,6.2831853) var alpha: float = 1.5
 var bullet = load("res://sprites/common/bullet/snowflake.tscn")
 
 const SPEED = 300.0
@@ -14,7 +14,7 @@ var movex = 0
 var movey = 0
 var attack = 87
 var crit = 7
-
+var velocity
 
 func _ready():
 	if Global.isboss:
@@ -30,7 +30,7 @@ func get_vector(angle):
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-@onready var anim := $AnimationPlayer
+onready var anim := $AnimationPlayer
 
 func _physics_process(delta):
 	if Global.live == 1:

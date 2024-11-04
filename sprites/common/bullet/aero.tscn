@@ -1,28 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://bex0xeqbq5uci"]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource type="Script" path="res://sprites/common/bullet/aero.gd" id="1_rovd1"]
-[ext_resource type="Texture2D" uid="uid://ca17ddf0kokpv" path="res://sprites/common/bullet/aero.png" id="2_omcs8"]
+[ext_resource path="res://sprites/common/bullet/aero.gd" type="Script" id=1]
+[ext_resource path="res://sprites/common/bullet/aero.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g125y"]
-size = Vector2(128, 28)
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 14, 63.5 )
 
 [node name="Aero" type="Area2D"]
-script = ExtResource("1_rovd1")
+script = ExtResource( 1 )
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, 64)
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 64 )
 rotation = 1.5708
-texture = ExtResource("2_omcs8")
+texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 64)
-rotation = 1.5708
-shape = SubResource("RectangleShape2D_g125y")
+position = Vector2( -1, 63.5 )
+shape = SubResource( 1 )
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(0, 64)
-rotation = 1.5708
-scale = Vector2(6.4, 1.4)
-
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[node name="VisibleOnScreenNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( -1, 63.5 )
+scale = Vector2( 1.4, 6.35 )

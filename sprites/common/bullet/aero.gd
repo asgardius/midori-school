@@ -27,7 +27,7 @@ func _process(delta):
 func _physics_process(delta):
 	rotation -= angular_speed * delta
 	print(rotation)
-	if rotation+deg_to_rad(180) < origangle:
+	if rotation+deg2rad(180) < origangle:
 		queue_free()
 
 func _on_body_entered(body):
