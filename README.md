@@ -2,7 +2,7 @@
 
 <img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/icon.png>
 
-An Action Role Playing Game inspired by Alundra, Touhou Project, Megaman X, among others. The only Open Source Genshin Killer and the only game at the moment that offers official bittorrent downloads. This game is made using Godot Engine 4.X and eventually will be ported to Virtualx Game Engine (forked from Godot 3.6)
+An Action Role Playing Game inspired by Alundra, Touhou Project, Megaman X, among others. The only Open Source Genshin Killer and the only game at the moment that offers official bittorrent downloads. This game is made using Virtualx Game Engine (forked from Godot 3.6)
 At the moment this game is in beta development stage. If you want to help send me an email to asgardius@asgardius.company
 You can find game documentation at https://cloud.asgardius.company/s/3tPKHsMznzMjzEc?path=%2Fgame%20documentation%2FMidori%20in%20the%20Magic%20School
 
