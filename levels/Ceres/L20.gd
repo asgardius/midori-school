@@ -1,5 +1,5 @@
 extends Node2D
-var talk = load("res://levels/ui/talk.tscn").instantiate()
+var talk = load("res://levels/ui/talk.tscn").instance()
 var boss
 var player
 # Called when the node enters the scene tree for the first time.
@@ -9,7 +9,7 @@ func _ready():
 	boss.add_to_group("boss")
 	Global.cdialog = [[tr("DIALOG_CERES_L20_0"), true, 0, 0], [tr("DIALOG_CERES_L20_1"), false, 3], [tr("DIALOG_CERES_L20_2"), true, 0, 0]]
 	Global.live = 0
-	get_tree().root.add_child.call(talk)
+	call_deferred("_talk")
 	if !Global.debug:
 		Global.quest[0] = 1
 
@@ -38,8 +38,8 @@ func _winner():
 	Global.live = 3
 	Global.ccutscene = 6
 	#talk.queue_free()
-	talk = load("res://levels/ui/talk.tscn").instantiate()
-	get_tree().root.add_child.call(talk)
+	talk = load("res://levels/ui/talk.tscn").instance()
+	call_deferred("_talk")
 
 func _statrebase():
 	if Global.debug:
@@ -52,3 +52,6 @@ func _statrebase():
 			if Global.party[i][0] != null:
 				for j in 7:
 					Global.mstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.dparty[i][0]]
+
+func _talk():
+	get_tree().root.add_child(talk)

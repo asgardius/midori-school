@@ -6,7 +6,7 @@ var bgsound := AudioStreamPlayer.new()
 var sfx1 := AudioStreamPlayer.new()
 var musictrack
 var isboss
-var bhud = load("res://levels/bottomhud.tscn").instantiate()
+var bhud = load("res://levels/bottomhud.tscn").instance()
 var ishud = true
 
 # Called when the node enters the scene tree for the first time.
@@ -14,11 +14,11 @@ func _ready():
 	Global.live = 1
 	add_child(bgsound)
 	add_child(sfx1)
-	level = load(Global.cutscenes[Global.ccutscene][0]).instantiate()
+	level = load(Global.cutscenes[Global.ccutscene][0]).instance()
 	musictrack = Global.musictracks[Global.cutscenes[Global.ccutscene][2]]
 	music = load(musictrack)
-	get_tree().root.add_child.call_deferred(level)
-	get_tree().root.add_child.call_deferred(bhud)
+	call_deferred("_level")
+	call_deferred("_bhud")
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
 	bgsound.mix_target = 1
@@ -47,16 +47,16 @@ func _ready():
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
-	if (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_BUTTON_BACK)) && Global.debug:
+	if (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_SELECT)) && Global.debug:
 		Global.live = 0
 		Global.bossready = false
 		get_tree().root.remove_child(bhud)
 		#get_tree().root.remove_child(player)
 		get_tree().root.remove_child(level)
 		if Global.debug:
-			get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+			get_tree().change_scene("res://levels/ui/scene.tscn")
 		else:
-			get_tree().change_scene_to_file("res://title.tscn")
+			get_tree().change_scene("res://title.tscn")
 	if Input.is_action_just_pressed("ui_accept"):
 		if Global.cutscenes[Global.ccutscene][3]:
 			var ccutscene = Global.ccutscene
@@ -65,20 +65,20 @@ func _input(event):
 			get_tree().root.remove_child(level)
 			bgsound.stop()
 			if Global.debug:
-				get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+				get_tree().change_scene("res://levels/ui/scene.tscn")
 			else:
-				get_tree().change_scene_to_file(Global.cutscenes[ccutscene][1])
+				get_tree().change_scene(Global.cutscenes[ccutscene][1])
 		else:
 			Global.ccutscene += 1
 			get_tree().root.remove_child(level)
-			level = load(Global.cutscenes[Global.ccutscene][0]).instantiate()
+			level = load(Global.cutscenes[Global.ccutscene][0]).instance()
 			if musictrack != Global.musictracks[Global.cutscenes[Global.ccutscene][2]]:
 				bgsound.stop()
 				musictrack = Global.musictracks[Global.cutscenes[Global.ccutscene][2]]
 				music = load(musictrack)
 				bgsound.stream = music
 				bgsound.play(0)
-			get_tree().root.add_child.call_deferred(level)
+			call_deferred("_level")
 	#if (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_UP)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_UP))):
 	#	if Global.debug:
 	#		if Global.dparty[0][0] != null:
@@ -112,3 +112,9 @@ func _input(event):
 	#	sfx1.stream = load(Global.sfxtracks[1])
 	#	sfx1.play(0)
 	#	bgsound.play(0)
+
+func _level():
+	get_tree().root.add_child(level)
+
+func _bhud():
+	get_tree().root.add_child(bhud)

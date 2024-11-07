@@ -1,24 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0f8yoj6q7l6w"]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource type="Script" path="res://levels/Cutscenes/Honker Railway/railway.gd" id="1_0hhdb"]
-[ext_resource type="Texture2D" uid="uid://5w6pjyubryq3" path="res://backgounds/Honker Railway in forest.jpg" id="1_10hv6"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_4m46s"]
+[ext_resource path="res://backgounds/Honker Railway in forest.jpg" type="Texture" id=1]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
+[ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
+[ext_resource path="res://levels/Cutscenes/Honker Railway/railway.gd" type="Script" id=4]
 
 [node name="Railway" type="Node2D"]
-script = ExtResource("1_0hhdb")
+script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1278.0
-offset_bottom = 600.0
-texture = ExtResource("1_10hv6")
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
 
-[node name="Text" type="Label" parent="."]
-offset_left = 52.0
-offset_top = 606.0
-offset_right = 1224.0
-offset_bottom = 714.0
-theme_override_font_sizes/font_size = 40
+[node name="Label" type="Label" parent="."]
+margin_left = 58.0
+margin_top = 581.0
+margin_right = 1198.0
+margin_bottom = 703.0
+custom_fonts/font = ExtResource( 3 )
 text = "CUTSCENE_2_2"
-horizontal_alignment = 1
+align = 1
 
-[node name="Bottomhud" parent="." instance=ExtResource("2_4m46s")]
+[node name="Bottomhud" parent="." instance=ExtResource( 2 )]

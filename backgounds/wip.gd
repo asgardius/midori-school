@@ -32,9 +32,9 @@ func _title():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 	if Global.debug:
-		get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+		get_tree().change_scene("res://levels/ui/scene.tscn")
 	else:
-		get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+		get_tree().change_scene("res://levels/ui/gameplay.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

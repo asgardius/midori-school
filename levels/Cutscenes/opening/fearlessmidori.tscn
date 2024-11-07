@@ -1,22 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://dmmmmfcc0lp5"]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource type="Texture2D" uid="uid://chr01sorihbb2" path="res://backgounds/Midori No Akuma.jpg" id="1_v5r6a"]
-[ext_resource type="PackedScene" uid="uid://d31udhuuwrajn" path="res://levels/bottomhud.tscn" id="2_fog7h"]
+[ext_resource path="res://backgounds/Midori No Akuma.jpg" type="Texture" id=1]
+[ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
+[ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
 
 [node name="Fearlessmidori" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1278.0
-offset_bottom = 600.0
-texture = ExtResource("1_v5r6a")
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
 
-[node name="Text" type="Label" parent="."]
-offset_left = 52.0
-offset_top = 606.0
-offset_right = 1224.0
-offset_bottom = 714.0
-theme_override_font_sizes/font_size = 40
+[node name="Label" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 598.0
+margin_right = 1263.0
+margin_bottom = 703.0
+custom_fonts/font = ExtResource( 3 )
 text = "CUTSCENE_0_2"
-horizontal_alignment = 1
+align = 1
 
-[node name="Bottomhud" parent="." instance=ExtResource("2_fog7h")]
+[node name="Bottomhud" parent="." instance=ExtResource( 2 )]

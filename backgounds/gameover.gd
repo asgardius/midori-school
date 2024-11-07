@@ -5,7 +5,7 @@ var sfx1 := AudioStreamPlayer.new()
 func _ready() -> void:
 	add_child(sfx1)
 	sfx1.mix_target = 1
-	sfx1.bus = &"SFX1"
+	sfx1.bus = "SFX1"
 	sfx1.stream = load(Global.sfxtracks[0])
 	sfx1.play(0)
 
@@ -16,4 +16,4 @@ func _process(delta: float) -> void:
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_accept"):
-		get_tree().change_scene_to_file("res://title.tscn")
+		get_tree().change_scene("res://title.tscn")

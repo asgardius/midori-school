@@ -11,7 +11,7 @@ func _process(delta):
 func _input(event):
 	gamepadtest.new(event)
 	if Input.is_action_just_pressed("ui_cancel"):
-		get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")
+		get_tree().change_scene("res://levels/ui/tmenu.tscn")
    # Mouse in viewport coordinates.
 #	if Input.is_key_pressed(KEY_ENTER) || Input.is_joy_button_pressed(0,JOY_BUTTON_B):
 		#print("Mouse Click/Unclick at: ", event.position)
@@ -27,7 +27,7 @@ func _input(event):
 
 
 func _on_exit_pressed():
-	get_tree().change_scene_to_file("res://levels/ui/tmenu.tscn")
+	get_tree().change_scene("res://levels/ui/tmenu.tscn")
 	#pass # Replace with function body.
 
 
@@ -35,7 +35,7 @@ func _on_noob_pressed():
 	_statrebase()
 	Global.dificulty = 1
 	_reset()
-	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
 	#pass # Replace with function body.
 
 
@@ -43,7 +43,7 @@ func _on_thisfirst_pressed():
 	_statrebase()
 	Global.dificulty = 2
 	_reset()
-	get_tree().change_scene_to_file("res://levels/ui/Cutscenes.tscn")
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
 	#pass # Replace with function body.
 
 

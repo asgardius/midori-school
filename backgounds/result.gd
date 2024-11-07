@@ -9,10 +9,10 @@ func _ready():
 	result = $Label
 	presscontinue = $Label2
 	var previoustime
-	var min = float(Global.result[1] / 60000)
-	var sec = (Global.result[1] / 1000) - (min*60)
-	var msec = Global.result[1] - (sec*1000) - (min*60000)
-	result.set_text("Defeated enemies: "+str(Global.result[0])+"\nClear time: "+str(min)+":"+str(sec)+":"+str(msec)+"\nCharged skill uses: 0\nDamage received: "+str(Global.result[3])+"\nEarned experience: 0")
+	var minute = float(Global.result[1] / 60000)
+	var second = (Global.result[1] / 1000) - (minute*60)
+	var msecond = Global.result[1] - (second*1000) - (minute*60000)
+	result.set_text("Defeated enemies: "+str(Global.result[0])+"\nClear time: "+str(minute)+":"+str(second)+":"+str(msecond)+"\nCharged skill uses: 0\nDamage received: "+str(Global.result[3])+"\nEarned experience: 0")
 	Global.result = [0, 0, 0, 0, 0]
 	updatehud()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
@@ -40,14 +40,14 @@ func _title():
 	# This is like autoloading the scene, only
 	# it happens after already loading the main scene.
 	if Global.debug:
-		get_tree().change_scene_to_file("res://levels/ui/scene.tscn")
+		get_tree().change_scene("res://levels/ui/scene.tscn")
 	else:
 		if Global.cplace == [1, 1, 17]:
 			Global.cplace = [0, 0, 0]
-			get_tree().change_scene_to_file("res://backgounds/wip.tscn")
+			get_tree().change_scene("res://backgounds/wip.tscn")
 		else:
 			Global.cplace = [0, 0, 0]
-			get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+			get_tree().change_scene("res://levels/ui/gameplay.tscn")
 		#get_tree().root.add_child(title)
 		#get_tree().root.remove_child(boot)
 		#boot.queue_free()

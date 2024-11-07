@@ -13,7 +13,7 @@ var movex = 0
 var movey = 0
 var attack = 59
 var crit = 5
-var velocity
+var velocity = Vector2(0,0)
 
 
 func _ready():

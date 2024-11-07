@@ -9,4 +9,4 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	Global.live = 1
-	get_tree().change_scene_to_file("res://levels/ui/gameplay.tscn")
+	get_tree().change_scene("res://levels/ui/gameplay.tscn")

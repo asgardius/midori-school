@@ -1,66 +1,49 @@
-[gd_scene load_steps=7 format=3 uid="uid://c8hmum2w6aygy"]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource type="Script" path="res://levels/Ceres/L20.gd" id="1_cjbjq"]
-[ext_resource type="Texture2D" uid="uid://dursxelwwxe8u" path="res://sprites/common/placeholder/player.png" id="1_g5hs8"]
-[ext_resource type="PackedScene" uid="uid://wo77i5ql2esb" path="res://sprites/common/kimberly/kimberly.tscn" id="2_5cnwp"]
-[ext_resource type="PackedScene" uid="uid://cehe6sm8ly06u" path="res://sprites/common/player/player.tscn" id="3_slxde"]
+[ext_resource path="res://levels/Ceres/L20.gd" type="Script" id=1]
+[ext_resource path="res://sprites/common/player/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://sprites/common/kimberly/kimberly.tscn" type="PackedScene" id=3]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1jr1w"]
-size = Vector2(20, 761)
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 18.5, 446.5 )
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_iptg6"]
-size = Vector2(1283, 20)
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 676, 20.5 )
 
 [node name="L20" type="Node2D"]
-script = ExtResource("1_cjbjq")
+script = ExtResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(1280, 720)
-offset_right = 40.0
-offset_bottom = 40.0
-color = Color(0, 0.619608, 0.270588, 1)
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 583.0
-offset_top = 4.0
-offset_right = 711.0
-offset_bottom = 260.0
-texture = ExtResource("1_g5hs8")
-
-[node name="Label" type="Label" parent="."]
-offset_left = 327.0
-offset_top = 354.0
-offset_right = 957.0
-offset_bottom = 409.0
-theme_override_font_sizes/font_size = 40
-text = "Boss spawns at EBU pattern area"
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 0.619608, 0.270588, 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-11, 361.5)
-shape = SubResource("RectangleShape2D_1jr1w")
+position = Vector2( -18, 373.5 )
+shape = SubResource( 1 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(1293, 358)
-shape = SubResource("RectangleShape2D_1jr1w")
+position = Vector2( 1299, 376 )
+shape = SubResource( 1 )
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(641.5, -9)
-shape = SubResource("RectangleShape2D_iptg6")
+position = Vector2( 641, -21 )
+shape = SubResource( 2 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
-position = Vector2(644, 731)
-shape = SubResource("RectangleShape2D_iptg6")
+position = Vector2( 640, 741 )
+shape = SubResource( 2 )
 
-[node name="Kimberly" parent="." instance=ExtResource("2_5cnwp")]
-position = Vector2(644, 133)
+[node name="Kimberly" parent="." instance=ExtResource( 3 )]
+position = Vector2( 644, 133 )
 
-[node name="Player" parent="." instance=ExtResource("3_slxde")]
-position = Vector2(652, 590)
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 635, 586 )

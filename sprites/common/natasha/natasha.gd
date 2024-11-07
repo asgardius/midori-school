@@ -14,7 +14,7 @@ var movex = 0
 var movey = 0
 var attack = 87
 var crit = 7
-var velocity
+var velocity = Vector2(0,0)
 
 func _ready():
 	if Global.isboss:
@@ -88,7 +88,7 @@ func _physics_process(delta):
 			anim.play("sidle")
 	#move_and_slide()
 func shoot(angle):
-	var new_bullet = bullet.instantiate()
+	var new_bullet = bullet.instance()
 	new_bullet.position = Vector2(position.x, position.y)
 	new_bullet.direction = get_vector(angle)
 	new_bullet.btype = "boss"
