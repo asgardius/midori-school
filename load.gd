@@ -88,6 +88,28 @@ func _init(slot):
 			else:
 				Global.party[3][0] = null
 				Global.party[3][1] = null
+			quest = savefile[5].rsplit(",", true, 9)
+			if quest[0] is int:
+				Global.sparty[0][0] = int(quest[0])
+				Global.sparty[0][1] = int(quest[1])
+			if quest[2] is int:
+				Global.sparty[1][0] = int(quest[2])
+				Global.sparty[1][1] = int(quest[3])
+			else:
+				Global.sparty[1][0] = null
+				Global.sparty[1][1] = null
+			if quest[4] is int:
+				Global.sparty[2][0] = int(quest[4])
+				Global.sparty[2][1] = int(quest[5])
+			else:
+				Global.sparty[2][0] = null
+				Global.sparty[2][1] = null
+			if quest[6] is int:
+				Global.sparty[3][0] = int(quest[6])
+				Global.sparty[3][1] = int(quest[7])
+			else:
+				Global.sparty[3][0] = null
+				Global.sparty[3][1] = null
 	# We need to revert the game state so we're not cloning objects
 	# during loading. This will vary wildly depending on the needs of a
 	# project, so take care with this step.
@@ -105,7 +127,7 @@ func _init(slot):
 		file.open("user://userprefs", File.WRITE)
 		file.store_string(saveinit)
 		file.close()
-		saveinit = "0,0,<null>,<null>,<null>,<null>,<null>,<null>\n0\n0\n1,11,19\n0,0,0,0,0,0"
+		saveinit = "0,0,<null>,<null>,<null>,<null>,<null>,<null>\n0\n0\n1,11,19\n0,0,0,0,0,0\n<null>,<null>,<null>,<null>,<null>,<null>,<null>,<null>"
 		file = File.new()
 		file.open("user://slot1", File.WRITE)
 		file.store_string(saveinit)
