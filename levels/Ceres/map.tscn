@@ -23,10 +23,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
+"times": PoolRealArray( 0.001 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 8 ]
+"values": [ 0 ]
 }
 
 [sub_resource type="Animation" id=5]
@@ -175,7 +175,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 8 ]
+"values": [ 0 ]
 }
 
 [sub_resource type="Animation" id=14]
@@ -353,7 +353,6 @@ position = Vector2( 615, -444 )
 texture = ExtResource( 1 )
 hframes = 4
 vframes = 4
-frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Railwaygirl"]
 shape = SubResource( 3 )
@@ -376,7 +375,6 @@ position = Vector2( -651, 133 )
 texture = ExtResource( 2 )
 hframes = 4
 vframes = 4
-frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pamela"]
 shape = SubResource( 3 )

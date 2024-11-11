@@ -127,6 +127,8 @@ DIALOG_TROUBLEMAKER_2;I am not a terrorist;No soy una terrorista;私はテロリ
 DIALOG_TROUBLEMAKER_3;This is an Easy Quiz;Esto fue un examen fácil;これは簡単な試験でした
 DIALOG_TROUBLEMAKER_4;What hapened to my house?;¿Que le ocurrió a mi casa?;私の家に何が起こったのでしょうか?
 DIALOG_TROUBLEMAKER_5;Which house?;¿Cual casa?;どの家ですか？
+DIALOG_HKR_0;I hear a heartbeat coming from inside this trash can;Escucho un latido que proviene del interior de este \ncubo de basura;このゴミ箱の中から鼓動が聞こえる
+DIALOG_HKR_1;Don't underestimate the emotions of a trash can;No subestimes las emociones de un cubo de basura;ゴミ箱の感情を過小評価しないでください
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
 TWIN_TROUBLEMAKERS;Twin Troublemakers;Gemelas problématicas;双子のトラブルメーカー
 MENU_CHARACTER;Character List;Lista de Personajes;キャラクター一覧
