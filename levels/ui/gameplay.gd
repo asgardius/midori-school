@@ -9,11 +9,14 @@ var musictrack
 var bhud = load("res://levels/bottomhud.tscn").instance()
 var thud = load("res://levels/ui/tophud.tscn").instance()
 var pmenu = load("res://levels/ui/pause.tscn").instance()
+var mgamepad = load("res://levels/ui/missinggamepad.tscn").instance()
+var ismgamepad = false
 var ispaused = false
 var ishud = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Input.connect("joy_connection_changed",self,"_on_joy_connection_changed")
 	_statrebase()
 	add_child(bgsound)
 	add_child(sfx1)
@@ -60,6 +63,11 @@ func _process(delta):
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
+	if ismgamepad && (event is InputEventJoypadButton || Input.is_key_pressed(KEY_ENTER)):
+		ismgamepad = false
+		get_tree().root.remove_child(mgamepad)
+		Global.live = 1
+		
 	gamepadtest.new(event)
 	if Input.is_action_just_pressed("Pause") && Global.cdialog == []:
 		_pausemenu()
@@ -163,6 +171,12 @@ func _exit():
 			Global.live = 0
 			get_tree().change_scene("res://title.tscn")
 
+func  _on_joy_connection_changed(device_id, connected):
+	if !ismgamepad && !connected && Global.gamepad != 0 && Global.live == 1:
+		ismgamepad = true
+		Global.live = 4
+		call_deferred("_mgamepad")
+
 func _level():
 	get_tree().root.add_child(level)
 
@@ -174,3 +188,6 @@ func _bhud():
 
 func _pmenu():
 	get_tree().root.add_child(pmenu)
+
+func _mgamepad():
+	get_tree().root.add_child(mgamepad)

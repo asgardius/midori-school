@@ -4,17 +4,19 @@
 
 [node name="Missinggamepad" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 margin_left = 90.0
 margin_top = 211.0
-margin_right = 1177.0
+margin_right = 1197.0
 margin_bottom = 511.0
 color = Color( 0, 0, 0, 1 )
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="CanvasLayer"]
 margin_left = 90.0
 margin_top = 211.0
-margin_right = 1177.0
+margin_right = 1197.0
 margin_bottom = 511.0
 rect_min_size = Vector2( 1072, 300 )
 custom_fonts/font = ExtResource( 1 )
