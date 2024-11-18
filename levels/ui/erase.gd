@@ -55,6 +55,7 @@ func _on_ram_pressed() -> void:
 	Global.cplace = [1, 11, 19]
 	Global.live = 0
 	Global.cpchar = 0
+	Global.difdamage = 0
 	Global.party = [[0,0], [null,null], [null,null], [null,null]]
 	Global.ccutscene = 0
 	_on_back_pressed()

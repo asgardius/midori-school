@@ -11,6 +11,7 @@ var crit
 func _ready():
 	isvisible = $VisibleOnScreenNotifier2D
 	add_to_group(btype)
+	attack = attack * Global.difdamage
 	#pass # Replace with function body.
 
 

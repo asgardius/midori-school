@@ -16,6 +16,28 @@ var ishud = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Global.dificulty == 1:
+		if Global.difdamage != 0:
+			print("Script Kiddie")
+			Global.difdamage = Global.dparty/0
+	elif Global.dificulty == 2:
+		if Global.difdamage == 0 || Global.difdamage == 1:
+			Global.difdamage = 1
+		else:
+			print("Script Kiddie")
+			Global.difdamage = Global.dparty/0
+	elif Global.dificulty == 3:
+		if Global.difdamage == 0 || Global.difdamage == 100:
+			Global.difdamage = 100
+		else:
+			print("Script Kiddie")
+			Global.difdamage = Global.dparty/0
+	elif Global.dificulty == 4:
+		if Global.difdamage == 0 || Global.difdamage == 1000:
+			Global.difdamage = 1000
+		else:
+			print("Script Kiddie")
+			Global.difdamage = Global.dparty/0
 	Input.connect("joy_connection_changed",self,"_on_joy_connection_changed")
 	_statrebase()
 	add_child(bgsound)

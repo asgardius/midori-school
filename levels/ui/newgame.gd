@@ -49,11 +49,17 @@ func _on_thisfirst_pressed():
 
 
 func _on_challenge_pressed():
-	pass # Replace with function body.
+	_statrebase()
+	Global.dificulty = 3
+	_reset()
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
 
 
 func _on_maniac_pressed():
-	pass # Replace with function body.
+	_statrebase()
+	Global.dificulty = 4
+	_reset()
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
 
 
 func _statrebase():
