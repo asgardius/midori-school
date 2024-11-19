@@ -27,14 +27,14 @@ func _ready():
 			print("Script Kiddie")
 			Global.difdamage = Global.dparty/0
 	elif Global.dificulty == 3:
-		if Global.difdamage == 0 || Global.difdamage == 100:
-			Global.difdamage = 100
+		if Global.difdamage == 0 || Global.difdamage == 3:
+			Global.difdamage = 3
 		else:
 			print("Script Kiddie")
 			Global.difdamage = Global.dparty/0
 	elif Global.dificulty == 4:
-		if Global.difdamage == 0 || Global.difdamage == 1000:
-			Global.difdamage = 1000
+		if Global.difdamage == 0 || Global.difdamage == 6:
+			Global.difdamage = 6
 		else:
 			print("Script Kiddie")
 			Global.difdamage = Global.dparty/0
