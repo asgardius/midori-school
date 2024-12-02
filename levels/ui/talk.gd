@@ -24,9 +24,9 @@ func _process(delta):
 	pass
 
 func _input(event):
-	if Input.is_action_just_pressed("ui_accept") && !press:
+	if (Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick")) && !press:
 		press = true
-	if Input.is_action_just_released("ui_accept") && press:
+	if (Input.is_action_just_released("ui_accept") || Input.is_action_just_released("mclick")) && press:
 		dindex += 1
 		if dindex < Global.cdialog.size():
 			if Global.cdialog[dindex][1]:

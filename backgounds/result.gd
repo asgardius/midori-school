@@ -42,7 +42,7 @@ func _title():
 	if Global.debug:
 		get_tree().change_scene("res://levels/ui/scene.tscn")
 	else:
-		if Global.cplace == [1, 1, 17]:
+		if Global.cplace == [1, 2, 17]:
 			Global.cplace = [0, 0, 0]
 			get_tree().change_scene("res://backgounds/wip.tscn")
 		else:

@@ -78,7 +78,7 @@ margin_right = 1017.0
 margin_bottom = 286.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
-text = "BUTTON_PLACEHOLDER"
+text = "TWIN_TROUBLEMAKERS_P2"
 
 [node name="WIP" type="Button" parent="VBoxContainer"]
 margin_top = 290.0
@@ -100,4 +100,5 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="VBoxContainer/Lilytest" to="." method="_on_lilytest_pressed"]
 [connection signal="pressed" from="VBoxContainer/Dialogtest" to="." method="_on_dialogtest_pressed"]
 [connection signal="pressed" from="VBoxContainer/Bullethell" to="." method="_on_bullethell_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

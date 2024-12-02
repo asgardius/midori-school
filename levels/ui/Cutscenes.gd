@@ -57,7 +57,7 @@ func _input(event):
 			get_tree().change_scene("res://levels/ui/scene.tscn")
 		else:
 			get_tree().change_scene("res://title.tscn")
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
 		if Global.cutscenes[Global.ccutscene][3]:
 			var ccutscene = Global.ccutscene
 			Global.ccutscene = null

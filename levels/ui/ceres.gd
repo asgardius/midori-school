@@ -70,3 +70,9 @@ func _on_bullethell_pressed() -> void:
 	Global.dplace = [1, 1, 17]
 	Global.live = 1
 	get_tree().change_scene("res://levels/ui/gameplay.tscn")
+
+
+func _on_Credits_pressed():
+	Global.dplace = [1, 2, 17]
+	Global.live = 1
+	get_tree().change_scene("res://levels/ui/gameplay.tscn")

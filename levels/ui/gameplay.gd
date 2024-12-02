@@ -21,7 +21,7 @@ func _ready():
 		if Global.difdamage != 0:
 			print("Script Kiddie")
 			Global.difdamage = Global.dparty/0
-	elif Global.dificulty == 2:
+	elif Global.dificulty == 2 || Global.dificulty == 0:
 		if Global.difdamage == 0 || Global.difdamage == 1:
 			Global.difdamage = 1
 		else:
@@ -81,6 +81,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Global.live != 1 && ishud:
+		get_tree().root.remove_child(thud)
+		get_tree().root.remove_child(tcontrol)
+		ishud = false
+	elif Global.live == 1 && !ishud:
+		call_deferred("_thud")
+		call_deferred("_tcontrol")
+		ishud = true
 	if Global.isresume:
 		Global.isresume = false
 		_pausemenu()
@@ -96,7 +104,7 @@ func _input(event):
 		Global.live = 1
 		
 	gamepadtest.new(event)
-	if Input.is_action_just_pressed("Pause") && Global.live == 1:
+	if Input.is_action_just_pressed("Pause") && (Global.live == 1 || Global.live == 4):
 		_pausemenu()
 		#Global.exitgame = true
 	if Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_up"):
@@ -132,14 +140,6 @@ func _input(event):
 		sfx1.stream = load(Global.sfxtracks[1])
 		sfx1.play(0)
 		bgsound.play(0)
-	if Global.live != 1 && ishud:
-		get_tree().root.remove_child(thud)
-		get_tree().root.remove_child(tcontrol)
-		ishud = false
-	elif Global.live == 1 && !ishud:
-		call_deferred("_thud")
-		call_deferred("_tcontrol")
-		ishud = true
 func _statrebase():
 	if Global.debug:
 		for i in 4:

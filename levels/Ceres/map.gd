@@ -23,7 +23,7 @@ func _process(delta):
 	pass
 
 func _input(event):
-	if Input.is_action_just_pressed("ui_accept") && travel != null:
+	if Input.is_action_just_pressed("ui_accept") && travel != null && Global.live == 1:
 		if Global.ccutscene == null:
 			if Global.debug:
 				Global.dplace = travel

@@ -79,3 +79,8 @@ func _on_ceres_pressed():
 	#get_tree().change_scene("res://levels/ui/ceres.tscn")
 	Global.ccutscene = 10
 	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
+
+
+func _on_Credits_pressed():
+	Global.ccutscene = 16
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")

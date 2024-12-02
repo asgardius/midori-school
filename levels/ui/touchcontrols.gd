@@ -62,3 +62,27 @@ func _on_Select_pressed():
 
 func _on_Select_released():
 	Input.action_release("Pause")
+
+
+func _on_R2_pressed():
+	Input.action_press("run")
+
+
+func _on_R2_released():
+	Input.action_release("run")
+
+
+func _on_R1_pressed():
+	Input.action_press("schar")
+
+
+func _on_R1_released():
+	Input.action_release("schar")
+
+
+func _on_B_pressed():
+	Input.action_press("ui_accept")
+
+
+func _on_B_released():
+	Input.action_release("ui_accept")
