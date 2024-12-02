@@ -49,10 +49,11 @@ var owlocation = [[null, null], [null, null]]
 const musictracks = ["res://music/midorinoyume.ogg", "res://music/seahorse.ogg", "res://music/chinesegoat.ogg", "res://music/doyoufeelold.ogg", "res://music/doyiuneedahealer.ogg", "res://music/adayatceres.ogg", "res://music/twintroublemakers.ogg", "res://music/easyquiz.ogg", "res://music/neowave.ogg", "res://music/multivectorsubmarines.ogg", "res://music/halfgeniegirls.ogg", "res://music/rusianmaverickfairy.ogg", "res://music/blacksmithofdestruction.ogg", "res://music/shininglikefireworks.ogg", "res://music/sadtrashcan.ogg", "res://music/akikonotegami.ogg", "res://music/asadcat.ogg", "res://music/lilydesire.ogg", "res://music/scholartrip.ogg", "res://music/quantumice.ogg", "res://music/unreeeal.ogg", "res://music/alsa.ogg", "res://music/silverblue.ogg"]
 const sfxtracks = ["res://sfx/braindamage.wav", "res://sfx/gaugefill.wav", "res://sfx/boomboombakudan.wav"]
 var debug = false
-const release = "R0.3.0-beta"
+const release = "R0.3.0-dev"
 var sk = false
 var gamepad = 0
 var quest = [0, 0, 0, 0, 0, 0]
+var isresume = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

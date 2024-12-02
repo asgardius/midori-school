@@ -55,7 +55,7 @@ func _process(delta):
 	pass
 
 func _input(event):
-	if Input.is_key_pressed(KEY_ESCAPE) || (Input.is_joy_button_pressed(0,JOY_XBOX_A) && (Input.is_joy_button_pressed(0,JOY_XBOX_B))):
+	if Input.is_key_pressed(KEY_ESCAPE) || Input.is_action_just_pressed("mclick") || (Input.is_joy_button_pressed(0,JOY_XBOX_A) && (Input.is_joy_button_pressed(0,JOY_XBOX_B))):
 		get_tree().change_scene("res://levels/ui/debug.tscn")
 	gamepadtest.new(event)
 	if Global.gamepad == 1:

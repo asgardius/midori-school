@@ -172,5 +172,14 @@ custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 5 )
 text = "MENU_EXIT"
 
+[node name="Resume" type="Button" parent="CanvasLayer"]
+margin_left = 314.0
+margin_top = 150.0
+margin_right = 487.0
+margin_bottom = 204.0
+custom_fonts/font = ExtResource( 2 )
+text = "Resume"
+
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer/Warp" to="." method="_on_warp_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Resume" to="." method="_on_Resume_pressed"]

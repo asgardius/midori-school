@@ -56,6 +56,6 @@ func _complete():
 
 func _input(event):
    # Mouse in viewport coordinates.
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_complete()

@@ -34,7 +34,7 @@ func _input(event):
    # Mouse in viewport coordinates.
 	gamepadtest.new(event)
 	updatehud()
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		get_tree().change_scene("res://levels/ui/tmenu.tscn")
 		#_level()

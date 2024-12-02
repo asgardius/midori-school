@@ -15,5 +15,5 @@ func _process(delta: float) -> void:
 	pass
 
 func _input(event):
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
 		get_tree().change_scene("res://title.tscn")

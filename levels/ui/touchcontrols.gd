@@ -54,3 +54,11 @@ func _on_Right_pressed():
 
 func _on_Right_released():
 	Input.action_release("ui_right")
+
+
+func _on_Select_pressed():
+	Input.action_press("Pause")
+
+
+func _on_Select_released():
+	Input.action_release("Pause")

@@ -58,3 +58,7 @@ func _on_warp_pressed() -> void:
 	else:
 		Global.cplace = [0, 0, 0]
 	Global.live = 5
+
+
+func _on_Resume_pressed():
+	Global.isresume = true

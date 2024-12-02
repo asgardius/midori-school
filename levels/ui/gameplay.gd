@@ -81,19 +81,22 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Global.isresume:
+		Global.isresume = false
+		_pausemenu()
 	var velocity = Vector2.ZERO
 	if (Global.live > 4 && Global.live < 9) || Global.live == 2:
 		_exit()
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
-	if ismgamepad && (event is InputEventJoypadButton || Input.is_key_pressed(KEY_ENTER)):
+	if ismgamepad && (event is InputEventJoypadButton || Input.is_key_pressed(KEY_ENTER) || Input.is_action_just_pressed("mclick")):
 		ismgamepad = false
 		get_tree().root.remove_child(mgamepad)
 		Global.live = 1
 		
 	gamepadtest.new(event)
-	if Input.is_action_just_pressed("Pause") && Global.cdialog == []:
+	if Input.is_action_just_pressed("Pause") && Global.live == 1:
 		_pausemenu()
 		#Global.exitgame = true
 	if Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_up"):
@@ -131,9 +134,11 @@ func _input(event):
 		bgsound.play(0)
 	if Global.live != 1 && ishud:
 		get_tree().root.remove_child(thud)
+		get_tree().root.remove_child(tcontrol)
 		ishud = false
 	elif Global.live == 1 && !ishud:
 		call_deferred("_thud")
+		call_deferred("_tcontrol")
 		ishud = true
 func _statrebase():
 	if Global.debug:

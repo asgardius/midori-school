@@ -30,7 +30,7 @@ func _ready() -> void:
 func _input(event):
 	gamepadtest.new(event)
    # Mouse in viewport coordinates.
-	if Input.is_action_just_pressed("ui_cancel"):
+	if Input.is_action_just_pressed("ui_cancel") || Input.is_action_just_pressed("mclick"):
 		get_tree().change_scene("res://levels/ui/soundtest.tscn")
 	elif Input.is_action_pressed("ui_left") && Input.is_action_pressed("ui_up"):
 		fl.play(0)

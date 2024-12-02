@@ -30,7 +30,7 @@ func _input(event):
 	updatehud()
 		
    # Mouse in viewport coordinates.
-	if !Global.sk && Input.is_action_just_pressed("ui_accept"):
+	if !Global.sk && Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
 		#print("Mouse Click/Unclick at: ", event.position)
 		_title()
 
