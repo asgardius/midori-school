@@ -10,6 +10,7 @@ var bhud = load("res://levels/bottomhud.tscn").instance()
 var thud = load("res://levels/ui/tophud.tscn").instance()
 var pmenu = load("res://levels/ui/pause.tscn").instance()
 var mgamepad = load("res://levels/ui/missinggamepad.tscn").instance()
+var tcontrol = load("res://levels/ui/touchcontrols.tscn").instance()
 var ismgamepad = false
 var ispaused = false
 var ishud = true
@@ -65,6 +66,7 @@ func _ready():
 	call_deferred("_level")
 	call_deferred("_bhud")
 	call_deferred("_thud")
+	call_deferred("_tcontrol")
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
 	bgsound.bus = "Music"
@@ -165,6 +167,7 @@ func _exit():
 	Global.bossready = false
 	Global.cboss = [null, null, null]
 	#if Global.live == 4:
+	get_tree().root.remove_child(tcontrol)
 	get_tree().root.remove_child(pmenu)
 	#else:
 	#	get_tree().root.remove_child(thud)
@@ -213,3 +216,6 @@ func _pmenu():
 
 func _mgamepad():
 	get_tree().root.add_child(mgamepad)
+
+func _tcontrol():
+	get_tree().root.add_child(tcontrol)
