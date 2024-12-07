@@ -36,19 +36,19 @@ position = Vector2( 1007, 479 )
 normal = ExtResource( 7 )
 
 [node name="R1" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 872, 501 )
+position = Vector2( 872, 610 )
 normal = ExtResource( 8 )
 
 [node name="R2" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 917, 573 )
+position = Vector2( 917, 479 )
 normal = ExtResource( 9 )
 
 [node name="L1" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 20, 372 )
+position = Vector2( 740, 610 )
 normal = ExtResource( 6 )
 
 [node name="L2" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 157, 334 )
+position = Vector2( 787, 479 )
 normal = ExtResource( 5 )
 
 [node name="Up" type="TouchScreenButton" parent="CanvasLayer"]
@@ -72,13 +72,15 @@ position = Vector2( 431, 526 )
 normal = ExtResource( 10 )
 
 [node name="Start" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 743, 526 )
+position = Vector2( 639, 526 )
 normal = ExtResource( 11 )
 
 [connection signal="pressed" from="CanvasLayer/B" to="." method="_on_B_pressed"]
 [connection signal="released" from="CanvasLayer/B" to="." method="_on_B_released"]
 [connection signal="pressed" from="CanvasLayer/A" to="." method="_on_A_pressed"]
 [connection signal="released" from="CanvasLayer/A" to="." method="_on_A_released"]
+[connection signal="pressed" from="CanvasLayer/Y" to="." method="_on_Y_pressed"]
+[connection signal="released" from="CanvasLayer/Y" to="." method="_on_Y_released"]
 [connection signal="pressed" from="CanvasLayer/R1" to="." method="_on_R1_pressed"]
 [connection signal="released" from="CanvasLayer/R1" to="." method="_on_R1_released"]
 [connection signal="pressed" from="CanvasLayer/R2" to="." method="_on_R2_pressed"]

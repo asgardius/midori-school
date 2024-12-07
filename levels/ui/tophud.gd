@@ -113,11 +113,6 @@ func _ready():
 	bossbg = $CanvasLayer/Bossbg
 	topleft.visible = false
 	topleftbg.visible = false
-	if Global.mangohud:
-		topleft.position.y = 244
-		topleftbg.position.y = 244
-		topmini.position.y = 601
-		topminibg.position.y = 601
 	if Global.cboss == [null, null, null]:
 		bossbg.visible = false
 		boss.visible = false

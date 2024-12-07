@@ -7,6 +7,7 @@ var btype
 var isvisible
 var attack
 var crit
+var isjump = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	isvisible = $VisibleOnScreenNotifier2D
@@ -28,10 +29,9 @@ func _physics_process(delta):
 
 
 func _on_body_entered(body):
-	if !body.is_in_group(btype):
-		if body.is_in_group("players") && Global.dificulty != 1:
+	if !body.is_in_group(btype) && Global.live == 1:
+		if body.is_in_group("players") && Global.dificulty != 1 && body.isjump == isjump:
 			if body.weakness == 3:
-				print("weakness")
 				Global.result[3] += attack * crit
 				#Input.start_joy_vibration(0,0,1,3)
 				if Global.debug:
@@ -57,9 +57,8 @@ func _on_body_entered(body):
 						Global.cstats[Global.party[Global.cpchar][0]][0] -= attack
 					else:
 						Global.cstats[Global.party[Global.cpchar][0]][0] = 0
-		elif body.is_in_group("boss") && Global.dificulty != 1 && Global.cboss[1] != null:
+		elif body.is_in_group("boss") && Global.dificulty != 1 && Global.cboss[1] != null && body.isjump == isjump:
 			if body.weakness == 3:
-				print("weakness")
 				if Global.cboss[1] >= (attack * crit):
 						Global.cboss[1] -= attack * crit
 				else:
@@ -69,16 +68,17 @@ func _on_body_entered(body):
 						Global.cboss[1] -= attack
 				else:
 					Global.cboss[1] = 0
-		elif body.is_in_group("enemies") && Global.dificulty != 1:
+		elif body.is_in_group("enemies") && Global.dificulty != 1 && body.isjump == isjump:
 			if body.weakness == 3:
-				print("weakness")
+				pass
+		elif !body.is_in_group("enemies") && body.is_in_group("boss") && !body.is_in_group("players"):
+			queue_free()
 	#if body.is_in_group("players"):
 	#	Global.live = 2
 	#elif body.is_in_group("enemies"):
 	#	Global.live = 3
 	#elif body.is_in_group("boss"):
 	#	Global.live = 3
-		queue_free()
 
 
 

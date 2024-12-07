@@ -18,10 +18,13 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var weakness
 var speciality
 var rboost = 1
+var jtimer
+var isjump = false
 
 func _ready():
 	add_to_group("players")
 	anim = $AnimationPlayer
+	jtimer = $Jtimer
 	sprite = $Sprite
 	#_charswitch()
 	_charinit()
@@ -79,24 +82,25 @@ func _physics_process(delta):
 			angle = 1
 		elif xm < -0.3:
 			angle = 3
-		if velocity.y != 0 || velocity.x != 0:
-			if angle == 0:
-				anim.play("nwalk")
-			elif angle == 1:
-				anim.play("ewalk")
-			elif angle == 3:
-				anim.play("wwalk")
+		if !isjump:
+			if velocity.y != 0 || velocity.x != 0:
+				if angle == 0:
+					anim.play("nwalk")
+				elif angle == 1:
+					anim.play("ewalk")
+				elif angle == 3:
+					anim.play("wwalk")
+				else:
+					anim.play("swalk")
 			else:
-				anim.play("swalk")
-		else:
-			if angle == 0:
-				anim.play("nidle")
-			elif angle == 1:
-				anim.play("eidle")
-			elif angle == 3:
-				anim.play("widle")
-			else:
-				anim.play("sidle")
+				if angle == 0:
+					anim.play("nidle")
+				elif angle == 1:
+					anim.play("eidle")
+				elif angle == 3:
+					anim.play("widle")
+				else:
+					anim.play("sidle")
 		position += velocity
 		velocity = move_and_slide(velocity)
 		#move_and_slide(position)
@@ -105,6 +109,17 @@ func _input(event):
 	xm = 0
 	ym = 0
 	if Global.live == 1:
+		if Input.is_action_just_pressed("jump") && !isjump:
+			if angle == 0:
+				anim.play("njump")
+			elif angle == 1:
+				anim.play("ejump")
+			elif angle == 3:
+				anim.play("wjump")
+			else:
+				anim.play("sjump")
+			isjump = true
+			jtimer.start()
 		if Global.live == 1 && !Input.is_action_pressed("schar"):
 			if Input.get_joy_axis(0,JOY_ANALOG_LX) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LX) < -0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) < -0.2:
 				xm = Input.get_joy_axis(0,JOY_ANALOG_LX)
@@ -137,6 +152,7 @@ func _input(event):
 			new_pbullet.btype = "players"
 			new_pbullet.attack = attack
 			new_pbullet.crit = crit
+			new_pbullet.isjump = isjump
 			new_pbullet.speciality = speciality
 			new_pbullet.velocity = Vector2(0, -speed).rotated(deg2rad(angle * 90))
 			var rposition = Vector2(0, -96).rotated(deg2rad(angle * 90))
@@ -189,3 +205,25 @@ func _charswitch():
 			sprite.texture = load(Global.pchars[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
 			weakness = Global.specialities[Global.pcspecialities[Global.party[Global.cpchar][0]]]
 			speciality = Global.pcspecialities[Global.party[Global.cpchar][0]]
+
+
+func _on_Jtimer_timeout():
+	isjump = false
+	if velocity.y != 0 || velocity.x != 0:
+		if angle == 0:
+			anim.play("nwalk")
+		elif angle == 1:
+			anim.play("ewalk")
+		elif angle == 3:
+			anim.play("wwalk")
+		else:
+			anim.play("swalk")
+	else:
+		if angle == 0:
+			anim.play("nidle")
+		elif angle == 1:
+			anim.play("eidle")
+		elif angle == 3:
+			anim.play("widle")
+		else:
+			anim.play("sidle")

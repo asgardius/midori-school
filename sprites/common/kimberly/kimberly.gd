@@ -14,7 +14,7 @@ var movey = 0
 var attack = 59
 var crit = 5
 var velocity = Vector2(0,0)
-
+var isjump = false
 
 func _ready():
 	if Global.isboss:
@@ -93,6 +93,7 @@ func shoot(angle):
 	new_bullet.btype = "boss"
 	new_bullet.attack = attack
 	new_bullet.crit = crit
+	new_bullet.isjump = isjump
 	new_bullet.speciality = 3
 	get_parent().call_deferred("add_child",new_bullet)
 

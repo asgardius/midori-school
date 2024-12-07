@@ -86,3 +86,11 @@ func _on_B_pressed():
 
 func _on_B_released():
 	Input.action_release("ui_accept")
+
+
+func _on_Y_pressed():
+	Input.action_press("jump")
+
+
+func _on_Y_released():
+	Input.action_release("jump")

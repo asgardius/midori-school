@@ -12,17 +12,7 @@ const fspeed = 100.0
 const JUMP_VELOCITY = -400.0
 var vangle = 2
 var weakness = 1
-
-
-
-
-
-
-
-
-
-
-
+var isjump = false
 var movex = 0
 var movey = 0
 var attack = 59
@@ -107,6 +97,7 @@ func shoot(angle):
 	new_bullet.btype = "boss"
 	new_bullet.attack = attack
 	new_bullet.crit = crit
+	new_bullet.isjump = isjump
 	new_bullet.speciality = 3
 	get_parent().call_deferred("add_child",new_bullet)
 

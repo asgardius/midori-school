@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://sprites/common/player/player.gd" type="Script" id=2]
 
@@ -6,7 +6,7 @@
 extents = Vector2( 45, 128 )
 
 [sub_resource type="Animation" id=2]
-length = 0.001
+length = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -22,6 +22,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "eidle"
+length = 0.3
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -34,6 +35,22 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ 8 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "ejump"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 11 ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -56,6 +73,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "nidle"
+length = 0.3
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -68,6 +86,22 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ 4 ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "njump"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 7 ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -89,6 +123,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=7]
 resource_name = "sidle"
+length = 0.3
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -97,10 +132,26 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.5 ),
+"times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "sjump"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
 }
 
 [sub_resource type="Animation" id=8]
@@ -137,6 +188,22 @@ tracks/0/keys = {
 "values": [ 12 ]
 }
 
+[sub_resource type="Animation" id=14]
+resource_name = "wjump"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 15 ]
+}
+
 [sub_resource type="Animation" id=10]
 resource_name = "wwalk"
 length = 0.3
@@ -167,13 +234,24 @@ shape = SubResource( 1 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/RESET = SubResource( 2 )
 anims/eidle = SubResource( 3 )
+anims/ejump = SubResource( 11 )
 anims/ewalk = SubResource( 4 )
 anims/nidle = SubResource( 5 )
+anims/njump = SubResource( 12 )
 anims/nwalk = SubResource( 6 )
 anims/sidle = SubResource( 7 )
+anims/sjump = SubResource( 13 )
 anims/swalk = SubResource( 8 )
 anims/widle = SubResource( 9 )
+anims/wjump = SubResource( 14 )
 anims/wwalk = SubResource( 10 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="Jtimer" type="Timer" parent="."]
+process_mode = 0
+wait_time = 0.3
+one_shot = true
+
+[connection signal="timeout" from="Jtimer" to="." method="_on_Jtimer_timeout"]
