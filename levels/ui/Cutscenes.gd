@@ -6,6 +6,7 @@ var bgsound := AudioStreamPlayer.new()
 var sfx1 := AudioStreamPlayer.new()
 var musictrack
 var isboss
+var press = false
 var bhud = load("res://levels/bottomhud.tscn").instance()
 var ishud = true
 
@@ -47,17 +48,9 @@ func _ready():
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
-	if (Input.is_key_pressed(KEY_ESCAPE) || Input.is_joy_button_pressed(0,JOY_SELECT)) && Global.debug:
-		Global.live = 0
-		Global.bossready = false
-		get_tree().root.remove_child(bhud)
-		#get_tree().root.remove_child(player)
-		get_tree().root.remove_child(level)
-		if Global.debug:
-			get_tree().change_scene("res://levels/ui/scene.tscn")
-		else:
-			get_tree().change_scene("res://title.tscn")
-	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
+	if (Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick")) && !press:
+		press = true
+	if (Input.is_action_just_released("ui_accept") || Input.is_action_just_released("mclick")) && press:
 		if Global.cutscenes[Global.ccutscene][3]:
 			var ccutscene = Global.ccutscene
 			Global.ccutscene = null
@@ -79,6 +72,7 @@ func _input(event):
 				bgsound.stream = music
 				bgsound.play(0)
 			call_deferred("_level")
+		press = false
 	#if (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_UP)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_UP))):
 	#	if Global.debug:
 	#		if Global.dparty[0][0] != null:
