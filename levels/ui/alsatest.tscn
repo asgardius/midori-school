@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://backgounds/night-sky-at-ceres.jpg" type="Texture" id=1]
-[ext_resource path="res://sfx/Front_Left.wav" type="AudioStream" id=2]
-[ext_resource path="res://sfx/Front_Right.wav" type="AudioStream" id=3]
+[ext_resource path="res://music/fl/alsa.ogg" type="AudioStream" id=2]
+[ext_resource path="res://music/fr/alsa.ogg" type="AudioStream" id=3]
 [ext_resource path="res://exit.gd" type="Script" id=4]
 [ext_resource path="res://Game name.gd" type="Script" id=5]
 [ext_resource path="res://start.gd" type="Script" id=6]
@@ -10,8 +10,8 @@
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=8]
 [ext_resource path="res://fonts/about.tres" type="DynamicFont" id=9]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=10]
-[ext_resource path="res://sfx/Rear_Left.wav" type="AudioStream" id=11]
-[ext_resource path="res://sfx/Rear_Right.wav" type="AudioStream" id=12]
+[ext_resource path="res://music/rl/alsa.ogg" type="AudioStream" id=11]
+[ext_resource path="res://music/rr/alsa.ogg" type="AudioStream" id=12]
 [ext_resource path="res://levels/ui/alsatest.gd" type="Script" id=13]
 
 [node name="Alsatest" type="Control"]

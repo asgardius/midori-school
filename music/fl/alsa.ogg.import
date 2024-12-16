@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/alsa.ogg-e3bfc65fe4f8ccc83f07f8ee09d1125e.oggstr"
+
+[deps]
+
+source_file="res://music/fl/alsa.ogg"
+dest_files=[ "res://.import/alsa.ogg-e3bfc65fe4f8ccc83f07f8ee09d1125e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
