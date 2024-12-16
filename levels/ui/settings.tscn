@@ -46,6 +46,7 @@ margin_right = 1046.0
 margin_bottom = 54.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 1 )
+disabled = true
 text = "CERES_L20_DESC"
 
 [node name="Lilytest" type="Button" parent="VBoxContainer"]
@@ -54,6 +55,7 @@ margin_right = 1046.0
 margin_bottom = 112.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
+disabled = true
 text = "MENU_MAP"
 
 [node name="Dialogtest" type="Button" parent="VBoxContainer"]

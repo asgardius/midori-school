@@ -5,7 +5,7 @@ func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	alsatest = $VBoxContainer/ALSA
 	$"VBoxContainer/Music".grab_focus()
-	if OS.get_name() == "Linux":
+	if OS.get_name() == "X11":
 		alsatest.disabled = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

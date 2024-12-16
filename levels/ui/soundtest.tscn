@@ -64,6 +64,7 @@ margin_right = 1131.0
 margin_bottom = 308.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 2 )
+disabled = true
 text = "ALSA_TEST_MENU"
 
 [node name="Back" type="Button" parent="VBoxContainer"]

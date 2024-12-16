@@ -11,6 +11,9 @@ func _ready():
 	gldrv = $VBoxContainer/Bullethell
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$VBoxContainer/L20.grab_focus()
+	if OS.get_name() == "X11":
+		vsync.disabled = false
+		fullscreen.disabled = false
 	if OS.is_vsync_enabled():
 		vsync.set_text(tr("SETTING_VSYNCT"))
 	else:
