@@ -93,7 +93,7 @@ func _process(delta):
 		Global.isresume = false
 		_pausemenu()
 	var velocity = Vector2.ZERO
-	if (Global.live > 4 && Global.live < 9) || Global.live == 2:
+	if (Global.live > 4 && Global.live < 10) || Global.live == 2:
 		_exit()
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
@@ -183,6 +183,8 @@ func _exit():
 		get_tree().change_scene("res://backgounds/result.tscn")
 	elif Global.live == 8:
 		get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
+	elif Global.live == 9:
+		get_tree().change_scene("res://levels/ui/teams.tscn")
 	elif Global.live == 5:
 		Global.result = [0, 0, 0, 0, 0]
 		_statrebase()

@@ -4,6 +4,8 @@ var cnf
 var chealthf
 var clevel
 var warpmenu
+var teammenu
+var teamswitch
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,6 +15,7 @@ func _ready():
 	chealthf = $CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer/Label2
 	clevel = $CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2/Label2
 	$CanvasLayer/HBoxContainer2/VBoxContainer2/Exit.grab_focus()
+	teammenu = $CanvasLayer/HBoxContainer2/VBoxContainer/Team
 	_fetchdata()
 	#pass # Replace with function body.
 
@@ -30,11 +33,15 @@ func _fetchdata():
 			warpmenu.visible = true
 		else:
 			warpmenu.visible = false
+		if Global.dplace == [1, 8, 28]:
+			teammenu.visible = true
 	else:
 		if Global.cplace != [1, 11, 19] && (Global.cplace[0] == 1 || Global.dplace[0] == 2):
 			warpmenu.visible = true
 		else:
 			warpmenu.visible = false
+		if Global.cplace == [1, 8, 28]:
+			teammenu.visible = true
 	if Global.debug:
 		cnf.set_text(Global.pcnames[Global.dparty[Global.dcpchar][0]])
 		cff.texture = load(Global.hudfaces[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
@@ -62,3 +69,7 @@ func _on_warp_pressed() -> void:
 
 func _on_Resume_pressed():
 	Global.isresume = true
+
+
+func _on_Team_pressed():
+	Global.live = 9

@@ -57,6 +57,7 @@ BUTTON_MUSICTEST;Music;Música;音楽
 BUTTON_SFXTEST;Sound Effects;Efectos de Sonido;音響効果
 MENU_SFXTEST;Sound Effects Test;Prueba de efectos de sonido;音響効果テスト
 MENU_MUSICTEST;Music Test;Prueba de música;音楽テスト
+MENU_CHARSEL;Choose a character;Elige un personaje;キャラクターを選択してください
 LABEL_STOPPLAYBACK;Press X to stop playback;Presione X para detener la reproducción;再生を停止するにはXを押してください
 SONG0_LABEL;Title Screen;Pantalla de título;タイトル画面
 SONG0_INFO;RELOADED\nRELOADED THEME\nMidori is now RELOADED;RELOADED\nRELOADED THEME\nMidori ahora esta RELOADED;RELOADED\nRELOADED THEME\n緑は今 RELOADED
@@ -131,9 +132,11 @@ DIALOG_TROUBLEMAKER_6;Are you OK?;¿Estás bien?;大丈夫ですか？
 DIALOG_TROUBLEMAKER_7;It seems so;Eso parece;そうみたいです
 DIALOG_HKR_0;I hear a heartbeat coming from inside this trash can;Escucho un latido que proviene del interior de este \ncubo de basura;このゴミ箱の中から鼓動が聞こえる
 DIALOG_HKR_1;Don't underestimate the emotions of a trash can;No subestimes las emociones de un cubo de basura;ゴミ箱の感情を過小評価しないでください
+DIALOG_HOME_0;Your friends can rest here if they wish;Tus amigos pueden descansar aquí si lo desean.;あなたの友人は望むならここで休むことができます
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
 TWIN_TROUBLEMAKERS;Twin Troublemakers;Gemelas problématicas;双子のトラブルメーカー
 TWIN_TROUBLEMAKERS_P2;Twin Troublemakers Part 2;Gemelas problématicas Parte 2;双子のトラブルメーカー パート2
+YOUR_HOME;Your Home;Tu casa;あなたの家
 MENU_CHARACTER;Character List;Lista de Personajes;キャラクター一覧
 MENU_TEAM;Team List;Lista de Equipos;チーム
 MENU_MAP;World Map;Mapa Mundial;世界地図

@@ -1,9 +1,10 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://sprites/ceres/railway/sprite.png" type="Texture" id=1]
 [ext_resource path="res://sprites/ceres/pamela/sprite.png" type="Texture" id=2]
 [ext_resource path="res://sprites/common/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://levels/Ceres/map.gd" type="Script" id=4]
+[ext_resource path="res://sprites/ceres/items/home-icon6.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 18.5, 721 )
@@ -12,7 +13,7 @@ extents = Vector2( 18.5, 721 )
 extents = Vector2( 1167.5, 20.5 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 45, 128 )
+extents = Vector2( 63, 61 )
 
 [sub_resource type="Animation" id=4]
 length = 0.001
@@ -312,6 +313,47 @@ tracks/0/keys = {
 "values": [ 13, 12, 14 ]
 }
 
+[sub_resource type="Animation" id=22]
+length = 0.001
+
+[sub_resource type="Animation" id=23]
+resource_name = "eidle"
+loop = true
+
+[sub_resource type="Animation" id=24]
+resource_name = "ewalk"
+length = 0.3
+loop = true
+step = 0.033
+
+[sub_resource type="Animation" id=25]
+resource_name = "nidle"
+loop = true
+
+[sub_resource type="Animation" id=26]
+resource_name = "nwalk"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=27]
+resource_name = "sidle"
+loop = true
+
+[sub_resource type="Animation" id=28]
+resource_name = "swalk"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=29]
+resource_name = "widle"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=30]
+resource_name = "wwalk"
+length = 0.3
+loop = true
+
 [node name="Map" type="Node2D"]
 script = ExtResource( 4 )
 
@@ -390,6 +432,31 @@ anims/swalk = SubResource( 19 )
 anims/widle = SubResource( 20 )
 anims/wwalk = SubResource( 21 )
 
+[node name="Home" type="Area2D" parent="."]
+position = Vector2( 635, 394 )
+
+[node name="TextureRect" type="TextureRect" parent="Home"]
+margin_left = -64.0
+margin_top = -78.0
+margin_right = 86.0
+margin_bottom = 72.0
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Home"]
+position = Vector2( 11, 3 )
+shape = SubResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Home"]
+anims/RESET = SubResource( 22 )
+anims/eidle = SubResource( 23 )
+anims/ewalk = SubResource( 24 )
+anims/nidle = SubResource( 25 )
+anims/nwalk = SubResource( 26 )
+anims/sidle = SubResource( 27 )
+anims/swalk = SubResource( 28 )
+anims/widle = SubResource( 29 )
+anims/wwalk = SubResource( 30 )
+
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 635, 586 )
 
@@ -397,3 +464,5 @@ position = Vector2( 635, 586 )
 [connection signal="body_exited" from="Railwaygirl" to="." method="_on_railwaygirl_body_exited"]
 [connection signal="body_entered" from="Pamela" to="." method="_on_pamela_body_entered"]
 [connection signal="body_exited" from="Pamela" to="." method="_on_pamela_body_exited"]
+[connection signal="body_entered" from="Home" to="." method="_on_Home_body_entered"]
+[connection signal="body_exited" from="Home" to="." method="_on_Home_body_exited"]

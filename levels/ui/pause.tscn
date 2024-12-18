@@ -180,6 +180,7 @@ margin_bottom = 204.0
 custom_fonts/font = ExtResource( 2 )
 text = "Resume"
 
+[connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer/Team" to="." method="_on_Team_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer/Warp" to="." method="_on_warp_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="CanvasLayer/Resume" to="." method="_on_Resume_pressed"]
