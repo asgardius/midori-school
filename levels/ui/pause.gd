@@ -60,6 +60,7 @@ func _on_exit_pressed():
 
 
 func _on_warp_pressed() -> void:
+	Global.result = [0, 0, 0, 0, 0]
 	if Global.debug:
 		Global.dplace = [0, 0, 0]
 	else:

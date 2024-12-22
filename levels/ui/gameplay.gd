@@ -43,16 +43,7 @@ func _ready():
 	_statrebase()
 	add_child(bgsound)
 	add_child(sfx1)
-	if Global.debug:
-		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instance()
-		#player = load(Global.pchars[Global.dcpchar]).instance()
-		musictrack = Global.musictracks[Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]]
-		Global.isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
-	else:
-		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instance()
-	#	player = load(Global.pchars[Global.cpchar]).instance()
-		musictrack = Global.musictracks[Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]]
-		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
+	_loadlevel()
 	#if Global.cspawnarea[0] != null && Global.cspawnarea[0] != null:
 	#	player.position.x = Global.cspawnarea[0]
 	#	player.position.y = Global.cspawnarea[1]
@@ -180,15 +171,17 @@ func _exit():
 	#get_tree().root.remove_child(player)
 	get_tree().root.remove_child(level)
 	if Global.live == 7:
+		_statrebase()
 		get_tree().change_scene("res://backgounds/result.tscn")
 	elif Global.live == 8:
 		get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
 	elif Global.live == 9:
 		get_tree().change_scene("res://levels/ui/teams.tscn")
 	elif Global.live == 5:
-		Global.result = [0, 0, 0, 0, 0]
-		_statrebase()
-		get_tree().change_scene("res://backgounds/warp.tscn")
+		bhud = load("res://levels/bottomhud.tscn").instance()
+		pmenu = load("res://levels/ui/pause.tscn").instance()
+		ispaused = false
+		_loadlevel()
 	elif Global.live == 2:
 		Global.result = [0, 0, 0, 0, 0]
 		_statrebase()
@@ -226,3 +219,22 @@ func _mgamepad():
 
 func _tcontrol():
 	get_tree().root.add_child(tcontrol)
+
+func _loadlevel():
+	var oldtrack = musictrack
+	if Global.debug:
+		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instance()
+		#player = load(Global.pchars[Global.dcpchar]).instance()
+		musictrack = Global.musictracks[Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]]
+		Global.isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
+	else:
+		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instance()
+	#	player = load(Global.pchars[Global.cpchar]).instance()
+		musictrack = Global.musictracks[Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]]
+		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
+	if musictrack != oldtrack:
+		bgsound.stop()
+		music = load(musictrack)
+		bgsound.stream = music
+		bgsound.play(0)
+	_level()

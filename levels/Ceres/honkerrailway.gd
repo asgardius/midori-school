@@ -6,8 +6,9 @@ func _ready():
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
-	Global.quest[1] = 3
-	Global.quest[2] = 1
+	if Global.quest[1] != 3:
+		Global.quest[1] = 3
+		Global.quest[2] = 1
 	#pass # Replace with function body.
 
 
