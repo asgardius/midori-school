@@ -27,13 +27,13 @@ func _input(event):
 		Global.cdialog = []
 	
 func _winner():
-	Global.result[0] = 1
-	Global.quest[2] = 3
-	Global.quest[3] = 1
+	Global.result[0] = 2
+	if Global.quest[1] != 3:
+		Global.quest[2] = 3
+		Global.quest[3] = 1
 	Global.cdialog = [[tr("DIALOG_TROUBLEMAKER_7"), true, 0, 0], ["...", true, 8, 0], ["...", true, 0, 0]]
 	Global.live = 3
-	#Global.ccutscene = 6
-	Global.ccutscene = null
+	Global.ccutscene = 19
 	#talk.queue_free()
 	talk = load("res://levels/ui/talk.tscn").instance()
 	call_deferred("_talk")

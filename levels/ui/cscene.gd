@@ -53,8 +53,8 @@ func _on_credits_pressed():
 
 
 func _on_wip_pressed():
-	#get_tree().change_scene("res://backgounds/wip.tscn")
-	pass
+	Global.ccutscene = 19
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
 
 
 func _on_results_pressed():

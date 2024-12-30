@@ -64,7 +64,6 @@ func _ready():
 	bgsound.mix_target = 1
 	sfx1.mix_target = 1
 	sfx1.bus = "SFX1"
-	Global.wait = Time.get_ticks_msec()
 	if !Global.isboss:
 		bgsound.play(0)
 		

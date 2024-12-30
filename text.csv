@@ -136,6 +136,7 @@ DIALOG_HOME_0;Your friends can rest here if they wish;Tus amigos pueden descansa
 CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
 TWIN_TROUBLEMAKERS;Twin Troublemakers;Gemelas problématicas;双子のトラブルメーカー
 TWIN_TROUBLEMAKERS_P2;Twin Troublemakers Part 2;Gemelas problématicas Parte 2;双子のトラブルメーカー パート2
+ENDOFDAY;End of day;Fin del día;一日の終わり
 YOUR_HOME;Your Home;Tu casa;あなたの家
 MENU_CHARACTER;Character List;Lista de Personajes;キャラクター一覧
 MENU_TEAM;Team List;Lista de Equipos;チーム
@@ -166,3 +167,6 @@ CUTSCENE_3_2;She stole a candy that I was carrying in my hand using\nher Kung Fu
 CUTSCENE_4_0;While Pamela and I were fighting,\nher sister was watching us from a rooftop;Mientras Pamela y yo estabamos peleando,\nsu hermana nos observaba desde una azotea;パメラと私が喧嘩している間、\n彼女の妹が屋上から私たちを見守っていました
 CUTSCENE_4_1;Lety jumped from the roof and fell in a peculiar position;Lety saltó desde la azotea y cayó en una postura peculiar;レティは屋上から飛び降り、奇妙な位置に落ちた
 CUTSCENE_4_2;She seemed to be challenging me,\nbut her facial expression worries me a little.;Al parecer me estaba retando,\npero su expresión facial me preocupa un poco;彼女は私に挑戦しているようだったが、\n彼女の表情が少し心配だった
+CUTSCENE_5_0;Pamela and Lety accidentally\ndestroyed their house;Pamela y Lety accidentalmente\ndestruyeron su casa;パメラとレティは誤って家\nを壊してしまいました
+CUTSCENE_5_1;My sister and I have always been very close;Mi hermana y yo siempre hemos sido muy unidas;妹と私はいつもとても仲が良いです
+CUTSCENE_5_2;I can't help but laugh when my friends say\nI'm made out of rubber;No puedo evitar reirme cuando mis amigos\ndicen que estoy hecha de hule;友達が私をゴムでできていると言うと、笑わずにはいられない
