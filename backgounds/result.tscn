@@ -24,7 +24,7 @@ text = "Defeated enemies: 0
 Clear time: 0
 Charged skill uses: 0
 Damage received: 0
-Earned experience: 0"
+Earned gold: 0"
 
 [node name="Label2" type="Label" parent="."]
 margin_top = 326.0

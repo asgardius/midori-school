@@ -106,7 +106,7 @@ SONG21_INFO;MrGamer\nHostlov\nA song made to calibrate your sound system while p
 SONG22_LABEL;Elysium Fields;Campos Elíseos;エリジウム フィールド
 SONG22_INFO;4mat\nEternity\nA song about eternity and immutability;4mat\nEternity\nUna canción sobre la eternidad y la inmutabilidad;4mat\nEternity\n永遠と不変性についての歌
 ALSA_TEST_MENU;ALSA Audio Calibration;Calibración de Audio ALSA;ALSA オーディオキャリブレーション
-ALSA_TEST_SPK;Use directional corners to test speakers;Utilice las esquinas direccionales para probar los altavoces;指向性コーナーを使用してスピーカーをテストする
+ALSA_TEST_SPK;Speaker calibration test;Prueba de calibración de altavoces;スピーカーキャリブレーションテスト
 DIALOG_TEST_0;What is this place?;¿Qué es este lugar?;この場所は何ですか？
 DIALOG_TEST_1;I'm here;Estoy aquí;私はここにいます
 DIALOG_TEST_2;I got you, cheap copy;Te atrapé, copia barata;手に入れたよ、安物コピー

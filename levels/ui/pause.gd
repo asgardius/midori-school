@@ -42,16 +42,17 @@ func _fetchdata():
 			warpmenu.visible = false
 		if Global.cplace == [1, 8, 28]:
 			teammenu.visible = true
+	clevel.set_text("1")
 	if Global.debug:
 		cnf.set_text(Global.pcnames[Global.dparty[Global.dcpchar][0]])
 		cff.texture = load(Global.hudfaces[Global.dparty[Global.dcpchar][0]][Global.dparty[Global.dcpchar][1]])
 		chealthf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
-		clevel.set_text(str(Global.dlevel[Global.dparty[Global.dcpchar][0]]))
+		#clevel.set_text(str(Global.dlevel[Global.dparty[Global.dcpchar][0]]))
 	else:
 		cnf.set_text(Global.pcnames[Global.party[Global.cpchar][0]])
 		cff.texture = load(Global.hudfaces[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
 		chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][0]))
-		clevel.set_text(str(Global.level[Global.party[Global.cpchar][0]]))
+		#clevel.set_text(str(Global.level[Global.party[Global.cpchar][0]]))
 
 
 func _on_exit_pressed():

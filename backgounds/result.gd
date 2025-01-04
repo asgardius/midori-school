@@ -12,7 +12,7 @@ func _ready():
 	var minute = float(Global.result[1] / 60000)
 	var second = (Global.result[1] / 1000) - (minute*60)
 	var msecond = Global.result[1] - (second*1000) - (minute*60000)
-	result.set_text("Defeated enemies: "+str(Global.result[0])+"\nClear time: "+str(minute)+":"+str(second)+":"+str(msecond)+"\nCharged skill uses: 0\nDamage received: "+str(Global.result[3])+"\nEarned experience: 0")
+	result.set_text("Defeated enemies: "+str(Global.result[0])+"\nClear time: "+str(minute)+":"+str(second)+":"+str(msecond)+"\nCharged skill uses: 0\nDamage received: "+str(Global.result[3])+"\nEarned gold: 0")
 	Global.result = [0, 0, 0, 0, 0]
 	updatehud()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
