@@ -1,8 +1,13 @@
 extends Node2D
 
 var talk
+var isemily = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Time.get_date_string_from_system(false).ends_with("06-28") || Time.get_date_string_from_system(false).ends_with("10-10"):
+		isemily = true
+	if isemily:
+		$Principal/Sprite.texture = load("res://sprites/common/anonymous/sprite.png")
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
@@ -38,4 +43,20 @@ func _on_Katalk_body_entered(body):
 
 
 func _on_Katalk_body_exited(body):
+	Global.cdialog = []
+
+
+func _on_Patalk_body_entered(body):
+	if isemily:
+		if OS.get_name() == "X11":
+			Global.cdialog = [[tr("DIALOG_HOME_0"), true, 11, 0]]
+		else:
+			Global.cdialog = [[tr("DIALOG_HOME_0"), true, 11, 0]]
+	else:
+		if OS.get_name() == "X11":
+			Global.cdialog = [[tr("DIALOG_HOME_0"), true, 10, 0]]
+		else:
+			Global.cdialog = [[tr("DIALOG_HOME_0"), true, 10, 0]]
+
+func _on_Patalk_body_exited(body):
 	Global.cdialog = []
