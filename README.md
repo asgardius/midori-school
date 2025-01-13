@@ -20,6 +20,8 @@ Bittorrent downloads https://elda.asgardius.company/virtualxrpg-torrent/
 
 You can download game soundtrack at https://elda.asgardius.company/game-ost/
 
+You can download Android version at https://play.google.com/store/apps/details?id=asgardius.page.virtualxrpg&hl=en-US
+
 # Plot
 
 Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since much before than Earth. Most Asteroid Belt natives have pointy ears. There are also animal-based humanoids. All humans from the universe lives here since their planet was destroyed by the Alcohol Discs, but very few of them remains. You are Midori Asgardius, a 15 years old elf girl also know as "The Walking Explosive". You are a student at Kaizo Magic School. Your best friends are Diana Asgardius "The Tuna" and Rikka Grub "The Chuunibyou Cat". 10+ playable characters are awaiting for you (optional gacha machine sold separately). Deal Kung Fu Troublemakers, fight against bullet hell themed bosses, solve exciting puzzles, dig inside trashcans, find beautiful Multi Vector Submarines, defeat martians and Discover the truth of this universe from an unique point of view. If you are maniac try our super hardcore mode. Be kind and have a happy unfunaversary this year. If you have any doubt about this game ask to your father and Kaizo's principal: Page Asgardius. Will you be able to find the secret behind Midori's explosive personality?
@@ -59,3 +61,23 @@ Because that is not a true social media and it's too mainstream. Remember that i
 # Why you aren't using Unity for this game?
 
 Because Unity is a closed source tool, and it's too mainstream. I'll learn to use Unity and Unreal, but i won't use them on Asgardius Virtualx Videogames (those will use open source engines only)
+
+# Which smartphone is better for this game?
+
+This game is made to  work better on linux smartphones like Pinephone (the one that i use) and librem 5
+
+# Why Android release arrived too late?
+
+I had issues trying to make this game working  on Pinephone,  so i delayed touch controls implementation until this issue was solved. Android support for this game is not a priority for me, for this reason i suggest using a linux-first smartphone instead
+
+# How i can install this game on a Huawei Smartphone?
+
+Android release is only available at Google Play because most android users find apps there. If you have a degoogled android device you need something like yalp store
+
+# How can install this game on my Pixel with Graphene OS?
+
+If you want a privacy focused smartphone, you must use a librem 5 instead, but you can use my hint for Huawei users
+
+# Why this game is not available at F-Droid?
+
+This is not a priority for me, but if you want to maintain a f-droid release, i won't stop you
