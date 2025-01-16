@@ -38,7 +38,7 @@ func _ready():
 #func _process(delta):
 func _input(event):
 	if Input.is_action_just_pressed("Pause"):
-		queue_free()
+		get_tree().change_scene("res://levels/ui/gameplay.tscn")
 
 func _charsel():
 	get_tree().change_scene("res://levels/ui/charlist.tscn")

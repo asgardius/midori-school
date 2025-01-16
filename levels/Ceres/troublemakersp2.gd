@@ -28,7 +28,7 @@ func _input(event):
 	
 func _winner():
 	Global.result[0] = 2
-	if Global.quest[1] != 3:
+	if Global.quest[2] != 3:
 		Global.quest[2] = 3
 		Global.quest[3] = 1
 	Global.cdialog = [[tr("DIALOG_TROUBLEMAKER_7"), true, 0, 0], ["...", true, 8, 0], ["...", true, 0, 0]]

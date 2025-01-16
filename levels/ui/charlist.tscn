@@ -44,7 +44,7 @@ margin_right = 360.0
 margin_bottom = 54.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
-text = "Miidori Asgardius"
+text = "Midori Asgardius"
 
 [node name="Diana" type="Button" parent="HBoxContainer/VBoxContainer"]
 visible = false
