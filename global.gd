@@ -56,6 +56,8 @@ var sk = false
 var gamepad = 0
 var quest = [0, 0, 0, 0, 0, 0]
 var isresume = false
+var xm = 0
+var ym = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

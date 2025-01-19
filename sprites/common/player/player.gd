@@ -2,8 +2,6 @@ extends KinematicBody2D
 
 var velocity
 const SPEED = 300.0
-var xm = 0
-var ym = 0
 const JUMP_VELOCITY = -400.0
 var angle = 2
 var sprite
@@ -66,21 +64,21 @@ func _physics_process(delta):
 					Global.live = 2
 	# Add the gravity.
 	#var velocity = Vector2.ZERO
-	#if Global.live == 1 || (xm == 0 && ym == 0):
+	#if Global.live == 1 || (Global.xm == 0 && Global.ym == 0):
 	if speed != null:
-		velocity = (Vector2.RIGHT.rotated(rotation) * speed * xm * delta * rboost)-Vector2.UP.rotated(rotation) * speed * ym * delta * rboost
+		velocity = (Vector2.RIGHT.rotated(rotation) * speed * Global.xm * delta * rboost)-Vector2.UP.rotated(rotation) * speed * Global.ym * delta * rboost
 			#origmpos = get_viewport().get_mouse_position()
 		#if Input.get_joy_axis(0,JOY_AXIS_LEFT_Y) != 0:
 		#	velocity = Vector2.UP.rotated(rotation) * -400 * Input.get_joy_axis(0,JOY_AXIS_LEFT_Y)
 		Global.playerx = position.x
 		Global.playery = position.y
-		if ym > 0.3:
+		if Global.ym > 0.3:
 			angle = 2
-		elif ym < -0.3:
+		elif Global.ym < -0.3:
 			angle = 0
-		elif xm > 0.3:
+		elif Global.xm > 0.3:
 			angle = 1
-		elif xm < -0.3:
+		elif Global.xm < -0.3:
 			angle = 3
 		if !isjump:
 			if velocity.y != 0 || velocity.x != 0:
@@ -106,8 +104,8 @@ func _physics_process(delta):
 		#move_and_slide(position)
 
 func _input(event):
-	xm = 0
-	ym = 0
+	#Global.xm = 0
+	#Global.ym = 0
 	if Global.live == 1:
 		if Input.is_action_just_pressed("jump") && !isjump:
 			if angle == 0:
@@ -122,17 +120,25 @@ func _input(event):
 			jtimer.start()
 		if Global.live == 1 && !Input.is_action_pressed("schar"):
 			if Input.get_joy_axis(0,JOY_ANALOG_LX) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LX) < -0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) < -0.2:
-				xm = Input.get_joy_axis(0,JOY_ANALOG_LX)
-				ym = Input.get_joy_axis(0,JOY_ANALOG_LY)
+				Global.xm = Input.get_joy_axis(0,JOY_ANALOG_LX)
+				Global.ym = Input.get_joy_axis(0,JOY_ANALOG_LY)
 			else:
-				if Input.is_action_pressed("ui_left"):
-					xm = -1
-				if Input.is_action_pressed("ui_right"):
-					xm = 1
-				if Input.is_action_pressed("ui_up"):
-					ym = -1
-				if Input.is_action_pressed("ui_down"):
-					ym = 1
+				if Input.is_action_just_pressed("ui_left"):
+					Global.xm = -1
+				elif  Input.is_action_just_released("ui_left"):
+					Global.xm = 0
+				if Input.is_action_just_pressed("ui_right"):
+					Global.xm = 1
+				elif  Input.is_action_just_released("ui_right"):
+					Global.xm = 0
+				if Input.is_action_just_pressed("ui_up"):
+					Global.ym = -1
+				elif  Input.is_action_just_released("ui_up"):
+					Global.ym = 0
+				if Input.is_action_just_pressed("ui_down"):
+					Global.ym = 1
+				elif  Input.is_action_just_released("ui_down"):
+					Global.ym = 0
 			if Input.is_action_pressed("run"):
 				rboost = 4
 			elif Global.gamepad > 0:

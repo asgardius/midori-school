@@ -32,7 +32,7 @@ From my point of view, a Genshin Killer is an Anime RPG which include elves amon
 
 # Why this game doesn't have builds for Microsoft Windows? Most players are using that OS
 
-Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better
+Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better. If you want to play this game from Windows, you can use Google Play Games for Windows, but you will get muuch better results using virtualbox. In other words, something that Nintendo employees hates
 
 # Why a 2d game?
 
@@ -68,7 +68,7 @@ This game is made to  work better on linux smartphones like Pinephone (the one t
 
 # Why Android release arrived too late?
 
-I had issues trying to make this game working  on Pinephone,  so i delayed touch controls implementation until this issue was solved. Android support for this game is not a priority for me, for this reason i suggest using a linux-first smartphone instead
+I had issues trying to make this game working  on Pinephone,  so i delayed touch controls implementation until this issue was solved. Android support for this game is not a priority for me, for this reason i suggest using a linux-first smartphone instead. remember that Google Play reviews any app update, so every android  release  will arrive a bit later than linux releases
 
 # How i can install this game on a Huawei Smartphone?
 
@@ -81,3 +81,22 @@ If you want a privacy focused smartphone, you must use a librem 5 instead, but y
 # Why this game is not available at F-Droid?
 
 This is not a priority for me, but if you want to maintain a f-droid release, i won't stop you
+
+# System requirements
+
+* 64 bit X86 or ARM quad core CPU, 1.2 GHz or better
+* 512 MB of RAM
+* Glibc 2.36.9 or later
+* OpenGL ES 2.0 compatible GPU for hardware rendering
+* 700 MB of free space
+* ALSA compatible sound card or bluetooth headset
+* Keyboard, gamepad or touchscreen
+* Network interface for LAN multiplayer (not yet implemented)
+
+# Known devices that fit  these requirements
+
+* Pinephone (Requirements were made to fit this device)
+* Pinephone Pro (Untested)
+* Librem 5 (Untested)
+* Raspberry Pi 3b or later (Untested)
+* Almost any X86_64 computer (Don't expect seeing this game ruunning on a Pentium 2 with a Voodoo card, because i'm not John Carmack)

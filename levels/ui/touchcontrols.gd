@@ -1,5 +1,5 @@
 extends Node2D
-
+var isjoystick = false
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -14,7 +14,18 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
+func _input(event):
+	if event is InputEventScreenTouch and event.pressed == true:
+		if event.position.x >= 40 && event.position.x <= 240 && event.position.y >= 460 && event.position.y <= 660:
+			if !isjoystick:
+				isjoystick = true
+				Global.xm = (event.position.x-140)/100
+				Global.ym = (event.position.y-560)/100
+			#print(Global.xm, Global.ym)
+	elif event is InputEventScreenTouch and event.pressed == false && isjoystick:
+			isjoystick = false
+			Global.xm = 0
+			Global.ym = 0
 
 func _on_A_pressed():
 	Input.action_press("shoot")
@@ -26,34 +37,6 @@ func _on_A_released():
 
 func _on_Up_pressed():
 	Input.action_press("ui_up")
-
-
-func _on_Up_released():
-	Input.action_release("ui_up")
-
-
-func _on_Down_pressed():
-	Input.action_press("ui_down")
-
-
-func _on_Down_released():
-	Input.action_release("ui_down")
-
-
-func _on_Left_pressed():
-	Input.action_press("ui_left")
-
-
-func _on_Left_released():
-	Input.action_release("ui_left")
-
-
-func _on_Right_pressed():
-	Input.action_press("ui_right")
-
-
-func _on_Right_released():
-	Input.action_release("ui_right")
 
 
 func _on_Select_pressed():
