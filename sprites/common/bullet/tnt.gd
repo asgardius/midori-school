@@ -12,7 +12,10 @@ var isjump = false
 func _ready():
 	isvisible = $VisibleOnScreenNotifier2D
 	add_to_group(btype)
-	attack = attack * Global.difdamage
+	if Global.spboost == 1:
+		attack = (attack*attack) * Global.difdamage
+	else:
+		attack = attack * Global.difdamage
 	#pass # Replace with function body.
 
 

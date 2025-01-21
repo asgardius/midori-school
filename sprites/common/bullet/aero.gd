@@ -18,7 +18,10 @@ func _ready():
 	if is_in_group("players"):
 		speciality = Global.pcspecialities[Global.dparty[Global.dcpchar][0]]
 	add_to_group(btype)
-	attack = attack * Global.difdamage
+	if Global.spboost == speciality:
+		attack = (attack*attack) * Global.difdamage
+	else:
+		attack = attack * Global.difdamage
 	#pass # Replace with function body.
 
 

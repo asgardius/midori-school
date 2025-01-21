@@ -18,7 +18,10 @@ func _ready():
 		rotation = velocity.angle()
 	else:
 		rotation = direction.angle()
-	attack = attack * Global.difdamage
+	if Global.spboost == speciality:
+		attack = (attack*attack) * Global.difdamage
+	else:
+		attack = attack * Global.difdamage
 	#pass # Replace with function body.
 
 

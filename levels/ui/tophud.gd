@@ -54,6 +54,7 @@ var boss
 var bossbg
 var ctime
 var ctimeset
+var buffcalc
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -132,6 +133,26 @@ func _process(delta):
 		ctimeset = Time.get_time_string_from_system(false)
 		ctimeset.erase(5, 3)
 		ctime.set_text(ctimeset)
+		ctimeset.erase(2, 3)
+		buffcalc = int(ctimeset)
+		if buffcalc < 6 && buffcalc >= 20:
+			#print("water")
+			Global.spboost = 0
+		elif buffcalc < 14 && buffcalc >= 12:
+			#print("fire")
+			Global.spboost = 1
+		elif buffcalc < 20 && buffcalc >= 18:
+			#print("electricity")
+			Global.spboost = 2
+		elif buffcalc < 10 && buffcalc >= 6:
+			#print("wood")
+			Global.spboost = 3
+		elif buffcalc < 12 && buffcalc >= 10:
+			#print("earth")
+			Global.spboost = 4
+		elif buffcalc < 18 && buffcalc >= 14:
+			#print("wind")
+			Global.spboost = 5
 		if Global.debug:
 			chealthf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
 			cstaminaf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][1]))
