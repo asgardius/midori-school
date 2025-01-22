@@ -15,14 +15,14 @@ var weakness = 1
 var isjump = false
 var movex = 0
 var movey = 0
-var attack = 59
-var crit = 5
+var attack = 65
+var crit = 12
 var velocity = Vector2(0,0)
 
 
 func _ready():
 	if Global.isboss:
-		Global.cboss = ["Pamela Hashimoto",800,800]
+		Global.cboss = ["Pamela Hashimoto",2077,2077]
 	var stimer = $Speed
 	stimer.start(0.05)
 
