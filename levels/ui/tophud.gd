@@ -153,9 +153,6 @@ func _process(delta):
 		elif buffcalc < 18 && buffcalc >= 14:
 			#print("wind")
 			Global.spboost = 5
-		ctimeset = Time.get_time_string_from_system(false)
-		ctimeset.erase(0, 7)
-		print(ctimeset)
 		if Global.debug:
 			chealthf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][0]))
 			cstaminaf.set_text(str(Global.dstats[Global.dparty[Global.dcpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.dcpchar][0]][1]))

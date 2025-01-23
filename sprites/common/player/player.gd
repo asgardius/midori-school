@@ -28,6 +28,9 @@ func _ready():
 	_charinit()
 
 func _physics_process(delta):
+	if Global.live != 1:
+		Global.xm = 0
+		Global.ym = 0
 	if Global.debug:
 		if Global.dplace != [1, 11, 19]:
 			if Global.dstats[Global.dparty[Global.dcpchar][0]][0] <= 0 && Global.live == 1:

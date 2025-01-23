@@ -107,7 +107,7 @@ func _physics_process(delta):
 			anim.play("widle")
 		else:
 			anim.play("sidle")
-	#move_and_slide()
+	move_and_slide(velocity)
 func shoot(angle):
 	var new_bullet = bullet.instance()
 	new_bullet.position = Vector2(position.x, position.y)

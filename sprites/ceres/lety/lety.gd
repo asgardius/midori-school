@@ -18,6 +18,8 @@ var movey = 0
 var attack = 65
 var crit = 12
 var velocity = Vector2(0,0)
+var fplayer = false
+var isfollow
 
 
 func _ready():
@@ -36,17 +38,35 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 onready var anim := $AnimationPlayer
 
 func _physics_process(delta):
+	fplayer = Time.get_time_string_from_system(false)
+	fplayer.erase(0, 7)
+	if int(fplayer) > 4:
+		isfollow = true
+	else:
+		isfollow = false
 	if Global.live == 1:
 		if Global.playerx < position.x && (position.x - Global.playerx) > 200:
-			movex = -1
+			if isfollow:
+				movex = -1
+			else:
+				movex = 1
 		elif Global.playerx > position.x && (Global.playerx - position.x) > 200:
-			movex = 1
+			if isfollow:
+				movex = 1
+			else:
+				movex = -1
 		else:
 			movex = 0
 		if Global.playery < position.y && (position.y - Global.playery) > 200:
-			movey = -1
+			if isfollow:
+				movey = -1
+			else:
+				movey = 1
 		elif Global.playery > position.y && (Global.playery - position.y) > 200:
-			movey = 1
+			if isfollow:
+				movey = 1
+			else:
+				movey = -1
 		else:
 			movey = 0
 	else:
@@ -89,7 +109,7 @@ func _physics_process(delta):
 			anim.play("widle")
 		else:
 			anim.play("sidle")
-	#move_and_slide()
+	move_and_slide(velocity)
 func shoot(angle):
 	var new_bullet = bullet.instance()
 	new_bullet.position = Vector2(position.x, position.y)
