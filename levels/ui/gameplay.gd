@@ -43,7 +43,16 @@ func _ready():
 	_statrebase()
 	add_child(bgsound)
 	add_child(sfx1)
-	_loadlevel()
+	if Global.debug:
+		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instance()
+		#player = load(Global.pchars[Global.dcpchar]).instance()
+		musictrack = Global.musictracks[Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]]
+		Global.isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
+	else:
+		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instance()
+	#	player = load(Global.pchars[Global.cpchar]).instance()
+		musictrack = Global.musictracks[Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]]
+		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	#if Global.cspawnarea[0] != null && Global.cspawnarea[0] != null:
 	#	player.position.x = Global.cspawnarea[0]
 	#	player.position.y = Global.cspawnarea[1]
