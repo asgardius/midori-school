@@ -2,8 +2,11 @@ extends Node2D
 var talk = load("res://levels/ui/talk.tscn").instance()
 var boss
 var player
+var isreplay = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Global.quest[0] == 3:
+		isreplay = true
 	boss = $Kimberly
 	player = $Player
 	boss.add_to_group("boss")
@@ -20,13 +23,15 @@ func _process(delta):
 
 func _physics_process(delta):
 	if Global.debug:
-		if Global.dstats[Global.dparty[0][0]][0] <= 0 && Global.live == 1:
+		if Global.dstats[Global.dparty[0][0]][0] <= 0 && Global.live == 1 && !isreplay:
 			_winner()
 	else:
-		if Global.cstats[Global.party[0][0]][0] <= 0 && Global.live == 1:
+		if Global.cstats[Global.party[0][0]][0] <= 0 && Global.live == 1 && !isreplay:
 			_winner()
 
 func _input(event):
+	if Global.cboss[1] <= 0 && Global.live == 1 && isreplay:
+		_winner()
 	if Global.cdialog.size() != 0 && Global.live == 1:
 		get_tree().root.remove_child(talk)
 		Global.cdialog = []

@@ -1,5 +1,6 @@
 extends Area2D
 var velocity: Vector2 = Vector2()
+var speed
 var direction
 var speciality
 var btype

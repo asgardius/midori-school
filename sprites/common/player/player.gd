@@ -32,7 +32,7 @@ func _physics_process(delta):
 		Global.xm = 0
 		Global.ym = 0
 	if Global.debug:
-		if Global.dplace != [1, 11, 19]:
+		if Global.quest[0] == 3:
 			if Global.dstats[Global.dparty[Global.dcpchar][0]][0] <= 0 && Global.live == 1:
 				if Global.dparty[0][0] != null && Global.dstats[Global.dparty[0][0]][0] > 0:
 					Global.dcpchar = 0
@@ -163,6 +163,7 @@ func _input(event):
 			new_pbullet.crit = crit
 			new_pbullet.isjump = isjump
 			new_pbullet.speciality = speciality
+			new_pbullet.speed = speed
 			new_pbullet.velocity = Vector2(0, -speed).rotated(deg2rad(angle * 90))
 			var rposition = Vector2(0, -96).rotated(deg2rad(angle * 90))
 			if angle == 2:

@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var theta: float = 0.0
 export(float,6.2831853) var alpha: float = 1.5
-var bullet = load("res://sprites/common/bullet/arrow.tscn")
+var bullet
 
 const SPEED = 300.0
 const fspeed = 100.0
@@ -17,10 +17,19 @@ var velocity = Vector2(0,0)
 var isjump = false
 var fplayer = false
 var isfollow
+var isreplay = false
 
 func _ready():
+	if Global.quest[0] == 3:
+		isreplay = true
+		bullet = load("res://sprites/common/bullet/sk.tscn")
+	else:
+		bullet = load("res://sprites/common/bullet/arrow.tscn")
 	if Global.isboss:
-		Global.cboss = ["Kimberly Arch",0,0]
+		if isreplay:
+			Global.cboss = ["Kimberly Arch",2967,2967]
+		else:
+			Global.cboss = ["Kimberly Arch",0,0]
 	var stimer = $Speed
 	stimer.start(0.05)
 
@@ -117,7 +126,22 @@ func shoot(angle):
 	new_bullet.speciality = 3
 	get_parent().call_deferred("add_child",new_bullet)
 
+func shootr(angle):
+	var new_bullet = bullet.instance()
+	new_bullet.position = Vector2(position.x, position.y)
+	new_bullet.direction = get_vector(angle)
+	new_bullet.btype = "boss"
+	new_bullet.attack = attack
+	new_bullet.crit = crit
+	new_bullet.isjump = isjump
+	new_bullet.speciality = 3
+	new_bullet.speed = 100 * (sin(Time.get_ticks_msec()) + 2)
+	get_parent().call_deferred("add_child",new_bullet)
+
 
 func _on_speed_timeout():
 	if Global.live == 1:
-		shoot(theta)
+		if isreplay:
+			shootr(theta)
+		else:
+			shoot(theta)

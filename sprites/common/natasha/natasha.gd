@@ -116,6 +116,7 @@ func shoot(angle):
 	new_bullet.attack = attack
 	new_bullet.crit = crit
 	new_bullet.isjump = isjump
+	new_bullet.speed = 100 * (sin(Time.get_ticks_msec()) + 2)
 	get_parent().call_deferred("add_child",new_bullet)
 
 
