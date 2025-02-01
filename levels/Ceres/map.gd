@@ -2,6 +2,7 @@ extends Node2D
 var hkr
 var troublemaker
 var yourhome
+var karch
 var travel = null
 
 
@@ -10,6 +11,7 @@ func _ready():
 	hkr = $Railwaygirl
 	troublemaker = $Pamela
 	yourhome = $Home
+	karch = $Kimberly
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
@@ -19,6 +21,7 @@ func _ready():
 		troublemaker.queue_free()
 	if Global.quest[3] == 0:
 		yourhome.queue_free()
+		karch.queue_free()
 	#pass # Replace with function body.
 
 
@@ -68,4 +71,13 @@ func _on_Home_body_entered(body):
 
 
 func _on_Home_body_exited(body):
+	travel = null
+
+
+func _on_Kimberly_body_entered(body):
+	Global.ccutscene = 22
+	travel = [1, 11, 19]
+
+
+func _on_Kimberly_body_exited(body):
 	travel = null

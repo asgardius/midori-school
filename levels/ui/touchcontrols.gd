@@ -1,5 +1,6 @@
 extends Node2D
 var isjoystick = false
+var tjoy
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -8,7 +9,7 @@ var isjoystick = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	tjoy = $CanvasLayer/ColorRect
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,11 +17,11 @@ func _ready():
 #	pass
 func _input(event):
 	if event is InputEventScreenTouch and event.pressed == true:
-		if event.position.x >= 40 && event.position.x <= 240 && event.position.y >= 460 && event.position.y <= 660:
+		if event.position.x >= tjoy.rect_position.x && event.position.x <= tjoy.rect_position.x+200 && event.position.y >= tjoy.rect_position.y && event.position.y <= tjoy.rect_position.y+200:
 			if !isjoystick:
 				isjoystick = true
-				Global.xm = (event.position.x-140)/100
-				Global.ym = (event.position.y-560)/100
+				Global.xm = (event.position.x-tjoy.rect_position.x-100)/100
+				Global.ym = (event.position.y-tjoy.rect_position.y-100)/100
 			#print(Global.xm, Global.ym)
 	elif event is InputEventScreenTouch and event.pressed == false && isjoystick:
 			isjoystick = false

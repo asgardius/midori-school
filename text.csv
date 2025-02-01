@@ -120,7 +120,7 @@ DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラ�
 DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso,\nEl perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
 DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
 DIALOG_CERES_L20_3;I'm tired;Estoy cansada;私は疲れている
-DIALOG_CERES_L20_4;You must study at Kaizo Magic School as you promised;Debes estudiar en la escuela de Magia Kaizo como prometiste;約束通りカイゾー魔法学校で勉強しなくちゃ
+DIALOG_CERES_L20_4;You must study at Kaizo Magic School as you promised;Debes estudiar en la escuela de Magia Kaizo\ncomo prometiste;約束通りカイゾー魔法学校で勉強しなくちゃ
 DIALOG_CERES_L20_5;It seems I'm lucky;Parece que tengo suerte;私は幸運のようです
 DIALOG_TROUBLEMAKER_0;Hey, I just want to be your friend.;Oye, solamente quiero ser tu amiga;ねえ、私はただあなたと友達になりたいだけよ。
 DIALOG_TROUBLEMAKER_1;I hate rubber terrorists like you;Odio a las terroristas de hule como tu;あなたのようなゴムテロリストは嫌いです
@@ -141,6 +141,8 @@ TWIN_TROUBLEMAKERS;Twin Troublemakers;Gemelas problématicas;双子のトラブ�
 TWIN_TROUBLEMAKERS_P2;Twin Troublemakers Part 2;Gemelas problématicas Parte 2;双子のトラブルメーカー パート2
 ENDOFDAY;End of first day;Fin del primer día;初日終了
 YOUR_HOME;Your Home;Tu casa;あなたの家
+SECONDCHALLENGE;Second Challenge;Segundo Reto;第二の挑戦
+SMUGFACE;Smug Face;Cara presumida;得意げな顔
 MENU_CHARACTER;Character List;Lista de Personajes;キャラクター一覧
 MENU_TEAM;Team List;Lista de Equipos;チーム
 MENU_MAP;World Map;Mapa Mundial;世界地図
@@ -173,3 +175,9 @@ CUTSCENE_4_2;She seemed to be challenging me,\nbut her facial expression worries
 CUTSCENE_5_0;Pamela and Lety accidentally\ndestroyed their house;Pamela y Lety accidentalmente\ndestruyeron su casa;パメラとレティは誤って家\nを壊してしまいました
 CUTSCENE_5_1;My sister and I have always been very close;Mi hermana y yo siempre hemos sido muy unidas;妹と私はいつもとても仲が良いです
 CUTSCENE_5_2;I can't help but laugh when my friends say\nI'm made out of rubber;No puedo evitar reirme cuando mis amigos\ndicen que estoy hecha de hule;友達が私をゴムでできていると言うと、笑わずにはいられない
+CUTSCENE_6_0;I found a treasure map and decided to follow it;Encontré un mapa del tesoro y decidí seguirlo;宝の地図を見つけたのでそれに従うことにしました
+CUTSCENE_6_1;I found Kimberly alone in the middle of the forest;Encontré a Kimberly sola en medio del bosque;私は森の真ん中でキンバリーを一人で見つけた
+CUTSCENE_6_2;When she noticed my arrival she took out some knives\nas if she wanted to challenge me;Cuando notó mi llegada sacó unos cuchillos como\nsi quisiera retarme;彼女は私が到着したことに気づき、\nまるで私に挑戦するかのようにナイフを何本か取り出しました
+CUTSCENE_7_0;I decided to challenge Kimberly to see who was the most flexible;Decidí desafiar a Kimberly para ver quién era la más flexible;私はキンバリーに、誰が一番身体が柔軟か挑戦してみることにしました
+CUTSCENE_7_1;She followed my challenge without thinking twice;Ella siguió mi reto sin pensarlo dos veces;彼女は何も考えずに私の挑戦に応じた
+CUTSCENE_7_2;A girl with an eye patch was watching us;Una niña con un parche en un ojo nos estaba observando;眼帯をした女の子が私たちを見ていた

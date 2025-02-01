@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 var presscontinue
 
 const gamepadtest = preload("res://gamepad.gd")

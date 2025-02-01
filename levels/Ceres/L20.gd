@@ -31,7 +31,7 @@ func _physics_process(delta):
 
 func _input(event):
 	if Global.cboss[1] <= 0 && Global.live == 1 && isreplay:
-		_winner()
+		_winnerr()
 	if Global.cdialog.size() != 0 && Global.live == 1:
 		get_tree().root.remove_child(talk)
 		Global.cdialog = []
@@ -42,6 +42,16 @@ func _winner():
 	Global.cdialog = [[tr("DIALOG_CERES_L20_3"), true, 0, 0], [tr("DIALOG_CERES_L20_4"), false, 3], [tr("DIALOG_CERES_L20_5"), true, 0, 0]]
 	Global.live = 3
 	Global.ccutscene = 6
+	#talk.queue_free()
+	talk = load("res://levels/ui/talk.tscn").instance()
+	call_deferred("_talk")
+
+func _winnerr():
+	Global.quest[3] = 3
+	Global.quest[4] = 1
+	Global.cdialog = [[tr("DIALOG_CERES_L20_3"), true, 0, 0], [tr("DIALOG_CERES_L20_4"), false, 3], [tr("DIALOG_CERES_L20_5"), true, 0, 0]]
+	Global.live = 3
+	Global.ccutscene = 25
 	#talk.queue_free()
 	talk = load("res://levels/ui/talk.tscn").instance()
 	call_deferred("_talk")

@@ -84,3 +84,13 @@ func _on_ceres_pressed():
 func _on_Credits_pressed():
 	Global.ccutscene = 16
 	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
+
+
+func _on_Cutscene_pressed():
+	Global.ccutscene = 22
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")
+
+
+func _on_Cutscene2_pressed():
+	Global.ccutscene = 25
+	get_tree().change_scene("res://levels/ui/Cutscenes.tscn")

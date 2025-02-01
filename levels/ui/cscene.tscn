@@ -12,8 +12,14 @@ bg_color = Color( 0, 0.8, 0, 1 )
 bg_color = Color( 0, 0.8, 0, 1 )
 
 [node name="Cscene" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -360.0
+margin_right = -640.0
+margin_bottom = -360.0
 script = ExtResource( 1 )
 
 [node name="Night Sky" type="TextureRect" parent="."]
@@ -91,12 +97,20 @@ margin_right = 1017.0
 margin_bottom = 402.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
-text = "BUTTON_PLACEHOLDER"
+text = "SECONDCHALLENGE"
 
-[node name="Back" type="Button" parent="VBoxContainer"]
+[node name="Cutscene2" type="Button" parent="VBoxContainer"]
 margin_top = 406.0
 margin_right = 1017.0
 margin_bottom = 460.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 1 )
+text = "SMUGFACE"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+margin_top = 464.0
+margin_right = 1017.0
+margin_bottom = 518.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
@@ -107,5 +121,6 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="VBoxContainer/Results" to="." method="_on_results_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/WIP" to="." method="_on_wip_pressed"]
-[connection signal="pressed" from="VBoxContainer/Cutscene" to="." method="_on_cutscene_pressed"]
+[connection signal="pressed" from="VBoxContainer/Cutscene" to="." method="_on_Cutscene_pressed"]
+[connection signal="pressed" from="VBoxContainer/Cutscene2" to="." method="_on_Cutscene2_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

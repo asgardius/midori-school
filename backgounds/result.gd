@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 var presscontinue
 var result
 var rmusic := AudioStreamPlayer.new()

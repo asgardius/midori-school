@@ -12,17 +12,26 @@ rect_pivot_offset = Vector2( -290, -425 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="fps" type="Label" parent="CanvasLayer"]
+anchor_top = 1.0
+anchor_bottom = 1.0
 margin_left = 5.0
-margin_top = 697.0
+margin_top = -29.0
 margin_right = 45.0
-margin_bottom = 725.0
+margin_bottom = -1.0
 custom_fonts/font = ExtResource( 3 )
 script = ExtResource( 2 )
 
 [node name="Version" type="Label" parent="CanvasLayer"]
-margin_left = 1143.0
-margin_top = 691.0
-margin_right = 1223.0
-margin_bottom = 719.0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -85.0
+margin_top = -29.0
+margin_right = -5.0
+margin_bottom = -1.0
+grow_horizontal = 0
+grow_vertical = 0
 custom_fonts/font = ExtResource( 3 )
+align = 2
 script = ExtResource( 1 )

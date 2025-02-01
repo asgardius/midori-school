@@ -11,9 +11,11 @@ script = ExtResource( 3 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Playerface" type="TextureRect" parent="CanvasLayer"]
-margin_left = 511.0
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -129.0
 margin_top = 35.0
-margin_right = 767.0
+margin_right = 127.0
 margin_bottom = 291.0
 texture = ExtResource( 1 )
 
@@ -36,17 +38,25 @@ to continue"
 align = 1
 
 [node name="Textbox" type="ColorRect" parent="CanvasLayer"]
-margin_left = 41.0
-margin_top = 319.0
-margin_right = 1243.0
-margin_bottom = 681.0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -599.0
+margin_top = -401.0
+margin_right = 603.0
+margin_bottom = -39.0
 color = Color( 0.254902, 0.254902, 0.254902, 1 )
 
 [node name="Cname" type="Label" parent="CanvasLayer"]
-margin_left = 41.0
-margin_top = 319.0
-margin_right = 1243.0
-margin_bottom = 374.0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -599.0
+margin_top = -401.0
+margin_right = 603.0
+margin_bottom = -346.0
 rect_min_size = Vector2( 1202, 55 )
 custom_fonts/font = ExtResource( 4 )
 text = "Character name goes here"
@@ -54,10 +64,14 @@ align = 1
 valign = 1
 
 [node name="Dialog" type="Label" parent="CanvasLayer"]
-margin_left = 41.0
-margin_top = 377.0
-margin_right = 1243.0
-margin_bottom = 681.0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -599.0
+margin_top = -343.0
+margin_right = 603.0
+margin_bottom = -39.0
 custom_fonts/font = ExtResource( 4 )
 text = "Your dialog goes here"
 align = 1
