@@ -101,6 +101,12 @@ This is not a priority for me, but if you want to maintain a f-droid release, i 
 * Raspberry Pi 3b or later (Untested)
 * Almost any X86_64 computer (Don't expect seeing this game ruunning on a Pentium 2 with a Voodoo card, because i'm not John Carmack)
 
+# Linux packages
+
+Arch Linux users can use Kimberly Repo. More info at https://kimberly.asgardius.company/
+
+Gentoo users can use Layla Repo https://git.asgardius.company/asgardius/laylarepo
+
 # How to donate to this project
 
 If you want to donate to this project you can see  my crypto addressess at https://asgardius.company/?page_id=1870  (chia and monero at the moment)

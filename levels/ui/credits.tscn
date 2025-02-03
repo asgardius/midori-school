@@ -61,7 +61,7 @@ Page Asgardius
 Fireworks design
 Midori Asgardius / Lily
 
-Memory integrity check
+Anticheat System
 Falcighol Arch / Mariana Kaizo
 
 Title screen background
@@ -78,6 +78,8 @@ Natasha
 Alex
 The Owl Man
 Jamming Man
+Kaizo Magic School Students
+Evelyn Freeman
 
 Auxiliar Creatives
 Page Asgardius
@@ -90,7 +92,7 @@ Alice Naito
 
 Midori No Akuma background by geralt (Pixabay)
 
-Made with Godot Engine
+Made with Virtualx Engine (forked from Godot 3.6)
 
 Testing Devices
 
@@ -112,10 +114,19 @@ Provided by Eric Asgardius
 Gigabyte B550M DS3H AC
 Arch Linux Rolling
 Used for development since R0.1.10-alpha (Boom Boom Torofi Build)
+Provided by Kimberly Arch
 
-Feedback
-Sakura Nakayama
-Tood
+Moto G9 Play
+LineageOS 21
+Used to test Android Release
+
+Samsung Galaxy S7
+Android 8.0
+Used to test Android Release
+
+Pinephone
+Gentoo
+This game is being created to work well on this device
 
 Creative Staff
 Page Asgardius
@@ -586,9 +597,6 @@ Unity Technologies
 For make me choosing Godot
 Godot does what Unitydnt
 
-Ferdowsi
-For writing the book that inspired the Blacksmith of Destruction
-
 Shigeru Miyamoto
 For let me know that an elf as a main character is a great idea
 
@@ -629,7 +637,7 @@ Matt Bozon
 For his unique humour in Shantae game series
 
 Valve Corporation
-For laughing at me, promoting the environmental pollution  and let me know that i must avoid every big company
+For laughing at me, promoting the environmental pollution and let me know that i must avoid every big company
 
 Naomi Ubuntu
 For helping at Character Design
@@ -682,12 +690,12 @@ Activitypub
 Matrix Chat
 @asgardius:asgardius.company
 
-XMPP
-asgardius@asgardius.company
-
 No animals were harmed during game development
 
 Every explosion was tested on vector based universes only
+
+This game is created to be downloaded for free
+If you paid for this game ask for a refund
 
 You are free to distribute this game and make modifications, but remember sharing your modifications with source code
 
