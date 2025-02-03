@@ -12,6 +12,8 @@ func _ready():
 		$HBoxContainer/VBoxContainer/Diana.visible = true
 		$HBoxContainer/VBoxContainer/Pamela.visible = true
 		$HBoxContainer/VBoxContainer/Lety.visible = true
+	if Global.quest[3] == 3:
+		$HBoxContainer/VBoxContainer/Kimberly.visible = true
 	$HBoxContainer/VBoxContainer/Midori.grab_focus()
 	#pass # Replace with function body.
 
@@ -64,3 +66,13 @@ func _on_Lety_pressed():
 		Global.party[Global.charswitch][1] = 0
 	_on_Return_pressed()
 
+
+
+func _on_Kimberly_pressed():
+	if Global.debug:
+		Global.dparty[Global.charswitch][0] = 3
+		Global.dparty[Global.charswitch][1] = 0
+	else:
+		Global.party[Global.charswitch][0] = 3
+		Global.party[Global.charswitch][1] = 0
+	_on_Return_pressed()

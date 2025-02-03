@@ -10,7 +10,11 @@ func _ready():
 	boss = $Kimberly
 	player = $Player
 	boss.add_to_group("boss")
-	Global.cdialog = [[tr("DIALOG_CERES_L20_0"), true, 0, 0], [tr("DIALOG_CERES_L20_1"), false, 3], [tr("DIALOG_CERES_L20_2"), true, 0, 0]]
+	if isreplay:
+		Global.cdialog = [[tr("DIALOG_CERES_L20_6"), true, 0, 0], [tr("DIALOG_CERES_L20_7"), false, 3], [tr("DIALOG_CERES_L20_8"), true, 0, 0]]
+	else:
+		Global.cdialog = [[tr("DIALOG_CERES_L20_0"), true, 0, 0], [tr("DIALOG_CERES_L20_1"), false, 3], [tr("DIALOG_CERES_L20_2"), true, 0, 0]]
+	
 	Global.live = 0
 	call_deferred("_talk")
 	if !Global.debug:
@@ -49,7 +53,7 @@ func _winner():
 func _winnerr():
 	Global.quest[3] = 3
 	Global.quest[4] = 1
-	Global.cdialog = [[tr("DIALOG_CERES_L20_3"), true, 0, 0], [tr("DIALOG_CERES_L20_4"), false, 3], [tr("DIALOG_CERES_L20_5"), true, 0, 0]]
+	Global.cdialog = [[tr("DIALOG_CERES_L20_9"), true, 0, 0], [tr("DIALOG_CERES_L20_10"), false, 3], [tr("DIALOG_CERES_L20_11"), true, 0, 0]]
 	Global.live = 3
 	Global.ccutscene = 25
 	#talk.queue_free()

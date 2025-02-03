@@ -55,7 +55,7 @@ text = "Midori Asgardius"
 [node name="Diana" type="Button" parent="HBoxContainer/VBoxContainer"]
 visible = false
 margin_top = 58.0
-margin_right = 387.0
+margin_right = 360.0
 margin_bottom = 112.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
@@ -63,45 +63,45 @@ text = "Diana Asgardius"
 
 [node name="Rikka" type="Button" parent="HBoxContainer/VBoxContainer"]
 visible = false
-margin_top = 58.0
-margin_right = 387.0
-margin_bottom = 112.0
+margin_top = 116.0
+margin_right = 360.0
+margin_bottom = 170.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "Rikka Grub"
 
 [node name="Kimberly" type="Button" parent="HBoxContainer/VBoxContainer"]
 visible = false
-margin_top = 58.0
-margin_right = 387.0
-margin_bottom = 112.0
+margin_top = 174.0
+margin_right = 360.0
+margin_bottom = 228.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "Kimberly Arch"
 
 [node name="Hu" type="Button" parent="HBoxContainer/VBoxContainer"]
 visible = false
-margin_top = 58.0
-margin_right = 387.0
-margin_bottom = 112.0
+margin_top = 174.0
+margin_right = 360.0
+margin_bottom = 228.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "Hu Wei"
 
 [node name="Gurukosu" type="Button" parent="HBoxContainer/VBoxContainer"]
 visible = false
-margin_top = 58.0
-margin_right = 387.0
-margin_bottom = 112.0
+margin_top = 174.0
+margin_right = 360.0
+margin_bottom = 228.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "Gurukōsu Tanaka"
 
 [node name="Momo" type="Button" parent="HBoxContainer/VBoxContainer"]
 visible = false
-margin_top = 58.0
-margin_right = 387.0
-margin_bottom = 112.0
+margin_top = 174.0
+margin_right = 360.0
+margin_bottom = 228.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "Momo Tanaka"
@@ -134,6 +134,7 @@ text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Midori" to="." method="_on_Midori_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Diana" to="." method="_on_Diana_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Kimberly" to="." method="_on_Kimberly_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Pamela" to="." method="_on_Pamela_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Lety" to="." method="_on_Lety_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Return" to="." method="_on_Return_pressed"]
