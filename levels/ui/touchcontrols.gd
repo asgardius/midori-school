@@ -20,8 +20,38 @@ func _input(event):
 		if event.position.x >= tjoy.rect_position.x && event.position.x <= tjoy.rect_position.x+200 && event.position.y >= tjoy.rect_position.y && event.position.y <= tjoy.rect_position.y+200:
 			if !isjoystick:
 				isjoystick = true
-				Global.xm = (event.position.x-tjoy.rect_position.x-100)/100
-				Global.ym = (event.position.y-tjoy.rect_position.y-100)/100
+				if Input.is_action_pressed("schar"):
+					if event.position.y-tjoy.rect_position.y-100 < -50:
+						if Global.debug:
+							if Global.dparty[0][0] != null && Global.dstats[Global.dparty[0][0]][0] > 0:
+								Global.dcpchar = 0
+						else:
+							if Global.party[0][0] != null && Global.cstats[Global.party[0][0]][0] > 0:
+								Global.cpchar = 0
+					elif event.position.y-tjoy.rect_position.y-100 > 50:
+						if Global.debug:
+							if Global.dparty[2][0] != null && Global.dstats[Global.dparty[2][0]][0] > 0:
+								Global.dcpchar = 2
+						else:
+							if Global.party[2][0] != null && Global.cstats[Global.party[2][0]][0] > 0:
+								Global.cpchar = 2
+					elif event.position.x-tjoy.rect_position.x-100 > 50:
+						if Global.debug:
+							if Global.dparty[1][0] != null && Global.dstats[Global.dparty[1][0]][0] > 0:
+								Global.dcpchar = 1
+						else:
+							if Global.party[1][0] != null && Global.cstats[Global.party[1][0]][0] > 0:
+								Global.cpchar = 1
+					elif event.position.x-tjoy.rect_position.x-100 < -50:
+						if Global.debug:
+							if Global.dparty[3][0] != null && Global.dstats[Global.dparty[3][0]][0] > 0:
+								Global.dcpchar = 3
+						else:
+							if Global.party[3][0] != null && Global.cstats[Global.party[3][0]][0] > 0:
+								Global.cpchar = 3
+				else:
+					Global.xm = (event.position.x-tjoy.rect_position.x-100)/100
+					Global.ym = (event.position.y-tjoy.rect_position.y-100)/100
 			#print(Global.xm, Global.ym)
 	elif event is InputEventScreenTouch and event.pressed == false && isjoystick:
 			isjoystick = false

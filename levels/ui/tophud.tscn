@@ -219,16 +219,19 @@ color = Color( 0, 0, 1, 1 )
 
 [node name="Topleftbg" type="ColorRect" parent="CanvasLayer"]
 visible = false
-margin_left = 842.0
-margin_right = 1280.0
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -438.0
 margin_bottom = 476.0
 color = Color( 0.254902, 0.254902, 0.254902, 1 )
 
 [node name="Topleft" type="VBoxContainer" parent="CanvasLayer"]
 visible = false
-margin_left = 843.0
-margin_right = 1280.0
-margin_bottom = 116.0
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -438.0
+margin_right = -1.0
+margin_bottom = 476.0
 
 [node name="Character1" type="HBoxContainer" parent="CanvasLayer/Topleft"]
 margin_right = 437.0

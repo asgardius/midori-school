@@ -148,7 +148,7 @@ func _input(event):
 				rboost = (Input.get_joy_axis(0,JOY_ANALOG_R2) + 1)*2
 			else:
 				rboost = 1
-		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
+		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right") || (event is InputEventScreenTouch and event.pressed == true)):
 			_charswitch()
 		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
 			bpress = true
