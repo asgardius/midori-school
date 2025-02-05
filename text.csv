@@ -9,12 +9,12 @@ TEXT_CONTINUE_US;Press B to continue;Presiona B para continuar;Bを押して続�
 TEXT_CONTINUE_GEO;Press ○ to continue;Presiona ○ para continuar;○を押して続行します
 TEXT_START;Press Enter or B to start;Presiona Intro o B para iniciar;EnterまたはBを押して開始します
 TEXT_START_KB;Press Enter to start;Presiona Intro para iniciar;Enterを押して開始
-TEXT_START_JP;Press A to start;Presiona A para iniciar;Aを押して開始
+TEXT_START_JA;Press A to start;Presiona A para iniciar;Aを押して開始
 TEXT_START_US;Press B to start;Presiona B para iniciar;Bを押して開始
 TEXT_START_GEO;Press ○ to start;Presiona ○ para iniciar;○を押して開始
 TEXT_EXIT;Press Escape or A to exit;Presiona Escape o A para salir;終了するにはEscまたはAを押してください
 TEXT_EXIT_KB;Press Escape to exit;Presiona Escape para salir;終了するにはEscキーを押してください
-TEXT_EXIT_JP;Press B to exit;Presiona B para salir;終了するにはBキーを押してください
+TEXT_EXIT_JA;Press B to exit;Presiona B para salir;終了するにはBキーを押してください
 TEXT_EXIT_US;Press A to exit;Presiona A para salir;終了するにはAキーを押してください
 TEXT_EXIT_GEO;Press X to exit;Presiona X para salir;終了するにはXキーを押してください
 GAME_NAME;Midori in the Magic School;Midori in the Magic School;改造魔法学校のミドリ

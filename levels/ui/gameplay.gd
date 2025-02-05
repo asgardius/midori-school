@@ -14,9 +14,12 @@ var tcontrol = load("res://levels/ui/touchcontrols.tscn").instance()
 var ismgamepad = false
 var ispaused = false
 var ishud = true
+var istouch = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Input.get_mouse_mode() == 0:
+		istouch = true
 	if Global.dificulty == 1:
 		if Global.difdamage != 0:
 			print("Script Kiddie")
@@ -66,7 +69,8 @@ func _ready():
 	call_deferred("_level")
 	call_deferred("_bhud")
 	call_deferred("_thud")
-	call_deferred("_tcontrol")
+	if istouch:
+		call_deferred("_tcontrol")
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
 	bgsound.bus = "Music"
@@ -97,6 +101,12 @@ func _process(delta):
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
+	if (event is InputEventScreenTouch || event is InputEventMouse) && Input.get_mouse_mode() == 0 && !istouch && Global.live == 1:
+		istouch = true
+		call_deferred("_tcontrol")
+	elif Input.get_mouse_mode() != 0 && istouch && !(event is InputEventScreenTouch || event is InputEventMouse):
+		istouch = false
+		get_tree().root.remove_child(tcontrol)
 	if ismgamepad && (event is InputEventJoypadButton || Input.is_key_pressed(KEY_ENTER) || Input.is_action_just_pressed("mclick")):
 		ismgamepad = false
 		get_tree().root.remove_child(mgamepad)
