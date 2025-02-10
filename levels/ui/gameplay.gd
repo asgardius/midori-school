@@ -90,7 +90,8 @@ func _process(delta):
 		ishud = false
 	elif Global.live == 1 && !ishud:
 		call_deferred("_thud")
-		call_deferred("_tcontrol")
+		if istouch:
+			call_deferred("_tcontrol")
 		ishud = true
 	if Global.isresume:
 		Global.isresume = false

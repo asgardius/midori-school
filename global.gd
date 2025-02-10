@@ -39,8 +39,8 @@ var party = [[0,0], [null,null], [null,null], [null,null]]
 var sparty = [[null,null], [null,null], [null,null], [null,null]]
 const specialities = [2, 0, 3, 1, 5, 4]
 var dparty = [[0,0], [1,0], [7,0], [8,0]]
-var level = [1,1,1,1,1,1,1,1,1,1]
-var dlevel = [1,1,1,1,1,1,1,1,1,1]
+var level = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+var dlevel = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 var cpchar = 0
 var result = [0, 0, 0, 0, 0]
 var dificulty = 0
@@ -54,13 +54,14 @@ var debug = false
 const release = "R0.3.5-dev"
 var sk = false
 var gamepad = 0
-var quest = [0, 0, 0, 0, 0, 0]
+var quest = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 var isresume = false
 var xm = 0
 var ym = 0
 var spboost = 0
 var defeats = 0
-var challenges = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+var challenges = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+var gold = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.

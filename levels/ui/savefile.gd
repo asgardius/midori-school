@@ -1,8 +1,6 @@
 extends Control
 const gamepadtest = preload("res://gamepad.gd")
-var startbutton
 func _ready():
-	startbutton = $VBoxContainer/Start
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$VBoxContainer/Load.grab_focus()
 

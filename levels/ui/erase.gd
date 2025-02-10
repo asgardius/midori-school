@@ -51,13 +51,17 @@ func _on_back_pressed():
 
 func _on_ram_pressed() -> void:
 	Global.dificulty = 0
-	Global.quest = [0, 0, 0, 0, 0, 0]
+	Global.quest = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 	Global.cplace = [1, 11, 19]
 	Global.live = 0
 	Global.cpchar = 0
 	Global.difdamage = 0
 	Global.party = [[0,0], [null,null], [null,null], [null,null]]
 	Global.ccutscene = 0
+	Global.defeats = 0
+	Global.challenges = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	Global.level = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	Global.gold = 0
 	_on_back_pressed()
 
 

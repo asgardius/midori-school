@@ -69,7 +69,6 @@ func _statrebase():
 				Global.cstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.dparty[i][0]]
 
 func _reset():
-	Global.quest = [0, 0, 0, 0, 0, 0]
 	Global.cplace = [1, 11, 19]
 	Global.live = 1
 	Global.cpchar = 0

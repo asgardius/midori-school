@@ -4,6 +4,8 @@ var boss
 var player
 var isreplay = false
 var nothealer = load("res://levels/challenges/nothealler.tscn").instance()
+var houston = load("res://levels/challenges/houston.tscn").instance()
+var coward = load("res://levels/challenges/coward.tscn").instance()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if Global.quest[0] == 3 && !Global.debug:
@@ -19,7 +21,10 @@ func _ready():
 	Global.live = 0
 	call_deferred("_talk")
 	if !isreplay:
-		call_deferred("_nothealer")
+		if Global.dificulty == 1:
+			call_deferred("_coward")
+		else:
+			call_deferred("_nothealer")
 	if !Global.debug && !isreplay:
 		Global.quest[0] = 1
 
@@ -62,6 +67,7 @@ func _winnerr():
 	#talk.queue_free()
 	talk = load("res://levels/ui/talk.tscn").instance()
 	call_deferred("_talk")
+	call_deferred("_houston")
 
 func _statrebase():
 	if Global.debug:
@@ -80,3 +86,9 @@ func _talk():
 
 func _nothealer():
 	get_tree().root.add_child(nothealer)
+
+func _houston():
+	get_tree().root.add_child(houston)
+
+func _coward():
+	get_tree().root.add_child(coward)
