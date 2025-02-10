@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://fonts/about.tres" type="DynamicFont" id=1]
-[ext_resource path="res://levels/challenges/willy.gd" type="Script" id=2]
+[ext_resource path="res://levels/challenges/nothealler.gd" type="Script" id=2]
 
-[node name="willy" type="Control"]
+[node name="nothealler" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
@@ -37,11 +37,9 @@ align = 1
 [node name="Label2" type="Label" parent="CanvasLayer/VBoxContainer"]
 margin_top = 28.0
 margin_right = 429.0
-margin_bottom = 106.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 1 )
-text = "Kung Fury was Willy’s first victim,
-Wright’s wife his second one,
-and a robot avoided a third one"
+text = "I'm not a healer"
 align = 1
 
 [node name="Timer" type="Timer" parent="."]

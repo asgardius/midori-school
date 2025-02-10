@@ -2,6 +2,7 @@
 TEXT_DISCLAIMER;Disclaimer\nPlaying with fireworks inside a videogame can give hours of fun,\nbut in real life is dangerous\nLife insurance exists only on fiction;Descargo de responsabilidad\nJugar con explosivos dentro de un videojuego puede dar horas de diversión\npero en la vida real es peligroso\nLos seguros de vida solamente existen en la ficción;免責事項\nビデオゲームの中で花火で遊ぶと何時間も楽しめます。\nしかし現実では危険である\n生命保険はフィクションの上にのみ存在する
 TEXT_GAMEPAD_DISCONNECTED;Game Controller was disconnected\nPlease connect you game controller again\nand press any button\nor press Enter to continue with keyboard; El mando de juego ha sido desconectado\nFavor de conectar el mando y presione cualquier botón\no presione Intro para continuar con el teclado;ゲーム コントローラが切断されました\nゲーム コントローラを再度接続し、任意のボタンを押す\nか、キーボードで Enter キーを押して続行してください。
 TEXT_WIP;This game is under development\nMore content will be added in following releases;Este juego está en desarrollo\nMás contenido se agregará en los siguientes lanzamientos;このゲームは現在開発中です\n今後のリリースではさらにコンテンツが追加される予定です
+CHALLENGE_COMPLETE;Challenge completed;Desafío completado;チャレンジ完了
 TEXT_CONTINUE;Press Enter or B to continue;Presiona Intro o B para continuar;Enter または B を押して続行します
 TEXT_CONTINUE_KB;Press Enter to continue;Presiona Intro para continuar;Enterを押して続行します
 TEXT_CONTINUE_JA;Press A to continue;Presiona A para continuar;Aを押して続行します

@@ -1,12 +1,14 @@
 extends Node2D
 
 var talk
+var hkr = load("res://levels/challenges/hkr.tscn").instance()
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
 	if Global.quest[1] != 3:
+		call_deferred("_hkr")
 		Global.quest[1] = 3
 		Global.quest[2] = 1
 	#pass # Replace with function body.
@@ -49,3 +51,6 @@ func _on_Rgtalk_body_exited(body):
 
 func _talk():
 	get_tree().root.add_child(talk)
+
+func _hkr():
+	get_tree().root.add_child(hkr)
