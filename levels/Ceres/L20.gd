@@ -5,7 +5,7 @@ var player
 var isreplay = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if Global.quest[0] == 3:
+	if Global.quest[0] == 3 && !Global.debug:
 		isreplay = true
 	boss = $Kimberly
 	player = $Player
@@ -17,7 +17,7 @@ func _ready():
 	
 	Global.live = 0
 	call_deferred("_talk")
-	if !Global.debug:
+	if !Global.debug && !isreplay:
 		Global.quest[0] = 1
 
 

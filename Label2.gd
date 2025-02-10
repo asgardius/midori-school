@@ -2,6 +2,7 @@ extends Label
 var housefreedom
 var welcometext = ""
 var playername
+var willy = load("res://levels/challenges/willy.tscn").instance()
 func _ready():
 	_audiotest()
 	if OS.get_data_dir().begins_with("/home"):
@@ -21,6 +22,7 @@ func _ready():
 			Global.mangohud = true
 			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"
 		if OS.get_environment("WAYLAND_DISPLAY").length() > 0:
+			call_deferred("_willy")
 			welcometext = welcometext+"\nKung Fury was Willy’s first victim, Wright’s wife his second one, and a robot avoided a third one"
 		if Global.spkmode == 0:
 			welcometext = welcometext+"\nExperience Presented in Stereo"
@@ -46,6 +48,9 @@ func _ready():
 
 func _sk():
 	set_text("Script Kiddie detected, only true hackers can cheat here");
+
+func _willy():
+	get_tree().root.add_child(willy)
 
 func _input(event):
 	if Global.sk && (Input.is_mouse_button_pressed(BUTTON_LEFT) || event is InputEventScreenTouch || Input.is_joy_button_pressed(0,JOY_XBOX_Y) || Input.is_joy_button_pressed(0,JOY_XBOX_A) || Input.is_joy_button_pressed(0,JOY_XBOX_B) || Input.is_joy_button_pressed(0,JOY_SELECT) || Input.is_joy_button_pressed(0,JOY_START) || Input.is_joy_button_pressed(0,JOY_L) || Input.is_joy_button_pressed(0,JOY_R) || Input.is_key_pressed(KEY_ESCAPE) || Input.is_key_pressed(KEY_ENTER)):

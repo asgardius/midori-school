@@ -32,7 +32,7 @@ func _physics_process(delta):
 		Global.xm = 0
 		Global.ym = 0
 	if Global.debug:
-		if Global.quest[0] == 3:
+		if Global.cplace != [1, 11, 19]:
 			if Global.dstats[Global.dparty[Global.dcpchar][0]][0] <= 0 && Global.live == 1:
 				if Global.dparty[0][0] != null && Global.dstats[Global.dparty[0][0]][0] > 0:
 					Global.dcpchar = 0
@@ -49,7 +49,7 @@ func _physics_process(delta):
 				else:
 					Global.live = 2
 	else:
-		if Global.cplace != [1, 11, 19]:
+		if Global.quest[0] == 3:
 			if Global.cstats[Global.party[Global.cpchar][0]][0] <= 0 && Global.live == 1:
 				if Global.party[0][0] != null && Global.cstats[Global.party[0][0]][0] > 0:
 					Global.cpchar = 0

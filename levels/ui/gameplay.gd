@@ -202,6 +202,8 @@ func _exit():
 		_loadlevel()
 	elif Global.live == 2:
 		Global.result = [0, 0, 0, 0, 0]
+		if !Global.debug:
+			Global.defeats += 1
 		_statrebase()
 		get_tree().root.remove_child(thud)
 		get_tree().change_scene("res://backgounds/gameover.tscn")
