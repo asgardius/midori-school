@@ -74,3 +74,7 @@ func _on_Resume_pressed():
 
 func _on_Team_pressed():
 	Global.live = 9
+
+
+func _on_Challenges_pressed():
+	Global.live = 10

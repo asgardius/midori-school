@@ -1,6 +1,7 @@
 extends Control
 var presscontinue
 var pressexit
+var willy = load("res://levels/challenges/willy.tscn").instance()
 
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
@@ -10,6 +11,8 @@ const gamepadtest = preload("res://gamepad.gd")
 #var wormhole = preload("res://backgounds/wormhole.tscn").instantiate()
 
 func _ready():
+	if OS.get_environment("WAYLAND_DISPLAY").length() > 0 &&Global.challenges[0] == 0:
+			call_deferred("_willy")
 	presscontinue = $start
 	pressexit = $exit
 	updatehud()
@@ -70,3 +73,6 @@ func updatehud():
 	elif Global.gamepad == 3:
 		presscontinue.set_text(tr("TEXT_START_GEO"))
 		pressexit.set_text(tr("TEXT_EXIT_GEO"))
+
+func _willy():
+	get_tree().root.add_child(willy)
