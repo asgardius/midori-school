@@ -107,6 +107,12 @@ Arch Linux users can use Kimberly Repo. More info at https://kimberly.asgardius.
 
 Gentoo users can use Layla Repo https://git.asgardius.company/asgardius/laylarepo
 
+Debian users can use evelynrepo adding the following to sources.list (replace <arch> with amd64 or arm64)
+
+deb [trusted=yes] https://s3.asgardius.company/evelynrepo <arch>/
+
+
+
 # How to donate to this project
 
 If you want to donate to this project you can see  my crypto addressess at https://asgardius.company/?page_id=1870  (chia and monero at the moment)
