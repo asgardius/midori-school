@@ -86,6 +86,7 @@ margin_right = 1046.0
 margin_bottom = 286.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
+disabled = true
 text = "BUTTON_PLACEHOLDER"
 
 [node name="WIP" type="Button" parent="VBoxContainer"]
@@ -108,4 +109,5 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="VBoxContainer/Lilytest" to="." method="_on_lilytest_pressed"]
 [connection signal="pressed" from="VBoxContainer/Dialogtest" to="." method="_on_dialogtest_pressed"]
 [connection signal="pressed" from="VBoxContainer/Bullethell" to="." method="_on_bullethell_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

@@ -3,6 +3,8 @@ var housefreedom
 var welcometext = ""
 var playername
 func _ready():
+	if OS.get_name() != "X11":
+		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT,  SceneTree.STRETCH_ASPECT_KEEP, Vector2(1280,720),1)
 	_audiotest()
 	if OS.get_data_dir().begins_with("/home"):
 		playername = OS.get_data_dir().rsplit("/", true, 7)[2]

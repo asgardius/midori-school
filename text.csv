@@ -38,6 +38,8 @@ SETTING_VSYNCT;V-Sync On;Sincronización Vertical Activada;垂直同期オン
 SETTING_VSYNCF;V-Sync Off;Sincronización Vertical Desactivada;垂直同期オフ
 SETTING_FULLSCREEN;Fullscreen;Pantalla Completa;全画面表示
 SETTING_WINDOWED;Window;Ventana;ウィンドウ
+SETTING_LFPSF;Framerate limit: Standard;Límite de Fotogramas: estandar;フレームレート制限: 標準
+SETTING_LFPST;Framerate limit: 30;Límite de Fotogramas: 30;フレームレート制限: 30
 BUTTON_GAMEPADTEST;Gamepad Test;Prueba de mando;ゲームパッドテスト
 BUTTON_SCENESELECT;Scene Selector;Selector de escena;シーンセレクター
 BUTTON_SOUNDTEST;Sound Test;Prueba de sonido;サウンドテスト

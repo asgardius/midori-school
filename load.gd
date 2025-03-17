@@ -16,6 +16,8 @@ func _init(slot):
 			OS.set_window_fullscreen(true)
 		else:
 			OS.set_window_fullscreen(false)
+		if savefile.size() > 4:
+			Engine.target_fps =  int(savefile[4])
 		if slot == 0:
 			fileslot = int(savefile[0])
 		else:
@@ -128,7 +130,7 @@ func _init(slot):
 	# the object it represents.
 	else:
 		#Global.firstrun = true
-		var saveinit = "0,1,1,"+str(Time.get_unix_time_from_datetime_dict(Time.get_datetime_dict_from_system(true)))
+		var saveinit = "0,1,1,"+str(Time.get_unix_time_from_datetime_dict(Time.get_datetime_dict_from_system(true)))+",0"
 		var file = File.new()
 		file.open("user://userprefs", File.WRITE)
 		file.store_string(saveinit)

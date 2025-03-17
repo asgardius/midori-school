@@ -2,18 +2,21 @@ extends Control
 const gamepadtest = preload("res://gamepad.gd")
 var vsync
 var fullscreen
-var xw
-var gldrv
+var fps
 func _ready():
 	vsync = $VBoxContainer/L20
 	fullscreen = $VBoxContainer/Lilytest
-	xw = $VBoxContainer/Dialogtest
-	gldrv = $VBoxContainer/Bullethell
+	fps = $VBoxContainer/Credits
+	if Engine.target_fps == 30:
+		fps.set_text(tr("SETTING_LFPST"))
+	else:
+		fps.set_text(tr("SETTING_LFPSF"))
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$VBoxContainer/L20.grab_focus()
 	if OS.get_name() == "X11":
 		vsync.disabled = false
 		fullscreen.disabled = false
+		fps.disabled = false
 	if OS.is_vsync_enabled():
 		vsync.set_text(tr("SETTING_VSYNCT"))
 	else:
@@ -92,3 +95,13 @@ func _on_dialogtest_pressed() -> void:
 
 func _on_bullethell_pressed() -> void:
 	get_tree().change_scene("res://levels/ui/savefile.tscn")
+
+
+func _on_Credits_pressed():
+	if Engine.target_fps == 30:
+		Engine.target_fps = 0
+		fps.set_text(tr("SETTING_LFPSF"))
+		
+	else:
+		Engine.target_fps = 30
+		fps.set_text(tr("SETTING_LFPST"))

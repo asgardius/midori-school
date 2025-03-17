@@ -1,6 +1,6 @@
 extends Node
 func _init(slot, erase):
-	var saveinit = str(slot)+","+str(int(OS.is_vsync_enabled()))+","+str(int(OS.is_window_fullscreen()))+","+str(Time.get_unix_time_from_datetime_dict(Time.get_datetime_dict_from_system(true)))
+	var saveinit = str(slot)+","+str(int(OS.is_vsync_enabled()))+","+str(int(OS.is_window_fullscreen()))+","+str(Time.get_unix_time_from_datetime_dict(Time.get_datetime_dict_from_system(true)))+","+str(Engine.target_fps)
 	var file = File.new()
 	file.open("user://userprefs", File.WRITE)
 	file.store_string(saveinit)
