@@ -41,7 +41,7 @@ text = "MENU_MUSICTEST"
 align = 1
 valign = 1
 
-[node name="Stop" type="Label" parent="."]
+[node name="Stop" type="Button" parent="."]
 margin_left = 5.0
 margin_top = 672.0
 margin_right = 230.0
@@ -256,6 +256,7 @@ custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
 
+[connection signal="pressed" from="Stop" to="." method="_on_Stop_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Disclaimer, Settings, Stores" to="." method="_on_disclaimer_settings_stores_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Testrooms" to="." method="_on_testrooms_pressed"]

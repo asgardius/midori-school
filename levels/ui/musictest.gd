@@ -196,3 +196,8 @@ func _on_elysium_pressed() -> void:
 	player.stream = load(Global.musictracks[22])
 	infobox.set_text(tr("SONG22_INFO"))
 	player.play(0)
+
+
+func _on_Stop_pressed():
+	infobox.set_text("")
+	player.stop()

@@ -65,8 +65,8 @@ margin_top = 656.0
 margin_right = 809.0
 margin_bottom = 705.0
 custom_fonts/font = ExtResource( 9 )
-text = "2023-2024 Page Asgardius GNU General Public License 3
-2016-2024 Asgardius Virtualx Project"
+text = "2023-2025 Page Asgardius GNU General Public License 3
+2016-2025 Asgardius Virtualx Project"
 align = 1
 
 [node name="Bottomhud" parent="." instance=ExtResource( 10 )]
