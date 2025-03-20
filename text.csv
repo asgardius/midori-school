@@ -4,12 +4,12 @@ TEXT_GAMEPAD_DISCONNECTED;Game Controller was disconnected\nPlease connect you g
 TEXT_WIP;This game is under development\nMore content will be added in following releases;Este juego está en desarrollo\nMás contenido se agregará en los siguientes lanzamientos;このゲームは現在開発中です\n今後のリリースではさらにコンテンツが追加される予定です
 CHALLENGE_COMPLETE;Challenge completed;Desafío completado;チャレンジ完了
 TEXT_CONTINUE;Press Enter or B to continue;Presiona Intro o B para continuar;Enter または B を押して続行します
-TEXT_CONTINUE_KB;Press Enter to continue;Presiona Intro para continuar;Enterを押して続行します
+TEXT_CONTINUE_KB;Click or press Enter to continue;Haz click o presiona Intro para continuar;クリックまたはEnterキーを押して続行します
 TEXT_CONTINUE_JA;Press A to continue;Presiona A para continuar;Aを押して続行します
 TEXT_CONTINUE_US;Press B to continue;Presiona B para continuar;Bを押して続行します
 TEXT_CONTINUE_GEO;Press ○ to continue;Presiona ○ para continuar;○を押して続行します
 TEXT_START;Press Enter or B to start;Presiona Intro o B para iniciar;EnterまたはBを押して開始します
-TEXT_START_KB;Press Enter to start;Presiona Intro para iniciar;Enterを押して開始
+TEXT_START_KB;Click or press Enter to start;Haz click o presiona Intro para iniciar;クリックまたはEnterキーを押して開始します
 TEXT_START_JA;Press A to start;Presiona A para iniciar;Aを押して開始
 TEXT_START_US;Press B to start;Presiona B para iniciar;Bを押して開始
 TEXT_START_GEO;Press ○ to start;Presiona ○ para iniciar;○を押して開始

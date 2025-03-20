@@ -16,7 +16,7 @@ func _ready() -> void:
 	#add_child(fl)
 	#add_child(fr)
 	bgsound.stream = load("res://music/c/alsa.ogg")
-	bgsound.mix_target = 1
+	bgsound.mix_target = 2
 	bgsound.bus = "Music"
 	#fl.mix_target = 1
 	#fr.mix_target = 1

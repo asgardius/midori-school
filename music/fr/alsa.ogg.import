@@ -12,4 +12,4 @@ dest_files=[ "res://.import/alsa.ogg-aa647b6c90906b5246e0eda306aa8697.oggstr" ]
 [params]
 
 loop=true
-loop_offset=0
+loop_offset=6.0

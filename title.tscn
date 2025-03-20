@@ -37,9 +37,8 @@ valign = 1
 script = ExtResource( 5 )
 
 [node name="exit" type="Label" parent="."]
-margin_left = 364.0
 margin_top = 602.0
-margin_right = 834.0
+margin_right = 1280.0
 margin_bottom = 657.0
 custom_fonts/font = ExtResource( 8 )
 text = "TEXT_EXIT"
@@ -47,9 +46,8 @@ align = 1
 script = ExtResource( 6 )
 
 [node name="start" type="Label" parent="."]
-margin_left = 446.0
 margin_top = 92.0
-margin_right = 893.0
+margin_right = 1280.0
 margin_bottom = 147.0
 custom_fonts/font = ExtResource( 8 )
 text = "Press escape or A to exit"
