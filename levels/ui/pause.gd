@@ -29,9 +29,7 @@ func _input(event):
 
 func _fetchdata():
 	if Global.debug:
-		if Global.dplace == [1, 8, 28]:
-			teammenu.visible = true
-		if Global.dplace != [1, 11, 19] && (Global.dplace[0] == 1 || Global.dplace[0] == 2):
+		if Global.quest[0] == 3:
 			warpmenu.visible = true
 		else:
 			warpmenu.visible = false
