@@ -2,7 +2,7 @@
 
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=1]
 [ext_resource path="res://backgounds/night-sky-at-ceres.jpg" type="Texture" id=2]
-[ext_resource path="res://levels/ui/settings.gd" type="Script" id=4]
+[ext_resource path="res://levels/ui/remap.gd" type="Script" id=3]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -23,7 +23,7 @@ margin_left = -640.0
 margin_top = -360.0
 margin_right = -640.0
 margin_bottom = -360.0
-script = ExtResource( 4 )
+script = ExtResource( 3 )
 
 [node name="Night Sky" type="TextureRect" parent="."]
 margin_right = 1280.0
@@ -35,7 +35,7 @@ margin_top = 3.0
 margin_right = 1280.0
 margin_bottom = 73.0
 custom_fonts/font = ExtResource( 5 )
-text = "BUTTON_SETTINGS"
+text = "BUTTON_REMAP"
 align = 1
 valign = 1
 
@@ -43,72 +43,96 @@ valign = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 126.0
-margin_top = 169.0
+margin_top = 106.0
 margin_right = 1172.0
-margin_bottom = 628.0
+margin_bottom = 682.0
 
-[node name="L20" type="Button" parent="VBoxContainer"]
+[node name="Shoot" type="Button" parent="VBoxContainer"]
 margin_right = 1046.0
 margin_bottom = 54.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 1 )
-disabled = true
-text = "CERES_L20_DESC"
+text = "Shoot"
 
-[node name="Lilytest" type="Button" parent="VBoxContainer"]
+[node name="Jump" type="Button" parent="VBoxContainer"]
 margin_top = 58.0
 margin_right = 1046.0
 margin_bottom = 112.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
-disabled = true
-text = "MENU_MAP"
+text = "Jump"
 
-[node name="Dialogtest" type="Button" parent="VBoxContainer"]
+[node name="Item" type="Button" parent="VBoxContainer"]
 margin_top = 116.0
 margin_right = 1046.0
 margin_bottom = 170.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
-text = "BUTTON_DEBUG"
+disabled = true
+text = "Item"
 
-[node name="Bullethell" type="Button" parent="VBoxContainer"]
+[node name="Switch" type="Button" parent="VBoxContainer"]
 margin_top = 174.0
 margin_right = 1046.0
 margin_bottom = 228.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
-text = "BUTTON_PERSISTENCE"
+text = "Switch"
 
-[node name="Credits" type="Button" parent="VBoxContainer"]
+[node name="Special" type="Button" parent="VBoxContainer"]
 margin_top = 232.0
 margin_right = 1046.0
 margin_bottom = 286.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
 disabled = true
-text = "BUTTON_PLACEHOLDER"
+text = "Special"
 
-[node name="WIP" type="Button" parent="VBoxContainer"]
+[node name="Pause" type="Button" parent="VBoxContainer"]
 margin_top = 290.0
 margin_right = 1046.0
 margin_bottom = 344.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
-text = "BUTTON_REMAP"
+text = "Pause"
 
-[node name="Back" type="Button" parent="VBoxContainer"]
+[node name="Backpack" type="Button" parent="VBoxContainer"]
 margin_top = 348.0
 margin_right = 1046.0
 margin_bottom = 402.0
 custom_fonts/font = ExtResource( 5 )
+custom_styles/focus = SubResource( 2 )
+disabled = true
+text = "Backpack"
+
+[node name="OCSkill" type="Button" parent="VBoxContainer"]
+margin_top = 406.0
+margin_right = 1046.0
+margin_bottom = 460.0
+custom_fonts/font = ExtResource( 5 )
+custom_styles/focus = SubResource( 2 )
+disabled = true
+text = "OC Skill"
+
+[node name="Run" type="Button" parent="VBoxContainer"]
+margin_top = 464.0
+margin_right = 1046.0
+margin_bottom = 518.0
+custom_fonts/font = ExtResource( 5 )
+custom_styles/focus = SubResource( 2 )
+text = "Run"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+margin_top = 522.0
+margin_right = 1046.0
+margin_bottom = 576.0
+custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
 
-[connection signal="pressed" from="VBoxContainer/L20" to="." method="_on_l_20_pressed"]
-[connection signal="pressed" from="VBoxContainer/Lilytest" to="." method="_on_lilytest_pressed"]
-[connection signal="pressed" from="VBoxContainer/Dialogtest" to="." method="_on_dialogtest_pressed"]
-[connection signal="pressed" from="VBoxContainer/Bullethell" to="." method="_on_bullethell_pressed"]
-[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
-[connection signal="pressed" from="VBoxContainer/WIP" to="." method="_on_WIP_pressed"]
+[connection signal="pressed" from="VBoxContainer/Shoot" to="." method="_on_Shoot_pressed"]
+[connection signal="pressed" from="VBoxContainer/Jump" to="." method="_on_Jump_pressed"]
+[connection signal="pressed" from="VBoxContainer/Switch" to="." method="_on_Switch_pressed"]
+[connection signal="pressed" from="VBoxContainer/Pause" to="." method="_on_Pause_pressed"]
+[connection signal="pressed" from="VBoxContainer/Run" to="." method="_on_Run_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

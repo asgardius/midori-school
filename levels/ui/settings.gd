@@ -105,3 +105,7 @@ func _on_Credits_pressed():
 	else:
 		Engine.target_fps = 30
 		fps.set_text(tr("SETTING_LFPST"))
+
+
+func _on_WIP_pressed():
+	get_tree().change_scene("res://levels/ui/remap.tscn")

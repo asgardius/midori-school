@@ -123,8 +123,8 @@ func _input(event):
 			jtimer.start()
 		if Global.live == 1 && !Input.is_action_pressed("schar"):
 			if Input.get_joy_axis(0,JOY_ANALOG_LX) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LX) < -0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) < -0.2:
-				Global.xm = Input.get_joy_axis(0,JOY_ANALOG_LX)
-				Global.ym = Input.get_joy_axis(0,JOY_ANALOG_LY)
+				Global.xm = Input.get_axis("ui_left", "ui_right")
+				Global.ym = Input.get_axis("ui_up", "ui_down")
 			else:
 				if Input.is_action_just_pressed("ui_left"):
 					Global.xm = -1
@@ -145,7 +145,7 @@ func _input(event):
 			if Input.is_action_pressed("run"):
 				rboost = 4
 			elif Global.gamepad > 0:
-				rboost = (Input.get_joy_axis(0,JOY_ANALOG_R2) + 1)*2
+				rboost = (Input.get_action_strength("run") + 1)*2
 			else:
 				rboost = 1
 		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right") || (event is InputEventScreenTouch and event.pressed == true)):
