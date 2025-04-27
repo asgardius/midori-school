@@ -23,6 +23,7 @@ BUTTON_START;Start;Iniciar;始める
 BUTTON_CONTINUE;Continue;Continuar;続く
 BUTTON_DEBUG;Debug;Depurar;デバッグ
 BUTTON_PERSISTENCE;Savefile;Guardado;保存ファイル
+BUTTON_REMAP;Button Remap;Reasignar Botones;ボタンの再マップ
 BUTTON_LOAD;Load;Cargar;ファイルを保存
 BUTTON_SAVE;Save;Guardar;ファイルを保存
 BUTTON_ERASE;Erase;Borrar;ファイルを保存
