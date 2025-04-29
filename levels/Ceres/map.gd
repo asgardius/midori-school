@@ -54,7 +54,7 @@ func _on_railwaygirl_body_entered(body: Node2D) -> void:
 
 
 func _on_railwaygirl_body_exited(body: Node2D) -> void:
-	Global.ccutscene = null
+	#Global.ccutscene = null
 	travel = null
 
 
@@ -64,16 +64,17 @@ func _on_pamela_body_entered(body: Node2D) -> void:
 
 
 func _on_pamela_body_exited(body: Node2D) -> void:
-	Global.ccutscene = null
+	#Global.ccutscene = null
 	travel = null
 
 
 func _on_Home_body_entered(body):
+	Global.ccutscene = null
 	travel = [1, 8, 28]
 
 
 func _on_Home_body_exited(body):
-	Global.ccutscene = null
+	#Global.ccutscene = null
 	travel = null
 
 
@@ -83,5 +84,5 @@ func _on_Kimberly_body_entered(body):
 
 
 func _on_Kimberly_body_exited(body):
-	Global.ccutscene = null
+	#Global.ccutscene = null
 	travel = null
