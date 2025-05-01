@@ -57,6 +57,11 @@ func _input(event):
 			isjoystick = false
 			Global.xm = 0
 			Global.ym = 0
+	elif event is InputEventScreenDrag && isjoystick:
+		if event.position.x >= tjoy.rect_position.x && event.position.x <= tjoy.rect_position.x+200 && event.position.y >= tjoy.rect_position.y && event.position.y <= tjoy.rect_position.y+200:
+			Global.xm = (event.position.x-tjoy.rect_position.x-100)/100
+			Global.ym = (event.position.y-tjoy.rect_position.y-100)/100
+		
 
 func _on_A_pressed():
 	Input.action_press("shoot")
