@@ -122,26 +122,8 @@ func _input(event):
 			isjump = true
 			jtimer.start()
 		if Global.live == 1 && !Input.is_action_pressed("schar"):
-			if Input.get_joy_axis(0,JOY_ANALOG_LX) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) > 0.2 || Input.get_joy_axis(0,JOY_ANALOG_LX) < -0.2 || Input.get_joy_axis(0,JOY_ANALOG_LY) < -0.2:
-				Global.xm = Input.get_axis("ui_left", "ui_right")
-				Global.ym = Input.get_axis("ui_up", "ui_down")
-			else:
-				if Input.is_action_just_pressed("ui_left"):
-					Global.xm = -1
-				elif  Input.is_action_just_released("ui_left"):
-					Global.xm = 0
-				if Input.is_action_just_pressed("ui_right"):
-					Global.xm = 1
-				elif  Input.is_action_just_released("ui_right"):
-					Global.xm = 0
-				if Input.is_action_just_pressed("ui_up"):
-					Global.ym = -1
-				elif  Input.is_action_just_released("ui_up"):
-					Global.ym = 0
-				if Input.is_action_just_pressed("ui_down"):
-					Global.ym = 1
-				elif  Input.is_action_just_released("ui_down"):
-					Global.ym = 0
+			Global.xm = Input.get_axis("ui_left", "ui_right")
+			Global.ym = Input.get_axis("ui_up", "ui_down")
 			if Input.is_action_pressed("run"):
 				rboost = 4
 			elif Global.gamepad > 0:
