@@ -124,12 +124,7 @@ func _input(event):
 		if Global.live == 1 && !Input.is_action_pressed("schar"):
 			Global.xm = Input.get_axis("ui_left", "ui_right")
 			Global.ym = Input.get_axis("ui_up", "ui_down")
-			if Input.is_action_pressed("run"):
-				rboost = 4
-			elif Global.gamepad > 0:
-				rboost = (Input.get_action_strength("run") + 1)*2
-			else:
-				rboost = 1
+			rboost = (Input.get_action_strength("run") + 1)*2
 		if Input.is_action_pressed("schar") && (Input.is_action_just_released("ui_up") || Input.is_action_just_released("ui_down") || Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right") || (event is InputEventScreenTouch and event.pressed == true)):
 			_charswitch()
 		if Input.is_action_just_pressed("shoot") && !bpress && Global.live == 1:
