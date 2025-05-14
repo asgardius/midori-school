@@ -18,10 +18,12 @@ script = ExtResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect2" type="ColorRect" parent="CanvasLayer"]
+anchor_top = 1.0
+anchor_bottom = 1.0
 margin_left = 35.0
-margin_top = 455.0
+margin_top = -265.0
 margin_right = 245.0
-margin_bottom = 665.0
+margin_bottom = -55.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
