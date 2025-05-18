@@ -82,3 +82,9 @@ func _on_WIP_pressed():
 	Global.dplace = [1, 8, 28]
 	Global.live = 1
 	get_tree().change_scene("res://levels/ui/gameplay.tscn")
+
+
+func _on_huwei_pressed():
+	Global.dplace = [1, 4, 18]
+	Global.live = 1
+	get_tree().change_scene("res://levels/ui/gameplay.tscn")
