@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var theta: float = 0.0
 export(float,6.2831853) var alpha: float = 1.5
-var bullet = load("res://sprites/common/bullet/sk.tscn")
+var bullet = load("res://sprites/common/bullet/snowflake.tscn")
 
 const SPEED = 300.0
 const fspeed = 100.0

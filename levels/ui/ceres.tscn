@@ -102,10 +102,18 @@ custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
 text = "Kitchen Nightmare"
 
-[node name="Back" type="Button" parent="VBoxContainer"]
+[node name="dust" type="Button" parent="VBoxContainer"]
 margin_top = 406.0
 margin_right = 1017.0
 margin_bottom = 460.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 4 )
+text = "Tito Dust"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+margin_top = 464.0
+margin_right = 1017.0
+margin_bottom = 518.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
@@ -117,4 +125,5 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_Credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/WIP" to="." method="_on_WIP_pressed"]
 [connection signal="pressed" from="VBoxContainer/huwei" to="." method="_on_huwei_pressed"]
+[connection signal="pressed" from="VBoxContainer/dust" to="." method="_on_dust_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

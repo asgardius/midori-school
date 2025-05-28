@@ -4,10 +4,10 @@ var boss
 var player
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	boss = $Mhyceo
+	boss = $Dust
 	player = $Player
 	boss.add_to_group("boss")
-	Global.cdialog = [[tr("CHINESEFOOD"), true, 4, 0]]
+	Global.cdialog = [[tr("TINGYUNNECK"), true, 5, 0]]
 	Global.live = 0
 	call_deferred("_talk")
 
