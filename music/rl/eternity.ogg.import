@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/eternity.ogg-dd410da16f2b7a3ef542c2a66bd1d04d.oggstr"
+
+[deps]
+
+source_file="res://music/rl/eternity.ogg"
+dest_files=[ "res://.import/eternity.ogg-dd410da16f2b7a3ef542c2a66bd1d04d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
