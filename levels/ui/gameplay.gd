@@ -15,9 +15,17 @@ var ismgamepad = false
 var ispaused = false
 var ishud = true
 var istouch = false
+var fl
+var fr
+var rl
+var rr
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	fl = $Front_Left
+	fr = $Front_Right
+	rl = $Rear_Left
+	rr = $Rear_Right
 	if Input.get_mouse_mode() == 0:
 		istouch = true
 	if Global.dificulty == 1:
@@ -49,12 +57,12 @@ func _ready():
 	if Global.debug:
 		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instance()
 		#player = load(Global.pchars[Global.dcpchar]).instance()
-		musictrack = Global.musictracks[Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]]
+		musictrack = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]
 		Global.isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
 	else:
 		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instance()
 	#	player = load(Global.pchars[Global.cpchar]).instance()
-		musictrack = Global.musictracks[Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]]
+		musictrack = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]
 		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	#if Global.cspawnarea[0] != null && Global.cspawnarea[0] != null:
 	#	player.position.x = Global.cspawnarea[0]
@@ -65,7 +73,12 @@ func _ready():
 	#else:
 	#	player.position.x = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]
 	#	player.position.y = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
-	music = load(musictrack)
+	
+	music = load(Global.musictrackc[musictrack])
+	fl.stream = load(Global.musictrackfl[musictrack])
+	fr.stream = load(Global.musictrackfr[musictrack])
+	rl.stream = load(Global.musictrackrl[musictrack])
+	rr.stream = load(Global.musictrackrr[musictrack])
 	call_deferred("_level")
 	call_deferred("_bhud")
 	call_deferred("_thud")
@@ -74,11 +87,15 @@ func _ready():
 	#get_tree().root.add_child.call_deferred(player)
 	bgsound.stream = music
 	bgsound.bus = "Music"
-	bgsound.mix_target = 1
+	bgsound.mix_target = 2
 	sfx1.mix_target = 1
 	sfx1.bus = "SFX1"
 	if !Global.isboss:
 		bgsound.play(0)
+		fl.play(0)
+		fr.play(0)
+		rl.play(0)
+		rr.play(0)
 		
 
 
@@ -150,6 +167,10 @@ func _input(event):
 		sfx1.stream = load(Global.sfxtracks[1])
 		sfx1.play(0)
 		bgsound.play(0)
+		fl.play(0)
+		fr.play(0)
+		rl.play(0)
+		rr.play(0)
 func _statrebase():
 	if Global.debug:
 		for i in 4:
@@ -248,16 +269,24 @@ func _loadlevel():
 	if Global.debug:
 		level = load(Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][0]).instance()
 		#player = load(Global.pchars[Global.dcpchar]).instance()
-		musictrack = Global.musictracks[Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]]
+		musictrack = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][1]
 		Global.isboss = Global.places[Global.dplace[0]][Global.dplace[1]][Global.dplace[2]][2]
 	else:
 		level = load(Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][0]).instance()
 	#	player = load(Global.pchars[Global.cpchar]).instance()
-		musictrack = Global.musictracks[Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]]
+		musictrack = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]
 		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	if musictrack != oldtrack:
 		bgsound.stop()
-		music = load(musictrack)
+		music = load(Global.musictrackc[musictrack])
+		fl.stream = load(Global.musictrackfl[musictrack])
+		fr.stream = load(Global.musictrackfr[musictrack])
+		rl.stream = load(Global.musictrackrl[musictrack])
+		rr.stream = load(Global.musictrackrr[musictrack])
 		bgsound.stream = music
 		bgsound.play(0)
+		fl.play(0)
+		fr.play(0)
+		rl.play(0)
+		rr.play(0)
 	_level()

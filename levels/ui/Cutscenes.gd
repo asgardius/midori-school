@@ -9,21 +9,37 @@ var isboss
 var press = false
 var bhud = load("res://levels/bottomhud.tscn").instance()
 var ishud = true
+var fl
+var fr
+var rl
+var rr
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	fl = $Front_Left
+	fr = $Front_Right
+	rl = $Rear_Left
+	rr = $Rear_Right
 	Global.live = 1
 	add_child(bgsound)
 	add_child(sfx1)
+	bgsound.mix_target = 2
 	level = load(Global.cutscenes[Global.ccutscene][0]).instance()
-	musictrack = Global.musictracks[Global.cutscenes[Global.ccutscene][2]]
-	music = load(musictrack)
+	musictrack = Global.cutscenes[Global.ccutscene][2]
+	music = load(Global.musictrackc[musictrack])
+	fl.stream = load(Global.musictrackfl[musictrack])
+	fr.stream = load(Global.musictrackfr[musictrack])
+	rl.stream = load(Global.musictrackrl[musictrack])
+	rr.stream = load(Global.musictrackrr[musictrack])
+	bgsound.stream = music
+	bgsound.play(0)
+	fl.play(0)
+	fr.play(0)
+	rl.play(0)
+	rr.play(0)
 	call_deferred("_level")
 	call_deferred("_bhud")
 	#get_tree().root.add_child.call_deferred(player)
-	bgsound.stream = music
-	bgsound.mix_target = 1
-	bgsound.play(0)
 		
 
 
@@ -65,12 +81,20 @@ func _input(event):
 			Global.ccutscene += 1
 			get_tree().root.remove_child(level)
 			level = load(Global.cutscenes[Global.ccutscene][0]).instance()
-			if musictrack != Global.musictracks[Global.cutscenes[Global.ccutscene][2]]:
+			if musictrack != Global.cutscenes[Global.ccutscene][2]:
 				bgsound.stop()
-				musictrack = Global.musictracks[Global.cutscenes[Global.ccutscene][2]]
-				music = load(musictrack)
+				musictrack = Global.cutscenes[Global.ccutscene][2]
+				music = load(Global.musictrackc[musictrack])
+				fl.stream = load(Global.musictrackfl[musictrack])
+				fr.stream = load(Global.musictrackfr[musictrack])
+				rl.stream = load(Global.musictrackrl[musictrack])
+				rr.stream = load(Global.musictrackrr[musictrack])
 				bgsound.stream = music
 				bgsound.play(0)
+				fl.play(0)
+				fr.play(0)
+				rl.play(0)
+				rr.play(0)
 			call_deferred("_level")
 		press = false
 	#if (Global.live == 1 && (Input.is_key_pressed(KEY_V) && Input.is_key_pressed(KEY_UP)) ||(Input.is_joy_button_pressed(0,JOY_BUTTON_RIGHT_SHOULDER) && Input.is_joy_button_pressed(0,JOY_BUTTON_DPAD_UP))):

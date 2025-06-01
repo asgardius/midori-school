@@ -20,9 +20,9 @@ func _ready():
 	#if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
 	#	Global.sk = true
 	add_child(bgsound)
-	var titlemusic = load(Global.musictracks[0])
+	var titlemusic = load(Global.musictrackc[0])
 	bgsound.stream = titlemusic
-	bgsound.mix_target = 1
+	bgsound.mix_target = 2
 	bgsound.play(0)
 	bgsound.bus = "Music"
 	wait = Time.get_ticks_msec()

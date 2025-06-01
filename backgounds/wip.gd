@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 var presscontinue
 
 var rmusic := AudioStreamPlayer.new()
@@ -9,9 +9,9 @@ func _ready():
 	updatehud()
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(rmusic)
-	var titlemusic = load(Global.musictracks[1])
+	var titlemusic = load(Global.musictrackc[1])
 	rmusic.stream = titlemusic
-	rmusic.mix_target = 1
+	rmusic.mix_target = 2
 	rmusic.play(0)
 	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.

@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://fonts/selftest.tres" type="DynamicFont" id=1]
 [ext_resource path="res://fonts/about.tres" type="DynamicFont" id=2]
 [ext_resource path="res://backgounds/Midori No Akuma.jpg" type="Texture" id=3]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=4]
 [ext_resource path="res://backgounds/result.gd" type="Script" id=5]
+[ext_resource path="res://music/rr/edzesss.ogg" type="AudioStream" id=6]
+[ext_resource path="res://music/rl/edzesss.ogg" type="AudioStream" id=7]
+[ext_resource path="res://music/fl/edzesss.ogg" type="AudioStream" id=8]
+[ext_resource path="res://music/fr/edzesss.ogg" type="AudioStream" id=9]
 
 [node name="Result" type="Control"]
 anchor_left = 0.5
@@ -45,3 +49,40 @@ align = 1
 valign = 3
 
 [node name="Bottomhud" parent="." instance=ExtResource( 4 )]
+
+[node name="Front_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5 )
+stream = ExtResource( 8 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Front_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5 )
+stream = ExtResource( 9 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Rear_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+stream = ExtResource( 7 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Rear_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
+stream = ExtResource( 6 )
+unit_db = 80.0
+unit_size = 10.0
+autoplay = true
+bus = "SFX1"
+
+[node name="Camera3D" type="Camera" parent="."]

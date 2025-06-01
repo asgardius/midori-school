@@ -256,6 +256,35 @@ custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
 
+[node name="Front_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Front_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Rear_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Rear_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
+unit_db = 80.0
+unit_size = 10.0
+bus = "SFX1"
+
+[node name="Camera3D" type="Camera" parent="."]
+
 [connection signal="pressed" from="Stop" to="." method="_on_Stop_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Disclaimer, Settings, Stores" to="." method="_on_disclaimer_settings_stores_pressed"]

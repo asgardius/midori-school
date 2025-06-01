@@ -12,3 +12,32 @@ margin_top = -360.0
 margin_right = -640.0
 margin_bottom = -360.0
 script = ExtResource( 1 )
+
+[node name="Front_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Front_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Rear_Left" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+unit_db = 80.0
+unit_size = 10.0
+max_distance = 30.0
+bus = "SFX1"
+
+[node name="Rear_Right" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
+unit_db = 80.0
+unit_size = 10.0
+bus = "SFX1"
+
+[node name="Camera3D" type="Camera" parent="."]

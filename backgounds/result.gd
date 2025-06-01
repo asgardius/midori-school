@@ -17,9 +17,9 @@ func _ready():
 	updatehud()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(rmusic)
-	var titlemusic = load(Global.musictracks[7])
+	var titlemusic = load(Global.musictrackc[7])
 	rmusic.stream = titlemusic
-	rmusic.mix_target = 1
+	rmusic.mix_target = 2
 	rmusic.play(0)
 	wait = Time.get_ticks_msec()
 	#pass # Replace with function body.

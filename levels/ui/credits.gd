@@ -3,18 +3,46 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 var bgsound := AudioStreamPlayer.new()
-var song1 = load(Global.musictracks[15])
-var song2 = load(Global.musictracks[16])
-var song3 = load(Global.musictracks[17])
+var fl
+var fr
+var rl
+var rr
+var song1a = load(Global.musictrackc[15])
+var song2a = load(Global.musictrackc[16])
+var song3a = load(Global.musictrackc[17])
+var song1b = load(Global.musictrackfl[15])
+var song2b = load(Global.musictrackfl[16])
+var song3b = load(Global.musictrackfl[17])
+var song1c = load(Global.musictrackfr[15])
+var song2c = load(Global.musictrackfr[16])
+var song3c = load(Global.musictrackfr[17])
+var song1d = load(Global.musictrackrl[15])
+var song2d = load(Global.musictrackrl[16])
+var song3d = load(Global.musictrackrl[17])
+var song1e = load(Global.musictrackrr[15])
+var song2e = load(Global.musictrackrr[16])
+var song3e = load(Global.musictrackrr[17])
 var playstart = false
 var playindex = 0
 
 func _ready():
-	bgsound.mix_target = 1
+	fl = $Front_Left
+	fr = $Front_Right
+	rl = $Rear_Left
+	rr = $Rear_Right
+	bgsound.mix_target = 2
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(bgsound)
-	bgsound.stream = song1
+	bgsound.stream = song1a
+	fl.stream = song1b
+	fr.stream = song1c
+	rl.stream = song1d
+	rr.stream = song1e
 	bgsound.play(0)
+	fl.play(0)
+	fr.play(0)
+	rl.play(0)
+	rr.play(0)
 	bgsound.bus = "Music"
 	#pass # Replace with function body.
 
@@ -30,13 +58,29 @@ func _process(delta):
 			if playindex == 0:
 				playindex = 1
 				playstart = false
-				bgsound.stream = song2
+				bgsound.stream = song2a
+				fl.stream = song2b
+				fr.stream = song2c
+				rl.stream = song2d
+				rr.stream = song2e
 				bgsound.play(0)
+				fl.play(0)
+				fr.play(0)
+				rl.play(0)
+				rr.play(0)
 			elif playindex == 1:
 				playindex = 2
 				playstart = false
-				bgsound.stream = song3
+				bgsound.stream = song3a
+				fl.stream = song3b
+				fr.stream = song3c
+				rl.stream = song3d
+				rr.stream = song3e
 				bgsound.play(0)
+				fl.play(0)
+				fr.play(0)
+				rl.play(0)
+				rr.play(0)
 			else:
 				_complete()
 	elif bgsound.get_playback_position() > 10:
