@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/portello.ogg-6474dc5a42f906420fd2834af33c3220.oggstr"
+
+[deps]
+
+source_file="res://music/rr/portello.ogg"
+dest_files=[ "res://.import/portello.ogg-6474dc5a42f906420fd2834af33c3220.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

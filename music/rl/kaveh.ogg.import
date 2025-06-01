@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/kaveh.ogg-21d7777c137f06454d30e4c8d22af8b2.oggstr"
+
+[deps]
+
+source_file="res://music/rl/kaveh.ogg"
+dest_files=[ "res://.import/kaveh.ogg-21d7777c137f06454d30e4c8d22af8b2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

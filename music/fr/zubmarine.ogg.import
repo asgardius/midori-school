@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/zubmarine.ogg-c28f13f2b74fde551442855c68b8f3b5.oggstr"
+
+[deps]
+
+source_file="res://music/fr/zubmarine.ogg"
+dest_files=[ "res://.import/zubmarine.ogg-c28f13f2b74fde551442855c68b8f3b5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

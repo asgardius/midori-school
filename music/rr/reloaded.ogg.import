@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/reloaded.ogg-559e50f21d5de712ba18a3992cf1946a.oggstr"
+
+[deps]
+
+source_file="res://music/rr/reloaded.ogg"
+dest_files=[ "res://.import/reloaded.ogg-559e50f21d5de712ba18a3992cf1946a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

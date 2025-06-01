@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/getabrain.ogg-6b04bfa2bf9c4ee544e813c5d7b8e590.oggstr"
+
+[deps]
+
+source_file="res://music/rl/getabrain.ogg"
+dest_files=[ "res://.import/getabrain.ogg-6b04bfa2bf9c4ee544e813c5d7b8e590.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

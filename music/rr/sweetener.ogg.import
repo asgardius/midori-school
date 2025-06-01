@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sweetener.ogg-440de27f904bcc9fd8dbb8ba6a67c543.oggstr"
+
+[deps]
+
+source_file="res://music/rr/sweetener.ogg"
+dest_files=[ "res://.import/sweetener.ogg-440de27f904bcc9fd8dbb8ba6a67c543.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

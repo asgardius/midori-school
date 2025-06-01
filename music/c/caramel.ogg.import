@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/caramel.ogg-458923374bbd7df9e2537d832b4c92f1.oggstr"
+
+[deps]
+
+source_file="res://music/c/caramel.ogg"
+dest_files=[ "res://.import/caramel.ogg-458923374bbd7df9e2537d832b4c92f1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

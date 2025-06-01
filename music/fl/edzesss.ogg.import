@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/edzesss.ogg-0c57ff81c8df1057bdd1da63bd72dc23.oggstr"
+
+[deps]
+
+source_file="res://music/fl/edzesss.ogg"
+dest_files=[ "res://.import/edzesss.ogg-0c57ff81c8df1057bdd1da63bd72dc23.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gotanda.ogg-b577ba479ba59669c87df7fa7a8c2ec3.oggstr"
+
+[deps]
+
+source_file="res://music/c/gotanda.ogg"
+dest_files=[ "res://.import/gotanda.ogg-b577ba479ba59669c87df7fa7a8c2ec3.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

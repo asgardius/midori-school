@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/extralife.ogg-3466b4c518a4743baf990b8af23a252d.oggstr"
+
+[deps]
+
+source_file="res://music/rr/extralife.ogg"
+dest_files=[ "res://.import/extralife.ogg-3466b4c518a4743baf990b8af23a252d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

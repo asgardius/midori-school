@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/milkyway.ogg-91fd61675ef9de52e24348a1c7c38d4c.oggstr"
+
+[deps]
+
+source_file="res://music/fl/milkyway.ogg"
+dest_files=[ "res://.import/milkyway.ogg-91fd61675ef9de52e24348a1c7c38d4c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

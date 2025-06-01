@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/songbirds.ogg-5a24324c64824de7a87b53977f9f6d25.oggstr"
+
+[deps]
+
+source_file="res://music/fl/songbirds.ogg"
+dest_files=[ "res://.import/songbirds.ogg-5a24324c64824de7a87b53977f9f6d25.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jellyfish.ogg-d9c239f4189a61e6fe97e8e4cf0834d2.oggstr"
+
+[deps]
+
+source_file="res://music/rr/jellyfish.ogg"
+dest_files=[ "res://.import/jellyfish.ogg-d9c239f4189a61e6fe97e8e4cf0834d2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

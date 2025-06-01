@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/shakeshark.ogg-354abfbe5499e4b8c309daf950a1fe6a.oggstr"
+
+[deps]
+
+source_file="res://music/rr/shakeshark.ogg"
+dest_files=[ "res://.import/shakeshark.ogg-354abfbe5499e4b8c309daf950a1fe6a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
