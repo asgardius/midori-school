@@ -26,13 +26,22 @@ You can download Android version at https://play.google.com/store/apps/details?i
 
 Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since much before than Earth. Most Asteroid Belt natives have pointy ears. There are also animal-based humanoids. All humans from the universe lives here since their planet was destroyed by the Alcohol Discs, but very few of them remains. You are Midori Asgardius, a 15 years old elf girl also know as "The Walking Explosive". You are a student at Kaizo Magic School. Your best friends are Diana Asgardius "The Tuna" and Rikka Grub "The Chuunibyou Cat". 10+ playable characters are awaiting for you (optional gacha machine sold separately). Deal Kung Fu Troublemakers, fight against bullet hell themed bosses, solve exciting puzzles, dig inside trashcans, find beautiful Multi Vector Submarines, defeat martians and Discover the truth of this universe from an unique point of view. If you are maniac try our super hardcore mode. Be kind and have a happy unfunaversary this year. If you have any doubt about this game ask to your father and Kaizo's principal: Page Asgardius. Will you be able to find the secret behind Midori's explosive personality?
 
+# Features
+
+* Low hardware requirements
+* Soundtrack mastered in Surround
+* Compatble with Pinephone
+* Gamepad compatibility
+* Bullethell themed bosses
+* Multiple playable characters
+
 # What is a Genshin Killer?
 
 From my point of view, a Genshin Killer is an Anime RPG which include elves among its playable Characters. This term is used since Genshin Impact gained popularity. Midori in the Magic School is a Genshin Killer because most of its playable characters are elves. Genshin Impact has 3 playable characters that look like elves (+1 upcoming one). Honkai Impact 3rd has a playable elf (Elysia). Wuthering Waves also has an elf as a playable character (Yinlin, a tribute to Kimberly Arch from Midori in the Magic School). Honkai: Star Rail has a playable dragon girl that look like an elf (Lingsha). Tower of Fantasy is not a Genshin Killer because that game hasn't playable characters that look like elves. Somebody else might have another point of view about this term, but won't be used here. This is a Genshin Killer, not a Genshin Like
 
 # Why this game doesn't have builds for Microsoft Windows? Most players are using that OS
 
-Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better. If you want to play this game from Windows, you can use Google Play Games for Windows, but you will get muuch better results using virtualbox. In other words, something that Nintendo employees hates
+Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better. If you want to play this game from Windows, you can use Google Play Games for Windows, but you will get much better results using virtualbox. In other words, something that Nintendo employees hates (Emulaation)
 
 # Why a 2d game?
 
@@ -72,7 +81,7 @@ I had issues trying to make this game working  on Pinephone,  so i delayed touch
 
 # How i can install this game on a Huawei Smartphone?
 
-Android release is only available at Google Play because most android users find apps there. If you have a degoogled android device you need something like yalp store
+Android release is only available at Google Play because most android users find apps there. If you have a degoogled android device you need something like Aurora Store
 
 # How can install this game on my Pixel with Graphene OS?
 
@@ -81,6 +90,10 @@ If you want a privacy focused smartphone, you must use a librem 5 instead, but y
 # Why this game is not available at F-Droid?
 
 This is not a priority for me, but if you want to maintain a f-droid release, i won't stop you
+
+# Why Ultrawide Screen support does not work on Android?
+
+It's because most current Android devices have notched screens, something that Linux smartphones like Pinephone doesn't have
 
 # System requirements
 
