@@ -41,7 +41,7 @@ From my point of view, a Genshin Killer is an Anime RPG which include elves amon
 
 # Why this game doesn't have builds for Microsoft Windows? Most players are using that OS
 
-Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better. If you want to play this game from Windows, you can use Google Play Games for Windows, but you will get much better results using virtualbox. In other words, something that Nintendo employees hates (Emulaation)
+Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better. If you want to play this game from Windows, you can use Google Play Games for Windows, but you will get much better results using virtualbox. In other words, something that Nintendo employees hates (Emulation)
 
 # Why a 2d game?
 
@@ -54,6 +54,10 @@ Almost nothing. If you want to know game plot, you can read it separately as an 
 # Why your game looks like a Paul Klee Painting?
 
 Because Midori Asgardius loves fireworks. You know, because this is a Genshin Killer
+
+# Why most characters wear scholar uniform or maid outfit?
+
+The game title explain it by itself
 
 # About Falcighol Stealth Anticheat System
 
@@ -94,6 +98,14 @@ This is not a priority for me, but if you want to maintain a f-droid release, i 
 # Why Ultrawide Screen support does not work on Android?
 
 It's because most current Android devices have notched screens, something that Linux smartphones like Pinephone doesn't have
+
+# Your game will be released on Nintendo Switch 2?
+
+I won't release my games on consoles owned by companies that destroy everything
+
+# Why your game is not available for Apple Devices?
+
+I won't spend money for an App Store Developer Account. This game is available for Android because Asgardius S3 Manager is already at Google Play
 
 # System requirements
 
