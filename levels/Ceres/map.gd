@@ -15,11 +15,11 @@ func _ready():
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
-	if Global.quest[1] == 0:
+	if Global.quest[1] == 0 && !Global.cheater:
 		hkr.queue_free()
-	if Global.quest[2] == 0:
+	if Global.quest[2] == 0 && !Global.cheater:
 		troublemaker.queue_free()
-	if Global.quest[3] == 0:
+	if Global.quest[3] == 0 && !Global.cheater:
 		yourhome.queue_free()
 		karch.queue_free()
 	#pass # Replace with function body.

@@ -8,6 +8,15 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Global.cheater:
+		$HBoxContainer/VBoxContainer/Diana.visible = true
+		$HBoxContainer/VBoxContainer/Kimberly.visible = true
+		$HBoxContainer/VBoxContainer/Hu.visible = true
+		$HBoxContainer/VBoxContainer/Gurukosu.visible = true
+		$HBoxContainer/VBoxContainer/Momo.visible = true
+		$HBoxContainer/VBoxContainer/Pamela.visible = true
+		$HBoxContainer/VBoxContainer/Lety.visible = true
+		$HBoxContainer/VBoxContainer/Natasha.visible = true
 	if Global.quest[2] == 3:
 		$HBoxContainer/VBoxContainer/Diana.visible = true
 		$HBoxContainer/VBoxContainer/Pamela.visible = true
@@ -74,5 +83,45 @@ func _on_Kimberly_pressed():
 		Global.dparty[Global.charswitch][1] = 0
 	else:
 		Global.party[Global.charswitch][0] = 3
+		Global.party[Global.charswitch][1] = 0
+	_on_Return_pressed()
+
+
+func _on_Hu_pressed():
+	if Global.debug:
+		Global.dparty[Global.charswitch][0] = 4
+		Global.dparty[Global.charswitch][1] = 0
+	else:
+		Global.party[Global.charswitch][0] = 4
+		Global.party[Global.charswitch][1] = 0
+	_on_Return_pressed()
+
+
+func _on_Gurukosu_pressed():
+	if Global.debug:
+		Global.dparty[Global.charswitch][0] = 5
+		Global.dparty[Global.charswitch][1] = 0
+	else:
+		Global.party[Global.charswitch][0] = 5
+		Global.party[Global.charswitch][1] = 0
+	_on_Return_pressed()
+
+
+func _on_Momo_pressed():
+	if Global.debug:
+		Global.dparty[Global.charswitch][0] = 6
+		Global.dparty[Global.charswitch][1] = 0
+	else:
+		Global.party[Global.charswitch][0] = 6
+		Global.party[Global.charswitch][1] = 0
+	_on_Return_pressed()
+
+
+func _on_Natasha_pressed():
+	if Global.debug:
+		Global.dparty[Global.charswitch][0] = 9
+		Global.dparty[Global.charswitch][1] = 0
+	else:
+		Global.party[Global.charswitch][0] = 9
 		Global.party[Global.charswitch][1] = 0
 	_on_Return_pressed()

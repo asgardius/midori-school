@@ -2,6 +2,7 @@ extends Node
 var file = File.new()
 var fileslot
 func _init(slot):
+	Global.cheater = false
 	if file.file_exists("user://userprefs"):
 		
 		

@@ -1,6 +1,8 @@
 extends Control
 const gamepadtest = preload("res://gamepad.gd")
 func _ready():
+	if Global.cheater:
+		$VBoxContainer/Save.visible = false
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	$VBoxContainer/Load.grab_focus()
 

@@ -62,6 +62,7 @@ func _on_ram_pressed() -> void:
 	Global.challenges = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 	Global.level = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	Global.gold = 0
+	Global.cheater = false
 	_on_back_pressed()
 
 

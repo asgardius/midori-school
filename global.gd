@@ -56,7 +56,7 @@ const musictrackrl = ["res://music/rl/reloaded.ogg", "res://music/rl/jellyfish.o
 const musictrackrr = ["res://music/rr/reloaded.ogg", "res://music/rr/jellyfish.ogg", "res://music/rr/getabrain.ogg", "res://music/rr/oskars.ogg", "res://music/rr/extralife.ogg", "res://music/rr/layers.ogg", "res://music/rr/caramel.ogg", "res://music/rr/edzesss.ogg", "res://music/rr/shakeshark.ogg", "res://music/rr/zubmarine.ogg", "res://music/rr/crammin.ogg", "res://music/rr/func.ogg", "res://music/rr/kaveh.ogg", "res://music/rr/rock.ogg", "res://music/rr/milkyway.ogg", "res://music/rr/sweetener.ogg", "res://music/rr/tooold.ogg", "res://music/rr/portello.ogg", "res://music/rr/songbirds.ogg", "res://music/rr/gotanda.ogg", "res://music/rr/caramel.ogg", "res://music/rr/alsa.ogg", "res://music/rr/eternity.ogg"]
 const sfxtracks = ["res://sfx/braindamage.wav", "res://sfx/gaugefill.wav", "res://sfx/boomboombakudan.wav"]
 var debug = false
-const release = "R0.3.10-beta"
+const release = "R0.3.10-dev"
 var sk = false
 var gamepad = 0
 var quest = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -67,6 +67,8 @@ var spboost = 0
 var defeats = 0
 var challenges = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 var gold = 0
+var konami = 0
+var cheater = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
