@@ -59,11 +59,11 @@ func _input(event):
 		get_tree().change_scene("res://levels/ui/debug.tscn")
 	gamepadtest.new(event)
 	if Global.gamepad == 1:
-		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Gate"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\n"+str(Input.get_joy_guid(0))+"\nController Type: Gate"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
 	elif Global.gamepad == 2:
-		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Nanook"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\n"+str(Input.get_joy_guid(0))+"\nController Type: Nanook"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
 	elif Global.gamepad == 3:
-		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Geo"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
+		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\n"+str(Input.get_joy_guid(0))+"\nController Type: Geo"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
 	elif Global.gamepad == 0:
 		joyname.set_text("Current Device: "+str(Input.get_joy_name(0))+"\nController Type: Keyboard"+"\nIf drift threshold is 0.2 or higher, your gamepad need new sticks")
 	lxaxis.set_text("Left X Axis "+str(Input.get_joy_axis(0,JOY_ANALOG_LX)))

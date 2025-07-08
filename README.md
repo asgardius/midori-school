@@ -85,7 +85,8 @@ I had issues trying to make this game working  on Pinephone,  so i delayed touch
 
 # How i can install this game on a Huawei Smartphone?
 
-Android release is only available at Google Play because most android users find apps there. If you have a degoogled android device you need something like Aurora Store
+Android release is only available at Google Play because most android users find apps there. If you have a degoogled android device you need something like Aurora Store.
+Since R0.3.11-beta apk release is available at download links
 
 # How can install this game on my Pixel with Graphene OS?
 
