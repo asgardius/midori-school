@@ -143,6 +143,7 @@ text = "BUTTON_RETURN"
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Midori" to="." method="_on_Midori_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Diana" to="." method="_on_Diana_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Rikka" to="." method="_on_Rikka_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Kimberly" to="." method="_on_Kimberly_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Hu" to="." method="_on_Hu_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Gurukosu" to="." method="_on_Gurukosu_pressed"]

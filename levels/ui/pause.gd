@@ -36,7 +36,7 @@ func _fetchdata():
 	else:
 		if Global.cplace == [1, 8, 28]:
 			teammenu.visible = true
-		if Global.cplace != [1, 11, 19] && (Global.cplace[0] == 1 || Global.dplace[0] == 2):
+		if Global.quest[0] != 0 && (Global.cplace[0] == 1 || Global.dplace[0] == 2):
 			warpmenu.visible = true
 		else:
 			warpmenu.visible = false
@@ -48,7 +48,7 @@ func _fetchdata():
 	else:
 		cnf.set_text(Global.pcnames[Global.party[Global.cpchar][0]])
 		cff.texture = load(Global.hudfaces[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
-		chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][0]))
+		chealthf.set_text(str(Global.cstats[Global.party[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.party[Global.cpchar][0]][0]))
 		clevel.set_text(str(Global.level[Global.party[Global.cpchar][0]]))
 
 

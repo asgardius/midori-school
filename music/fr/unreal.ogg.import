@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/unreal.ogg-75cf42bb43bbc7699cf50481721bcd8a.oggstr"
+
+[deps]
+
+source_file="res://music/fr/unreal.ogg"
+dest_files=[ "res://.import/unreal.ogg-75cf42bb43bbc7699cf50481721bcd8a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

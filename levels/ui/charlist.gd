@@ -10,6 +10,7 @@ extends Control
 func _ready():
 	if Global.cheater:
 		$HBoxContainer/VBoxContainer/Diana.visible = true
+		$HBoxContainer/VBoxContainer/Rikka.visible = true
 		$HBoxContainer/VBoxContainer/Kimberly.visible = true
 		$HBoxContainer/VBoxContainer/Hu.visible = true
 		$HBoxContainer/VBoxContainer/Gurukosu.visible = true
@@ -123,5 +124,15 @@ func _on_Natasha_pressed():
 		Global.dparty[Global.charswitch][1] = 0
 	else:
 		Global.party[Global.charswitch][0] = 9
+		Global.party[Global.charswitch][1] = 0
+	_on_Return_pressed()
+
+
+func _on_Rikka_pressed():
+	if Global.debug:
+		Global.dparty[Global.charswitch][0] = 2
+		Global.dparty[Global.charswitch][1] = 0
+	else:
+		Global.party[Global.charswitch][0] = 2
 		Global.party[Global.charswitch][1] = 0
 	_on_Return_pressed()

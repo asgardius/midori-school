@@ -401,3 +401,17 @@ func _on_Stop_pressed():
 	fr.stop()
 	rl.stop()
 	rr.stop()
+
+
+func _on_Neon_pressed():
+	player.stream = load(Global.musictrackc[23])
+	fl.stream = load(Global.musictrackfl[23])
+	fr.stream = load(Global.musictrackfr[23])
+	rl.stream = load(Global.musictrackrl[23])
+	rr.stream = load(Global.musictrackrr[23])
+	infobox.set_text(tr("SONG23_INFO"))
+	player.play(0)
+	fl.play(0)
+	fr.play(0)
+	rl.play(0)
+	rr.play(0)

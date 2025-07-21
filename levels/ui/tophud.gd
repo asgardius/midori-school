@@ -161,9 +161,9 @@ func _process(delta):
 			bstaminaf.value = (Global.dstats[Global.dparty[Global.dcpchar][0]][1] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][1]
 			bskillf.value = (Global.dstats[Global.dparty[Global.dcpchar][0]][4] * 100) / Global.mstats[Global.dparty[Global.dcpchar][0]][4]
 		else:
-			chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][0]))
-			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][1]))
-			cskillf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][4])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][4]))
+			chealthf.set_text(str(Global.cstats[Global.party[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.party[Global.cpchar][0]][0]))
+			cstaminaf.set_text(str(Global.cstats[Global.party[Global.cpchar][0]][1])+"/"+str(Global.mstats[Global.party[Global.cpchar][0]][1]))
+			cskillf.set_text(str(Global.cstats[Global.party[Global.cpchar][0]][4])+"/"+str(Global.mstats[Global.party[Global.cpchar][0]][4]))
 			bhealthf.value = (Global.cstats[Global.party[Global.cpchar][0]][0] * 100) / Global.mstats[Global.party[Global.cpchar][0]][0]
 			bstaminaf.value = (Global.cstats[Global.party[Global.cpchar][0]][1] * 100) / Global.mstats[Global.party[Global.cpchar][0]][1]
 			bskillf.value = (Global.cstats[Global.party[Global.cpchar][0]][4] * 100) / Global.mstats[Global.party[Global.cpchar][0]][4]
@@ -388,9 +388,9 @@ func _charrefresh():
 		else:
 			cnf.set_text(Global.pcnames[Global.party[Global.cpchar][0]])
 			cff.texture = load(Global.hudfaces[Global.party[Global.cpchar][0]][Global.party[Global.cpchar][1]])
-			chealthf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][0]))
-			cstaminaf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][1])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][1]))
-			cskillf.set_text(str(Global.cstats[Global.dparty[Global.cpchar][0]][4])+"/"+str(Global.mstats[Global.dparty[Global.cpchar][0]][4]))
+			chealthf.set_text(str(Global.cstats[Global.party[Global.cpchar][0]][0])+"/"+str(Global.mstats[Global.party[Global.cpchar][0]][0]))
+			cstaminaf.set_text(str(Global.cstats[Global.party[Global.cpchar][0]][1])+"/"+str(Global.mstats[Global.party[Global.cpchar][0]][1]))
+			cskillf.set_text(str(Global.cstats[Global.party[Global.cpchar][0]][4])+"/"+str(Global.mstats[Global.party[Global.cpchar][0]][4]))
 			bhealthf.value = (Global.cstats[Global.party[Global.cpchar][0]][0] * 100) / Global.mstats[Global.party[Global.cpchar][0]][0]
 			bstaminaf.value = (Global.cstats[Global.party[Global.cpchar][0]][1] * 100) / Global.mstats[Global.party[Global.cpchar][0]][1]
 			bskillf.value = (Global.cstats[Global.party[Global.cpchar][0]][4] * 100) / Global.mstats[Global.party[Global.cpchar][0]][4]
