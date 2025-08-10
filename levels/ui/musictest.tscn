@@ -256,10 +256,18 @@ custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG23_LABEL"
 
-[node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
+[node name="Meido" type="Button" parent="BoxContainer/VBoxContainer2"]
 margin_top = 374.0
 margin_right = 189.0
 margin_bottom = 404.0
+custom_fonts/font = ExtResource( 1 )
+custom_styles/focus = SubResource( 3 )
+text = "SONG24_LABEL"
+
+[node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
+margin_top = 408.0
+margin_right = 189.0
+margin_bottom = 438.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
@@ -318,4 +326,5 @@ bus = "SFX1"
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/ALSA" to="." method="_on_alsa_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Elysium" to="." method="_on_elysium_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Neon" to="." method="_on_Neon_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/Meido" to="." method="_on_Meido_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer2/Back" to="." method="_on_back_pressed"]

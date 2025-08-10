@@ -109,6 +109,10 @@ SONG21_LABEL;ALSA Audio Calibration;Calibración de Audio ALSA;ALSA オーディ
 SONG21_INFO;Page Asgardius\nAdvanced Linein Sound Architects\nA song made to calibrate your sound system while\nplaying this game.\nThis does not work with bluetooth headset or weird kernels;Page Asgardius\nAdvanced Linein Sound Architects\nUna canción hecha para calibrar tu sistema de sonido\nmientras juegas a este juego.\nEsto no funciona con auriculares bluetooth o\nkernels extraños;Page Asgardius\nAdvanced Linein Sound Architects\nこのゲームをプレイ中にサウンドシステム\nを調整するために作られた曲。\nBluetoothヘッドセットや奇妙なカーネルでは動作しません
 SONG22_LABEL;Elysium Fields;Campos Elíseos;エリジウム フィールド
 SONG22_INFO;4mat\nEternity\nA song about eternity and immutability;4mat\nEternity\nUna canción sobre la eternidad y la inmutabilidad;4mat\nEternity\n永遠と不変性についての歌
+SONG23_LABEL;Neon City;Ciudad de Neón;ネオンシティ
+SONG23_INFO;joule & ko0x\ncaroline in neon\nA song about cities with neon lights;joule & ko0x\ncaroline in neon\nUna canción sobre ciudades con luces de neón;joule & ko0x\ncaroline in neon\nネオンライトが輝く街についての歌
+SONG24_LABEL;Maid's patience;Paciencia de criada;メイドの忍耐
+SONG24_INFO;Vince Kaichan\nYesterday Rain\nLearning to throw knives requires a lot of patience.;Vince Kaichan\nYesterday Rain\nAprender a lanzar cuchillos requiere mucha paciencia;ヴィンス・カイチャン\nYesterday Rain\nナイフ投げを学ぶには多大な忍耐力が必要です
 ALSA_TEST_MENU;ALSA Audio Calibration;Calibración de Audio ALSA;ALSA オーディオキャリブレーション
 ALSA_TEST_SPK;Speaker calibration test;Prueba de calibración de altavoces;スピーカーキャリブレーションテスト
 DIALOG_TEST_0;What is this place?;¿Qué es este lugar?;この場所は何ですか？

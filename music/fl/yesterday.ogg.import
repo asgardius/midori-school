@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/yesterday.ogg-5cd7f28c98e61f787a670d42f701c5ee.oggstr"
+
+[deps]
+
+source_file="res://music/fl/yesterday.ogg"
+dest_files=[ "res://.import/yesterday.ogg-5cd7f28c98e61f787a670d42f701c5ee.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

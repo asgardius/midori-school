@@ -415,3 +415,17 @@ func _on_Neon_pressed():
 	fr.play(0)
 	rl.play(0)
 	rr.play(0)
+
+
+func _on_Meido_pressed():
+	player.stream = load(Global.musictrackc[24])
+	fl.stream = load(Global.musictrackfl[24])
+	fr.stream = load(Global.musictrackfr[24])
+	rl.stream = load(Global.musictrackrl[24])
+	rr.stream = load(Global.musictrackrr[24])
+	infobox.set_text(tr("SONG24_INFO"))
+	player.play(0)
+	fl.play(0)
+	fr.play(0)
+	rl.play(0)
+	rr.play(0)
