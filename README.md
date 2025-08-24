@@ -137,7 +137,9 @@ Debian users can use evelynrepo adding the following to sources.list (replace <a
 
 deb [trusted=yes] https://s3.asgardius.company/evelynrepo <arch>/
 
+# Running on FreeBSD
 
+Download latest engine executable from https://elda.asgardius.company/virtualx-engine-ports/ and rename it to get the same prefix than pck file. If you have virtualxrpg.pck, executable must be named like virtualxrpg.x86_64
 
 # How to donate to this project
 
