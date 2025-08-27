@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bheart.ogg-d7cb438880072199bd5e167813353361.oggstr"
+
+[deps]
+
+source_file="res://music/rl/bheart.ogg"
+dest_files=[ "res://.import/bheart.ogg-d7cb438880072199bd5e167813353361.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

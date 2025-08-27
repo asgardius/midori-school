@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gmambo.ogg-0ba83ea53336811114d18c70aa35c31f.oggstr"
+
+[deps]
+
+source_file="res://music/fl/gmambo.ogg"
+dest_files=[ "res://.import/gmambo.ogg-0ba83ea53336811114d18c70aa35c31f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

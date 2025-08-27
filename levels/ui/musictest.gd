@@ -216,3 +216,15 @@ func _musicplay(song):
 	fr.play(0)
 	rl.play(0)
 	rr.play(0)
+
+
+func _on_Underworld_pressed():
+	infobox.set_text(tr("SONG25_INFO"))
+	_musicplay(25)
+
+
+
+func _on_Antiques_pressed():
+	infobox.set_text(tr("SONG26_INFO"))
+	_musicplay(26)
+
