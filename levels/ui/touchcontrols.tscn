@@ -103,3 +103,5 @@ normal = ExtResource( 11 )
 [connection signal="released" from="CanvasLayer/Container2/R1" to="." method="_on_R1_released"]
 [connection signal="pressed" from="CanvasLayer/Container2/R2" to="." method="_on_R2_pressed"]
 [connection signal="released" from="CanvasLayer/Container2/R2" to="." method="_on_R2_released"]
+[connection signal="pressed" from="CanvasLayer/Container2/Start" to="." method="_on_Start_pressed"]
+[connection signal="released" from="CanvasLayer/Container2/Start" to="." method="_on_Start_released"]

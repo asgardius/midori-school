@@ -108,3 +108,11 @@ func _on_Y_pressed():
 
 func _on_Y_released():
 	Input.action_release("jump")
+
+
+func _on_Start_pressed():
+	Input.action_press("Backpack")
+
+
+func _on_Start_released():
+	Input.action_release("Backpack")

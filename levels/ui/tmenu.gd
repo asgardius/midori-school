@@ -85,7 +85,6 @@ func _konami(event):
 	elif event is InputEventKey || event is InputEventJoypadButton:
 		if event.is_pressed():
 			Global.konami = 0
-	print(Global.konami)
 
 func _hackerman():
 	get_tree().root.add_child(hackerman)

@@ -9,6 +9,7 @@ var musictrack
 var bhud = load("res://levels/bottomhud.tscn").instance()
 var thud = load("res://levels/ui/tophud.tscn").instance()
 var pmenu = load("res://levels/ui/pause.tscn").instance()
+var backpack = load("res://levels/ui/backpack.tscn").instance()
 var mgamepad = load("res://levels/ui/missinggamepad.tscn").instance()
 var tcontrol = load("res://levels/ui/touchcontrols.tscn").instance()
 var ismgamepad = false
@@ -110,9 +111,16 @@ func _process(delta):
 		if istouch:
 			call_deferred("_tcontrol")
 		ishud = true
+	if Global.istobackpack:
+		Global.istobackpack = false
+		_pausemenu()
+		_backpackm()
 	if Global.isresume:
 		Global.isresume = false
-		_pausemenu()
+		if Global.isbackpack:
+			_backpackm()
+		else:
+			_pausemenu()
 	var velocity = Vector2.ZERO
 	if (Global.live > 4 && Global.live < 11) || Global.live == 2:
 		_exit()
@@ -133,6 +141,8 @@ func _input(event):
 	gamepadtest.new(event)
 	if Input.is_action_just_pressed("Pause") && (Global.live == 1 || Global.live == 4):
 		_pausemenu()
+	if Input.is_action_just_pressed("Backpack") && (Global.live == 1 || Global.live == 4):
+		_backpackm()
 		#Global.exitgame = true
 	if Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_up"):
 		if Global.debug:
@@ -184,6 +194,19 @@ func _statrebase():
 				for j in 7:
 					Global.mstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.party[i][0]]
 					Global.cstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.party[i][0]]
+func _backpackm():
+	if Global.live == 1 && !Global.isbackpack:
+		get_tree().root.remove_child(bhud)
+		call_deferred("_backpack")
+		Global.isbackpack = true
+		Global.live = 4
+	elif Global.live == 4 && Global.isbackpack:
+		get_tree().root.remove_child(backpack)
+		call_deferred("_bhud")
+		Global.isbackpack = false
+		backpack = load("res://levels/ui/backpack.tscn").instance()
+		Global.live = 1
+		
 func _pausemenu():
 	if Global.live == 1 && !ispaused:
 		get_tree().root.remove_child(bhud)
@@ -257,6 +280,9 @@ func _bhud():
 
 func _pmenu():
 	get_tree().root.add_child(pmenu)
+
+func _backpack():
+	get_tree().root.add_child(backpack)
 
 func _mgamepad():
 	get_tree().root.add_child(mgamepad)

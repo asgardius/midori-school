@@ -76,3 +76,7 @@ func _on_Team_pressed():
 
 func _on_Challenges_pressed():
 	Global.live = 10
+
+
+func _on_Backpack_pressed():
+	Global.istobackpack = true
