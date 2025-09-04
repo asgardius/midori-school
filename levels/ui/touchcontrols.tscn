@@ -96,6 +96,7 @@ position = Vector2( 639, 526 )
 normal = ExtResource( 11 )
 
 [node name="Container3" type="Container" parent="CanvasLayer"]
+visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 1.0
