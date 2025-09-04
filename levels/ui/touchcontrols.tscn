@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://levels/ui/touchcontrols.gd" type="Script" id=1]
 [ext_resource path="res://sprites/buttons/B.png" type="Texture" id=2]
@@ -11,6 +11,10 @@
 [ext_resource path="res://sprites/buttons/RT.png" type="Texture" id=9]
 [ext_resource path="res://sprites/buttons/Select.png" type="Texture" id=10]
 [ext_resource path="res://sprites/buttons/Start.png" type="Texture" id=11]
+[ext_resource path="res://sprites/buttons/1.png" type="Texture" id=12]
+[ext_resource path="res://sprites/buttons/2.png" type="Texture" id=13]
+[ext_resource path="res://sprites/buttons/3.png" type="Texture" id=14]
+[ext_resource path="res://sprites/buttons/4.png" type="Texture" id=15]
 
 [node name="Touchcontrols" type="Node2D"]
 script = ExtResource( 1 )
@@ -91,6 +95,32 @@ normal = ExtResource( 5 )
 position = Vector2( 639, 526 )
 normal = ExtResource( 11 )
 
+[node name="Container3" type="Container" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -640.0
+margin_top = -720.0
+margin_right = -600.0
+margin_bottom = -680.0
+
+[node name="s1" type="TouchScreenButton" parent="CanvasLayer/Container3"]
+position = Vector2( 406, 610 )
+normal = ExtResource( 12 )
+
+[node name="s2" type="TouchScreenButton" parent="CanvasLayer/Container3"]
+position = Vector2( 489, 610 )
+normal = ExtResource( 13 )
+
+[node name="s3" type="TouchScreenButton" parent="CanvasLayer/Container3"]
+position = Vector2( 572, 610 )
+normal = ExtResource( 14 )
+
+[node name="s4" type="TouchScreenButton" parent="CanvasLayer/Container3"]
+position = Vector2( 655, 610 )
+normal = ExtResource( 15 )
+
 [connection signal="pressed" from="CanvasLayer/Container/Select" to="." method="_on_Select_pressed"]
 [connection signal="released" from="CanvasLayer/Container/Select" to="." method="_on_Select_released"]
 [connection signal="pressed" from="CanvasLayer/Container2/B" to="." method="_on_B_pressed"]
@@ -105,3 +135,11 @@ normal = ExtResource( 11 )
 [connection signal="released" from="CanvasLayer/Container2/R2" to="." method="_on_R2_released"]
 [connection signal="pressed" from="CanvasLayer/Container2/Start" to="." method="_on_Start_pressed"]
 [connection signal="released" from="CanvasLayer/Container2/Start" to="." method="_on_Start_released"]
+[connection signal="pressed" from="CanvasLayer/Container3/s1" to="." method="_on_s1_pressed"]
+[connection signal="released" from="CanvasLayer/Container3/s1" to="." method="_on_s1_released"]
+[connection signal="pressed" from="CanvasLayer/Container3/s2" to="." method="_on_s2_pressed"]
+[connection signal="released" from="CanvasLayer/Container3/s2" to="." method="_on_s2_released"]
+[connection signal="pressed" from="CanvasLayer/Container3/s3" to="." method="_on_s3_pressed"]
+[connection signal="released" from="CanvasLayer/Container3/s3" to="." method="_on_s3_released"]
+[connection signal="pressed" from="CanvasLayer/Container3/s4" to="." method="_on_s4_pressed"]
+[connection signal="released" from="CanvasLayer/Container3/s4" to="." method="_on_s4_released"]

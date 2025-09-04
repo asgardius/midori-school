@@ -133,9 +133,9 @@ Arch Linux users can use Kimberly Repo. More info at https://kimberly.asgardius.
 
 Gentoo users can use Layla Repo https://git.asgardius.company/asgardius/laylarepo
 
-Debian users can use evelynrepo adding the following to sources.list (replace <arch> with amd64 or arm64)
+Debian users can use evelynrepo adding the following to sources.list (replace arch with amd64 or arm64)
 
-deb [trusted=yes] https://s3.asgardius.company/evelynrepo <arch>/
+deb [trusted=yes] https://s3.asgardius.company/evelynrepo arch/
 
 # Running on FreeBSD
 

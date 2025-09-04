@@ -116,3 +116,43 @@ func _on_Start_pressed():
 
 func _on_Start_released():
 	Input.action_release("Backpack")
+
+
+func _on_s1_pressed():
+	Input.action_press("schar")
+	Input.action_press("ui_up")
+
+
+func _on_s1_released():
+	Input.action_release("ui_up")
+	Input.action_release("schar")	
+
+
+func _on_s2_pressed():
+	Input.action_press("schar")
+	Input.action_press("ui_right")
+
+
+func _on_s2_released():
+	Input.action_release("ui_right")
+	Input.action_release("schar")
+
+
+func _on_s3_pressed():
+	Input.action_press("schar")
+	Input.action_press("ui_down")
+
+
+func _on_s3_released():
+	Input.action_release("ui_down")
+	Input.action_release("schar")	
+
+
+func _on_s4_pressed():
+	Input.action_press("schar")
+	Input.action_press("ui_left")
+
+
+func _on_s4_released():
+	Input.action_release("ui_left")
+	Input.action_release("schar")	
