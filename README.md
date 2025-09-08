@@ -140,6 +140,7 @@ deb [trusted=yes] https://s3.asgardius.company/evelynrepo arch/
 Flatpak release is avaiilable at Karla repo
 
 flatpak remote-add karlarepo https://s3.asgardius.company/karlarepo/karlarepo.flatpakrepo
+
 flatpak install karlarepo asgardius.page.virtualxrpg
 
 # Running on FreeBSD
