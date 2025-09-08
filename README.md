@@ -137,6 +137,10 @@ Debian users can use evelynrepo adding the following to sources.list (replace ar
 
 deb [trusted=yes] https://s3.asgardius.company/evelynrepo arch/
 
+Flatpak release is avaiilable at Karla repo
+
+flatpak remote-add karlarepo https://s3.asgardius.company/karlarepo/karlarepo.flatpakrepo
+
 # Running on FreeBSD
 
 Download latest engine executable from https://elda.asgardius.company/virtualx-engine-ports/ and rename it to get the same prefix than pck file. If you have virtualxrpg.pck, executable must be named like virtualxrpg.x86_64
