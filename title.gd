@@ -20,9 +20,20 @@ func _ready():
 	#if (OS.get_name() != "Linux" && !OS.get_name().ends_with("BSD")) || OS.get_distribution_name().contains("Kali") || !OS.get_data_dir().begins_with("/home") || OS.get_environment("WSL_DISTRO_NAME").length() < 0:
 	#	Global.sk = true
 	add_child(bgsound)
-	var titlemusic = load(Global.musictrackc[0])
+	var song = 0
+	if Global.quest[3] == 3:
+		song = 24
+	var titlemusic = load(Global.musictrackc[song])
+	$Front_Left.stream = load(Global.musictrackfl[song])
+	$Front_Right.stream = load(Global.musictrackfr[song])
+	$Rear_Left.stream = load(Global.musictrackrl[song])
+	$Rear_Right.stream = load(Global.musictrackrr[song])
 	bgsound.stream = titlemusic
 	bgsound.mix_target = 2
+	$Front_Left.play(0)
+	$Front_Right.play(0)
+	$Rear_Left.play(0)
+	$Rear_Right.play(0)
 	bgsound.play(0)
 	bgsound.bus = "Music"
 	wait = Time.get_ticks_msec()
