@@ -108,6 +108,10 @@ I won't release my games on consoles owned by companies that destroy everything
 
 I won't spend money for an App Store Developer Account. This game is available for Android because Asgardius S3 Manager is already at Google Play
 
+# Why this game is not available as snap package?
+
+Ubuntu is the only distro that uses snap intead flatpak. Those users can use debian packages instead
+
 # System requirements
 
 * 64 bit X86 or ARM quad core CPU, 1.2 GHz or better
