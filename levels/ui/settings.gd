@@ -7,7 +7,7 @@ func _ready():
 	vsync = $VBoxContainer/L20
 	fullscreen = $VBoxContainer/Lilytest
 	fps = $VBoxContainer/Credits
-	if Engine.target_fps == 10:
+	if Engine.target_fps == 15:
 		fps.set_text(tr("SETTING_LFPST"))
 	else:
 		fps.set_text(tr("SETTING_LFPSF"))
@@ -98,12 +98,12 @@ func _on_bullethell_pressed() -> void:
 
 
 func _on_Credits_pressed():
-	if Engine.target_fps == 10:
+	if Engine.target_fps == 15:
 		Engine.target_fps = 0
 		fps.set_text(tr("SETTING_LFPSF"))
 		
 	else:
-		Engine.target_fps = 10
+		Engine.target_fps = 15
 		fps.set_text(tr("SETTING_LFPST"))
 
 

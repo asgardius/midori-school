@@ -80,3 +80,7 @@ func _on_Challenges_pressed():
 
 func _on_Backpack_pressed():
 	Global.istobackpack = true
+
+
+func _on_Journal_pressed():
+	Global.live = 11

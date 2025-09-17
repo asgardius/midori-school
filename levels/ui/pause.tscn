@@ -143,7 +143,6 @@ margin_bottom = 228.0
 rect_min_size = Vector2( 539, 0 )
 
 [node name="Journal" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
-visible = false
 margin_right = 539.0
 margin_bottom = 54.0
 custom_fonts/font = ExtResource( 2 )
@@ -151,24 +150,25 @@ custom_styles/focus = SubResource( 5 )
 text = "MENU_BOUKEN"
 
 [node name="Challenges" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
-margin_right = 539.0
-margin_bottom = 54.0
-custom_fonts/font = ExtResource( 2 )
-custom_styles/focus = SubResource( 5 )
-text = "MENU_CHALLENGES"
-
-[node name="Backpack" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
 margin_top = 58.0
 margin_right = 539.0
 margin_bottom = 112.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 5 )
-text = "MENU_BACKPACK"
+text = "MENU_CHALLENGES"
 
-[node name="Exit" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
+[node name="Backpack" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
 margin_top = 116.0
 margin_right = 539.0
 margin_bottom = 170.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 5 )
+text = "MENU_BACKPACK"
+
+[node name="Exit" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
+margin_top = 174.0
+margin_right = 539.0
+margin_bottom = 228.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 5 )
 text = "MENU_EXIT"
@@ -183,6 +183,7 @@ text = "Resume"
 
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer/Team" to="." method="_on_Team_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer/Warp" to="." method="_on_warp_pressed"]
+[connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Journal" to="." method="_on_Journal_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Challenges" to="." method="_on_Challenges_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Backpack" to="." method="_on_Backpack_pressed"]
 [connection signal="pressed" from="CanvasLayer/HBoxContainer2/VBoxContainer2/Exit" to="." method="_on_exit_pressed"]

@@ -122,7 +122,7 @@ func _process(delta):
 		else:
 			_pausemenu()
 	var velocity = Vector2.ZERO
-	if (Global.live > 4 && Global.live < 11) || Global.live == 2:
+	if (Global.live > 4 && Global.live < 12) || Global.live == 2:
 		_exit()
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
@@ -242,6 +242,8 @@ func _exit():
 		get_tree().change_scene("res://levels/ui/teams.tscn")
 	elif Global.live == 10:
 		get_tree().change_scene("res://levels/ui/challengesmenu/page01.tscn")
+	elif Global.live == 11:
+		get_tree().change_scene("res://levels/ui/questmenu/page01.tscn")
 	elif Global.live == 5:
 		bhud = load("res://levels/bottomhud.tscn").instance()
 		pmenu = load("res://levels/ui/pause.tscn").instance()
