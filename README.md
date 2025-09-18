@@ -128,7 +128,7 @@ Ubuntu is the only distro that uses snap intead flatpak. Those users can use deb
 * Pinephone (Requirements were made to fit this device)
 * Pinephone Pro (Untested)
 * Librem 5 (Untested)
-* Raspberry Pi 3b or later (Untested)
+* Raspberry Pi 3b or later (Tested on 3b+)
 * Almost any X86_64 computer (Don't expect seeing this game ruunning on a Pentium 2 with a Voodoo card, because i'm not John Carmack)
 
 # Linux packages
