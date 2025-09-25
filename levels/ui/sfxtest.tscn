@@ -2,7 +2,7 @@
 
 [ext_resource path="res://levels/ui/sfxtest.gd" type="Script" id=1]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=2]
-[ext_resource path="res://backgounds/night-sky-at-ceres.jpg" type="Texture" id=3]
+[ext_resource path="res://backgounds/Midori Asgardius boom boom torofi.jpg" type="Texture" id=3]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
