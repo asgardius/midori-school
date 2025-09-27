@@ -86,7 +86,6 @@ margin_right = 1046.0
 margin_bottom = 286.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 2 )
-disabled = true
 text = "BUTTON_PLACEHOLDER"
 
 [node name="WIP" type="Button" parent="VBoxContainer"]

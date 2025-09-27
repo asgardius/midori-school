@@ -20,6 +20,7 @@ func _ready():
 		$HBoxContainer/VBoxContainer/Natasha.visible = true
 	if Global.quest[2] == 3:
 		$HBoxContainer/VBoxContainer/Diana.visible = true
+		$HBoxContainer/VBoxContainer/Rikka.visible = true
 		$HBoxContainer/VBoxContainer/Pamela.visible = true
 		$HBoxContainer/VBoxContainer/Lety.visible = true
 	if Global.quest[3] == 3:

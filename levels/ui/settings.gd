@@ -16,7 +16,6 @@ func _ready():
 	if OS.get_name() == "X11":
 		vsync.disabled = false
 		fullscreen.disabled = false
-		fps.disabled = false
 	if OS.is_vsync_enabled():
 		vsync.set_text(tr("SETTING_VSYNCT"))
 	else:
