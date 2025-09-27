@@ -11,5 +11,5 @@ dest_files=[ "res://.import/portello.ogg-b7eae267d69a21da4fa5aaa77e3b2ea3.oggstr
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

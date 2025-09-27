@@ -11,5 +11,5 @@ dest_files=[ "res://.import/sweetener.ogg-80ccdd91ec3901402351084ba1c0d35c.oggst
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
