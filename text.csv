@@ -64,7 +64,7 @@ MENU_MUSICTEST;Music Test;Prueba de música;音楽テスト
 MENU_CHARSEL;Choose a character;Elige un personaje;キャラクターを選択してください
 LABEL_STOPPLAYBACK;Press X to stop playback;Presione X para detener la reproducción;再生を停止するにはXを押してください
 SONG0_LABEL;Title Screen;Pantalla de título;タイトル画面
-SONG0_INFO;RELOADED\nRELOADED THEME\nMidori is now RELOADED;RELOADED\nRELOADED THEME\nMidori ahora esta RELOADED;RELOADED\nRELOADED THEME\n緑は今 RELOADED
+SONG0_INFO;RELOADED\nRELOADED THEME\nMidori is now RELOADED;RELOADED\nRELOADED THEME\nMidori ahora esta RELOADED;RELOADED\nRELOADED THEME\nミドリは今 RELOADED
 SONG1_LABEL;Disclaimer;Descargo de responsabilidad;免責事項
 SONG1_INFO;Vince Kaichan\nJellies in the Sea\nA relaxing sea music to prepare you for this explosive\nAction RPG;Vince Kaichan\nJellies in the Sea\nUna relajante música marina que te preparará\npara este explosivo Action RPG;ヴィンス・カイチャン\nJellies in the Sea\n爆発的なアクションRPGに備えてリラックスできる海の音楽
 SONG2_LABEL;Shrine of the doomed souls;Santuario de las almas condenadas;呪われた魂の聖域
@@ -212,3 +212,5 @@ QNAME_3;Win Kimberly's Challenge;Gana el desafío de Kimberly;キンバリーの
 QNAME_4;Complete Hu Wei character quest;Completa la misión del personaje Hu Wei;胡薇キャラクタークエストを完了する
 QNAME_5;Complete Gurukōsu Tanaka character quest;Completa la misión del personaje Gurukōsu Tanaka;グルコース田中のキャラクタークエストを完了する
 QNAME_6;Complete Gurukōsu Tanaka character quest;Completa la misión del personaje Momo Tanaka;田中桃のキャラクタークエストを完了する
+CHARINFO_0;Midori Asgardius is an elf girl with an\nenergetic personality, but who doesn't\nsay a word.\nHer body is so flexible that she's known\nas The Rubber Girl;Midori Asgardius es una niña elfo de\npersonalidad enérgica, pero que no dice\nni una palabra.\nTiene un cuerpo muy flexible, a tal punto\n que se le conoce como La Niña de Hule;ミドリアスガルディウスは、\n活発な性格だが一言も話さないエルフの少女。\n彼女の体は非常に柔軟で、\n「ゴム少女」と呼ばれている。
+CHARINFO_1;Diana Asgardius is Midori's older sister.\nShe is nicknamed this due to her\nprotective role and her larger height,\nas they are both the same age. She also\nhas a body as flexible as rubber;Diana Asgardius es la hermana mayor de\nMidori. Se le conoce de esta manera\ndebido a su rol protector y su mayor\nestatura, ya que ambas tienen la\nmisma edad. Ella también tiene un\ncuerpo flexible como el hule;ダイアナ・アスガルディウス ミドリの姉です。\nミドリと同い年で、守護者としての役割と、\n彼女よりも大きな体格から、\nこのあだ名が付けられました。また、\n彼女はゴムのように柔軟な体格の持ち主です
