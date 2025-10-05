@@ -83,6 +83,10 @@ This game is made to  work better on linux smartphones like Pinephone (the one t
 
 I had issues trying to make this game working  on Pinephone,  so i delayed touch controls implementation until this issue was solved. Android support for this game is not a priority for me, for this reason i suggest using a linux-first smartphone instead. remember that Google Play reviews any app update, so every android  release  will arrive a bit later than linux releases
 
+# Why Google Play release has its end of life planned at September 28 2026?
+
+Because i'm against this https://www.androidauthority.com/how-android-sideloading-restrictions-may-work-3595355/
+
 # How i can install this game on a Huawei Smartphone?
 
 Android release is only available at Google Play because most android users find apps there. If you have a degoogled android device you need something like Aurora Store.
