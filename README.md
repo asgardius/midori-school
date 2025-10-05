@@ -133,6 +133,8 @@ Ubuntu is the only distro that uses snap intead flatpak. Those users can use deb
 
 # Linux packages
 
+Linux packages have the same name than this repo (midori-school)
+
 Arch Linux users can use Kimberly Repo. More info at https://kimberly.asgardius.company/
 
 Gentoo users can use Layla Repo https://git.asgardius.company/asgardius/laylarepo
