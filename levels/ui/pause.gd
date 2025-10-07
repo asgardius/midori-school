@@ -84,3 +84,7 @@ func _on_Backpack_pressed():
 
 func _on_Journal_pressed():
 	Global.live = 11
+
+
+func _on_Character_pressed():
+	Global.live = 12
