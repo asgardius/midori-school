@@ -64,11 +64,11 @@ func _on_Hu_pressed():
 
 
 func _on_Gurukosu_pressed():
-	pass
+	get_tree().change_scene("res://levels/ui/charinfo/Gurukosu.tscn")
 
 
 func _on_Momo_pressed():
-	pass
+	get_tree().change_scene("res://levels/ui/charinfo/Momo.tscn")
 
 
 func _on_Natasha_pressed():
