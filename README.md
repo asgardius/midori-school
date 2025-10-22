@@ -145,11 +145,11 @@ Gentoo users can use Layla Repo https://git.asgardius.company/asgardius/laylarep
 
 Debian users can use evelynrepo adding the following to sources.list (replace arch with amd64 or arm64)
 
-deb [trusted=yes] https://s3.asgardius.company/evelynrepo arch/
+deb [trusted=yes] https://evelynrepo.momo.asgardius.company arch/
 
 Flatpak release is avaiilable at Karla repo
 
-flatpak remote-add karlarepo https://s3.asgardius.company/karlarepo/karlarepo.flatpakrepo
+flatpak remote-add karlarepo https://karlarepo.momo.asgardius.company/karlarepo.flatpakrepo
 
 flatpak install karlarepo asgardius.page.virtualxrpg
 
