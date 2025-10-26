@@ -23,6 +23,7 @@ func _init(slot):
 			fileslot = int(savefile[0])
 		else:
 			fileslot = slot
+		Global.saveslot = fileslot
 		if fileslot == 1:
 			file = File.new()
 			file.open("user://slot1", File.READ)

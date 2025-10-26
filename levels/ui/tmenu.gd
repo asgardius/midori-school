@@ -1,6 +1,7 @@
 extends Control
 const gamepadtest = preload("res://gamepad.gd")
 var startbutton
+const savegame = preload("res://save.gd")
 var hackerman = load("res://levels/challenges/hackerman.tscn").instance()
 func _ready():
 	if Global.konami == 9:
@@ -88,3 +89,8 @@ func _konami(event):
 
 func _hackerman():
 	get_tree().root.add_child(hackerman)
+
+
+func _on_Saveexit_pressed():
+	savegame.new(Global.saveslot, false)
+	_on_exit_pressed()

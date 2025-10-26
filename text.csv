@@ -29,6 +29,7 @@ BUTTON_SAVE;Save;Guardar;ファイルを保存
 BUTTON_ERASE;Erase;Borrar;ファイルを保存
 MENU_DEBUG;Debug Menu;Menú de Depuración;デバッグメニュー
 BUTTON_EXIT;Exit;Salir;このゲームを終了する
+SAVE_EXIT;Save and Exit;Guardar y salir;保存して終了
 START_NOOB;Coward;Cobarde;腰抜け
 START_THISFIRST;Try this First;Prueba Esto Primero;まずはこれを試してください
 START_CHALLENGE;True Challenge;Reto Verdadero;真の挑戦
