@@ -21,7 +21,7 @@ var isfollow
 
 func _ready():
 	if Global.isboss:
-		Global.cboss = ["Tito Dust",5520,5520]
+		Global.cboss = ["The Bug",5520,5520]
 	var stimer = $Speed
 	stimer.start(0.05)
 	#player = get_parent().root.get_node("Player")

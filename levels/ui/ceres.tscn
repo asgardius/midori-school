@@ -43,9 +43,9 @@ valign = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 111.0
-margin_top = 173.0
+margin_top = 129.0
 margin_right = 1128.0
-margin_bottom = 651.0
+margin_bottom = 705.0
 
 [node name="L20" type="Button" parent="VBoxContainer"]
 margin_right = 1017.0
@@ -110,10 +110,18 @@ custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
 text = "Tito Dust"
 
-[node name="Back" type="Button" parent="VBoxContainer"]
+[node name="ladybug" type="Button" parent="VBoxContainer"]
 margin_top = 464.0
 margin_right = 1017.0
 margin_bottom = 518.0
+custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 4 )
+text = "The Bug"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+margin_top = 522.0
+margin_right = 1017.0
+margin_bottom = 576.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
@@ -126,4 +134,5 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="VBoxContainer/WIP" to="." method="_on_WIP_pressed"]
 [connection signal="pressed" from="VBoxContainer/huwei" to="." method="_on_huwei_pressed"]
 [connection signal="pressed" from="VBoxContainer/dust" to="." method="_on_dust_pressed"]
+[connection signal="pressed" from="VBoxContainer/ladybug" to="." method="_on_ladybug_pressed"]
 [connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

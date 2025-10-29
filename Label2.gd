@@ -27,11 +27,11 @@ func _ready():
 		if Global.spkmode == 0:
 			welcometext = welcometext+"\nExperience Presented in Stereo"
 		elif Global.spkmode == 1:
-			welcometext = welcometext+"\nExperience Presented in 3.1 Surround (WIP)"
+			welcometext = welcometext+"\nExperience Presented in 3.1 Surround"
 		elif Global.spkmode == 2:
-			welcometext = welcometext+"\nExperience Presented in 5.1 Surround (WIP)"
+			welcometext = welcometext+"\nExperience Presented in 5.1 Surround"
 		elif Global.spkmode == 3:
-			welcometext = welcometext+"\nExperience Presented in 7.1 Surround (WIP)"
+			welcometext = welcometext+"\nExperience Presented in 7.1 Surround"
 		welcometext = welcometext+"\nbooting virtual machine"
 		#This can be used to detect background process, may be useful later
 		#var output = []

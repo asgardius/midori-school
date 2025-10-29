@@ -94,3 +94,9 @@ func _on_dust_pressed():
 	Global.dplace = [1, 5, 27]
 	Global.live = 1
 	get_tree().change_scene("res://levels/ui/gameplay.tscn")
+
+
+func _on_ladybug_pressed():
+	Global.dplace = [1, 6, 9]
+	Global.live = 1
+	get_tree().change_scene("res://levels/ui/gameplay.tscn")
