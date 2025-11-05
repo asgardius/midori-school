@@ -16,6 +16,8 @@ If you want to help in game development ask at https://matrix.to/#/!bqRfvdEXZATm
 
 Download links https://elda.asgardius.company/virtualxrpg-dl/
 
+Release archive at https://sourceforge.net/projects/midori-school/
+
 Bittorrent downloads https://elda.asgardius.company/virtualxrpg-torrent/
 
 You can download game soundtrack at https://elda.asgardius.company/game-ost/
