@@ -43,7 +43,7 @@ From my point of view, a Genshin Killer is an Anime RPG which include elves amon
 
 # Why this game doesn't have builds for Microsoft Windows? Most players are using that OS
 
-Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better. If you want to play this game from Windows, you can use Google Play Games for Windows, but you will get much better results using virtualbox. In other words, something that Nintendo employees hates (Emulation)
+Microsoft Defender has an antifeature known as Smart Screen, which flags every unsigned executable as malware. ALSA Audio Calibration feature doesn't work on that OS. Most developers don't release their games for GNU/Linux, but i'm using GNU/Linux as my main OS. I don't follow trends, i want something better. If you want to play this game from Windows, you can use virtualbox. In other words, something that Nintendo employees hates (Emulation)
 
 # Why a 2d game?
 
@@ -85,7 +85,7 @@ This game is made to  work better on linux smartphones like Pinephone (the one t
 
 I had issues trying to make this game working  on Pinephone,  so i delayed touch controls implementation until this issue was solved. Android support for this game is not a priority for me, for this reason i suggest using a linux-first smartphone instead. remember that Google Play reviews any app update, so every android  release  will arrive a bit later than linux releases
 
-# Why Google Play release has its end of life planned at September 28 2026?
+# Why Google Play release is not longer being updated?
 
 Because i'm against this https://www.androidauthority.com/how-android-sideloading-restrictions-may-work-3595355/
 
