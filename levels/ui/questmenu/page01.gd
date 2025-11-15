@@ -74,8 +74,8 @@ func _input(event):
 	gamepadtest.new(event)
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_Return_pressed()
-	elif Input.is_action_just_pressed("ui_right"):
-		_on_Next_pressed()
+	#elif Input.is_action_just_pressed("ui_right"):
+	#	_on_Next_pressed()
 
 func _on_Return_pressed():
 	if Global.live == 11:
