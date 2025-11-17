@@ -22,7 +22,33 @@ Bittorrent downloads https://elda.asgardius.company/virtualxrpg-torrent/
 
 You can download game soundtrack at https://elda.asgardius.company/game-ost/
 
-You can download Android version at https://play.google.com/store/apps/details?id=asgardius.page.virtualxrpg&hl=en-US
+You can download Android version at https://play.google.com/store/apps/details?id=asgardius.page.virtualxrpg&hl=en-US (deprecated)
+
+# Screenshots
+
+Title Screen
+
+<img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/1.jpg>
+
+Dialogs
+
+<img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/2.jpg>
+
+Intro Stage
+
+<img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/3.jpg>
+
+Can you guess this stage's name?
+
+<img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/4.jpg>
+
+Story telling with characters made by humans and backgrounds made by soulless machines (Stable Diffusion)
+
+<img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/5.jpg>
+
+Works well on Pinephone
+
+<img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/6.jpg>
 
 # Plot
 
@@ -91,8 +117,7 @@ Because i'm against this https://www.androidauthority.com/how-android-sideloadin
 
 # How i can install this game on a Huawei Smartphone?
 
-Android release is only available at Google Play because most android users find apps there. If you have a degoogled android device you need something like Aurora Store.
-Since R0.3.11-beta apk release is available at download links
+Since R0.3.11-beta apk release is available at download links, so you can use these because Play Store release is now deprecated
 
 # How can install this game on my Pixel with Graphene OS?
 
