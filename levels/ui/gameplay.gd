@@ -20,6 +20,8 @@ var fl
 var fr
 var rl
 var rr
+var powerdismiss = false
+var talk
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -122,6 +124,15 @@ func _process(delta):
 		else:
 			_pausemenu()
 	var velocity = Vector2.ZERO
+	#print(OS.get_power_percent_left())
+	if OS.get_name() == "X11" && Global.live == 1:
+		if OS.get_power_percent_left() < 30 && OS.get_power_state() == 1 && powerdismiss == false:
+			Global.cdialog = [[tr("LOWBATTERY_WARNING"), true, 0, 0]]
+			Global.live = 0
+			call_deferred("_talk")
+			powerdismiss = true
+		elif OS.get_power_state() != 1 && powerdismiss == true:
+			powerdismiss = false
 	if (Global.live > 4 && Global.live < 13) || Global.live == 2:
 		_exit()
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
@@ -320,3 +331,7 @@ func _loadlevel():
 		rl.play(0)
 		rr.play(0)
 	_level()
+
+func _talk():
+	talk = load("res://levels/ui/talk.tscn").instance()
+	get_tree().root.add_child(talk)

@@ -8,6 +8,7 @@ var savegame = load("res://save.gd")
 # Called when the node enters the scene tree for the first time.
 	
 func _ready():
+	OS.set_low_processor_usage_mode(true)
 	presscontinue = $Label
 	updatehud()
 	Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
