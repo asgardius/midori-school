@@ -67,42 +67,50 @@ custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 1 )
 text = "BUTTON_CERES"
 
-[node name="Results" type="Button" parent="VBoxContainer"]
+[node name="Earth" type="Button" parent="VBoxContainer"]
 margin_top = 174.0
 margin_right = 1017.0
 margin_bottom = 228.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 1 )
-text = "BUTTON_SCORESCREEN"
+text = "Earth"
 
-[node name="Credits" type="Button" parent="VBoxContainer"]
+[node name="Results" type="Button" parent="VBoxContainer"]
 margin_top = 232.0
 margin_right = 1017.0
 margin_bottom = 286.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 1 )
-text = "BUTTON_CREDITS"
+text = "BUTTON_SCORESCREEN"
 
-[node name="WIP" type="Button" parent="VBoxContainer"]
+[node name="Credits" type="Button" parent="VBoxContainer"]
 margin_top = 290.0
 margin_right = 1017.0
 margin_bottom = 344.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 1 )
-text = "BUTTON_WIP"
+text = "BUTTON_CREDITS"
 
-[node name="Cutscene" type="Button" parent="VBoxContainer"]
+[node name="WIP" type="Button" parent="VBoxContainer"]
 margin_top = 348.0
 margin_right = 1017.0
 margin_bottom = 402.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 1 )
-text = "BUTTON_CUTSCENES"
+text = "BUTTON_WIP"
 
-[node name="Back" type="Button" parent="VBoxContainer"]
+[node name="Cutscene" type="Button" parent="VBoxContainer"]
 margin_top = 406.0
 margin_right = 1017.0
 margin_bottom = 460.0
+custom_fonts/font = ExtResource( 5 )
+custom_styles/focus = SubResource( 1 )
+text = "BUTTON_CUTSCENES"
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+margin_top = 464.0
+margin_right = 1017.0
+margin_bottom = 518.0
 custom_fonts/font = ExtResource( 5 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
@@ -110,6 +118,7 @@ text = "BUTTON_RETURN"
 [connection signal="pressed" from="VBoxContainer/Disclaimer" to="." method="_on_disclaimer_pressed"]
 [connection signal="pressed" from="VBoxContainer/Testrooms" to="." method="_on_testrooms_pressed"]
 [connection signal="pressed" from="VBoxContainer/Ceres" to="." method="_on_ceres_pressed"]
+[connection signal="pressed" from="VBoxContainer/Earth" to="." method="_on_Earth_pressed"]
 [connection signal="pressed" from="VBoxContainer/Results" to="." method="_on_results_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/WIP" to="." method="_on_wip_pressed"]

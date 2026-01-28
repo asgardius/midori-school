@@ -74,3 +74,7 @@ func _on_ceres_pressed():
 
 func _on_cutscene_pressed():
 	get_tree().change_scene("res://levels/ui/cscene.tscn")
+
+
+func _on_Earth_pressed():
+	get_tree().change_scene("res://levels/ui/earth.tscn")

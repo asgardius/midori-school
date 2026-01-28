@@ -29,7 +29,10 @@ func _input(event):
 	if (Input.is_action_just_released("ui_accept") || Input.is_action_just_released("mclick")) && press:
 		dindex += 1
 		if dindex < Global.cdialog.size():
-			if Global.cdialog[dindex][1]:
+			if Global.cdialog[dindex][2] == null:
+				cname.set_text("Character name goes here")
+				pface.texture = load("res://sprites/common/placeholder/face.png")
+			elif Global.cdialog[dindex][1]:
 				cname.set_text(Global.pcnames[Global.cdialog[dindex][2]])
 				pface.texture = load((Global.pcfaces[Global.cdialog[dindex][2]][Global.cdialog[dindex][3]]))
 			else:

@@ -7,7 +7,7 @@ func _ready():
 	boss = $Dust
 	player = $Player
 	boss.add_to_group("boss")
-	Global.cdialog = [[tr("TINGYUNNECK"), true, 5, 0], ["I made RAM more expensive and you can't do anything to\nrevert it\nAI is the future", true, null, 0], ["KR800 like you uses DDR5 and i'll extract it from your head", true, 5, 0], ["Emily, take me the screwdriver", true, 5, 0]]
+	Global.cdialog = [["Who are you?", true, 0, 0], ["The man that ate Paimon", true, null, 0], ["I'm Boosted Adreno Kicks Asteroids", true, null, 0], ["Idiot, you are an idiot XD", true, 0, 0]]
 	Global.live = 0
 	call_deferred("_talk")
 
