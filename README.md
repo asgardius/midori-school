@@ -16,8 +16,6 @@ If you want to help in game development ask at https://matrix.to/#/!bqRfvdEXZATm
 
 Download links https://elda.asgardius.company/virtualxrpg-dl/
 
-Release archive at https://sourceforge.net/projects/midori-school/
-
 Bittorrent downloads https://elda.asgardius.company/virtualxrpg-torrent/
 
 You can download game soundtrack at https://elda.asgardius.company/game-ost/
@@ -142,6 +140,10 @@ I won't spend money for an App Store Developer Account. This game is available f
 # Why this game is not available as snap package?
 
 Ubuntu is the only distro that uses snap intead flatpak. Those users can use debian packages instead
+
+# Why this game uses simple graphics in gameplay, but a lot of details in cutscenes?
+
+Most Amiga games used this trick to optimize the limited hardware of these computers. My code optimizations are inspired by programming tricks used on old school games. As a result, this game can be easily ported to Amiga computers without losing its identity
 
 # System requirements
 
