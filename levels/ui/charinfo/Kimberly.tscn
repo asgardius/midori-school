@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://sprites/common/kimberly/fullbody.png" type="Texture" id=1]
+[ext_resource path="res://sprites/common/kimberly/overview.png" type="Texture" id=1]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
 [ext_resource path="res://backgounds/night-sky-at-ceres.jpg" type="Texture" id=4]
