@@ -47,11 +47,11 @@ func _on_Diana_pressed():
 
 
 func _on_Pamela_pressed():
-	pass
+	get_tree().change_scene("res://levels/ui/charinfo/Pamela.tscn")
 
 
 func _on_Lety_pressed():
-	pass
+	get_tree().change_scene("res://levels/ui/charinfo/Lety.tscn")
 
 
 
@@ -72,7 +72,7 @@ func _on_Momo_pressed():
 
 
 func _on_Natasha_pressed():
-	pass
+	get_tree().change_scene("res://levels/ui/charinfo/Natasha.tscn")
 
 
 func _on_Rikka_pressed():
