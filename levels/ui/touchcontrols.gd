@@ -34,13 +34,14 @@ func _input(event):
 					Input.action_press("ui_down", ym)
 			#print(Global.xm, Global.ym)
 	elif event is InputEventScreenTouch and event.pressed == false && isjoystick:
-			isjoystick = false
-			xm = 0
-			ym = 0
-			Input.action_release("ui_left")
-			Input.action_release("ui_right")
-			Input.action_release("ui_up")
-			Input.action_release("ui_down")
+			if event.position.x >= tjoy.rect_position.x && event.position.x <= tjoy.rect_position.x+200 && event.position.y >= tjoy.rect_position.y && event.position.y <= tjoy.rect_position.y+200:
+				isjoystick = false
+				xm = 0
+				ym = 0
+				Input.action_release("ui_left")
+				Input.action_release("ui_right")
+				Input.action_release("ui_up")
+				Input.action_release("ui_down")
 	elif event is InputEventScreenDrag && isjoystick:
 		if event.position.x >= tjoy.rect_position.x && event.position.x <= tjoy.rect_position.x+200 && event.position.y >= tjoy.rect_position.y && event.position.y <= tjoy.rect_position.y+200:
 			xm = (event.position.x-tjoy.rect_position.x-100)/100
