@@ -20,8 +20,6 @@ Bittorrent downloads https://elda.asgardius.company/virtualxrpg-torrent/
 
 You can download game soundtrack at https://elda.asgardius.company/game-ost/
 
-You can download Android version at https://play.google.com/store/apps/details?id=asgardius.page.virtualxrpg&hl=en-US (deprecated)
-
 # Screenshots
 
 Title Screen
