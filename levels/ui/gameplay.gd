@@ -138,7 +138,7 @@ func _process(delta):
 		#velocity = (Vector2.RIGHT.rotated(rotation) * -100 * Global.xm * delta)-Vector2.UP.rotated(rotation) * -100 * Global.ym * delta
 
 func _input(event):
-	if (event is InputEventScreenTouch || event is InputEventMouse) && Input.get_mouse_mode() == 0 && !istouch && Global.live == 1:
+	if (event is InputEventScreenTouch) && Input.get_mouse_mode() == 0 && !istouch && Global.live == 1:
 		istouch = true
 		call_deferred("_tcontrol")
 	elif Input.get_mouse_mode() != 0 && istouch && !(event is InputEventScreenTouch || event is InputEventMouse):
