@@ -11,7 +11,8 @@ func _process(delta):
 	pass
 
 func _input(event):
-	pass
+	if Input.is_action_just_pressed("Backpack"):
+		_on_Return_pressed()
 
 
 func _on_Return_pressed():

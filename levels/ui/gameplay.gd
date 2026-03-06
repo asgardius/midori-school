@@ -104,6 +104,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	print("Ispaused: "+str(ispaused))
 	if Global.live != 1 && ishud:
 		get_tree().root.remove_child(thud)
 		get_tree().root.remove_child(tcontrol)
@@ -150,9 +151,9 @@ func _input(event):
 		Global.live = 1
 		
 	gamepadtest.new(event)
-	if Input.is_action_just_pressed("Pause") && (Global.live == 1 || Global.live == 4):
+	if Input.is_action_just_pressed("Pause") && Global.live == 1:
 		_pausemenu()
-	if Input.is_action_just_pressed("Backpack") && (Global.live == 1 || Global.live == 4):
+	if Input.is_action_just_pressed("Backpack") && Global.live == 1:
 		_backpackm()
 		#Global.exitgame = true
 	if Global.live == 1 && Input.is_action_pressed("schar") && Input.is_action_just_pressed("ui_up"):
@@ -220,16 +221,16 @@ func _backpackm():
 		
 func _pausemenu():
 	if Global.live == 1 && !ispaused:
-		get_tree().root.remove_child(bhud)
-		call_deferred("_pmenu")
 		ispaused = true
 		Global.live = 4
-	elif Global.live == 4 && ispaused:
+		get_tree().root.remove_child(bhud)
+		call_deferred("_pmenu")
+	elif Global.live == 4:
+		Global.live = 1
+		ispaused = false
 		get_tree().root.remove_child(pmenu)
 		call_deferred("_bhud")
-		ispaused = false
 		pmenu = load("res://levels/ui/pause.tscn").instance()
-		Global.live = 1
 func _exit():
 	Global.cdialog = []
 	Global.exitgame = false
@@ -294,9 +295,13 @@ func _bhud():
 	get_tree().root.add_child(bhud)
 
 func _pmenu():
+	ispaused = true
+	Global.live = 4
 	get_tree().root.add_child(pmenu)
 
 func _backpack():
+	ispaused = true
+	Global.live = 4
 	get_tree().root.add_child(backpack)
 
 func _mgamepad():

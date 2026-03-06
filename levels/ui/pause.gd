@@ -25,6 +25,8 @@ func _process(delta):
 	pass
 
 func _input(event):
+	if Input.is_action_just_pressed("Pause"):
+		_on_Resume_pressed()
 	_fetchdata()
 
 func _fetchdata():
