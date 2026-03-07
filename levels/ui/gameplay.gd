@@ -13,7 +13,6 @@ var backpack = load("res://levels/ui/backpack.tscn").instance()
 var mgamepad = load("res://levels/ui/missinggamepad.tscn").instance()
 var tcontrol = load("res://levels/ui/touchcontrols.tscn").instance()
 var ismgamepad = false
-var ispaused = false
 var ishud = true
 var istouch = false
 var fl
@@ -104,7 +103,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print("Ispaused: "+str(ispaused))
 	if Global.live != 1 && ishud:
 		get_tree().root.remove_child(thud)
 		get_tree().root.remove_child(tcontrol)
@@ -220,14 +218,12 @@ func _backpackm():
 		Global.live = 1
 		
 func _pausemenu():
-	if Global.live == 1 && !ispaused:
-		ispaused = true
+	if Global.live == 1:
 		Global.live = 4
 		get_tree().root.remove_child(bhud)
 		call_deferred("_pmenu")
 	elif Global.live == 4:
 		Global.live = 1
-		ispaused = false
 		get_tree().root.remove_child(pmenu)
 		call_deferred("_bhud")
 		pmenu = load("res://levels/ui/pause.tscn").instance()
@@ -261,7 +257,6 @@ func _exit():
 	elif Global.live == 5:
 		bhud = load("res://levels/bottomhud.tscn").instance()
 		pmenu = load("res://levels/ui/pause.tscn").instance()
-		ispaused = false
 		_loadlevel()
 	elif Global.live == 2:
 		Global.result = [0, 0, 0, 0, 0]
@@ -295,12 +290,10 @@ func _bhud():
 	get_tree().root.add_child(bhud)
 
 func _pmenu():
-	ispaused = true
 	Global.live = 4
 	get_tree().root.add_child(pmenu)
 
 func _backpack():
-	ispaused = true
 	Global.live = 4
 	get_tree().root.add_child(backpack)
 
