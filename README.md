@@ -129,7 +129,7 @@ It's because most current Android devices have notched screens, something that L
 
 # Your game will be released on Nintendo Switch 2?
 
-I won't release my games on consoles owned by companies that destroy everything
+I won't release my games on consoles owned by companies that destroy everything. But if someday that console get a method to install Linux on it, this game will work there
 
 # Why your game is not available for Apple Devices?
 
@@ -138,6 +138,10 @@ I won't spend money for an App Store Developer Account. This game is available f
 # Why this game is not available as snap package?
 
 Ubuntu is the only distro that uses snap intead flatpak. Those users can use debian packages instead
+
+# Is this game compatible with ps5?
+
+Installing a Linux distro is required for this
 
 # Why this game uses simple graphics in gameplay, but a lot of details in cutscenes?
 
