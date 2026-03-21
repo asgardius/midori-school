@@ -58,6 +58,7 @@ Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since mu
 * Gamepad compatibility
 * Bullethell themed bosses
 * Multiple playable characters
+* This game doesn't use DLSS/FSR because isn't required
 
 # What is a Genshin Killer?
 
