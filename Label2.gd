@@ -5,8 +5,6 @@ var playername
 var file = File.new()
 var drivername
 func _ready():
-	file.open("user://logs/godot.log", File.READ)
-	var videodriver = file.get_as_text().rsplit("\n", true, 3)[1]
 	if OS.get_name() != "X11":
 		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT,  SceneTree.STRETCH_ASPECT_KEEP, Vector2(1280,720),1)
 	_audiotest()
@@ -28,10 +26,6 @@ func _ready():
 			welcometext = welcometext+"\nYour overlay already has a FPS counter, built-in one is disabled"
 		if OS.get_environment("WAYLAND_DISPLAY").length() > 0:
 			welcometext = welcometext+"\nKung Fury was Willy’s first victim, Wright’s wife his second one, and a robot avoided a third one"
-		if videodriver.find("llvmpipe",0) != -1:
-			welcometext = welcometext+"\nI don't need RTX"
-		elif videodriver.find("Mali400",0) != -1:
-			welcometext = welcometext+"\nThis game is made to fit this hardware"
 		if Global.spkmode == 0:
 			welcometext = welcometext+"\nExperience Presented in Stereo"
 		elif Global.spkmode == 1:
