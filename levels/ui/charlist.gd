@@ -13,16 +13,16 @@ func _ready():
 		$HBoxContainer/VBoxContainer/Rikka.visible = true
 		$HBoxContainer/VBoxContainer/Kimberly.visible = true
 		$HBoxContainer/VBoxContainer/Hu.visible = true
-		$HBoxContainer/VBoxContainer/Gurukosu.visible = true
-		$HBoxContainer/VBoxContainer/Momo.visible = true
-		$HBoxContainer/VBoxContainer/Pamela.visible = true
-		$HBoxContainer/VBoxContainer/Lety.visible = true
-		$HBoxContainer/VBoxContainer/Natasha.visible = true
+		$HBoxContainer/VBoxContainer2/Gurukosu.visible = true
+		$HBoxContainer/VBoxContainer2/Momo.visible = true
+		$HBoxContainer/VBoxContainer2/Pamela.visible = true
+		$HBoxContainer/VBoxContainer2/Lety.visible = true
+		$HBoxContainer/VBoxContainer2/Natasha.visible = true
 	if Global.quest[2] == 3:
 		$HBoxContainer/VBoxContainer/Diana.visible = true
 		$HBoxContainer/VBoxContainer/Rikka.visible = true
-		$HBoxContainer/VBoxContainer/Pamela.visible = true
-		$HBoxContainer/VBoxContainer/Lety.visible = true
+		$HBoxContainer/VBoxContainer2/Pamela.visible = true
+		$HBoxContainer/VBoxContainer2/Lety.visible = true
 	if Global.quest[3] == 3:
 		$HBoxContainer/VBoxContainer/Kimberly.visible = true
 	$HBoxContainer/VBoxContainer/Midori.grab_focus()
