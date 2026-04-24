@@ -29,6 +29,9 @@ func _input(event):
 	
 
 func _winner():
+	if Global.quest[4] != 3:
+		Global.quest[4] = 3
+		Global.quest[5] = 1
 	#Global.cdialog = [[tr("DIALOG_DANMAKUTEST_3"), true, 0, 0], [tr("DIALOG_DANMAKUTEST_4"), false, 9], [tr("DIALOG_DANMAKUTEST_5"), true, 0, 0]]
 	Global.live = 7
 	#talk.queue_free()

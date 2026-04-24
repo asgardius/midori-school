@@ -323,11 +323,12 @@ func _loadlevel():
 		rl.stream = load(Global.musictrackrl[musictrack])
 		rr.stream = load(Global.musictrackrr[musictrack])
 		bgsound.stream = music
-		bgsound.play(0)
-		fl.play(0)
-		fr.play(0)
-		rl.play(0)
-		rr.play(0)
+		if !Global.isboss:
+			bgsound.play(0)
+			fl.play(0)
+			fr.play(0)
+			rl.play(0)
+			rr.play(0)
 	_level()
 
 func _talk():

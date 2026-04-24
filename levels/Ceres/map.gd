@@ -1,27 +1,23 @@
 extends Node2D
-var hkr
-var troublemaker
-var yourhome
-var karch
 var travel = null
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	hkr = $Railwaygirl
-	troublemaker = $Pamela
-	yourhome = $Home
-	karch = $Kimberly
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
 	if Global.quest[1] == 0 && !Global.cheater:
-		hkr.queue_free()
+		$Railwaygirl.queue_free()
 	if Global.quest[2] == 0 && !Global.cheater:
-		troublemaker.queue_free()
+		$Pamela.queue_free()
 	if Global.quest[3] == 0 && !Global.cheater:
-		yourhome.queue_free()
-		karch.queue_free()
+		$Home.queue_free()
+		$Kimberly.queue_free()
+	if Global.quest[4] == 0 && !Global.cheater:
+		$Huwei.queue_free()
+	if Global.quest[5] == 0 && !Global.cheater:
+		$Tanaka.queue_free()
 	#pass # Replace with function body.
 
 
@@ -85,4 +81,22 @@ func _on_Kimberly_body_entered(body):
 
 func _on_Kimberly_body_exited(body):
 	#Global.ccutscene = null
+	travel = null
+
+
+func _on_Huwei_body_entered(body):
+	Global.ccutscene = null
+	travel = [1, 4, 18]
+
+
+func _on_Huwei_body_exited(body):
+	travel = null
+
+
+func _on_Tanaka_body_entered(body):
+	Global.ccutscene = null
+	travel = [1, 5, 27]
+
+
+func _on_Tanaka_body_exited(body):
 	travel = null

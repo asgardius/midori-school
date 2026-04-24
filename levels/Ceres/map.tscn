@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://sprites/ceres/railway/sprite.png" type="Texture" id=1]
 [ext_resource path="res://sprites/ceres/pamela/sprite.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://levels/Ceres/map.gd" type="Script" id=4]
 [ext_resource path="res://sprites/ceres/items/home-icon6.png" type="Texture" id=5]
 [ext_resource path="res://sprites/common/kimberly/sprite.png" type="Texture" id=6]
+[ext_resource path="res://sprites/common/chowchow/sprite.png" type="Texture" id=7]
+[ext_resource path="res://sprites/common/tanaka/sprite.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 18.5, 721 )
@@ -507,6 +509,88 @@ tracks/0/keys = {
 "values": [ 13, 12, 14 ]
 }
 
+[sub_resource type="Animation" id=41]
+length = 0.001
+
+[sub_resource type="Animation" id=42]
+resource_name = "eidle"
+loop = true
+
+[sub_resource type="Animation" id=43]
+resource_name = "ewalk"
+length = 0.3
+loop = true
+step = 0.033
+
+[sub_resource type="Animation" id=44]
+resource_name = "nidle"
+loop = true
+
+[sub_resource type="Animation" id=45]
+resource_name = "nwalk"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=46]
+resource_name = "sidle"
+loop = true
+
+[sub_resource type="Animation" id=47]
+resource_name = "swalk"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=48]
+resource_name = "widle"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=49]
+resource_name = "wwalk"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=50]
+length = 0.001
+
+[sub_resource type="Animation" id=51]
+resource_name = "eidle"
+loop = true
+
+[sub_resource type="Animation" id=52]
+resource_name = "ewalk"
+length = 0.3
+loop = true
+step = 0.033
+
+[sub_resource type="Animation" id=53]
+resource_name = "nidle"
+loop = true
+
+[sub_resource type="Animation" id=54]
+resource_name = "nwalk"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=55]
+resource_name = "sidle"
+loop = true
+
+[sub_resource type="Animation" id=56]
+resource_name = "swalk"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=57]
+resource_name = "widle"
+length = 0.3
+loop = true
+
+[sub_resource type="Animation" id=58]
+resource_name = "wwalk"
+length = 0.3
+loop = true
+
 [node name="Map" type="Node2D"]
 script = ExtResource( 4 )
 
@@ -633,6 +717,52 @@ anims/swalk = SubResource( 38 )
 anims/widle = SubResource( 39 )
 anims/wwalk = SubResource( 40 )
 
+[node name="Huwei" type="Area2D" parent="."]
+position = Vector2( -294, 123 )
+
+[node name="Sprite" type="Sprite" parent="Huwei"]
+texture = ExtResource( 7 )
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Huwei"]
+position = Vector2( 0, 6.5 )
+shape = SubResource( 31 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Huwei"]
+anims/RESET = SubResource( 41 )
+anims/eidle = SubResource( 42 )
+anims/ewalk = SubResource( 43 )
+anims/nidle = SubResource( 44 )
+anims/nwalk = SubResource( 45 )
+anims/sidle = SubResource( 46 )
+anims/swalk = SubResource( 47 )
+anims/widle = SubResource( 48 )
+anims/wwalk = SubResource( 49 )
+
+[node name="Tanaka" type="Area2D" parent="."]
+position = Vector2( -185, 444 )
+
+[node name="Sprite" type="Sprite" parent="Tanaka"]
+texture = ExtResource( 8 )
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tanaka"]
+position = Vector2( 0, 6.5 )
+shape = SubResource( 31 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Tanaka"]
+anims/RESET = SubResource( 50 )
+anims/eidle = SubResource( 51 )
+anims/ewalk = SubResource( 52 )
+anims/nidle = SubResource( 53 )
+anims/nwalk = SubResource( 54 )
+anims/sidle = SubResource( 55 )
+anims/swalk = SubResource( 56 )
+anims/widle = SubResource( 57 )
+anims/wwalk = SubResource( 58 )
+
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 635, 586 )
 
@@ -644,3 +774,7 @@ position = Vector2( 635, 586 )
 [connection signal="body_exited" from="Home" to="." method="_on_Home_body_exited"]
 [connection signal="body_entered" from="Kimberly" to="." method="_on_Kimberly_body_entered"]
 [connection signal="body_exited" from="Kimberly" to="." method="_on_Kimberly_body_exited"]
+[connection signal="body_entered" from="Huwei" to="." method="_on_Huwei_body_entered"]
+[connection signal="body_exited" from="Huwei" to="." method="_on_Huwei_body_exited"]
+[connection signal="body_entered" from="Tanaka" to="." method="_on_Tanaka_body_entered"]
+[connection signal="body_exited" from="Tanaka" to="." method="_on_Tanaka_body_exited"]

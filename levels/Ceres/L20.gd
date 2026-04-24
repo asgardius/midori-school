@@ -59,8 +59,9 @@ func _winner():
 	call_deferred("_talk")
 
 func _winnerr():
-	Global.quest[3] = 3
-	Global.quest[4] = 1
+	if Global.quest[3] != 3:
+		Global.quest[3] = 3
+		Global.quest[4] = 1
 	Global.cdialog = [[tr("DIALOG_CERES_L20_9"), true, 0, 0], [tr("DIALOG_CERES_L20_10"), false, 3], [tr("DIALOG_CERES_L20_11"), true, 0, 0]]
 	Global.live = 3
 	Global.ccutscene = 25
