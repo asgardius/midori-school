@@ -25,6 +25,9 @@ func _ready():
 		$HBoxContainer/VBoxContainer2/Lety.visible = true
 	if Global.quest[3] == 3:
 		$HBoxContainer/VBoxContainer/Kimberly.visible = true
+		$HBoxContainer/VBoxContainer/Hu.visible = true
+		$HBoxContainer/VBoxContainer2/Gurukosu.visible = true
+		$HBoxContainer/VBoxContainer2/Momo.visible = true
 	$HBoxContainer/VBoxContainer/Midori.grab_focus()
 	#pass # Replace with function body.
 

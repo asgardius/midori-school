@@ -140,7 +140,7 @@ func _input(event):
 	if (event is InputEventScreenTouch) && Input.get_mouse_mode() == 0 && !istouch && Global.live == 1:
 		istouch = true
 		call_deferred("_tcontrol")
-	elif Input.get_mouse_mode() != 0 && istouch && !(event is InputEventScreenTouch || event is InputEventMouse):
+	elif Input.get_mouse_mode() != 0 && istouch && (event is InputEventKey || event is InputEventJoypadButton || event is InputEventJoypadMotion):
 		istouch = false
 		get_tree().root.remove_child(tcontrol)
 	if ismgamepad && (event is InputEventJoypadButton || Input.is_key_pressed(KEY_ENTER) || Input.is_action_just_pressed("mclick")):
