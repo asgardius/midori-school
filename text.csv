@@ -42,6 +42,8 @@ SETTING_FULLSCREEN;Fullscreen;Pantalla Completa;全画面表示
 SETTING_WINDOWED;Window;Ventana;ウィンドウ
 SETTING_LFPSF;Framerate limit: Standard;Límite de Fotogramas: estandar;フレームレート制限: 標準
 SETTING_LFPST;Framerate limit: 15;Límite de Fotogramas: 15;フレームレート制限: 15
+SETTING_ULTRAWIDEF;Ultrawide Off;Ultrawide Desactivado;ウルトラワイド無効
+SETTING_ULTRAWIDET;Ultrawide On;Ultrawide Activado;ウルトラワイド対応
 BUTTON_GAMEPADTEST;Gamepad Test;Prueba de mando;ゲームパッドテスト
 BUTTON_SCENESELECT;Scene Selector;Selector de escena;シーンセレクター
 BUTTON_SOUNDTEST;Sound Test;Prueba de sonido;サウンドテスト

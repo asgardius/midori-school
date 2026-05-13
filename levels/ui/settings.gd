@@ -24,6 +24,10 @@ func _ready():
 		fullscreen.set_text(tr("SETTING_FULLSCREEN"))
 	else:
 		fullscreen.set_text(tr("SETTING_WINDOWED"))
+	if Global.isultrawide:
+		$VBoxContainer/Ultrawide.set_text(tr("SETTING_ULTRAWIDET"))
+	else:
+		$VBoxContainer/Ultrawide.set_text(tr("SETTING_ULTRAWIDEF"))
 		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -108,3 +112,14 @@ func _on_Credits_pressed():
 
 func _on_WIP_pressed():
 	get_tree().change_scene("res://levels/ui/remap.tscn")
+
+
+func _on_Ultrawide_pressed():
+	if Global.isultrawide:
+		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_VIEWPORT,  SceneTree.STRETCH_ASPECT_KEEP, Vector2(1280,720),1)
+		Global.isultrawide = false
+		$VBoxContainer/Ultrawide.set_text(tr("SETTING_ULTRAWIDEF"))
+	else:
+		get_tree().set_screen_stretch(SceneTree.STRETCH_MODE_2D,  SceneTree.STRETCH_ASPECT_EXPAND, Vector2(1280,720),1)
+		Global.isultrawide = true
+		$VBoxContainer/Ultrawide.set_text(tr("SETTING_ULTRAWIDET"))

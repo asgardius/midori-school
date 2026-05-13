@@ -124,10 +124,6 @@ If you want a privacy focused smartphone, you must use a librem 5 instead, but y
 
 This is not a priority for me, but if you want to maintain a f-droid release, i won't stop you
 
-# Why Ultrawide Screen support does not work on Android?
-
-It's because most current Android devices have notched screens, something that Linux smartphones like Pinephone doesn't have
-
 # Your game will be released on Nintendo Switch 2?
 
 I won't release my games on consoles owned by companies that destroy everything. But if someday that console get a method to install Linux on it, this game will work there
@@ -151,7 +147,7 @@ Most Amiga games used this trick to optimize the limited hardware of these compu
 # System requirements
 
 * 64 bit X86 or ARM quad core CPU, 1.2 GHz or better
-* 512 MB of RAM
+* 1 GB of RAM
 * Glibc 2.36.9 or later
 * OpenGL ES 2.0 compatible GPU for hardware rendering
 * 700 MB of free space
@@ -165,6 +161,7 @@ Most Amiga games used this trick to optimize the limited hardware of these compu
 * Pinephone Pro (Untested)
 * Librem 5 (Untested)
 * Raspberry Pi 3b or later (Tested on 3b+)
+* Droidian powered devices
 * Almost any X86_64 computer (Don't expect seeing this game ruunning on a Pentium 2 with a Voodoo card, because i'm not John Carmack)
 
 # Linux packages
