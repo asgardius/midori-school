@@ -28,8 +28,8 @@ func _ready():
 	fr = $Front_Right
 	rl = $Rear_Left
 	rr = $Rear_Right
-	if Input.get_mouse_mode() == 0:
-		istouch = true
+	#if Input.get_mouse_mode() == 0:
+	#	istouch = true
 	if Global.dificulty == 1:
 		if Global.difdamage != 0:
 			print("Script Kiddie")
