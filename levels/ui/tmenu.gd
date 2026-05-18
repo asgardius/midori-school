@@ -59,6 +59,7 @@ func _on_start_pressed():
 		get_tree().change_scene("res://levels/ui/newgame.tscn")
 	else:
 		Global.live = 1
+		_statrebase()
 		get_tree().change_scene("res://levels/ui/gameplay.tscn")
 	#_level()
 	#pass # Replace with function body.
@@ -94,3 +95,9 @@ func _hackerman():
 func _on_Saveexit_pressed():
 	savegame.new(Global.saveslot, false)
 	_on_exit_pressed()
+
+func _statrebase():
+	for i in 4:
+		if Global.party[i][0] != null:
+			for j in 7:
+				Global.cstats[Global.party[i][0]][j] = Global.basestats[Global.party[i][0]][j] * Global.level[Global.dparty[i][0]]
