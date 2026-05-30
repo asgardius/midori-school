@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Midori walking though forest.jpg-dca4081b9c1cb9c527db2ab9b9616775.stex"
+path="res://.import/Kimberly Arch knives.png-b2d64bfd5c92ff9b4f5f7ee09e285517.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgounds/Midori walking though forest.jpg"
-dest_files=[ "res://.import/Midori walking though forest.jpg-dca4081b9c1cb9c527db2ab9b9616775.stex" ]
+source_file="res://sprites/cutscenes/Kimberly Arch knives.png"
+dest_files=[ "res://.import/Kimberly Arch knives.png-b2d64bfd5c92ff9b4f5f7ee09e285517.stex" ]
 
 [params]
 

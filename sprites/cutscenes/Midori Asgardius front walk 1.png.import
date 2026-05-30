@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Honker Railway in forest.jpg-0d0f10c35109547a47ce6eebb3f37ffa.stex"
+path="res://.import/Midori Asgardius front walk 1.png-487ca92d168b8566cf2fe929bac21786.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgounds/Honker Railway in forest.jpg"
-dest_files=[ "res://.import/Honker Railway in forest.jpg-0d0f10c35109547a47ce6eebb3f37ffa.stex" ]
+source_file="res://sprites/cutscenes/Midori Asgardius front walk 1.png"
+dest_files=[ "res://.import/Midori Asgardius front walk 1.png-487ca92d168b8566cf2fe929bac21786.stex" ]
 
 [params]
 

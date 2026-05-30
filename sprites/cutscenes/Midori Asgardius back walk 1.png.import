@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/looking for a treasure.jpg-f4a88f9d95cd25b06c09f3ee4e3c0b7d.stex"
+path="res://.import/Midori Asgardius back walk 1.png-e0e601443a7646a1b71d58b0c798a628.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgounds/looking for a treasure.jpg"
-dest_files=[ "res://.import/looking for a treasure.jpg-f4a88f9d95cd25b06c09f3ee4e3c0b7d.stex" ]
+source_file="res://sprites/cutscenes/Midori Asgardius back walk 1.png"
+dest_files=[ "res://.import/Midori Asgardius back walk 1.png-e0e601443a7646a1b71d58b0c798a628.stex" ]
 
 [params]
 

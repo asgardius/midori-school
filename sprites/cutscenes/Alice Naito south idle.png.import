@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Kimberly Arch Knives.jpg-87e4072056c683e71b115a53058faaee.stex"
+path="res://.import/Alice Naito south idle.png-8ff2fe10ba99791679eaf46b3d595bf8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgounds/Kimberly Arch Knives.jpg"
-dest_files=[ "res://.import/Kimberly Arch Knives.jpg-87e4072056c683e71b115a53058faaee.stex" ]
+source_file="res://sprites/cutscenes/Alice Naito south idle.png"
+dest_files=[ "res://.import/Alice Naito south idle.png-8ff2fe10ba99791679eaf46b3d595bf8.stex" ]
 
 [params]
 

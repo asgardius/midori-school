@@ -1,16 +1,23 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=1]
-[ext_resource path="res://backgounds/Midori walking though forest.jpg" type="Texture" id=2]
+[ext_resource path="res://sprites/cutscenes/Midori Asgardius back walk 1.png" type="Texture" id=2]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
 [ext_resource path="res://levels/Cutscenes/unfunaversary/firstclass.gd" type="Script" id=4]
 
 [node name="Firstclass" type="Node2D"]
 script = ExtResource( 4 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0, 1, 0.6, 1 )
+
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 456.0
+margin_right = 816.0
+margin_bottom = 720.0
+rect_rotation = 0.136956
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]

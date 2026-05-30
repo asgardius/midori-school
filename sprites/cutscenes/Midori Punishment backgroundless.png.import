@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Kimberly Arch triple fold.jpg-8a67f095643dae0ce610c4d706673780.stex"
+path="res://.import/Midori Punishment backgroundless.png-cf020a22c0209c3f727eda238311785a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgounds/Kimberly Arch triple fold.jpg"
-dest_files=[ "res://.import/Kimberly Arch triple fold.jpg-8a67f095643dae0ce610c4d706673780.stex" ]
+source_file="res://sprites/cutscenes/Midori Punishment backgroundless.png"
+dest_files=[ "res://.import/Midori Punishment backgroundless.png-cf020a22c0209c3f727eda238311785a.stex" ]
 
 [params]
 

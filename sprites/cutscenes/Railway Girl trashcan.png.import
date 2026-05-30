@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Kimberly Arch crying.jpg-c9629d3010b4db2f2db2d50e1cba39e5.stex"
+path="res://.import/Railway Girl trashcan.png-64c5253b84861f7a442f668b44242e91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgounds/Kimberly Arch crying.jpg"
-dest_files=[ "res://.import/Kimberly Arch crying.jpg-c9629d3010b4db2f2db2d50e1cba39e5.stex" ]
+source_file="res://sprites/cutscenes/Railway Girl trashcan.png"
+dest_files=[ "res://.import/Railway Girl trashcan.png-64c5253b84861f7a442f668b44242e91.stex" ]
 
 [params]
 
