@@ -176,6 +176,14 @@ Debian users can use evelynrepo adding the following to sources.list (replace ar
 
 deb [trusted=yes] https://evelynrepo.momo.asgardius.company arch/
 
+Postmarketos native package is available at midorirepo (aonly for arm64)
+
+sudo wget https://midorirepo.momo.asgardius.company/asgardius@asgardius.company-69eacec0.rsa.pub -O /etc/apk/keys/asgardius@asgardius.company-69eacec0.rsa.pub
+
+Add the following to /etc/apk/repositories
+
+https://midorirepo.momo.asgardius.company
+
 Flatpak release is avaiilable at Karla repo
 
 flatpak remote-add karlarepo https://karlarepo.momo.asgardius.company/karlarepo.flatpakrepo
