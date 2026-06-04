@@ -6,7 +6,7 @@ An Action Role Playing Game inspired by Alundra, Touhou Project, Megaman X, amon
 At the moment this game is in beta development stage. If you want to help send me an email to asgardius@asgardius.company
 You can find game documentation at https://cloud.asgardius.company/s/3tPKHsMznzMjzEc?path=%2Fgame%20documentation%2FMidori%20in%20the%20Magic%20School
 
-First stable release is scheduled near Half Life 3 release (or maybe an Unfunaversary Day)
+First stable release is scheduled at 19 november 2026 (you must know why)
 
 Official video channel https://video.asgardius.company/c/asgardius_virtualx
 
