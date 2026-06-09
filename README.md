@@ -197,3 +197,7 @@ Download latest engine executable from https://elda.asgardius.company/virtualx-e
 # How to donate to this project
 
 If you want to donate to this project you can see  my crypto addressess at https://asgardius.company/?page_id=1870  (chia and monero at the moment)
+
+# Why you changed some background assets in your game?
+
+Most game developers are using Generative AI to create assets,  but most gamers hate this. So i removed AI Slop from my game and use public domain photos instead. R0.4.2-beta will be the the last release with AI slop among its assets
