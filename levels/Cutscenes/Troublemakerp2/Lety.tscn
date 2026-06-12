@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://sprites/ceres/lety/overview.png" type="Texture" id=1]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=2]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=3]
+[ext_resource path="res://backgounds/roof.jpg" type="Texture" id=4]
 
 [node name="Lety" type="Control"]
 anchor_left = 0.5
@@ -15,6 +16,11 @@ margin_right = -640.0
 margin_bottom = -360.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+
+[node name="Lety" type="TextureRect" parent="."]
 margin_left = 460.0
 margin_top = 110.0
 margin_right = 790.0
@@ -26,6 +32,7 @@ margin_left = 16.0
 margin_top = 598.0
 margin_right = 1263.0
 margin_bottom = 703.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 2 )
 text = "CUTSCENE_4_0"
 align = 1
