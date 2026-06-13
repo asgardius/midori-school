@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://sprites/cutscenes/Lety Hashimoto split.png" type="Texture" id=1]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=2]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=3]
+[ext_resource path="res://backgounds/tower.jpg" type="Texture" id=4]
 
 [node name="Fall" type="Control"]
 anchor_left = 0.5
@@ -15,6 +16,11 @@ margin_right = -640.0
 margin_bottom = -360.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+
+[node name="Lety" type="TextureRect" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 1 )

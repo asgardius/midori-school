@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://sprites/cutscenes/Midori Asgardius split.png" type="Texture" id=1]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
 [ext_resource path="res://levels/Cutscenes/Troublemakerp2/midori.gd" type="Script" id=4]
+[ext_resource path="res://backgounds/tower.jpg" type="Texture" id=5]
 
 [node name="Midori" type="Control"]
 anchor_left = 0.5
@@ -17,6 +18,11 @@ margin_bottom = -360.0
 script = ExtResource( 4 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 5 )
+
+[node name="Midori" type="TextureRect" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 1 )
