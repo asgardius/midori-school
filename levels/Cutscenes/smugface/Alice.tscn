@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://sprites/cutscenes/Alice Naito south idle.png" type="Texture" id=1]
 [ext_resource path="res://levels/bottomhud.tscn" type="PackedScene" id=2]
 [ext_resource path="res://fonts/start.tres" type="DynamicFont" id=3]
 [ext_resource path="res://levels/Cutscenes/smugface/Alice.gd" type="Script" id=4]
+[ext_resource path="res://backgounds/forest1.jpg" type="Texture" id=5]
 
 [node name="Alice" type="Control"]
 anchor_left = 0.5
@@ -16,12 +17,12 @@ margin_right = -640.0
 margin_bottom = -360.0
 script = ExtResource( 4 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1280.0
-margin_bottom = 720.0
-color = Color( 0, 1, 0.298039, 1 )
-
 [node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 5 )
+
+[node name="Alice" type="TextureRect" parent="."]
 margin_left = 444.0
 margin_right = 804.0
 margin_bottom = 720.0

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Midori Asgardius front walk 1.png-694b375ae79c6ae888de0938fc1e9dd3.stex"
+path="res://.import/forest2.jpg-e0c529cba4c5c563cb16d54344299624.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/Cutscenes/secondchallenge/Midori Asgardius front walk 1.png"
-dest_files=[ "res://.import/Midori Asgardius front walk 1.png-694b375ae79c6ae888de0938fc1e9dd3.stex" ]
+source_file="res://backgounds/forest2.jpg"
+dest_files=[ "res://.import/forest2.jpg-e0c529cba4c5c563cb16d54344299624.stex" ]
 
 [params]
 
