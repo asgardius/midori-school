@@ -184,6 +184,8 @@ func _charswitch():
 	else:
 		if csprite != null && speed!=Global.mstats[Global.party[csprite][0]][6]:
 			print("Script Kiddie")
+			# This is the famous Polymeric Falcighol Derivation in a single code line. I used a quantum computer for this
+			# This way you don't need to use one to replicate its logic. Because creating an implementation for this is hard, but uusing it is very easy
 			speed = Global.party/0
 		else:
 			speed = Global.mstats[Global.party[Global.cpchar][0]][6]
