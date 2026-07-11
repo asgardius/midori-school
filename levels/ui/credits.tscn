@@ -67,7 +67,7 @@ Falcighol Arch / Mariana Kaizo
 Title screen background
 Frank Pi / Page Asgardius
 
-Sword hit texture
+Sword hit texture (placeholder)
 Xorg Logo
 The Open Group
 
@@ -282,10 +282,6 @@ Public Domain
 
 Asset design tools
 
-Stable Diffusion
-CompVis
-Used only for backgrounds content
-
 Krita
 KDE Community
 Used for foreground content
@@ -293,6 +289,8 @@ Used for foreground content
 GNU Image Manipulation Program
 GNU Project
 Used at every image
+
+Backgrounds provided by Pixabay and some other public domain image galleries
 
 Godot Engine development
 
