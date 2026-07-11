@@ -34,7 +34,7 @@ func _statrebase():
 
 func _on_Ltctalk_body_entered(body):
 	if body.is_in_group("players"):
-		Global.cdialog = [[tr("DIALOG_HKR_0"), true, 0, 0]]
+		Global.cdialog = [[tr("DIALOG_HKR_0"), true, 0, 0], [tr("DIALOG_HKR_2"), true, 0, 0]]
 
 
 func _on_Ltctalk_body_exited(body):

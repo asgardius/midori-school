@@ -59,6 +59,7 @@ func _winner():
 	call_deferred("_talk")
 
 func _winnerr():
+	Global.result[0] = 1
 	if Global.quest[3] != 3:
 		Global.quest[3] = 3
 		Global.quest[4] = 1

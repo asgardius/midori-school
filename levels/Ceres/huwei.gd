@@ -29,6 +29,7 @@ func _input(event):
 	
 
 func _winner():
+	Global.result[0] = 1
 	if Global.quest[4] != 3:
 		Global.quest[4] = 3
 		Global.quest[5] = 1
