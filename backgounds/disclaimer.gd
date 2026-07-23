@@ -4,6 +4,7 @@ var presscontinue
 const gamepadtest = preload("res://gamepad.gd")
 var rmusic := AudioStreamPlayer.new()
 var wait
+var mode = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	presscontinue = $Label2
@@ -28,9 +29,13 @@ func _input(event):
 	updatehud()
    # Mouse in viewport coordinates.
 	if Input.is_action_just_pressed("ui_accept") || Input.is_action_just_pressed("mclick"):
-		#print("Mouse Click/Unclick at: ", event.position)
-		get_tree().change_scene("res://title.tscn")
+		if mode > 0:
+			#print("Mouse Click/Unclick at: ", event.position)
+			get_tree().change_scene("res://title.tscn")
 		#_title()
+		else:
+			mode = 1
+			$Label.set_text(tr("TEXT_DISCLAIMER_PT2"))
 
 func _title():
 	# This is like autoloading the scene, only
