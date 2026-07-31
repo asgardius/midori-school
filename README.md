@@ -38,7 +38,7 @@ Can you guess this stage's name?
 
 <img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/4.jpg>
 
-Story telling with characters made by humans and backgrounds made by soulless machines (Stable Diffusion)
+Story telling with hand-drawn characters and public domain photos for backgrounds
 
 <img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/5.jpg>
 
