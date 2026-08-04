@@ -38,7 +38,7 @@ func _fetchdata():
 	else:
 		if Global.cplace == [1, 8, 28]:
 			teammenu.visible = true
-		if Global.quest[0] != 0 && (Global.cplace[0] == 1 || Global.dplace[0] == 2):
+		if Global.quest[0] == 3 && (Global.cplace[0] == 1 || Global.dplace[0] == 2):
 			warpmenu.visible = true
 		else:
 			warpmenu.visible = false

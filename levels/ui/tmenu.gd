@@ -13,6 +13,8 @@ func _ready():
 	$VBoxContainer/Start.grab_focus()
 	if Global.dificulty != 0:
 		startbutton.set_text(tr("BUTTON_CONTINUE"))
+		if Global.dificulty == 4 && Global.defeats > 0:
+			startbutton.disabled = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -57,6 +59,8 @@ func _input(event):
 func _on_start_pressed():
 	if Global.dificulty == 0:
 		get_tree().change_scene("res://levels/ui/newgame.tscn")
+	elif Global.dificulty == 4 && Global.defeats > 0:
+			startbutton.disabled = true
 	else:
 		Global.live = 1
 		_statrebase()
