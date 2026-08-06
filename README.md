@@ -108,17 +108,13 @@ This game is made to  work better on linux smartphones like Pinephone (the one t
 
 I had issues trying to make this game working  on Pinephone,  so i delayed touch controls implementation until this issue was solved. Android support for this game is not a priority for me, for this reason i suggest using a linux-first smartphone instead. remember that Google Play reviews any app update, so every android  release  will arrive a bit later than linux releases
 
-# Why Google Play release is not longer being updated?
+# Why Google Play release was remove?
 
 Because i'm against this https://www.androidauthority.com/how-android-sideloading-restrictions-may-work-3595355/
 
-# How i can install this game on a Huawei Smartphone?
+# What happened to apk releases?
 
-Since R0.3.11-beta apk release is available at download links, so you can use these because Play Store release is now deprecated
-
-# How can install this game on my Pixel with Graphene OS?
-
-If you want a privacy focused smartphone, you must use a librem 5 instead, but you can use my hint for Huawei users
+See instruction for Postmarketos
 
 # Why this game is not available at F-Droid?
 
