@@ -11,6 +11,12 @@ func _ready():
 	if !Global.debug:
 		_statrebase()
 	Global.live = 1
+	var vlc = "/usr/bin/vlc"
+	if File.new().file_exists(vlc):
+		print("VLC detected")
+	else:
+		$vlc.queue_free()
+		$vlctalk.queue_free()
 	#Global.quest[1] = 3
 	#Global.quest[2] = 1
 	#pass # Replace with function body.
@@ -59,4 +65,12 @@ func _on_Patalk_body_entered(body):
 			Global.cdialog = [[tr("DIALOG_HOME_1"), true, 10, 0], [tr("DIALOG_HOME_2"), true, 10, 0]]
 
 func _on_Patalk_body_exited(body):
+	Global.cdialog = []
+
+
+func _on_vlctalk_body_entered(body):
+	Global.cdialog = [[tr("VLCTALK"), true, 0, 0]]
+
+
+func _on_vlctalk_body_exited(body):
 	Global.cdialog = []

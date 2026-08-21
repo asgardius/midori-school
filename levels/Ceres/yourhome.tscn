@@ -1,9 +1,10 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://sprites/common/kimberly/sprite.png" type="Texture" id=1]
 [ext_resource path="res://levels/Ceres/yourhome.gd" type="Script" id=2]
 [ext_resource path="res://sprites/common/player/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://sprites/common/principal/sprite.png" type="Texture" id=4]
+[ext_resource path="res://sprites/ceres/items/vlc.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 18.5, 446.5 )
@@ -315,6 +316,12 @@ tracks/0/keys = {
 [sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 48.5, 146 )
 
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 60, 64 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 67.5, 70.5 )
+
 [node name="Honkerrailway" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -514,6 +521,22 @@ position = Vector2( 473, 133 )
 position = Vector2( 2.5, 16 )
 shape = SubResource( 13 )
 
+[node name="vlc" type="StaticBody2D" parent="."]
+position = Vector2( 72, 643 )
+
+[node name="Sprite" type="Sprite" parent="vlc"]
+texture = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vlc"]
+shape = SubResource( 23 )
+
+[node name="vlctalk" type="Area2D" parent="."]
+position = Vector2( 72, 643 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="vlctalk"]
+position = Vector2( -0.5, 0.5 )
+shape = SubResource( 24 )
+
 [node name="Patalk" type="Area2D" parent="."]
 position = Vector2( 650, 133 )
 
@@ -526,5 +549,7 @@ position = Vector2( 635, 586 )
 
 [connection signal="body_entered" from="Katalk" to="." method="_on_Katalk_body_entered"]
 [connection signal="body_exited" from="Katalk" to="." method="_on_Katalk_body_exited"]
+[connection signal="body_entered" from="vlctalk" to="." method="_on_vlctalk_body_entered"]
+[connection signal="body_exited" from="vlctalk" to="." method="_on_vlctalk_body_exited"]
 [connection signal="body_entered" from="Patalk" to="." method="_on_Patalk_body_entered"]
 [connection signal="body_exited" from="Patalk" to="." method="_on_Patalk_body_exited"]

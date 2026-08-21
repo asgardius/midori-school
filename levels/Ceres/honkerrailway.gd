@@ -1,5 +1,5 @@
 extends Node2D
-
+var ishkrlauncher = false
 var talk
 var hkr = load("res://levels/challenges/hkr.tscn").instance()
 # Called when the node enters the scene tree for the first time.
@@ -11,6 +11,10 @@ func _ready():
 		call_deferred("_hkr")
 		Global.quest[1] = 3
 		Global.quest[2] = 1
+	var hkl = "/usr/bin/honkers-railway-launcher"
+	if File.new().file_exists(hkl):
+		#print("The Honkers Railway Launcher detected")
+		ishkrlauncher = true
 	#pass # Replace with function body.
 
 
@@ -34,7 +38,10 @@ func _statrebase():
 
 func _on_Ltctalk_body_entered(body):
 	if body.is_in_group("players"):
-		Global.cdialog = [[tr("DIALOG_HKR_0"), true, 0, 0], [tr("DIALOG_HKR_2"), true, 0, 0]]
+		if ishkrlauncher:
+			Global.cdialog = [[tr("DIALOG_HKR_0"), true, 0, 0], [tr("DIALOG_HKR_2"), true, 0, 0], [tr("DIALOG_HKR_3"), true, 0, 0]]
+		else:
+			Global.cdialog = [[tr("DIALOG_HKR_0"), true, 0, 0], [tr("DIALOG_HKR_2"), true, 0, 0]]
 
 
 func _on_Ltctalk_body_exited(body):
