@@ -28,6 +28,14 @@ func _ready():
 	_charinit()
 
 func _physics_process(delta):
+	if Global.debug:
+		if Global.dstats[Global.dparty[Global.dcpchar][0]][0] > Global.mstats[Global.dparty[Global.dcpchar][0]][0]:
+			print("Script kiddie")
+			speed = Global.party/0
+	else:
+		if Global.cstats[Global.party[Global.cpchar][0]][0] > Global.mstats[Global.party[Global.cpchar][0]][0]:
+			print("Script kiddie")
+			speed = Global.party/0
 	if Global.live != 1:
 		Global.xm = 0
 		Global.ym = 0
