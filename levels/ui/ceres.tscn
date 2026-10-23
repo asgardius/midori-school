@@ -43,85 +43,85 @@ valign = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_left = 111.0
-margin_top = 129.0
+margin_top = 105.0
 margin_right = 1128.0
-margin_bottom = 705.0
+margin_bottom = 721.0
 
 [node name="L20" type="Button" parent="VBoxContainer"]
 margin_right = 1017.0
-margin_bottom = 54.0
+margin_bottom = 58.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "CERES_L20_DESC"
 
 [node name="Lilytest" type="Button" parent="VBoxContainer"]
-margin_top = 58.0
+margin_top = 62.0
 margin_right = 1017.0
-margin_bottom = 112.0
+margin_bottom = 120.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "MENU_MAP"
 
 [node name="Dialogtest" type="Button" parent="VBoxContainer"]
-margin_top = 116.0
+margin_top = 124.0
 margin_right = 1017.0
-margin_bottom = 170.0
+margin_bottom = 182.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "Honker Railway"
 
 [node name="Bullethell" type="Button" parent="VBoxContainer"]
-margin_top = 174.0
+margin_top = 186.0
 margin_right = 1017.0
-margin_bottom = 228.0
+margin_bottom = 244.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 1 )
 text = "TWIN_TROUBLEMAKERS"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
-margin_top = 232.0
+margin_top = 248.0
 margin_right = 1017.0
-margin_bottom = 286.0
+margin_bottom = 306.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
 text = "TWIN_TROUBLEMAKERS_P2"
 
 [node name="WIP" type="Button" parent="VBoxContainer"]
-margin_top = 290.0
+margin_top = 310.0
 margin_right = 1017.0
-margin_bottom = 344.0
+margin_bottom = 368.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
 text = "YOUR_HOME"
 
 [node name="huwei" type="Button" parent="VBoxContainer"]
-margin_top = 348.0
+margin_top = 372.0
 margin_right = 1017.0
-margin_bottom = 402.0
+margin_bottom = 430.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
 text = "Kitchen Nightmare"
 
 [node name="dust" type="Button" parent="VBoxContainer"]
-margin_top = 406.0
+margin_top = 434.0
 margin_right = 1017.0
-margin_bottom = 460.0
+margin_bottom = 492.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
 text = "Tito Dust"
 
 [node name="ladybug" type="Button" parent="VBoxContainer"]
-margin_top = 464.0
+margin_top = 496.0
 margin_right = 1017.0
-margin_bottom = 518.0
+margin_bottom = 554.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 4 )
 text = "The Bug"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
-margin_top = 522.0
+margin_top = 558.0
 margin_right = 1017.0
-margin_bottom = 576.0
+margin_bottom = 616.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"

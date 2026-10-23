@@ -49,55 +49,55 @@ margin_bottom = 651.0
 
 [node name="Testspawn" type="Button" parent="VBoxContainer"]
 margin_right = 1017.0
-margin_bottom = 54.0
+margin_bottom = 58.0
 custom_fonts/font = ExtResource( 3 )
 custom_styles/focus = SubResource( 1 )
 text = "BUTTON_SPAWNTEST"
 
 [node name="Lilytest" type="Button" parent="VBoxContainer"]
-margin_top = 58.0
+margin_top = 62.0
 margin_right = 1017.0
-margin_bottom = 112.0
+margin_bottom = 120.0
 custom_fonts/font = ExtResource( 3 )
 custom_styles/focus = SubResource( 1 )
 text = "BUTTOM_TESTBOSS"
 
 [node name="Dialogtest" type="Button" parent="VBoxContainer"]
-margin_top = 116.0
+margin_top = 124.0
 margin_right = 1017.0
-margin_bottom = 170.0
+margin_bottom = 182.0
 custom_fonts/font = ExtResource( 3 )
 custom_styles/focus = SubResource( 1 )
 text = "BUTTON_DIALOGTEST"
 
 [node name="Bullethell" type="Button" parent="VBoxContainer"]
-margin_top = 174.0
+margin_top = 186.0
 margin_right = 1017.0
-margin_bottom = 228.0
+margin_bottom = 244.0
 custom_fonts/font = ExtResource( 3 )
 custom_styles/focus = SubResource( 1 )
 text = "BUTTON_DANMAKUTEST"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
-margin_top = 232.0
+margin_top = 248.0
 margin_right = 1017.0
-margin_bottom = 286.0
+margin_bottom = 306.0
 custom_fonts/font = ExtResource( 3 )
 custom_styles/focus = SubResource( 4 )
 text = "BUTTON_PLACEHOLDER"
 
 [node name="WIP" type="Button" parent="VBoxContainer"]
-margin_top = 290.0
+margin_top = 310.0
 margin_right = 1017.0
-margin_bottom = 344.0
+margin_bottom = 368.0
 custom_fonts/font = ExtResource( 3 )
 custom_styles/focus = SubResource( 4 )
 text = "BUTTON_PLACEHOLDER"
 
 [node name="Back" type="Button" parent="VBoxContainer"]
-margin_top = 348.0
+margin_top = 372.0
 margin_right = 1017.0
-margin_bottom = 402.0
+margin_bottom = 430.0
 custom_fonts/font = ExtResource( 3 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
