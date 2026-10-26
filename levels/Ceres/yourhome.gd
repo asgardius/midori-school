@@ -53,16 +53,17 @@ func _on_Katalk_body_exited(body):
 
 
 func _on_Patalk_body_entered(body):
+	var character = 0
+	var diag1 = "placeholder"
 	if isemily:
-		if OS.get_name() == "X11":
-			Global.cdialog = [[tr("DIALOG_HOME_1"), true, 11, 0], [tr("DIALOG_HOME_3"), true, 11, 0]]
-		else:
-			Global.cdialog = [[tr("DIALOG_HOME_1"), true, 11, 0], [tr("DIALOG_HOME_2"), true, 11, 0]]
+		character = 11
 	else:
-		if OS.get_name() == "X11":
-			Global.cdialog = [[tr("DIALOG_HOME_1"), true, 10, 0], [tr("DIALOG_HOME_3"), true, 10, 0]]
-		else:
-			Global.cdialog = [[tr("DIALOG_HOME_1"), true, 10, 0], [tr("DIALOG_HOME_2"), true, 10, 0]]
+		character = 10
+	if OS.get_name() == "X11":
+		diag1 = "DIALOG_HOME_3"
+	else:
+		diag1 = "DIALOG_HOME_2"
+	Global.cdialog = [[tr("DIALOG_HOME_1"), true, character, 0], [tr(diag1), true, character, 0], [tr("DIALOG_HOME_4"), true, character, 0]]
 
 func _on_Patalk_body_exited(body):
 	Global.cdialog = []

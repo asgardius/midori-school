@@ -34,6 +34,8 @@ func _ready():
 			welcometext = welcometext+"\nExperience Presented in 5.1 Surround"
 		elif Global.spkmode == 3:
 			welcometext = welcometext+"\nExperience Presented in 7.1 Surround"
+		if Global.gamepad == 3:
+			welcometext = welcometext+"\nNo disc, no buy"
 		welcometext = welcometext+"\nbooting virtual machine"
 		#This can be used to detect background process, may be useful later
 		#var output = []
