@@ -160,7 +160,7 @@ Most Amiga games used this trick to optimize the limited hardware of these compu
 * Droidian powered devices
 * Almost any X86_64 computer (Don't expect seeing this game ruunning on a Pentium 2 with a Voodoo card, because i'm not John Carmack)
 
-# Linux packages
+# GNU/Linux packages
 
 Linux packages have the same name than this repo (midori-school)
 
@@ -172,7 +172,7 @@ Debian users can use evelynrepo adding the following to sources.list (replace ar
 
 deb [trusted=yes] https://evelynrepo.momo.asgardius.company arch/
 
-Postmarketos native package is available at midorirepo (aonly for arm64)
+Nura OS native package is available at midorirepo (aonly for arm64)
 
 sudo wget https://midorirepo.momo.asgardius.company/asgardius@asgardius.company-69eacec0.rsa.pub -O /etc/apk/keys/asgardius@asgardius.company-69eacec0.rsa.pub
 
@@ -180,7 +180,7 @@ Add the following to /etc/apk/repositories
 
 https://midorirepo.momo.asgardius.company
 
-Flatpak release is avaiilable at Karla repo
+Flatpak release is available at Karla repo
 
 flatpak remote-add karlarepo https://karlarepo.momo.asgardius.company/karlarepo.flatpakrepo
 
