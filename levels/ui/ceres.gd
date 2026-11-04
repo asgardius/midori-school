@@ -2,7 +2,7 @@ extends Control
 const gamepadtest = preload("res://gamepad.gd")
 func _ready():
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
-	$VBoxContainer/L20.grab_focus()
+	$HBoxContainer/VBoxContainer/L20.grab_focus()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -98,5 +98,11 @@ func _on_dust_pressed():
 
 func _on_ladybug_pressed():
 	Global.dplace = [1, 6, 9]
+	Global.live = 1
+	get_tree().change_scene("res://levels/ui/gameplay.tscn")
+
+
+func _on_nowhere_pressed():
+	Global.dplace = [1, 6, 8]
 	Global.live = 1
 	get_tree().change_scene("res://levels/ui/gameplay.tscn")

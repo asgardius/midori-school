@@ -43,23 +43,23 @@ margin_bottom = 50.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Boss"]
 margin_right = 301.0
-margin_bottom = 23.0
+margin_bottom = 24.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Boss/HBoxContainer"]
 margin_right = 174.0
-margin_bottom = 23.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 174, 23 )
 custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Boss"]
-margin_top = 27.0
+margin_top = 28.0
 margin_right = 301.0
-margin_bottom = 50.0
+margin_bottom = 52.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Boss/HBoxContainer2"]
 margin_right = 70.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 70, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Health"
@@ -75,7 +75,7 @@ custom_styles/bg = SubResource( 2 )
 [node name="Label2" type="Label" parent="CanvasLayer/Boss/HBoxContainer2"]
 margin_left = 178.0
 margin_right = 301.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 123, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "100/100"
@@ -106,31 +106,31 @@ margin_bottom = 116.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
 margin_right = 301.0
-margin_bottom = 23.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 0, 23 )
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer"]
 margin_right = 174.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 174, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="Label3" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer"]
 margin_left = 178.0
-margin_right = 202.0
-margin_bottom = 22.0
+margin_right = 196.0
+margin_bottom = 24.0
 custom_fonts/font = ExtResource( 1 )
 text = "R1"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
-margin_top = 27.0
+margin_top = 28.0
 margin_right = 301.0
-margin_bottom = 50.0
+margin_bottom = 52.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
 margin_right = 74.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 74, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Health"
@@ -146,20 +146,20 @@ custom_styles/bg = SubResource( 2 )
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer2"]
 margin_left = 182.0
 margin_right = 301.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 119, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "100/100"
 align = 2
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
-margin_top = 54.0
+margin_top = 56.0
 margin_right = 301.0
-margin_bottom = 77.0
+margin_bottom = 80.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
 margin_right = 74.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 74, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Stamina"
@@ -175,20 +175,20 @@ custom_styles/bg = SubResource( 4 )
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer3"]
 margin_left = 182.0
 margin_right = 301.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 119, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "100/100"
 align = 2
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CanvasLayer/Topmini/VBoxContainer"]
-margin_top = 81.0
+margin_top = 84.0
 margin_right = 301.0
-margin_bottom = 104.0
+margin_bottom = 108.0
 
 [node name="Label" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 margin_right = 74.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 74, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "OC Skill"
@@ -204,7 +204,7 @@ custom_styles/bg = SubResource( 6 )
 [node name="Label2" type="Label" parent="CanvasLayer/Topmini/VBoxContainer/HBoxContainer4"]
 margin_left = 182.0
 margin_right = 301.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 119, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "100/100"

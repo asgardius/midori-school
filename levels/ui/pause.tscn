@@ -22,8 +22,8 @@ script = ExtResource( 4 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-margin_right = 8000.0
-margin_bottom = 8000.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.698039 )
 
 [node name="Bottomhud" parent="CanvasLayer" instance=ExtResource( 3 )]
@@ -46,19 +46,19 @@ margin_bottom = 116.0
 
 [node name="Cname" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
 margin_right = 301.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 174, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Name"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
-margin_top = 26.0
+margin_top = 28.0
 margin_right = 301.0
-margin_bottom = 48.0
+margin_bottom = 52.0
 
 [node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_right = 178.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 178, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Health"
@@ -66,20 +66,20 @@ text = "Health"
 [node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer"]
 margin_left = 182.0
 margin_right = 301.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 119, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "100/100"
 align = 2
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/HBoxContainer/VBoxContainer"]
-margin_top = 52.0
+margin_top = 56.0
 margin_right = 301.0
-margin_bottom = 74.0
+margin_bottom = 80.0
 
 [node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2"]
 margin_right = 178.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 178, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "Level"
@@ -87,7 +87,7 @@ text = "Level"
 [node name="Label2" type="Label" parent="CanvasLayer/HBoxContainer/VBoxContainer/HBoxContainer2"]
 margin_left = 182.0
 margin_right = 301.0
-margin_bottom = 22.0
+margin_bottom = 24.0
 rect_min_size = Vector2( 119, 0 )
 custom_fonts/font = ExtResource( 1 )
 text = "100/100"
@@ -101,12 +101,12 @@ margin_bottom = 493.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HBoxContainer2"]
 margin_right = 539.0
-margin_bottom = 228.0
+margin_bottom = 244.0
 rect_min_size = Vector2( 539, 0 )
 
 [node name="Character" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer"]
 margin_right = 539.0
-margin_bottom = 54.0
+margin_bottom = 58.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 3 )
 text = "MENU_CHARACTER"
@@ -139,36 +139,36 @@ text = "MENU_SETTINGS"
 [node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/HBoxContainer2"]
 margin_left = 543.0
 margin_right = 1082.0
-margin_bottom = 228.0
+margin_bottom = 244.0
 rect_min_size = Vector2( 539, 0 )
 
 [node name="Journal" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
 margin_right = 539.0
-margin_bottom = 54.0
+margin_bottom = 58.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 5 )
 text = "MENU_BOUKEN"
 
 [node name="Challenges" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
-margin_top = 58.0
+margin_top = 62.0
 margin_right = 539.0
-margin_bottom = 112.0
+margin_bottom = 120.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 5 )
 text = "MENU_CHALLENGES"
 
 [node name="Backpack" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
-margin_top = 116.0
+margin_top = 124.0
 margin_right = 539.0
-margin_bottom = 170.0
+margin_bottom = 182.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 5 )
 text = "MENU_BACKPACK"
 
 [node name="Exit" type="Button" parent="CanvasLayer/HBoxContainer2/VBoxContainer2"]
-margin_top = 174.0
+margin_top = 186.0
 margin_right = 539.0
-margin_bottom = 228.0
+margin_bottom = 244.0
 custom_fonts/font = ExtResource( 2 )
 custom_styles/focus = SubResource( 5 )
 text = "MENU_EXIT"
