@@ -15,8 +15,10 @@ func _ready():
 		$Ch9.queue_free()
 	if Global.challenges[10] == 0:
 		$Ch10.queue_free()
-	if Global.challenges[10] == 0:
+	if Global.challenges[11] == 0:
 		$Ch11.queue_free()
+	if Global.challenges[12] == 0:
+		$Ch12.queue_free()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
