@@ -69,3 +69,13 @@ func _on_gauge_fill_pressed():
 func _on_explosion_pressed():
 	player.stream = load(Global.sfxtracks[2])
 	player.play(0)
+
+
+func _on_Moo_pressed():
+	player.stream = load(Global.sfxtracks[3])
+	player.play(0)
+
+
+func _on_Fierroviejo_pressed():
+	player.stream = load(Global.sfxtracks[4])
+	player.play(0)
