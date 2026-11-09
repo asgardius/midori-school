@@ -3,19 +3,10 @@ extends Control
 const gamepadtest = preload("res://gamepad.gd")
 var player := AudioStreamPlayer.new()
 var infobox
-var fl
-var fr
-var rl
-var rr
 
 func _ready():
-	fl = $Front_Left
-	fr = $Front_Right
-	rl = $Rear_Left
-	rr = $Rear_Right
 	#Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	add_child(player)
-	player.mix_target = 2
 	player.bus = "Music"
 	$"BoxContainer/VBoxContainer/Title Screen".grab_focus()
 	infobox = $Info
@@ -49,10 +40,6 @@ func _input(event):
 	if Input.is_action_just_pressed("stopmusic"):
 		infobox.set_text("")
 		player.stop()
-		fl.stop()
-		fr.stop()
-		rl.stop()
-		rr.stop()
 		#print("Mouse Click/Unclick at: ", event.position)
 #		if highlighted == 1:
 #			_on_debug_pressed()
@@ -190,10 +177,6 @@ func _on_elysium_pressed() -> void:
 func _on_Stop_pressed():
 	infobox.set_text("")
 	player.stop()
-	fl.stop()
-	fr.stop()
-	rl.stop()
-	rr.stop()
 
 
 func _on_Neon_pressed():
@@ -206,16 +189,8 @@ func _on_Meido_pressed():
 	_musicplay(24)
 
 func _musicplay(song):
-	player.stream = load(Global.musictrackc[song])
-	fl.stream = load(Global.musictrackfl[song])
-	fr.stream = load(Global.musictrackfr[song])
-	rl.stream = load(Global.musictrackrl[song])
-	rr.stream = load(Global.musictrackrr[song])
+	player.stream = load(Global.musictrack[song])
 	player.play(0)
-	fl.play(0)
-	fr.play(0)
-	rl.play(0)
-	rr.play(0)
 
 
 func _on_Underworld_pressed():

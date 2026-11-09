@@ -15,19 +15,11 @@ var tcontrol = load("res://levels/ui/touchcontrols.tscn").instance()
 var ismgamepad = false
 var ishud = true
 var istouch = false
-var fl
-var fr
-var rl
-var rr
 var powerdismiss = false
 var talk
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	fl = $Front_Left
-	fr = $Front_Right
-	rl = $Rear_Left
-	rr = $Rear_Right
 	#if Input.get_mouse_mode() == 0:
 	#	istouch = true
 	if Global.dificulty == 1:
@@ -76,11 +68,7 @@ func _ready():
 	#	player.position.x = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][1]
 	#	player.position.y = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	
-	music = load(Global.musictrackc[musictrack])
-	fl.stream = load(Global.musictrackfl[musictrack])
-	fr.stream = load(Global.musictrackfr[musictrack])
-	rl.stream = load(Global.musictrackrl[musictrack])
-	rr.stream = load(Global.musictrackrr[musictrack])
+	music = load(Global.musictrack[musictrack])
 	call_deferred("_level")
 	call_deferred("_bhud")
 	call_deferred("_thud")
@@ -94,10 +82,6 @@ func _ready():
 	sfx1.bus = "SFX1"
 	if !Global.isboss:
 		bgsound.play(0)
-		fl.play(0)
-		fr.play(0)
-		rl.play(0)
-		rr.play(0)
 		
 
 
@@ -187,10 +171,6 @@ func _input(event):
 		sfx1.stream = load(Global.sfxtracks[1])
 		sfx1.play(0)
 		bgsound.play(0)
-		fl.play(0)
-		fr.play(0)
-		rl.play(0)
-		rr.play(0)
 func _statrebase():
 	if Global.debug:
 		for i in 4:
@@ -317,18 +297,10 @@ func _loadlevel():
 		Global.isboss = Global.places[Global.cplace[0]][Global.cplace[1]][Global.cplace[2]][2]
 	if musictrack != oldtrack:
 		bgsound.stop()
-		music = load(Global.musictrackc[musictrack])
-		fl.stream = load(Global.musictrackfl[musictrack])
-		fr.stream = load(Global.musictrackfr[musictrack])
-		rl.stream = load(Global.musictrackrl[musictrack])
-		rr.stream = load(Global.musictrackrr[musictrack])
+		music = load(Global.musictrack[musictrack])
 		bgsound.stream = music
 		if !Global.isboss:
 			bgsound.play(0)
-			fl.play(0)
-			fr.play(0)
-			rl.play(0)
-			rr.play(0)
 	_level()
 
 func _talk():

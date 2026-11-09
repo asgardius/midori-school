@@ -23,17 +23,8 @@ func _ready():
 	var song = 0
 	if Global.quest[3] == 3:
 		song = 24
-	var titlemusic = load(Global.musictrackc[song])
-	$Front_Left.stream = load(Global.musictrackfl[song])
-	$Front_Right.stream = load(Global.musictrackfr[song])
-	$Rear_Left.stream = load(Global.musictrackrl[song])
-	$Rear_Right.stream = load(Global.musictrackrr[song])
+	var titlemusic = load(Global.musictrack[song])
 	bgsound.stream = titlemusic
-	bgsound.mix_target = 2
-	$Front_Left.play(0)
-	$Front_Right.play(0)
-	$Rear_Left.play(0)
-	$Rear_Right.play(0)
 	bgsound.play(0)
 	bgsound.bus = "Music"
 	wait = Time.get_ticks_msec()

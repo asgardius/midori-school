@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/crammin.ogg-80bc09ef5d45404439863820c924b731.oggstr"
+
+[deps]
+
+source_file="res://music/crammin.ogg"
+dest_files=[ "res://.import/crammin.ogg-80bc09ef5d45404439863820c924b731.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -7,7 +7,6 @@ var notdust = load("res://levels/challenges/notdust.tscn").instance()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	add_child(sfx1)
-	sfx1.mix_target = 1
 	sfx1.bus = "SFX1"
 	sfx1.stream = load(Global.sfxtracks[0])
 	sfx1.play(0)

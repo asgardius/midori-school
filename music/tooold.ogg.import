@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tooold.ogg-7c6144733b9073eeb86a19c75c0e9fe4.oggstr"
+
+[deps]
+
+source_file="res://music/tooold.ogg"
+dest_files=[ "res://.import/tooold.ogg-7c6144733b9073eeb86a19c75c0e9fe4.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -8,15 +8,10 @@ var rr
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	fl = $Front_Left
-	fr = $Front_Right
-	rl = $Rear_Left
-	rr = $Rear_Right
 	add_child(bgsound)
 	#add_child(fl)
 	#add_child(fr)
-	bgsound.stream = load("res://music/c/alsa.ogg")
-	bgsound.mix_target = 2
+	bgsound.stream = load("res://music/alsa.ogg")
 	bgsound.bus = "Music"
 	#fl.mix_target = 1
 	#fr.mix_target = 1
@@ -26,10 +21,6 @@ func _ready() -> void:
 	#fl.set_volume_db(10)
 	#fr.set_volume_db(10)
 	bgsound.play(0)
-	fl.play(0)
-	fr.play(0)
-	rl.play(0)
-	rr.play(0)
 
 func _input(event):
 	gamepadtest.new(event)

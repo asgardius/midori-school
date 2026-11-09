@@ -65,264 +65,235 @@ margin_right = 1280.0
 margin_bottom = 651.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer"]
-margin_right = 171.0
+margin_right = 132.0
 margin_bottom = 560.0
 
 [node name="Title Screen" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_right = 171.0
-margin_bottom = 30.0
+margin_right = 132.0
+margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG0_LABEL"
 
 [node name="Disclaimer, Settings, Stores" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 34.0
-margin_right = 171.0
-margin_bottom = 64.0
+margin_top = 36.0
+margin_right = 132.0
+margin_bottom = 68.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG1_LABEL"
 
 [node name="Testrooms" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 68.0
-margin_right = 171.0
-margin_bottom = 98.0
+margin_top = 72.0
+margin_right = 132.0
+margin_bottom = 104.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG2_LABEL"
 
 [node name="Friendly challenge" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 102.0
-margin_right = 171.0
-margin_bottom = 132.0
+margin_top = 108.0
+margin_right = 132.0
+margin_bottom = 140.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG3_LABEL"
 
 [node name="School nursery" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 136.0
-margin_right = 171.0
-margin_bottom = 166.0
+margin_top = 144.0
+margin_right = 132.0
+margin_bottom = 176.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG4_LABEL"
 
 [node name="Overworld (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 170.0
-margin_right = 171.0
-margin_bottom = 200.0
+margin_top = 180.0
+margin_right = 132.0
+margin_bottom = 212.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG5_LABEL"
 
 [node name="Boss fight (Ceres)" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 204.0
-margin_right = 171.0
-margin_bottom = 234.0
+margin_top = 216.0
+margin_right = 132.0
+margin_bottom = 248.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG6_LABEL"
 
 [node name="Result" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 238.0
-margin_right = 171.0
-margin_bottom = 268.0
+margin_top = 252.0
+margin_right = 132.0
+margin_bottom = 284.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG7_LABEL"
 
 [node name="Overworld (Earth)" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 272.0
-margin_right = 171.0
-margin_bottom = 302.0
+margin_top = 288.0
+margin_right = 132.0
+margin_bottom = 320.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG8_LABEL"
 
 [node name="The Zubmarine Zone" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 306.0
-margin_right = 171.0
-margin_bottom = 336.0
+margin_top = 324.0
+margin_right = 132.0
+margin_bottom = 356.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG9_LABEL"
 
 [node name="Radioactive Desert" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 340.0
-margin_right = 171.0
-margin_bottom = 370.0
+margin_top = 360.0
+margin_right = 132.0
+margin_bottom = 392.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG10_LABEL"
 
 [node name="Natasha’s Theme" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 374.0
-margin_right = 171.0
-margin_bottom = 404.0
+margin_top = 396.0
+margin_right = 132.0
+margin_bottom = 428.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG11_LABEL"
 
 [node name="Dungeon of Destruction" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 408.0
-margin_right = 171.0
-margin_bottom = 438.0
+margin_top = 432.0
+margin_right = 132.0
+margin_bottom = 464.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG12_LABEL"
 
 [node name="Final Boss Fight" type="Button" parent="BoxContainer/VBoxContainer"]
-margin_top = 442.0
-margin_right = 171.0
-margin_bottom = 472.0
+margin_top = 468.0
+margin_right = 132.0
+margin_bottom = 500.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG13_LABEL"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
-margin_left = 175.0
-margin_right = 364.0
+margin_left = 136.0
+margin_right = 278.0
 margin_bottom = 560.0
 
 [node name="Ending Theme" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_right = 189.0
-margin_bottom = 30.0
+margin_right = 142.0
+margin_bottom = 32.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG14_LABEL"
 
 [node name="Credits 1" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 34.0
-margin_right = 189.0
-margin_bottom = 64.0
+margin_top = 36.0
+margin_right = 142.0
+margin_bottom = 68.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG15_LABEL"
 
 [node name="Credits 2" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 68.0
-margin_right = 189.0
-margin_bottom = 98.0
+margin_top = 72.0
+margin_right = 142.0
+margin_bottom = 104.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG16_LABEL"
 
 [node name="Credits 3" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 102.0
-margin_right = 189.0
-margin_bottom = 132.0
+margin_top = 108.0
+margin_right = 142.0
+margin_bottom = 140.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG17_LABEL"
 
 [node name="The Magic School" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 136.0
-margin_right = 189.0
-margin_bottom = 166.0
+margin_top = 144.0
+margin_right = 142.0
+margin_bottom = 176.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG18_LABEL"
 
 [node name="Deep Forest" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 170.0
-margin_right = 189.0
-margin_bottom = 200.0
+margin_top = 180.0
+margin_right = 142.0
+margin_bottom = 212.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG19_LABEL"
 
 [node name="Boss Fight (Earth)" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 204.0
-margin_right = 189.0
-margin_bottom = 234.0
+margin_top = 216.0
+margin_right = 142.0
+margin_bottom = 248.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG20_LABEL"
 
 [node name="ALSA" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 238.0
-margin_right = 189.0
-margin_bottom = 268.0
+margin_top = 252.0
+margin_right = 142.0
+margin_bottom = 284.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG21_LABEL"
 
 [node name="Elysium" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 272.0
-margin_right = 189.0
-margin_bottom = 302.0
+margin_top = 288.0
+margin_right = 142.0
+margin_bottom = 320.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG22_LABEL"
 
 [node name="Neon" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 306.0
-margin_right = 189.0
-margin_bottom = 336.0
+margin_top = 324.0
+margin_right = 142.0
+margin_bottom = 356.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG23_LABEL"
 
 [node name="Meido" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 340.0
-margin_right = 189.0
-margin_bottom = 370.0
+margin_top = 360.0
+margin_right = 142.0
+margin_bottom = 392.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG24_LABEL"
 
 [node name="Underworld" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 374.0
-margin_right = 189.0
-margin_bottom = 404.0
+margin_top = 396.0
+margin_right = 142.0
+margin_bottom = 428.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG25_LABEL"
 
 [node name="Antiques" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 408.0
-margin_right = 189.0
-margin_bottom = 438.0
+margin_top = 432.0
+margin_right = 142.0
+margin_bottom = 464.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "SONG26_LABEL"
 
 [node name="Back" type="Button" parent="BoxContainer/VBoxContainer2"]
-margin_top = 442.0
-margin_right = 189.0
-margin_bottom = 472.0
+margin_top = 468.0
+margin_right = 142.0
+margin_bottom = 500.0
 custom_fonts/font = ExtResource( 1 )
 custom_styles/focus = SubResource( 3 )
 text = "BUTTON_RETURN"
-
-[node name="Front_Left" type="AudioStreamPlayer3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5 )
-unit_db = 80.0
-unit_size = 10.0
-max_distance = 30.0
-bus = "SFX1"
-
-[node name="Front_Right" type="AudioStreamPlayer3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5 )
-unit_db = 80.0
-unit_size = 10.0
-max_distance = 30.0
-bus = "SFX1"
-
-[node name="Rear_Left" type="AudioStreamPlayer3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
-unit_db = 80.0
-unit_size = 10.0
-max_distance = 30.0
-bus = "SFX1"
-
-[node name="Rear_Right" type="AudioStreamPlayer3D" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
-unit_db = 80.0
-unit_size = 10.0
-bus = "SFX1"
-
-[node name="Camera3D" type="Camera" parent="."]
 
 [connection signal="pressed" from="Stop" to="." method="_on_Stop_pressed"]
 [connection signal="pressed" from="BoxContainer/VBoxContainer/Title Screen" to="." method="_on_title_screen_pressed"]
