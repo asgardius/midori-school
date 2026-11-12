@@ -1,0 +1,237 @@
+;en;es;ja
+TEXT_DISCLAIMER;Disclaimer\nPlaying with fireworks inside a videogame can give hours of fun,\nbut in real life is dangerous\nLife insurance exists only on fiction;Descargo de responsabilidad\nJugar con explosivos dentro de un videojuego puede dar horas de diversión\npero en la vida real es peligroso\nLos seguros de vida solamente existen en la ficción;免責事項\nビデオゲームの中で花火で遊ぶと何時間も楽しめます。\nしかし現実では危険である\n生命保険はフィクションの上にのみ存在する
+TEXT_DISCLAIMER_PT2;This game has a lot of bugs as part of its design\nThis is not a defective game;Este juego tiene muchos bugs como parte de su diseño\nNo se trata de un juego defectuoso;このゲームには、設計上、多くのバグが存在します\n欠陥のあるゲームではありません
+TEXT_GAMEPAD_DISCONNECTED;Game Controller was disconnected\nPlease connect you game controller again\nand press any button\nor press Enter to continue with keyboard; El mando de juego ha sido desconectado\nFavor de conectar el mando y presione cualquier botón\no presione Intro para continuar con el teclado;ゲーム コントローラが切断されました\nゲーム コントローラを再度接続し、任意のボタンを押す\nか、キーボードで Enter キーを押して続行してください。
+TEXT_WIP;This game is under development\nMore content will be added in following releases;Este juego está en desarrollo\nMás contenido se agregará en los siguientes lanzamientos;このゲームは現在開発中です\n今後のリリースではさらにコンテンツが追加される予定です
+CHALLENGE_COMPLETE;Challenge completed;Desafío completado;チャレンジ完了
+TEXT_CONTINUE;Press Enter or B to continue;Presiona Intro o B para continuar;Enter または B を押して続行します
+TEXT_CONTINUE_KB;Click or press Enter to continue;Haz click o presiona Intro para continuar;クリックまたはEnterキーを押して続行します
+TEXT_CONTINUE_JA;Press A to continue;Presiona A para continuar;Aを押して続行します
+TEXT_CONTINUE_US;Press B to continue;Presiona B para continuar;Bを押して続行します
+TEXT_CONTINUE_GEO;Press ○ to continue;Presiona ○ para continuar;○を押して続行します
+TEXT_START;Press Enter or B to start;Presiona Intro o B para iniciar;EnterまたはBを押して開始します
+TEXT_START_KB;Click or press Enter to start;Haz click o presiona Intro para iniciar;クリックまたはEnterキーを押して開始します
+TEXT_START_JA;Press A to start;Presiona A para iniciar;Aを押して開始
+TEXT_START_US;Press B to start;Presiona B para iniciar;Bを押して開始
+TEXT_START_GEO;Press ○ to start;Presiona ○ para iniciar;○を押して開始
+TEXT_EXIT;Press Escape or A to exit;Presiona Escape o A para salir;終了するにはEscまたはAを押してください
+TEXT_EXIT_KB;Press Escape to exit;Presiona Escape para salir;終了するにはEscキーを押してください
+TEXT_EXIT_JA;Press B to exit;Presiona B para salir;終了するにはBキーを押してください
+TEXT_EXIT_US;Press A to exit;Presiona A para salir;終了するにはAキーを押してください
+TEXT_EXIT_GEO;Press X to exit;Presiona X para salir;終了するにはXキーを押してください
+GAME_NAME;Midori in the Magic School;Midori in the Magic School;改造魔法学校のミドリ
+BUTTON_START;Start;Iniciar;始める
+BUTTON_CONTINUE;Continue;Continuar;続く
+BUTTON_DEBUG;Debug;Depurar;デバッグ
+BUTTON_PERSISTENCE;Savefile;Guardado;保存ファイル
+BUTTON_REMAP;Button Remap;Reasignar Botones;ボタンの再マップ
+BUTTON_LOAD;Load;Cargar;ファイルを保存
+BUTTON_SAVE;Save;Guardar;ファイルを保存
+BUTTON_ERASE;Erase;Borrar;ファイルを保存
+MENU_DEBUG;Debug Menu;Menú de Depuración;デバッグメニュー
+BUTTON_EXIT;Exit;Salir;このゲームを終了する
+SAVE_EXIT;Save and Exit;Guardar y salir;保存して終了
+START_NOOB;Coward;Cobarde;腰抜け
+START_THISFIRST;Try this First;Prueba Esto Primero;まずはこれを試してください
+START_CHALLENGE;True Challenge;Reto Verdadero;真の挑戦
+START_MANIAC;Maniac;Maniático;一事狂
+BUTTON_RETURN;Return;Atrás;戻る
+BUTTON_SETTINGS;Settings;Ajustes;設定
+SETTING_VSYNCT;V-Sync On;Sincronización Vertical Activada;垂直同期オン
+SETTING_VSYNCF;V-Sync Off;Sincronización Vertical Desactivada;垂直同期オフ
+SETTING_FULLSCREEN;Fullscreen;Pantalla Completa;全画面表示
+SETTING_WINDOWED;Window;Ventana;ウィンドウ
+SETTING_LFPSF;Framerate limit: Standard;Límite de Fotogramas: estandar;フレームレート制限: 標準
+SETTING_LFPST;Framerate limit: 15;Límite de Fotogramas: 15;フレームレート制限: 15
+SETTING_ULTRAWIDEF;Ultrawide Off;Ultrawide Desactivado;ウルトラワイド無効
+SETTING_ULTRAWIDET;Ultrawide On;Ultrawide Activado;ウルトラワイド対応
+BUTTON_GAMEPADTEST;Gamepad Test;Prueba de mando;ゲームパッドテスト
+BUTTON_SCENESELECT;Scene Selector;Selector de escena;シーンセレクター
+BUTTON_SOUNDTEST;Sound Test;Prueba de sonido;サウンドテスト
+BUTTON_GAMEPADTEST_DONE;Press Escape or A + B to return;Presione Escape o A + B para regresar;戻るにはEscまたはA + Bを押してください
+BUTTON_SCENE_DISCLAIMER;Disclaimer;Descargo de responsabilidad;免責事項
+BUTTON_TESTROOMS;Shrine of the doomed souls;Santuario de las almas condenadas;呪われた魂の聖域
+BUTTON_CERES;Ceres;Ceres;ケレス
+BUTTON_SCORESCREEN;Result Screen;Pantalla de resultados;結果を表示
+BUTTON_CREDITS;Credits;Creditos;クレジット画面
+BUTTON_WIP;Work in Progress;Aún en desarrollo;まだ開発中
+BUTTON_CUTSCENES;Cutscenes;Escenas;カットシーン
+BUTTON_SPAWNTEST;Spawn Test;Prueba de generación;スポーンテスト
+BUTTOM_TESTBOSS;Test Boss (Lily);Jefe de prueba (Lily);テストボス（リリー）
+BUTTON_DIALOGTEST;Dialog Test;Prueba de diálogos;ダイアログテスト
+BUTTON_DANMAKUTEST;Bullet hell test (Natasha);Prueba del infierno de balas (Natasha);弾幕テスト（ナターシャ）
+BUTTON_PLACEHOLDER;Unused; Sin utilizar;未使用
+BUTTON_MUSICTEST;Music;Música;音楽
+BUTTON_SFXTEST;Sound Effects;Efectos de Sonido;音響効果
+MENU_SFXTEST;Sound Effects Test;Prueba de efectos de sonido;音響効果テスト
+MENU_MUSICTEST;Music Test;Prueba de música;音楽テスト
+MENU_CHARSEL;Choose a character;Elige un personaje;キャラクターを選択してください
+LABEL_STOPPLAYBACK;Press X to stop playback;Presione X para detener la reproducción;再生を停止するにはXを押してください
+LOWBATTERY_WARNING;Your device's battery has less than 30% charge;La bateria de su dispositivo tiene menos del 30% de carga;デバイスのバッテリーの充電量が 30% 未満です
+SONG0_LABEL;Title Screen;Pantalla de título;タイトル画面
+SONG0_INFO;RELOADED\nRELOADED THEME\nMidori is now RELOADED;RELOADED\nRELOADED THEME\nMidori ahora esta RELOADED;RELOADED\nRELOADED THEME\nミドリは今 RELOADED
+SONG1_LABEL;Disclaimer;Descargo de responsabilidad;免責事項
+SONG1_INFO;Vince Kaichan\nJellies in the Sea\nA relaxing sea music to prepare you for this explosive\nAction RPG;Vince Kaichan\nJellies in the Sea\nUna relajante música marina que te preparará\npara este explosivo Action RPG;ヴィンス・カイチャン\nJellies in the Sea\n爆発的なアクションRPGに備えてリラックスできる海の音楽
+SONG2_LABEL;Shrine of the doomed souls;Santuario de las almas condenadas;呪われた魂の聖域
+SONG2_INFO;Fearofdark\nGet A Brain Morans\nMeme Music for a meme themed stage.\nYou can enter here using Test Milk and\nget something interesting;Fearofdark\nGet A Brain Morans\nMúsica de Meme para un escenario de memes.\nPuedes ingresar con la Leche de Pruebas y\nsorprenderte;Fearofdark\nGet A Brain Morans\nミームをテーマにしたステージのミームミュージック\nTest Milkを使用してここに参加して、\n何か面白いものを手に入れましょう
+SONG3_LABEL;Friendly challenge;Reto amistoso;フレンドリーなチャレンジ
+SONG3_INFO;MrGamer\nOskars Skarmslackare\nPianola and Mechanical Drummer makes a great duo\nCenturies pass in the blink of an eye\nDo you feel old with this song? I too;MrGamer\nOskars Skarmslackare\nLa Pianola y el Baterista Mecánico hacen un gran\ndúo. Los siglos pasan en un abrir y cerrar de ojos.\n¿Te sientes viejo con esta canción?  Yo también;MrGamer\nOskars Skarmslackare\nピアノラとメカニカルドラマーは素晴らしいデュオです\n瞬く間に何世紀も経つ\nこの曲を聞くと年をとったように感じますか？ 私も
+SONG4_LABEL;school nursing;enfermería escolar;学校看護
+SONG4_INFO;JosSs\nExtra Life\nDo you want an Extra Life?\nYou need them;JosSs\nExtra Life\nOcupas una vida extra?\nLas necesitarás;JosSs\nExtra Life\nエクストラライフが欲しいですか?\n必要になるでしょう
+SONG5_LABEL;Overworld (Ceres);Mundo superior (Ceres);オーバーワールド（ケレス）
+SONG5_INFO;Ceekayed\nLayers\nGame graphics are made with a lot of texture layers\nmerged inside a single canvas;Ceekayed\nLayers\nLos gráficos del juego están hechos con muchas\ncapas de texturas\nfusionados dentro de un solo lienzo;Ceekayed\nLayers\nゲームのグラフィックは多くのテクスチャレイヤーで作られている\n一つのキャンバスに統合
+SONG6_LABEL;Boss fight (Ceres);Pelea de jefes (Ceres);ボス戦（ケレス）
+SONG6_INFO;ko0x\ncaramel condition\nPamela stole your candy using her Kung Fu Powers\nYou have a better weapon: Fireballs;ko0x\ncaramel condition\nPamela te robó tu dulce usando sus poderes de\nKung Fu. Tienes una mejor arma: llamaradas;ko0x\ncaramel condition\nパメラはカンフーパワーを使ってあなたのキャンディーを盗みました\nもっといい武器があるよ：火の玉
+SONG7_LABEL;Result Screen;Pantalla de resultados;結果画面
+SONG7_INFO;JosSs\nXs EdzesSs\nMost players can be confused by\nthe ways to earn experience in this game;JosSs\nXs EdzesSs\nLa mayoría de los jugadores pueden sentirse\nconfundidos por las formas de ganar\nexperiencia en este juego.;JosSs\nXs EdzesSs\nほとんどのプレイヤーは、このゲ\nームで経験値を稼ぐ方法に戸惑うかもしれません。
+SONG8_LABEL;Overworld (Earth);Mundo superior (Tierra);オーバーワールド（地球）
+SONG8_INFO;Vince Kaichan\nShakeshack Galaxy\nA song composed at Earth made to spread across the Galaxy\nYour father can give you an asteroid to achieve that;Vince Kaichan\nShakeshack Galaxy\nUna canción compuesta en la Tierra hecha para\ndifundirse por toda la Galaxia\nTu padre puede darte un asteroide para lograrlo.;ヴィンス・カイチャン\nShakeshack Galaxy\n地球で作曲され、銀河に広がる歌\nあなたの父親はそれを達成するため\nに小惑星を与えることができます
+SONG9_LABEL;The Submarine base;Base Submarina;潜水艦基地
+SONG9_INFO;Vince Kaichan\nThe Zubmarine Zone\nA militar base fill with Zubmarines and fire weapons\nYou can find a lot of Heavy Machine Guns here;Vince Kaichan\nThe Zubmarine Zone\nUna base militar llena de Zubmarinos y armas de\nfuego. Puedes encontrar muchas ametralladoras\npesadas aquí;ヴィンス・カイチャン\nThe Zubmarine Zone\n潜水艦や火器が満載の軍事基地\nここでは重機関銃がたくさん見つかります
+SONG10_LABEL;Radioactive Desert;Desierto Radioactivo;放射能砂漠
+SONG10_INFO;Vince Kaichan\ncrammin jammin\nDesert radiation can kill humans instantly\nBut you can stay here without issues\nAt June 2 2002 a Half Genie Girl born here\nIf you think that this game has an unique humour\nhere is the answer;Vince Kaichan\ncrammin jammin\nLa radiación del desierto puede matar a los\nhumanos al instante,\npero puedes estar aquí sin problemas.\nEl 2 de junio de 2002 nació aquí una\nNiña Semi Genio.\nSi crees que este juego tiene un humor\núnico, aquí tienes la respuesta;ヴィンス・カイチャン\ncrammin jammin\n砂漠の放射線は人間を瞬時に死に至らしめる\nしかし、問題なくここに滞在できます\n2002年6月2日、ハーフジーニーガールが誕生しました\nこのゲームに独特のユーモアがあると思うなら\n答えはここにあります
+SONG11_LABEL;Natasha’s Theme;Tema de Natasha;ナターシャのテーマ
+SONG11_INFO;Vince Kaichan\nThe Func\nYou are fighting against a Maverick Fairy with a sad past\nand a hate against humans.\nA Lunate Elf like you can change her mind\nbecause that fairy also has pointy ears;Vince Kaichan\nThe Func\nEstás luchando contra una Hada Rebelde con un\npasado triste y un odio hacia los humanos.\nUna elfa lunar como tú puede hacerla cambiar\ndeopinión porque esa hada también tiene\norejas puntiagudas.;ヴィンス・カイチャン\nThe Func\nあなたは悲しい過去と人間への憎しみを持\nつ反抗的な妖精と戦っています\nあなたのようなルナテエルフなら彼女の考えを変えるこ\nとができるだろう、なぜならあの妖精も尖った耳を持っているからだ
+SONG12_LABEL;Dungeon of Destruction;Calabozo de la Destrucción;破壊のダンジョン
+SONG12_INFO;xerxes\nKaveh's theme\nThe Blacksmith of Destruction gave his name to a former\nuntitled theme\nHe can give you the best weapon set from the universe\nbut you must earn them\nThe Chosen One has a harder life that normal people;xerxes\nKaveh's theme\nThe Blacksmith of Destruction dio su nombre a\nun tema anteriormente sin título\nÉl puede darte el mejor conjunto de armas del\nuniverso, pero debes ganartelas\nEl elegido tiene una vida mas dificil que las\npersonas normales;xerxes\nKaveh's theme\n破壊の鍛冶屋は、以前の無題のテーマに彼の名前を与えました\n彼は宇宙最高の武器セットをあなたに与えることができますが、\nそれを獲得する必要があります\n選ばれし者は普通の人よりも厳しい人生を送る
+SONG13_LABEL;Final Boss Fight;Jefe Final;最終ボス戦
+SONG13_INFO;ko0x\nzenon\nYou trained for this\nIt's time to shine like fireworks\nand make you final explosion;ko0x\nzenon\nEntrenaste para esto\nEs hora de brillar como fuegos artificiales\ny hacer tu explosión final;ko0x\nzenon\nあなたはこれのために訓練した\n花火のように輝き、最後の爆発を起こす時が来た
+SONG14_LABEL;Ending Theme;Tema final;エンディングテーマ
+SONG14_INFO;Vince Kaichan\nMilky Way\nWe won, but at what cost?;Vince Kaichan\nMilky Way\nGanamos, pero ¿A que costo?;ヴィンス・カイチャン\n天の川\n我々は勝利したが、その代償は？
+SONG15_LABEL;Credits 1;Creditos 1;クレジット 1
+SONG15_INFO;Funky Fish and raina\nartificial sweetener\nThat candy was a fake one?\nNow that you are dead doesn't matter;Funky Fish and raina\nartificial sweetener\n¿Ese caramelo era falso?\nAhora que has muerto es irrelevante;Funky Fish and raina\nartificial sweetener\nそのキャンディーは偽物だったんですか？\n死んだらどうでもいい
+SONG16_LABEL;Credits 2;Creditos 2;クレジット 2
+SONG16_INFO;tj technoiZ\ntoo old\nI'm too old to see my daughter dying;tj technoiZ\ntoo old\nSoy demasiado mayor para ver morir a Mi hija;tj technoiZ\ntoo old\n私は娘が死ぬのを見るには年を取りすぎている
+SONG17_LABEL;Credits 3;Creditos 3;クレジット 3
+SONG17_INFO;motherchip\nportello\nI said that you are dead?\nForget it\nThis is the true beggining;motherchip\nportello\n¿Dije que habias muerto?\nOlvídalo. Este es el verdadero comienzo;motherchip\nportello\n死んでるの？\n忘れてくださいこれが本当の始まりです
+SONG18_LABEL;Kaizo Magic School;Escuela de Magia Kaizo;カイゾー魔法学校
+SONG18_INFO;Vince Kaichan\nsongbirds playground\nA happy song for a magic school at Ceres;Vince Kaichan\nsongbirds playground\nUna canción alegre para una escuela de magia en Ceres;ヴィンス・カイチャン\nsongbirds playground\nケレスの魔法学校のための楽しい歌
+SONG19_LABEL;Deep Forest;Bosque Profundo;深い森
+SONG19_INFO;Vince Kaichan\nGotanda Lights\nThis forest is under the effect of quantum ice\nGo further and you will find a frozen lake\nand the origin of that quamtum ice;Vince Kaichan\nGotanda Lights\nEste bosque está bajo el efecto del hielo cuántico\nAvanza más y encontrarás un lago helado\ny el origen de dicho hielo cuántico;ヴィンス・カイチャン\nGotanda Lights\nこの森は量子氷の影響下にある\nさらに進むと凍った湖とその霜の原因が見つかります
+SONG20_LABEL;Boss Fight (Earth);Pelea de jefes (Tierra);ボス戦（地球）
+SONG20_INFO;rez-kenet\nunreeeal superhero 3\nReal superheroes are too mainstream\nYou can be somebody better;rez-kenet\nunreeeal superhero 3\nSuperheroes reales son demasiado comunes\nPuedes ser alguien mejor;rez-kenet\nunreeeal superhero 3\n本物のスーパーヒーローは主流すぎる\nあなたはもっと良い人間になれる
+SONG21_LABEL;ALSA Audio Calibration;Calibración de Audio ALSA;ALSA オーディオキャリブレーション
+SONG21_INFO;Page Asgardius\nAdvanced Linein Sound Architects\nA song made to calibrate your sound system while\nplaying this game.\nThis does not work with bluetooth headset or weird kernels;Page Asgardius\nAdvanced Linein Sound Architects\nUna canción hecha para calibrar tu sistema de sonido\nmientras juegas a este juego.\nEsto no funciona con auriculares bluetooth o\nkernels extraños;Page Asgardius\nAdvanced Linein Sound Architects\nこのゲームをプレイ中にサウンドシステム\nを調整するために作られた曲。\nBluetoothヘッドセットや奇妙なカーネルでは動作しません
+SONG22_LABEL;Elysium Fields;Campos Elíseos;エリジウム フィールド
+SONG22_INFO;4mat\nEternity\nA song about eternity and immutability;4mat\nEternity\nUna canción sobre la eternidad y la inmutabilidad;4mat\nEternity\n永遠と不変性についての歌
+SONG23_LABEL;Neon City;Ciudad de Neón;ネオンシティ
+SONG23_INFO;joule & ko0x\ncaroline in neon\nA song about cities with neon lights;joule & ko0x\ncaroline in neon\nUna canción sobre ciudades con luces de neón;joule & ko0x\ncaroline in neon\nネオンライトが輝く街についての歌
+SONG24_LABEL;Maid's patience;Paciencia de criada;メイドの忍耐
+SONG24_INFO;Vince Kaichan\nYesterday Rain\nLearning to throw knives requires a lot of patience;Vince Kaichan\nYesterday Rain\nAprender a lanzar cuchillos requiere mucha paciencia;ヴィンス・カイチャン\nYesterday Rain\nナイフ投げを学ぶには多大な忍耐力が必要です
+SONG25_LABEL;Underworld challenge;desafío del inframundo;アンダーワールドチャレンジ
+SONG25_INFO;4mat\nbroken heart\n???;4mat\nbroken heart\n???;4mat\nbroken heart\n???
+SONG26_LABEL;Antiques;Antigüedades;アンティーク
+SONG26_INFO;arachno\ngranny's mambo\n???;arachno\ngranny's mambo\n???;arachno\ngranny's mambo???
+ALSA_TEST_MENU;ALSA Audio Calibration;Calibración de Audio ALSA;ALSA オーディオキャリブレーション
+ALSA_TEST_SPK;Speaker calibration test;Prueba de calibración de altavoces;スピーカーキャリブレーションテスト
+DIALOG_TEST_0;What is this place?;¿Qué es este lugar?;この場所は何ですか？
+DIALOG_TEST_1;I'm here;Estoy aquí;私はここにいます
+DIALOG_TEST_2;I got you, cheap copy;Te atrapé, copia barata;手に入れたよ、安物コピー
+DIALOG_DANMAKUTEST_0;What are you doing here?;¿Qué haces aquí?;ここで何をしているの？
+DIALOG_DANMAKUTEST_1;Your father need help to debug this game;Tu padre necesita ayuda para depurar este juego;あなたのお父さんはこのゲー\nムのデバッグを手伝ってほしいと思っています
+DIALOG_DANMAKUTEST_2;Ok, i'll help too;Bien, entonces yo también ayudaré;わかった、私も手伝うよ
+DIALOG_DANMAKUTEST_3;are you OK?;¿estás bien?;大丈夫ですか？
+DIALOG_DANMAKUTEST_4;I'm just a bit tired;Solo estoy un poco cansada;ちょっと疲れただけ
+DIALOG_DANMAKUTEST_5;I'm leaving for now;Me voy por ahora;とりあえず出発します
+DIALOG_CERES_L20_0;I won’t be a healer;No seré una sanadora;私はヒーラーにはなりません
+DIALOG_CERES_L20_1;I want a friendly challenge, loser will obey the winner;Haremos un reto amistoso,\nEl perdedor obedecerá al ganador;友好的な挑戦をしたい、負けた者は勝者に従う
+DIALOG_CERES_L20_2;My magic wand VS your bow;Mi vara mágica contra tu arco;私の魔法の杖 VS あなたの弓
+DIALOG_CERES_L20_3;I'm tired;Estoy cansada;私は疲れている
+DIALOG_CERES_L20_4;You must study at Kaizo Magic School as you promised;Debes estudiar en la escuela de Magia Kaizo\ncomo prometiste;約束通りカイゾー魔法学校で勉強しなくちゃ
+DIALOG_CERES_L20_5;It seems I'm lucky;Parece que tengo suerte;私は幸運のようです
+DIALOG_CERES_L20_6;Why those knives?;¿Por qué esos cuchillos?;なぜあのナイフなのですか？
+DIALOG_CERES_L20_7;Get ready for a second chance;Prepárate para una segunda oportunidad;2度目のチャンスに備えよう
+DIALOG_CERES_L20_8;I have a new plan;Tengo un nuevo plan;新しい計画がある
+DIALOG_CERES_L20_9;I won;Yo gané;私は勝った
+DIALOG_CERES_L20_10;You are strong;Eres fuerte;あなたは強い
+DIALOG_CERES_L20_11;I haven't finished yet;No he terminado todavía;まだ終わってない
+DIALOG_TROUBLEMAKER_0;Hey, I just want to be your friend.;Oye, solamente quiero ser tu amiga;ねえ、私はただあなたと友達になりたいだけよ。
+DIALOG_TROUBLEMAKER_1;I hate rubber terrorists like you;Odio a las terroristas de hule como tu;あなたのようなゴムテロリストは嫌いです
+DIALOG_TROUBLEMAKER_2;I am not a terrorist;No soy una terrorista;私はテロリストではない
+DIALOG_TROUBLEMAKER_3;This is an Easy Quiz;Esto fue un examen fácil;これは簡単な試験でした
+DIALOG_TROUBLEMAKER_4;What hapened to my house?;¿Que le ocurrió a mi casa?;私の家に何が起こったのでしょうか?
+DIALOG_TROUBLEMAKER_5;Which house?;¿Cual casa?;どの家ですか？
+DIALOG_TROUBLEMAKER_6;Are you OK?;¿Estás bien?;大丈夫ですか？
+DIALOG_TROUBLEMAKER_7;It seems so;Eso parece;そうみたいです
+DIALOG_HKR_0;I hear a heartbeat coming from inside this trash can;Escucho un latido que proviene del interior de este \ncubo de basura;このゴミ箱の中から鼓動が聞こえる
+DIALOG_HKR_1;Don't underestimate the emotions of a trash can;No subestimes las emociones de un cubo de basura;ゴミ箱の感情を過小評価しないでください
+DIALOG_HKR_2;Weird, this trash can is empty;Qué raro, este cubo de basura está vacío;おかしいな、このゴミ箱は空っぽだ
+DIALOG_HKR_3;I've already opened trash cans in another game installed\non this computer;Ya he destapado cubos de basura en otro juego instalado\nen este ordenador;このコンピュータにインストールされている別のゲームで、\nすでにゴミ箱を開けました
+DIALOG_HOME_0;Your friends can rest here if they wish;Tus amigos pueden descansar aquí si lo desean;ゲームを保存したい場合は、タイトル メニューに戻って設定に進みます
+DIALOG_HOME_1;If you want to save your game, you can go back to\nthe title menu and go to settings;Si deseas guardar tu partida, puedes regresar\nal menú de título e ir a configuración;あなたの友人は望むならここで休むことができます
+DIALOG_HOME_2;You don't have a penguin at home;No tienes un pingüino en casa;家にペンギンはいない
+DIALOG_HOME_3;You have a cute penguin at home;Tienes un lindo pingüino en casa;家にはかわいいペンギンがいます
+DIALOG_HOME_4;Don't trust humans blindly, some of them lie;No te fies ciégamente de los humanos, algunos mienten;人間を盲目的に信用してはいけない。中には嘘をつく者もいる
+CERES_L20_DESC;Kimberly’s Challenge;Reto de Kimberly;キンバリーの挑戦
+TWIN_TROUBLEMAKERS;Twin Troublemakers;Gemelas problématicas;双子のトラブルメーカー
+TWIN_TROUBLEMAKERS_P2;Twin Troublemakers Part 2;Gemelas problématicas Parte 2;双子のトラブルメーカー パート2
+ENDOFDAY;End of first day;Fin del primer día;初日終了
+YOUR_HOME;Your Home;Tu casa;あなたの家
+SECONDCHALLENGE;Second Challenge;Segundo Reto;第二の挑戦
+SMUGFACE;Smug Face;Cara presumida;得意げな顔
+MENU_CHARACTER;Character List;Lista de Personajes;キャラクター一覧
+MENU_TEAM;Team List;Lista de Equipos;チーム
+MENU_MAP;World Map;Mapa Mundial;世界地図
+MENU_SETTINGS;Settings;Ajustes;設定
+MENU_BOUKEN;Adventure Journal;Diario de Aventura;冒険日記
+MENU_CHALLENGES;Challenges;Desafíos;チャレンジリスト
+MENU_BACKPACK;Backpack;Mochila;バックパック
+MENU_EXIT;Return to Title;Regresar a Título;タイトルに戻る
+CUTSCENE_0_NAME;Prologue;Prólogo;プロローグ
+CUTSCENE_1_NAME;Unfunaversary;Funaversario;面白くない記念日
+CUTSCENE_0_0;most underrated children will be the best magicians\nFalcighol Arch, Kaizo Magic School founder;Los niños más subestimados serán los mejores magos\nFalcighol Arch, fundador de la Escuela de Magia Kaizo;最も過小評価されている子供たちが最高のマジシャンになるだろう\nファルシゴール・アーチ、カイゾー・マジック・スクール創設者
+CUTSCENE_0_1;Hello, my name is Midori Asgardius, I am a 15 year old elf girl;Hola, mi nombre es Midori Asgardius,\nSoy una niña elfo de 15 años;こんにちは、私の名前はミドリ・アスガルディウスです。\n15歳のエルフの女の子です
+CUTSCENE_0_2;They say I run around here and there as if fear didn't exist;Dicen que corro de aquí para allá como si el miedo no existiera;まるで恐怖が存在しないかのように、私はあちこち走り回っていると彼らは言う
+CUTSCENE_0_3;But I'm actually a pretty shy and reserved girl;Pero en realidad soy una niña bastante tímida y reservada;でも実際は私はかなり内気で控えめな女の子です
+CUTSCENE_0_4;I love reading, when I concentrate\nnobody will bother me;Me encanta leer, cuando me\nconcentro nadie me molestará;私は読書が大好きです。集中すれば誰にも邪魔されません
+CUTSCENE_0_5;A very funny anecdote was when I set fire to\nmy adoptive mother's trophy room;Una anécdota muy divertida fue cuando incendié la\nsala de trofeos de mi madre adoptiva;とても面白い逸話は、\n私が養母のトロフィールームに火をつけた時のことです
+CUTSCENE_1_0;The punishment that day was very painful\nI was crying for the rest of the day;El castigo de ese dia fue muy doloroso\nEstuve llorando el resto del dia;その日の罰はとても痛かった\n私は一日中泣いていた
+CUTSCENE_1_1;According to my father, my adoptive mother was crying as well;Segun mi padre, mi madre adoptiva también estuvo llorando;父によると、養母も泣いていたそうです
+CUTSCENE_1_2;Tonight the asteroid in the sky looks beautiful;Esta noche el asteroide en el cielo se ve hermoso;今夜、空の小惑星は美しく見える
+CUTSCENE_1_3;Today is my first day of school;Hoy es mi primer dia de clase;今日は学校の初日です
+CUTSCENE_2_0;The interior of this forest is very dense;El interior de este bosque es muy denso;この森の内部は非常に密集している
+CUTSCENE_2_1;I found a girl next to a lordly trashcan;Me encontré una niña a un lado de un cubo de\nbasura muy elegante;とてもエレガントなゴミ箱の隣で女の子を見つけました
+CUTSCENE_2_2;Behind her I found a crashed railroad known as\nthe Honker Railway;Detrás de ella encontré un ferrocarril estrellado conocido\ncomo Honker Railway;その後ろに、ホンカー鉄道\nとして知られる墜落した鉄道を見つけました
+CUTSCENE_3_0;I arrived a little late to school because I didn't know how to\nget there;Llegué un poco tarde a la escuela debido a que no sabía cómo\nllegar;学校への行き方がわからなかったので、学校に少し遅れました
+CUTSCENE_3_1;A girl was sitting cross-legged on the roof of a building;Una niña estaba sentada con las piernas cruzadas encima de\nla azotea de un edificio;女の子がビルの屋上で足を組んで座っていた
+CUTSCENE_3_2;She stole a candy that I was carrying in my hand using\nher Kung Fu powers, I don't know what she has against me;Ella me robó un dulce que llevaba en mi mano utilizando\nsus poderes de Kung Fu, no se que tendrá contra mi;彼女はカンフーの力を使って私が手に持っていたキャンディー\nを盗んだ、彼女が私に対して何をするか分からない
+CUTSCENE_4_0;While Pamela and I were fighting,\nher sister was watching us from a rooftop;Mientras Pamela y yo estabamos peleando,\nsu hermana nos observaba desde una azotea;パメラと私が喧嘩している間、\n彼女の妹が屋上から私たちを見守っていました
+CUTSCENE_4_1;Lety jumped from the roof and fell in a peculiar position;Lety saltó desde la azotea y cayó en una postura peculiar;レティは屋上から飛び降り、奇妙な位置に落ちた
+CUTSCENE_4_2;She seemed to be challenging me,\nbut her facial expression worries me a little.;Al parecer me estaba retando,\npero su expresión facial me preocupa un poco;彼女は私に挑戦しているようだったが、\n彼女の表情が少し心配だった
+CUTSCENE_5_0;Pamela and Lety accidentally\ndestroyed their house;Pamela y Lety accidentalmente\ndestruyeron su casa;パメラとレティは誤って家\nを壊してしまいました
+CUTSCENE_5_1;My sister and I have always been very close;Mi hermana y yo siempre hemos sido muy unidas;妹と私はいつもとても仲が良いです
+CUTSCENE_5_2;I can't help but laugh when my friends say\nI'm made out of rubber;No puedo evitar reirme cuando mis amigos\ndicen que estoy hecha de hule;友達が私をゴムでできていると言うと、笑わずにはいられない
+CUTSCENE_6_0;I found a treasure map and decided to follow it;Encontré un mapa del tesoro y decidí seguirlo;宝の地図を見つけたのでそれに従うことにしました
+CUTSCENE_6_1;I found Kimberly alone in the middle of the forest;Encontré a Kimberly sola en medio del bosque;私は森の真ん中でキンバリーを一人で見つけた
+CUTSCENE_6_2;When she noticed my arrival she took out some knives\nas if she wanted to challenge me;Cuando notó mi llegada sacó unos cuchillos como\nsi quisiera retarme;彼女は私が到着したことに気づき、\nまるで私に挑戦するかのようにナイフを何本か取り出しました
+CUTSCENE_7_0;I decided to challenge Kimberly to see who was the most flexible;Decidí desafiar a Kimberly para ver quién era la más flexible;私はキンバリーに、誰が一番身体が柔軟か挑戦してみることにしました
+CUTSCENE_7_1;She followed my challenge without thinking twice;Ella siguió mi reto sin pensarlo dos veces;彼女は何も考えずに私の挑戦に応じた
+CUTSCENE_7_2;In the distance, a girl with an eye patch was watching us.;A lo lejos nos observaba una niña con un parche en el ojo;遠くで眼帯をした少女が私たちを見ていた
+CHINESEFOOD;I won't be chinese food;No seré comida china;私を中華料理に変えることはできない
+TINGYUNNECK;If you think you're going to twist my neck too,\nyou're wrong;Si piensas que a mi también me vas a torcer el cuello,\nte equivocas;私の首を絞められると思っているなら、\nそれは間違いです
+KR800AIRAM_1;I made RAM more expensive and you can't do anything to\nrevert it\nAI is the future;Hice que la RAM fuera más cara y no puedes hacer nada\npara revertirlo. La IA es el futuro;RAMの価格を上げたので、元に戻すことはできません\nAIは未来です
+KR800AIRAM_2;KR800 like you uses DDR5 and i'll extract it from your head;KR800 como tú usan DDR5 y te lo voy a sacar de la cabeza;KR800はあなたと同じようにDDR5を使用しているので、\nそれを抽出します
+KR800AIRAM_3;Emily, take me the screwdriver;Emily, tráeme el destornillador;エミリー、ドライバーを持ってきて
+KR800AIRAM_4;RAM is for gamers, not for AI;La RAM es para los jugadores,\nno para la IA;RAMはゲーマー向けであって、AI向けではない
+KR800AIRAM_5;Here is the screwdriver, let's sell that junk for parts;Aquí está el destornillador,\nvendamos esa chatarra por piezas;これがドライバーだ。このガラクタは部品として売ろう
+QSTATUS_0;Locked;Bloqueado;ロックされています
+QSTATUS_1;Ongoing;en curso;進行中
+QSTATUS_2;Failed;Fallido;失敗
+QSTATUS_3;Complete;Terminado;完全な
+QNAME_0;Challenge Kimberly;Desafía a Kimberly;チャレンジ・キンバリー
+QNAME_1;Visit Honker Railway;Visita Honker Railway;訪問 Honker Railway
+QNAME_2;Defeat that troublemaker girl;Derrota a esa niña problemática;トラブルメーカーの少女を倒せ
+QNAME_3;Win Kimberly's Challenge;Gana el desafío de Kimberly;キンバリーのチャレンジに勝つ
+QNAME_4;Complete Hu Wei character quest;Completa la misión del personaje Hu Wei;胡薇キャラクタークエストを完了する
+QNAME_5;Complete Gurukōsu Tanaka character quest;Completa la misión del personaje Gurukōsu Tanaka;グルコース田中のキャラクタークエストを完了する
+QNAME_6;Complete Momo Tanaka character quest;Completa la misión del personaje Momo Tanaka;田中桃のキャラクタークエストを完了する
+CHARINFO_0;Midori Asgardius is an elf girl with an\nenergetic personality, but who doesn't\nsay a word.\nHer body is so flexible that she's known\nas The Rubber Girl;Midori Asgardius es una niña elfo de\npersonalidad enérgica, pero que no dice\nni una palabra.\nTiene un cuerpo muy flexible, a tal punto\n que se le conoce como La Niña de Hule;ミドリアスガルディウスは、\n活発な性格だが一言も話さないエルフの少女。\n彼女の体は非常に柔軟で、\n「ゴム少女」と呼ばれている。
+CHARINFO_1;Diana Asgardius is Midori's older sister.\nShe is nicknamed this due to her\nprotective role and her larger height,\nas they are both the same age. She also\nhas a body as flexible as rubber;Diana Asgardius es la hermana mayor de\nMidori. Se le conoce de esta manera\ndebido a su rol protector y su mayor\nestatura, ya que ambas tienen la\nmisma edad. Ella también tiene un\ncuerpo flexible como el hule;ダイアナ・アスガルディウス ミドリの姉です。\nミドリと同い年で、守護者としての役割と、\n彼女よりも大きな体格から、\nこのあだ名が付けられました。また、\n彼女はゴムのように柔軟な体格の持ち主です
+CHARINFO_2;Rikka Grub is a nekomata girl known as\nthe Chuunibyou Cat. She's like a walking\nencyclopedia due to the amount of time\nshe spends reading in the library.;Rikka Grub es una niña nekomata\nconocida como La Gata Chuunibyou. Ella\nes como una enciclopedia ambulante\ndebido al tiempo que pasa leyendo en la\nbiblioteca;リッカ・グラブは、\n中二病猫として知られる猫又の女の子です。\n図書館で読書に多くの時間を費やす彼女は、\nまるで歩く百科事典のようです。
+CHARINFO_3;Kimberly Arch is a maid who is always\nwilling to help. She is very skilled at\narchery and knife throwing. It is said that\nshe has a body as flexible as rubber, but\nthere is no evidence of this;Kimberly Arch es una criada que siempre\nestá dispuesta a ayudar. Es muy habil en\nel tiro con arco y en el lanzamiento de\ncuchillos. Se dice que ella tiene un cuerpo\nflexible como el hule, pero no hay\nevidencia de ello;キンバリー・アーチは、\nいつでも喜んでお手伝いをして\nくれるメイドです。\n彼女は弓術とナイフ投げの達人です。\nゴムのように柔軟な体を\n持っていると言われていますが、\nその証拠はありません。
+CHARINFO_4;Hu Wei is a half dog boy. His father\nattempted to eat him in many times,\nwithout any success;Hu Wei es un niño mitad perro. Su padre\nintentó comérselo muchas veces,\nsin éxito alguno;胡薇は半犬の少年です。\n父親は何度も彼を食べようとしましたが、\n失敗しました。
+CHARINFO_5;Gurukōsu Tanaka is a kitsune girl whose\nfavorite hobby is drawing. Her drawings\nare inspired by legendary mangaka\nSatoru Hashimoto;Gurukōsu Tanaka es una niña kitsune\ncuyo pasatiempo favorito es el dibujo.\nSus dibujos están inspirados en el\nlegendario mangaka Satoru Hashimoto;田中グルコースは、\n絵を描くことが趣味のきつねの女の子です。\n彼女の絵は、\n伝説の漫画家・\n橋本さとるにインスピレーション\nを受けています。
+CHARINFO_6;Momo Tanaka is a Kitsune who became a\nzombie after Tito Dust twisted her neck.\nShe appears clumsy, but hides some\ninteresting secrets;Momo Tanaka es una Kitsune que se\nconvirtió en un zombie después de que\nTito Dust le torciera el cuello.\nAparentemente torpe, pero esconde\nalgunos secretos interesantes;田中モモは、\nティト・ダストに首を捻挫されてゾンビ\nになってしまったキツネです。\n一見不器用な彼女ですが、\n興味深い秘密を隠しています。
+CHARINFO_7;Pamela Hashimoto is a girl who has\ncaused a lot of trouble for the principal.\nHow long she's been at the school is a\nmystery;Pamela Hashimoto es una niña que le ha\ndado muchos problemas al director. El\ntiempo que lleva en la escuela es un\nmisterio;パメラ・ハシモトは校長先生に多大な迷惑を\nかけている少女です。\n彼女がどれくらいこの学校にいたのかは謎です
+CHARINFO_8;Lety Hashimoto is Pamela's twin sister.\nShe is quieter and rarely says a word;Lety Hashimoto es la hermana gemela de\nPamela. Ella es mas tranquila y muy rara\nvez dice palabra alguna;レティ・ハシモトはパメラの双子の妹です。\n彼女は物静かで、ほとんど言葉を発しません。
+VLCTALK;I don't remember if I stole this traffic cone from the\nVideoLAN offices or from a nearby street;No recuerdo si este cono de transito me lo robé de las\noficinas de VideoLAN o de una calle cercana;このカラーコーンをVideoLANのオフィスから盗んだのか、\nそれとも近くの通りから盗んだのか、覚えていない
