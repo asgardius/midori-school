@@ -135,6 +135,7 @@ Backpack={
 
 [locale]
 
+test="en"
 translations=PoolStringArray( "res://text.en.translation", "res://text.es.translation", "res://text.ja.translation" )
 
 [physics]

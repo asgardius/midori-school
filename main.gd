@@ -50,4 +50,4 @@ func updatehud():
 	elif Global.gamepad == 2:
 		presscontinue.set_text(tr("TEXT_CONTINUE_JA"))
 	elif Global.gamepad == 3:
-		presscontinue.set_text(tr("TEXT_CONTINUE_GEO"))
+		presscontinue.set_text(tr("TEXT_CONTINUE_GEO")+"\nNo disc, no buy")
