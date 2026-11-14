@@ -46,6 +46,57 @@ Works well on Pinephone
 
 <img src=https://git.asgardius.company/asgardius/midori-school/raw/branch/main/screenshots/6.jpg>
 
+
+# System requirements
+
+* 64 bit X86 or ARM quad core CPU, 1.2 GHz or better
+* 1 GB of RAM
+* Glibc 2.36.9 or later
+* OpenGL ES 2.0 compatible GPU for hardware rendering
+* 700 MB of free space
+* ALSA compatible sound card or bluetooth headset
+* Keyboard, gamepad or touchscreen
+* Network interface for LAN multiplayer (not yet implemented)
+
+# Known devices that fit  these requirements
+
+* Pinephone (Requirements were made to fit this device)
+* Pinephone Pro (Untested)
+* Librem 5 (Untested)
+* Raspberry Pi 3b or later (Tested on 3b+)
+* Droidian powered devices
+* Almost any X86_64 computer (Don't expect seeing this game ruunning on a Pentium 2 with a Voodoo card, because i'm not John Carmack)
+
+# GNU/Linux packages
+
+Linux packages have the same name than this repo (midori-school)
+
+Arch Linux users can use Kimberly Repo. More info at https://kimberly.asgardius.company/
+
+Gentoo users can use Layla Repo https://git.asgardius.company/asgardius/laylarepo
+
+Debian users can use evelynrepo adding the following to sources.list (replace arch with amd64 or arm64)
+
+deb [trusted=yes] https://evelynrepo.momo.asgardius.company arch/
+
+Nura OS native package is available at midorirepo (only for arm64)
+
+sudo wget https://midorirepo.momo.asgardius.company/asgardius@asgardius.company-69eacec0.rsa.pub -O /etc/apk/keys/asgardius@asgardius.company-69eacec0.rsa.pub
+
+Add the following to /etc/apk/repositories
+
+https://midorirepo.momo.asgardius.company
+
+Flatpak release is available at Karla repo
+
+flatpak remote-add karlarepo https://karlarepo.momo.asgardius.company/karlarepo.flatpakrepo
+
+flatpak install karlarepo asgardius.page.virtualxrpg
+
+# Running on FreeBSD
+
+Download latest engine executable from https://elda.asgardius.company/virtualx-engine-ports/ and rename it to get the same prefix than pck file. If you have virtualxrpg.pck, executable must be named like virtualxrpg.x86_64
+
 # Plot
 
 Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since much before than Earth. Most Asteroid Belt natives have pointy ears. There are also animal-based humanoids. All humans from the universe lives here since their planet was destroyed by the Alcohol Discs, but very few of them remains. You are Midori Asgardius, a 15 years old elf girl also know as "The Walking Explosive". You are a student at Kaizo Magic School. Your best friends are Diana Asgardius "The Tuna" and Rikka Grub "The Chuunibyou Cat". 10+ playable characters are awaiting for you (optional gacha machine sold separately). Deal Kung Fu Troublemakers, fight against bullet hell themed bosses, solve exciting puzzles, dig inside trashcans, find beautiful Multi Vector Submarines, defeat martians and Discover the truth of this universe from an unique point of view. If you are maniac try our super hardcore mode. Be kind and have a happy unfunaversary this year. If you have any doubt about this game ask to your father and Kaizo's principal: Page Asgardius. Will you be able to find the secret behind Midori's explosive personality?
@@ -54,7 +105,7 @@ Ceres is a dwarf planet at the Asteroid Belt which has intelligent life since mu
 
 * Low hardware requirements
 * Soundtrack mastered in Surround
-* Compatble with Pinephone
+* Compatible with Pinephone
 * Gamepad compatibility
 * Bullethell themed bosses
 * Multiple playable characters
@@ -104,17 +155,13 @@ Because Unity is a closed source tool, and it's too mainstream. I'll learn to us
 
 This game is made to  work better on linux smartphones like Pinephone (the one that i use) and librem 5
 
-# Why Android release arrived too late?
-
-I had issues trying to make this game working  on Pinephone,  so i delayed touch controls implementation until this issue was solved. Android support for this game is not a priority for me, for this reason i suggest using a linux-first smartphone instead. remember that Google Play reviews any app update, so every android  release  will arrive a bit later than linux releases
-
-# Why Google Play release was remove?
+# Why Google Play release was removed?
 
 Because i'm against this https://www.androidauthority.com/how-android-sideloading-restrictions-may-work-3595355/
 
 # What happened to apk releases?
 
-See instruction for Postmarketos
+See instruction for Nura OS
 
 # Why this game is not available at F-Droid?
 
@@ -126,7 +173,7 @@ I won't release my games on consoles owned by companies that destroy everything.
 
 # Why your game is not available for Apple Devices?
 
-I won't spend money for an App Store Developer Account. This game is available for Android because Asgardius S3 Manager is already at Google Play
+I won't spend money for an App Store Developer Account. This game was available for Android because Asgardius S3 Manager is already at Google Play
 
 # Why this game is not available as snap package?
 
@@ -140,63 +187,13 @@ Installing a Linux distro is required for this
 
 Most Amiga games used this trick to optimize the limited hardware of these computers. My code optimizations are inspired by programming tricks used on old school games. As a result, this game can be easily ported to Amiga computers without losing its identity
 
-# System requirements
-
-* 64 bit X86 or ARM quad core CPU, 1.2 GHz or better
-* 1 GB of RAM
-* Glibc 2.36.9 or later
-* OpenGL ES 2.0 compatible GPU for hardware rendering
-* 700 MB of free space
-* ALSA compatible sound card or bluetooth headset
-* Keyboard, gamepad or touchscreen
-* Network interface for LAN multiplayer (not yet implemented)
-
-# Known devices that fit  these requirements
-
-* Pinephone (Requirements were made to fit this device)
-* Pinephone Pro (Untested)
-* Librem 5 (Untested)
-* Raspberry Pi 3b or later (Tested on 3b+)
-* Droidian powered devices
-* Almost any X86_64 computer (Don't expect seeing this game ruunning on a Pentium 2 with a Voodoo card, because i'm not John Carmack)
-
-# GNU/Linux packages
-
-Linux packages have the same name than this repo (midori-school)
-
-Arch Linux users can use Kimberly Repo. More info at https://kimberly.asgardius.company/
-
-Gentoo users can use Layla Repo https://git.asgardius.company/asgardius/laylarepo
-
-Debian users can use evelynrepo adding the following to sources.list (replace arch with amd64 or arm64)
-
-deb [trusted=yes] https://evelynrepo.momo.asgardius.company arch/
-
-Nura OS native package is available at midorirepo (aonly for arm64)
-
-sudo wget https://midorirepo.momo.asgardius.company/asgardius@asgardius.company-69eacec0.rsa.pub -O /etc/apk/keys/asgardius@asgardius.company-69eacec0.rsa.pub
-
-Add the following to /etc/apk/repositories
-
-https://midorirepo.momo.asgardius.company
-
-Flatpak release is available at Karla repo
-
-flatpak remote-add karlarepo https://karlarepo.momo.asgardius.company/karlarepo.flatpakrepo
-
-flatpak install karlarepo asgardius.page.virtualxrpg
-
-# Running on FreeBSD
-
-Download latest engine executable from https://elda.asgardius.company/virtualx-engine-ports/ and rename it to get the same prefix than pck file. If you have virtualxrpg.pck, executable must be named like virtualxrpg.x86_64
-
 # How to donate to this project
 
-If you want to donate to this project you can see  my crypto addressess at https://asgardius.company/?page_id=1870  (chia and monero at the moment)
+If you want to donate to this project you can see  my crypto addresses at https://asgardius.company/?page_id=1870  (chia and monero at the moment)
 
 # Why you changed some background assets in your game?
 
-Most game developers are using Generative AI to create assets,  but most gamers hate this. So i removed AI Slop from my game and use public domain photos instead. R0.4.2-beta will be the the last release with AI slop among its assets
+Most game developers are using Generative AI to create assets,  but most gamers hate this. So i removed AI Slop from my game and use public domain photos instead. R0.4.2-beta was the the last release with AI slop among its assets
 
 # Why your game has its source code archived at WD hard drives?
 
